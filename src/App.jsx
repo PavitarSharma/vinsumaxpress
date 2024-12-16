@@ -5,16 +5,16 @@ import { MdOutlineChatBubble } from "react-icons/md";
 /**
  * @pages
  */
-import Home from "@/pages/Home/Home";
-import Service from "@/pages/Service";
-import About from "@/pages/About";
-import MediaCenter from "@/pages/MediaCenter";
-import Career from "@/pages/Career";
-import Contact from "@/pages/Contact";
-import PrivacyPloicy from "@/pages/PrivacyPolicy";
-import Packaging from "@/pages/Packaging";
-import Franchise from "@/pages/Franchise";
-import BlogDetail from "@/pages/BlogDetail/BlogDetail";
+const Home = lazy(() => import("@/pages/Home/Home"));
+const Service = lazy(() => import("@/pages/Service"));
+const About = lazy(() => import("@/pages/About"));
+const MediaCenter = lazy(() => import("@/pages/MediaCenter"));
+const Career = lazy(() => import("@/pages/Career"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const Packaging = lazy(() => import("@/pages/Packaging"));
+const Franchise = lazy(() => import("@/pages/Franchise"));
+const BlogDetail = lazy(() => import("@/pages/BlogDetail/BlogDetail"));
 
 /**
  * @components
@@ -29,7 +29,7 @@ import {
 } from "@/components/ui/popover";
 import { ROUTES } from "@/lib/routes";
 import ScrollToTop from "@/lib/ScrollToTop";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { LuArrowUp } from "react-icons/lu";
 
 const App = () => {
@@ -53,20 +53,22 @@ const App = () => {
   return (
     <div>
       <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path={ROUTES.SERVICE} element={<Service />} />
-        <Route path={ROUTES.ABOUT} element={<About />} />
-        <Route path={ROUTES.MEDIACENTER} element={<MediaCenter />} />
-        <Route path={ROUTES.CAREER} element={<Career />} />
-        <Route path={ROUTES.CONTACT} element={<Contact />} />
-        <Route path={ROUTES.PACKAGING} element={<Packaging />} />
-        <Route path={ROUTES.PRIVACY_POLICY} element={<PrivacyPloicy />} />
-        <Route path={ROUTES.FRANCHISE} element={<Franchise />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
-      </Routes>
-      <Footer />
+      <Suspense fallback={<div></div>}>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path={ROUTES.SERVICE} element={<Service />} />
+          <Route path={ROUTES.ABOUT} element={<About />} />
+          <Route path={ROUTES.MEDIACENTER} element={<MediaCenter />} />
+          <Route path={ROUTES.CAREER} element={<Career />} />
+          <Route path={ROUTES.CONTACT} element={<Contact />} />
+          <Route path={ROUTES.PACKAGING} element={<Packaging />} />
+          <Route path={ROUTES.PRIVACY_POLICY} element={<PrivacyPolicy />} />
+          <Route path={ROUTES.FRANCHISE} element={<Franchise />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+        </Routes>
+        <Footer />
+      </Suspense>
       {/* Additional routes can be added here */}
 
       <Toaster
@@ -94,7 +96,10 @@ const App = () => {
             <MdOutlineChatBubble size={24} />
           </button>
         </PopoverTrigger>
-        <PopoverContent align="end" className="min-[576px]:w-[400px] w-[300px] p-0">
+        <PopoverContent
+          align="end"
+          className="min-[576px]:w-[400px] w-[300px] p-0"
+        >
           <ChatBot />
         </PopoverContent>
       </Popover>
