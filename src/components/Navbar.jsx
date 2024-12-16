@@ -11,13 +11,14 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { navLinks, companyDetail } from "@/constants";
 import { FaFacebookF, FaPhoneAlt, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { LuMenu } from "react-icons/lu";
+import { ROUTES } from "@/lib/routes";
 import { useCallback, useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -116,7 +117,9 @@ const Navbar = () => {
               ))}
 
               <li className="px-2 mt-2">
-                <Button>Get Touch</Button>
+                <Link to={ROUTES.CONTACT}>
+                  <Button onClick={togglePopover}>Get in Touch</Button>
+                </Link>
               </li>
             </ul>
           </PopoverContent>
@@ -129,8 +132,6 @@ const Navbar = () => {
               <NavigationMenuItem key={index}>
                 <NavLink
                   to={path}
-                  legacyBehavior
-                  passHref
                   className={({ isActive }) =>
                     isActive ? "text-primary font-medium" : "hover:text-primary"
                   }
@@ -140,7 +141,9 @@ const Navbar = () => {
               </NavigationMenuItem>
             ))}
             <NavigationMenuItem>
-              <Button>Get Touch</Button>
+              <Link to={ROUTES.CONTACT}>
+                <Button>Get in Touch</Button>
+              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

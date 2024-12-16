@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { MdOutlineChatBubble } from "react-icons/md";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 /**
  * @pages
@@ -29,7 +30,6 @@ import {
 } from "@/components/ui/popover";
 import { ROUTES } from "@/lib/routes";
 import ScrollToTop from "@/lib/ScrollToTop";
-import { lazy, Suspense, useEffect, useState } from "react";
 import { LuArrowUp } from "react-icons/lu";
 
 const App = () => {
