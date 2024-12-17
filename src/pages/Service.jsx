@@ -199,7 +199,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="py-8">
         <div className="container">
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-8">
             MULTIMODAL TRANSPORTATION
@@ -262,7 +262,7 @@ const Service = () => {
                       <p className="mt-6 text-sm mb-4 text-zinc-500">
                         {obj.description}
                       </p>
-                      <Link to="#">
+                      <Link to={obj.path}>
                         <Button>View more</Button>
                       </Link>
                     </div>

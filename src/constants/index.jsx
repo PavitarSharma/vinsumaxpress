@@ -424,6 +424,7 @@ export const serviceData = [
     name: "Medtronic",
     label: "Electric car charging",
     image: truckDrivingRoad,
+    path: ROUTES.PACKAGING,
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi error recusandae animi, est velit officia alias inventore modi soluta, molestiae exercitationem reiciendis commodi deserunt temporibus illo harum. Voluptate, optio!",
   },
@@ -431,6 +432,7 @@ export const serviceData = [
     name: "Medtronic XYZ",
     label: "Residental solar panels",
     image: airplaneDesignFreight,
+    path: ROUTES.FRANCHISE,
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi error recusandae animi, est velit officia alias inventore modi soluta, molestiae exercitationem reiciendis commodi deserunt temporibus illo harum. Voluptate, optio!",
   },
@@ -808,3 +810,86 @@ export const galleriessh = [
   "https://vinsumaxpress.com/assets/img/gallery/new-vinsum-axpress-images13.jpg",
   "https://vinsumaxpress.com/assets/img/gallery/new-vinsum-axpress-images14.jpg",
 ];
+
+export const packagingPage = {
+  ppBox: {
+    title: "PP BOX & TOTES",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
+    images: ["", "", "", ""],
+  },
+
+  foldableCrates: {
+    title: "FOLDABLE CRATES/BINS",
+    benefits: [
+      "Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Can be Deployed Directly on - Process line.",
+      "Can with stand payload of up to 15-35 kg",
+      "Flat Packed to 1/5th the Assembled size to save reverse logistics up to 80%.",
+      "Detachable side walls-top LID.",
+    ],
+    images: ["", "", "", ""],
+  },
+
+  plsBoxes: {
+    title: "PLS & FLC BOXES",
+    benefits: [
+      "Life span 36 months in appropriate condition.",
+      "Designed to suit Trucks sizes for all regions PAN INDIA.",
+      "Suitable for wooden Boxes/Crates.",
+      "Can with stand Payload of up to 500-750 kg.",
+      "Flat Packed to 1/3th the assembled size to save reverse logistics up to 67%.",
+    ],
+    images: ["", "", "", ""],
+  },
+
+  wireMeshContainer: {
+    title: "WIRE-MESH CONTAINER",
+    benefits: [
+      "Designed to suit Trucks sizes for all regions PAN INDIA and around the world.",
+      "Suitable for wooden Boxes/Crates in light auto part industry for Transport & for online process as well.",
+      "Can with stand Payload of up to 750-1200 kg.",
+      "Flat Packed to 1/3th the assembled size to save reverse logistics up to 67%.",
+      "Light weight as compared to Tabular structures.",
+    ],
+    images: ["", "", "", ""],
+  },
+
+  metalFoldableCrates: {
+    title: "METAL FOLDABLE CRATES (MFC)",
+    benefits: [
+      "Designed to suit Trucks sizes for all Regions PAN INDIA & around the World.",
+      "Suitable for wooden Boxes/Crates in heavy auto part industry for Transport & for online process as well.",
+      "Flat Packed to 1/3th the assembled size to save reverse logistics up to 60%.",
+      "Customizable to light-heavy weight structure.",
+    ],
+    images: ["", "", "", ""],
+  },
+
+  pallets: {
+    title: "PALLETS (PLASTIC/WOODEN/STEEL)",
+    benefits: [
+      "Light Weight.",
+      "High physical Durability.",
+      "Rotomoulded, injection Moulded.",
+      "Plastic Pallets.",
+      "Wooden Pallets.",
+      "Steel Pallets.",
+    ],
+    images: ["", "", "", ""],
+  },
+
+  thermoFormingTray: {
+    title: "THERMO_FORMING TRAY",
+    benefits: [
+      "Vacuum-formed plastic trays.",
+      "Thermoforming plastic trays.",
+      "Designed for sensitive components.",
+      "Ideal for high-value components.",
+    ],
+    images: ["", "", "", ""],
+  },
+};

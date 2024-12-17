@@ -68,6 +68,33 @@ const App = () => {
           <Route path="/blog/:id" element={<BlogDetail />} />
         </Routes>
         <Footer />
+
+        {showScrollIcon && (
+          <button
+            type="button"
+            onClick={scrollToTop}
+            className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl ease-in-out cursor-pointer fixed bottom-16 right-4 z-50 animate-bounce duration-2000"
+          >
+            <LuArrowUp size={26} />
+          </button>
+        )}
+
+        <Popover>
+          <PopoverTrigger asChild>
+            <button
+              type="button"
+              className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer fixed bottom-4 right-4 z-50 "
+            >
+              <MdOutlineChatBubble size={24} />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent
+            align="end"
+            className="min-[576px]:w-[400px] w-[300px] p-0"
+          >
+            <ChatBot />
+          </PopoverContent>
+        </Popover>
       </Suspense>
       {/* Additional routes can be added here */}
 
@@ -76,33 +103,6 @@ const App = () => {
           duration: 3000,
         }}
       />
-
-      {showScrollIcon && (
-        <button
-          type="button"
-          onClick={scrollToTop}
-          className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl ease-in-out cursor-pointer fixed bottom-16 right-4 z-50 animate-bounce duration-2000"
-        >
-          <LuArrowUp size={26} />
-        </button>
-      )}
-
-      <Popover>
-        <PopoverTrigger asChild>
-          <button
-            type="button"
-            className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer fixed bottom-4 right-4 z-50 "
-          >
-            <MdOutlineChatBubble size={24} />
-          </button>
-        </PopoverTrigger>
-        <PopoverContent
-          align="end"
-          className="min-[576px]:w-[400px] w-[300px] p-0"
-        >
-          <ChatBot />
-        </PopoverContent>
-      </Popover>
     </div>
   );
 };
