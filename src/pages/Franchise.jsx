@@ -15,6 +15,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -41,7 +48,7 @@ const formSchema = z.object({
   remarks: z.string().nonempty({ message: "Remarks is required" }).trim(),
   service: z
     .string()
-    .nonempty({ message: "Please select at least one service." })
+    .nonempty({ message: "Please select your service." })
     .trim(),
 });
 
@@ -78,8 +85,10 @@ const Franchise = () => {
           headers: { "Content-Type": "application/json" },
         }
       );
+      alert(JSON.stringify(requestBody, null, 2));
       toast.success("Request submitted successfully");
       form.reset();
+      form.setValue("service", "");
       // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error(
@@ -93,15 +102,15 @@ const Franchise = () => {
   return (
     <>
       <section className="py-8">
-        <div className="max-w-5xl mx-auto px-4 grid lg:grid-cols-2 gap-6 ">
-          <figure className="lg:order-1 order-2">
+        <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-6 ">
+          <figure className="md:order-1 order-2">
             <img
               src={franchise}
               alt="franchise"
-              className="rounded-2xl lg:h-[86%]  w-full"
+              className="md:h-[450px]  w-full rounded-xl"
             />
           </figure>
-          <Card className="h-fit lg:order-2 order-1">
+          <Card className="md:h-[450px] md:order-2 order-1">
             <CardHeader>
               <CardTitle>Join Our Franchise Network</CardTitle>
               <CardDescription>
@@ -186,40 +195,38 @@ const Franchise = () => {
                         </FormItem>
                       )}
                     />
-                  </div>
-                  <div className="space-y-2">
-                    <p>You are a</p>
-                    <div className="space-y-2">
-                      {[
-                        "Booking Agent",
-                        "Delivery Agent",
-                        "Vendor/Partner",
-                      ].map((value) => (
-                        <label
-                          key={value}
-                          htmlFor={value}
-                          className="flex items-center gap-2"
-                        >
-                          <input
-                            type="radio"
-                            id={value}
-                            name="service"
-                            checked={form.watch("service") === value}
-                            value={value}
-                            onChange={() => form.setValue("service", value)}
-                            className="peer sr-only"
-                          />
-                          <div className="relative w-5 h-5 rounded-full bg-gray-300 cursor-pointer peer-checked:bg-blue-600 before:content-[''] before:absolute before:w-2 before:h-2 before:peer-checked:bg-white before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full "></div>
-                          <span>{value}</span>
-                        </label>
-                      ))}
-                      {form.formState?.errors?.service && (
-                        <small className="text-rose-600">
-                          {form.formState.errors.service}
-                        </small>
+
+                    <FormField
+                      control={form.control}
+                      name="service"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Service</FormLabel>
+                          <Select onValueChange={field.onChange}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select service" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {[
+                                "Booking Agent",
+                                "Delivery Agent",
+                                "Vendor/Partner",
+                              ].map((value) => (
+                                <SelectItem key={value} value={value}>
+                                  {value}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+
+                          <FormMessage />
+                        </FormItem>
                       )}
-                    </div>
+                    />
                   </div>
+
                   <Button type="submit">
                     {isLoading ? "Loading..." : "Submit"}
                   </Button>
