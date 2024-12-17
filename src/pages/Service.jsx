@@ -322,13 +322,15 @@ const Service = () => {
           </p>
         </div>
 
-        <div className="container my-8 grid md:gap-x-16 md:gap-y-8 gap-4 md:grid-cols-2">
-          {packagingServices.map(({ title, description }, index) => (
-            <div key={index} className="mb-2">
-              <h4 className="text-primary font-medium mb-2">{title}</h4>
-              <p className="text-sm">{description}</p>
-            </div>
-          ))}
+        <div className="container my-8">
+          <div className="grid md:gap-x-16 md:gap-y-8 gap-4 md:grid-cols-2">
+            {packagingServices.map(({ title, description }, index) => (
+              <div key={index} className="mb-2">
+                <h4 className="text-primary font-medium mb-2">{title}</h4>
+                <p className="text-sm">{description}</p>
+              </div>
+            ))}
+          </div>
 
           <Link
             to={ROUTES.PACKAGING}
