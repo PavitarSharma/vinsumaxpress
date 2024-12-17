@@ -133,7 +133,7 @@ const Footer = () => {
             <h3 className="font-semibold">Resources</h3>
             <ul className="space-y-2 mt-2">
               <li>
-                <Link to="#" className={menuLink}>
+                <Link to={ROUTES.CONTACT} className={menuLink}>
                   Help & Support
                 </Link>
               </li>
@@ -143,7 +143,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className={menuLink}>
+                <Link to={ROUTES.PRIVACY_POLICY} className={menuLink}>
                   Terms
                 </Link>
               </li>
@@ -197,7 +197,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href={ROUTES.MEDIACENTER}
+                href={companyDetail.instagram}
                 target="_blank"
                 className={`w-8 h-8 rounded-full flex items-center justify-center bg-zinc-200 hover:bg-primary hover:text-white transition duration-300 focus:bg-primary focus:text-white`}
               >

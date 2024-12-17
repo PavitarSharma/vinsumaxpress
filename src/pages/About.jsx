@@ -60,9 +60,7 @@ const About = () => {
                   with a portfolio of over 100+ happy clients, we strive to
                   provide exceptional service and build lasting relationships.
                 </li>
-                <li>
-                  and we are hiring. Click the button below to join us 😉.
-                </li>
+                <li>we are hiring. Click the button below to join us.</li>
               </ul>
             </div>
             <Link to={ROUTES.CAREER}>
@@ -129,7 +127,7 @@ const About = () => {
                     className="w-full h-full p-2"
                   />
                 </div>
-                <h3 className="text-center font-semibold text-lg">MISSION</h3>
+                <h3 className="text-center font-semibold text-lg">VISION</h3>
                 <p className="text-sm mt-2">
                   To accomplish the designed goal in time bound period by the
                   way of creating and using an infrastructure fully equipped
@@ -142,7 +140,7 @@ const About = () => {
                 <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-black">
                   <img src={value} alt="value" className="w-full h-full p-2" />
                 </div>
-                <h3 className="text-center font-semibold text-lg">MISSION</h3>
+                <h3 className="text-center font-semibold text-lg">VALUE</h3>
                 <p className="text-sm mt-2">
                   To accomplish the designed goal in time bound period by the
                   way of creating and using an infrastructure fully equipped
@@ -165,7 +163,161 @@ const About = () => {
             Chairman & Managing Director
           </div>
 
-          <div>
+          <div className="bg-cardBackground">
+            <div className="relative lg:py-8 pb-8  grid lg:grid-cols-2  my-4 mt-8">
+              <div className="w-full px-4 relative flex items-center justify-center flex-col py-32">
+                <div className="bg-[#DEDEDE] lg:h-[530px] w-1/2 absolute lg:right-0 -right-4 top-0 bottom-0 border-b-8 border-primary">
+                  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:flex flex-col w-full items-center justify-center">
+                    <p>Mr. Vinod Sharma</p>
+                    <p className="font-bold">Chairman & Managing Director</p>
+                  </div>
+                </div>
+
+                <div className="lg:hidden block z-10 relative">
+                  <div className="w-20 h-10 bg-primary/30 -top-4 -z-1 absolute right-0"></div>
+                  <h1 className="text-5xl font-bold font-lato z-10">
+                    About Me.
+                  </h1>
+                </div>
+
+                <div className=" flex flex-col gap-8 lg:p-4 lg:pt-0 pt-10 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-16">
+                  {/* <img src="/images/wave-2.png" alt="wave-2" className="absolute -top-28 -right-10" /> */}
+                  <div className="h-[280px] w-[250px] border-8 border-white rounded relative">
+                    {/* <div className="w-12 h-12 rounded flex items-center justify-center absolute -left-7 top-16 bg-[#EDEDED]">
+                    <Smile className="opacity-60" />
+                  </div> */}
+                    <img
+                      src={chairman}
+                      alt="chairmain"
+                      className="w-full h-full object-cover"
+                    />
+
+                    <div className="w-4 h-10 bg-primary absolute -right-6 -z-1 bottom-8"></div>
+                  </div>
+
+                  <div className="lg:flex hidden flex-col gap-4 pl-8">
+                    <a
+                      href="#"
+                      target="_blank"
+                      className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
+                    >
+                      <i className="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      target="_blank"
+                      className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
+                    >
+                      <i className="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      target="_blank"
+                      className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full relative  flex flex-col justify-center p-4 px-8">
+                <div className="lg:block hidden absolute -left-20 top-20">
+                  <div className="w-20 h-10 bg-primary/30 -top-4 -z-1 absolute right-0"></div>
+                  <h1 className="text-5xl font-bold font-lato z-10">
+                    About Me.
+                  </h1>
+                </div>
+
+                <div className="relative lg:pt-40 pt-10">
+                  <p className="text-2xl leading-relaxed relative before:content-[''] before:absolute before:lg:-left-16 before:-left-12 before:top-5 before:lg:w-14 before:w-10 before:h-[1px] before:bg-black">
+                    Join us on an extraordinary journey of growth, where we
+                    strive for excellence and work together to achieve the best
+                    for
+                    <strong> our business.</strong>
+                  </p>
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-8 pt-8">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-3 h-3 bg-black mt-2"></div>
+                    <p className="flex-1">
+                      On behalf of Vinsum Axpress, I warmly welcome you all and
+                      extend our heartfelt gratitude to our customers for their
+                      continued support, particularly during our initial years.
+                    </p>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-3 h-3 bg-black mt-2"></div>
+                    <p className="flex-1">
+                      Vinsum Axpress is dedicated to offering cost-effective
+                      transportation solutions. Our services span across surface
+                      transport, warehouse management, international freight
+                      forwarding, express distribution, 3PL/4PL solutions, and
+                      packaging.
+                    </p>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-3 h-3 bg-black mt-2"></div>
+                    <p className="flex-1">
+                      We are honored to be the preferred supplier for Fortune
+                      100 automobile companies and a key point of contact for
+                      enhancing efficiency within India&#39;s logistics
+                      landscape.
+                    </p>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-3 h-3 bg-black mt-2"></div>
+                    <p className="flex-1">
+                      With over 18 years of experience across various
+                      industries, our unwavering dedication to value delivery
+                      has earned us the trust of our clients.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:hidden flex flex-col py-20 mt-6 items-center justify-center bg-[#2E2E2E] text-white gap-6">
+                <div className="flex flex-col w-full items-center justify-center">
+                  <p>Social Media Seriously</p>
+                  <p className="font-bold">Harm your Mental Health</p>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  <a
+                    href="#"
+                    target="_blank"
+                    className="bg-[#676767] text-white w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
+                  >
+                    <i className="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    className="bg-[#676767] text-white w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
+                  >
+                    <i className="fa-brands fa-x-twitter"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    className="bg-[#676767] text-white w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
+                  >
+                    <i className="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div>
             <figure className="flex flex-wrap items-center gap-6">
               <div className="w-56 h-56 rounded-full border-[12px] border-cardBackground sm:mx-0 mx-auto">
                 <img
@@ -239,7 +391,7 @@ const About = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

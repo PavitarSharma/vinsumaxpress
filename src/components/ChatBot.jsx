@@ -37,14 +37,14 @@ const ChatBot = () => {
             <Avatar className="h-10 w-10 shrink-0">
               <AvatarImage
                 src={profileUser}
-                alt="@shadcn"
+                alt="profile-user"
                 className="object-cover"
               />
               <AvatarFallback>AC</AvatarFallback>
             </Avatar>
             <div className="grid gap-1 rounded-lg bg-muted p-3 text-sm">
               <div className="flex items-center gap-2">
-                <div className="font-medium">Acme Inc</div>
+                <div className="font-medium">Vinsum Axpress</div>
                 <div className="text-xs text-muted-foreground">2:39 PM</div>
               </div>
               <div>
@@ -67,7 +67,7 @@ const ChatBot = () => {
             <Avatar className="h-10 w-10 shrink-0">
               <AvatarImage
                 src={profileUser}
-                alt="@shadcn"
+                alt="profile-user"
                 className="object-cover"
               />
               <AvatarFallback>AC</AvatarFallback>
@@ -77,14 +77,14 @@ const ChatBot = () => {
             <Avatar className="h-10 w-10 shrink-0">
               <AvatarImage
                 src={profileUser}
-                alt="@shadcn"
+                alt="profile-user"
                 className="object-cover"
               />
               <AvatarFallback>AC</AvatarFallback>
             </Avatar>
             <div className="grid gap-1 rounded-lg bg-muted p-3 text-sm">
               <div className="flex items-center gap-2">
-                <div className="font-medium">Acme Inc</div>
+                <div className="font-medium">Vinsum Axpress</div>
                 <div className="text-xs text-muted-foreground">2:41 PM</div>
               </div>
               <div>

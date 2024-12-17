@@ -27,7 +27,7 @@ const Navbar = () => {
   const { pathname } = useLocation();
 
   const changeNavBg = () => {
-    window.scrollY >= 60 ? setNavBg(true) : setNavBg(false);
+    window.scrollY >= 80 ? setNavBg(true) : setNavBg(false);
   };
 
   useEffect(() => {

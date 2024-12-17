@@ -14,6 +14,8 @@ import "swiper/css/effect-fade";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { LuArrowRight } from "react-icons/lu";
+import { ROUTES } from "@/lib/routes";
 
 const Service = () => {
   const { hash } = useLocation();
@@ -82,7 +84,7 @@ const Service = () => {
           <div className="overflow-x-auto scrollbar">
             <div className="grid grid-cols-6 gap-4 w-[700px] mx-auto ">
               {endToEndSupplyChains.map(({ image, title }, index) => (
-                <figure key={index}>
+                <figure key={index} className="flex flex-col items-center">
                   <div className="border-4 border-primary p-2 w-20 h-20 rounded-full">
                     <img
                       src={image}
@@ -210,7 +212,11 @@ const Service = () => {
               ({ title, description, offers, image }, index) => (
                 <div key={index}>
                   <figure className="h-[200px] rounded-xl shadow mb-2">
-                    <img src={image} alt={title} className="w-full h-full object-cover rounded-xl brightness-90" />
+                    <img
+                      src={image}
+                      alt={title}
+                      className="w-full h-full object-cover rounded-xl brightness-90"
+                    />
                   </figure>
                   <div className="">
                     <h3 className="text-primary">{title}</h3>
@@ -316,13 +322,23 @@ const Service = () => {
           </p>
         </div>
 
-        <div className="container my-8">
+        <div className="container my-8 grid md:gap-x-16 md:gap-y-8 gap-4 md:grid-cols-2">
           {packagingServices.map(({ title, description }, index) => (
             <div key={index} className="mb-2">
               <h4 className="text-primary font-medium mb-2">{title}</h4>
               <p className="text-sm">{description}</p>
             </div>
           ))}
+
+          <Link
+            to={ROUTES.PACKAGING}
+            className="flex items-center justify-center mt-8"
+          >
+            <Button size="lg" variant="outline">
+              Learn more
+              <LuArrowRight />
+            </Button>
+          </Link>
         </div>
       </section>
 

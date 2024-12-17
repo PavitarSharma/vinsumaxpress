@@ -358,7 +358,7 @@ export const integratedSupplyChains = [
     text: "Multi-modal Transportation Surface Train & Air",
   },
   {
-    image: serviceTransportation,
+    image: warehouse1,
     title: "Reliable customer service",
     text: "Warehouse Management Dashboard Enables WMS",
   },

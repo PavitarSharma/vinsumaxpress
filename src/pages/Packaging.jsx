@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { packagingPage } from "@/constants";
+import { packagingPage, packagingServices } from "@/constants";
 import { useEffect } from "react";
 
 const Packaging = () => {
@@ -19,6 +19,28 @@ const Packaging = () => {
 
   return (
     <>
+      <div className="py-8 flex flex-col items-center justify-center bg-primary text-primary-foreground">
+        <h2 className="md:text-5xl text-3xl font-bold text-center">
+          PACKAGING
+        </h2>
+        <p className="text-center text-sm opacity-100 mt-2">
+          We have Completely Returnable packaging solutions & Images of all
+          different Types of packaging
+        </p>
+      </div>
+
+      <section>
+        <div className="container">
+          <div className="container my-8 grid md:gap-x-16 md:gap-y-8 gap-4 md:grid-cols-2">
+            {packagingServices.map(({ title, description }, index) => (
+              <div key={index} className="mb-2">
+                <h4 className="text-primary font-medium mb-2">{title}</h4>
+                <p className="text-sm">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="py-8">
         <div className="container grid lg:grid-cols-2 lg:gap-28 items-start gap-6">
           {/* PP Box */}
