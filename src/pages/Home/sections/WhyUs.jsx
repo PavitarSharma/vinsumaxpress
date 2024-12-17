@@ -28,19 +28,23 @@ const WhyUs = () => {
 
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 mt-10">
           {homeAboutCards.map(({ image, title, description }, index) => (
-            <div
+            <figure
               key={index}
               onClick={() => handleClick(index)}
               className={`bg-white  border drop-shadow w-full rounded-2xl p-6 space-y-4 hover:bg-primary hover:text-white transition duration-300 group cursor-pointer`}
             >
-              <img src={image} alt={title} className="w-16" />
-              <div>
+              <img
+                src={image}
+                alt={title}
+                className="w-16 group-hover:filter group-hover:brightness-0 group-hover:invert transition duration-300"
+              />
+              <figcaption>
                 <h2 className="font-semibold text-2xl">{title}</h2>
                 <p className="text-zinc-400 text-sm group-hover:text-white">
                   {description}
                 </p>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </div>

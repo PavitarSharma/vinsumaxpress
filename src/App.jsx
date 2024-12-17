@@ -16,6 +16,7 @@ const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const Packaging = lazy(() => import("@/pages/Packaging"));
 const Franchise = lazy(() => import("@/pages/Franchise"));
 const BlogDetail = lazy(() => import("@/pages/BlogDetail/BlogDetail"));
+const NotFound = lazy(() => import("@/pages/404"));
 
 /**
  * @components
@@ -66,6 +67,7 @@ const App = () => {
           <Route path={ROUTES.PRIVACY_POLICY} element={<PrivacyPolicy />} />
           <Route path={ROUTES.FRANCHISE} element={<Franchise />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
 

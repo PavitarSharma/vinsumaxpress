@@ -8,5 +8,5 @@ export const ROUTES = {
   MEDIACENTER: "/media-center",
   PRIVACY_POLICY: "/privacy-policy",
   PACKAGING: "/packaging",
-  ERROR_404: "/error/404",
+  ERROR_404: "/not-found",
 };

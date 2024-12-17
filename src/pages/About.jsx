@@ -21,7 +21,7 @@ import {
 } from "../assets/images";
 import { leadershipTeams, visnumNetwork } from "../constants";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { useEffect } from "react";
 
 const About = () => {
@@ -201,7 +201,7 @@ const About = () => {
                       target="_blank"
                       className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                     >
-                      <i className="fa-brands fa-instagram"></i>
+                      <FaInstagram />
                     </a>
 
                     <a
@@ -209,7 +209,7 @@ const About = () => {
                       target="_blank"
                       className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                     >
-                      <i className="fa-brands fa-x-twitter"></i>
+                      <FaXTwitter />
                     </a>
 
                     <a
@@ -217,7 +217,7 @@ const About = () => {
                       target="_blank"
                       className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                     >
-                      <i className="fa-brands fa-linkedin-in"></i>
+                      <FaLinkedinIn />
                     </a>
                   </div>
                 </div>
