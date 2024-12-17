@@ -78,7 +78,7 @@ const MediaCenter = () => {
                   type="submit"
                   className="rounded-full absolute right-2 top-1/2 -translate-y-1/2"
                 >
-                  Search
+                  Subscribe
                 </Button>
               </form>
             </Form>
