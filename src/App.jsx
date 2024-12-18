@@ -52,7 +52,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       <ScrollToTop />
       <Suspense fallback={<div></div>}>
         <Navbar />
@@ -105,7 +105,7 @@ const App = () => {
           duration: 3000,
         }}
       />
-    </div>
+    </>
   );
 };
 

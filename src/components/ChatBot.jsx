@@ -106,10 +106,18 @@ const ChatBot = () => {
             placeholder="Type your message..."
             className="flex-1 rounded-lg bg-muted px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
           />
-          <Button type="button" variant="ghost" size="icon">
-            <LuPaperclip className="h-5 w-5" />
-            <span className="sr-only">Attach file</span>
-          </Button>
+          <label htmlFor="file">
+            <Button type="button" variant="ghost" size="icon">
+              <LuPaperclip className="h-5 w-5" />
+              <span className="sr-only">Attach file</span>
+            </Button>
+            <input
+                id="file"
+                type="file"
+                hidden
+                onClick={(e) => e.stopPropagation()}
+              />
+          </label>
           <Button
             disabled={form.watch("message").length === 0}
             type="submit"
