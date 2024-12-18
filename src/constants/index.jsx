@@ -325,7 +325,7 @@ export const endToEndSupplyChains = [
     image: customer,
   },
   {
-    title: "Warehiuse 1",
+    title: "Warehouse 1",
     image: warehouse1,
   },
   {
@@ -337,7 +337,7 @@ export const endToEndSupplyChains = [
     image: hub2,
   },
   {
-    title: "Warehiuse 2",
+    title: "Warehouse 2",
     image: warehouse2,
   },
   {
@@ -394,6 +394,7 @@ export const integratedSupplyChains = [
 export const packagingServices = [
   {
     title: "Visual Packaging Solution Design",
+
     description:
       "We have a dedicated solution design team that specializes in material-level knowledge and can design solutions based on inputs provided by the customers about the component/part. Produce feasibility reports for all your packaging needs consultation.",
   },
