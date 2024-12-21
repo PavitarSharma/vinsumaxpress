@@ -102,7 +102,7 @@ const Service = () => {
         <div></div>
       </section>
 
-      <section className="">
+      <section>
         <div className="px-4">
           <h1 className="text-center md:text-4xl sm:text-3xl text-2xl font-bold">
             INTEGRATED SUPPLY CHAIN
@@ -130,7 +130,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section id="service-id" className="section">
+      <section id="3pl-4pl-management" className="section">
         <div className="container">
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-8">
             Services
@@ -201,7 +201,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section className="py-8">
+      <section id="multimodal-transportation" className="py-8">
         <div className="container">
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-8">
             MULTIMODAL TRANSPORTATION
@@ -237,7 +237,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section className="py-8">
+      <section id="warehouse-solution" className="py-8">
         <div className="conatiner">
           <h1 className="text-center text-4xl max-w-md mx-auto mb-8">
             See how we solve problems,{" "}
@@ -311,7 +311,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section>
+      <section id="packaging-solution">
         <div className="bg-black text-primary-foreground py-8 space-y-2 px-4">
           <h2 className="md:text-5xl text-3xl font-bold text-center">
             PACKAGING

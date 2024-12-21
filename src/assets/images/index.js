@@ -36,8 +36,9 @@ import hub2 from "@/assets/images/services/warehouse-hub-2.png";
 import inventorySearch from "@/assets/images/services/search.png";
 import services from "@/assets/images/services/services.png";
 import packagingSolution from "@/assets/images/services/packaging-solution.png";
-import airplaneDesignFreight from "@/assets/images/services/airplane-design-air-freight-logistics.jpg";
-import truckDrivingRoad from "@/assets/images/services/back-closeup-view-delivery-truck-driving-road.jpg";
+import airplaneDesignFreight from "@/assets/images/services/airplane-service.png";
+import truckDrivingRoad from "@/assets/images/services/truck-service.png";
+import railService from "@/assets/images/services/rail-service.png"
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -52,7 +53,18 @@ import vinsumAxpressWarehouse from "@/assets/images/about/vinsum-axpress-warehou
 import vinsumCareer from "./career/vinsum-career.png";
 
 // teams
-import chairman from "./teams/chairman.png";
+import chairman from "@/assets/images/teams/chairman.png";
+import kushumSharma from "@/assets/images/teams/kusum-sharma.png";
+import lalitSharma from "@/assets/images/teams/lalit-sharma.png";
+import amitSharma from "@/assets/images/teams/amit-sharma.png";
+import ankitSharma from "@/assets/images/teams/ankit-sharma.png";
+import tcSharma from "@/assets/images/teams/tc-sharma.png";
+import vimalSharma from "@/assets/images/teams/vimal-sharma.png";
+import babulalSharma from "@/assets/images/teams/babulal-sharma.png";
+import anilRajput from "@/assets/images/teams/anil-rajput.png";
+import amitabhaMohapatra from "@/assets/images/teams/amitabha-mohapatra.png";
+import mohitVashist from "@/assets/images/teams/mohit-vashisht.png";
+import supriyaDutt from "@/assets/images/teams/supriya-dutt.png";
 
 // Gallery
 import gallery1 from "@/assets/images/gallery/gallery-1.png";
@@ -97,6 +109,7 @@ export {
   services,
   packagingSolution,
   airplaneDesignFreight,
+  railService,
   truckDrivingRoad,
   warehouse2,
   hub1,
@@ -109,6 +122,17 @@ export {
   value,
   vinsumAxpressWarehouse,
   chairman,
+  kushumSharma,
+  lalitSharma,
+  amitSharma,
+  ankitSharma,
+  tcSharma,
+  vimalSharma,
+  babulalSharma,
+  anilRajput,
+  amitabhaMohapatra,
+  mohitVashist,
+  supriyaDutt,
   vinsumCareer,
   franchise,
   profileUser,

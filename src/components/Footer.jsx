@@ -5,6 +5,7 @@ import { LuArrowRight } from "react-icons/lu";
 import { FaFacebookF, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
+import { BsThreadsFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { ROUTES } from "@/lib/routes";
 import { companyDetail } from "@/constants";
@@ -143,18 +144,26 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={ROUTES.PRIVACY_POLICY} className={menuLink}>
-                  Terms
-                </Link>
+                <a
+                  href="https://hrms.vinsumaxpress.com/Default.aspx"
+                  target="_blank"
+                  className={menuLink}
+                >
+                  Hrms
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://ggco.vinsumaxpress.com"
+                  target="_blank"
+                  className={menuLink}
+                >
+                  Erp
+                </a>
               </li>
               <li>
                 <Link to={ROUTES.PRIVACY_POLICY} className={menuLink}>
                   Privacy
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className={menuLink}>
-                  Licenses
                 </Link>
               </li>
             </ul>
@@ -229,6 +238,15 @@ const Footer = () => {
                 className={`w-8 h-8 rounded-full flex items-center justify-center bg-zinc-200 hover:bg-primary hover:text-white transition duration-300 focus:bg-primary focus:text-white`}
               >
                 <FaYoutube />
+              </a>
+            </li>
+            <li>
+              <a
+                href={companyDetail.thread}
+                target="_blank"
+                className={`w-8 h-8 rounded-full flex items-center justify-center bg-zinc-200 hover:bg-primary hover:text-white transition duration-300 focus:bg-primary focus:text-white`}
+              >
+                <BsThreadsFill />
               </a>
             </li>
           </ul>

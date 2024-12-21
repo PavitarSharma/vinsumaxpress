@@ -294,7 +294,7 @@ const About = () => {
                     target="_blank"
                     className="bg-[#676767] text-white w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                   >
-                    <i className="fa-brands fa-instagram"></i>
+                    <FaInstagram />
                   </a>
 
                   <a
@@ -302,7 +302,7 @@ const About = () => {
                     target="_blank"
                     className="bg-[#676767] text-white w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                   >
-                    <i className="fa-brands fa-x-twitter"></i>
+                    <FaXTwitter />
                   </a>
 
                   <a
@@ -310,7 +310,7 @@ const About = () => {
                     target="_blank"
                     className="bg-[#676767] text-white w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                   >
-                    <i className="fa-brands fa-linkedin-in"></i>
+                    <FaLinkedinIn />
                   </a>
                 </div>
               </div>

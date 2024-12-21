@@ -8,6 +8,12 @@ import {
 } from "@/assets/images";
 import {
   airplaneDesignFreight,
+  amitabhaMohapatra,
+  amitSharma,
+  anilRajput,
+  ankitSharma,
+  babulalSharma,
+  chairman,
   complianceDocument,
   crafting,
   creative,
@@ -25,15 +31,23 @@ import {
   hub1,
   hub2,
   inventorySearch,
+  kushumSharma,
+  lalitSharma,
   logistics,
+  mohitVashist,
   productManagement,
+  profileUser,
+  railService,
   realTimeLocator,
   safeDelivery,
   serviceTransportation,
+  supriyaDutt,
+  tcSharma,
   techDriven,
   thinking,
   transportation,
   truckDrivingRoad,
+  vimalSharma,
   vinsumCareer,
   warehouse,
   warehouse1,
@@ -73,11 +87,15 @@ export const companyDetail = {
   email: "care@vinsumaxpress.com",
   location:
     "404- Electronic City, Udyog Vihar, Phase IV, Sector 18, Gurugram, 122015.",
-  instagram: "https://www.instagram.com/vinsumaxpress?igsh=cHZudWkycjRxbWpv",
-  facebook: "https://www.facebook.com/share/VBhwN2RJxduTKbNh/?mibextid=WC7FNe",
-  twitter: "https://x.com/vinsum_",
+  instagram:
+    "https://www.instagram.com/vinsumaxpress/profilecard/?igsh=MWllMWlkZ3VrNnAzZA==",
+  facebook: "https://www.facebook.com/vinsumaxpress?mibextid=ZbWKwL",
+  twitter: "https://x.com/vinsum_axpress",
   linkedin: "https://www.linkedin.com/company/vinsum-axpress",
-  youtube: "www.youtube.com/@vinsumaxpressindiapvtltd.8044",
+  youtube:
+    "https://youtube.com/@vinsumaxpressindiapvtltd.8044?si=PnkQydw1y1Wa-aGw",
+  thread:
+    "https://www.threads.net/@vinsumaxpress?xmt=AQGzDAAjWD4mrASrnVqeBbOfmwtsda6Rwq99jaQj6TGSFzw",
 };
 
 // Home page constants
@@ -138,6 +156,7 @@ export const homeServices = [
   {
     image: creative,
     title: "Packaging Solution",
+    path: "#packaging-solution",
   },
   {
     image: complianceDocument,
@@ -189,21 +208,25 @@ export const homeServiceQuestions = [
     title: "Multimodal Transportation",
     description:
       "Multimodal transport can ease the journey by optimizing routes and using the most efficient modes for each leg of the journey.",
+    path: "#multimodal-transportation",
   },
   {
     title: "Warehouse Solution",
     description:
       "We are offering wide range of services including consolidation & packaging of cargoes of various types & sizes.",
+    path: "#warehouse-solution",
   },
   {
     title: "Packaging Solutions",
     description:
       "Dedicated solution design team that can design solutions based on inputs provided by the customer about the component / part and produce feasibility reports for all your packaging needs consultation.",
+    path: "#packaging-solution",
   },
   {
     title: "3LP/4LP Management",
     description:
       "Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
+    path: "#3pl-4pl-management",
   },
 ];
 
@@ -292,7 +315,7 @@ export const multimodalTransPortations = [
     ],
   },
   {
-    image: truckDrivingRoad,
+    image: railService,
     title: "Rail Services",
     description:
       "We collabarate with DFC, Indian Railways, and the Ministry of Railways under the PM Gati Shakti plan fo greener logistics. We currently operate 6 routes with dedicated freight trains and VPU wagons, connecting North India wuth Bangalore, Chennai, kolkata, Guwahati, and Gujarat.",
@@ -304,7 +327,7 @@ export const multimodalTransPortations = [
     ],
   },
   {
-    image: truckDrivingRoad,
+    image: airplaneDesignFreight,
     title: "Air Services",
     description:
       "Our expeienced staff organize national and international air cargo shipping for a wide range of cargoes by selecting optimal routes based on your individual needs",
@@ -480,7 +503,7 @@ export const visnumNetwork = {
 
 export const leadershipTeams = [
   {
-    image: "https://vinsumaxpress.com/assets/img/team/CMD.jpeg",
+    image: chairman,
     name: "Mr. Vinod Sharma",
     position: "Chairman & Managing Director",
     twitter: "",
@@ -488,7 +511,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/team-4.jpg",
+    image: kushumSharma,
     name: "Mrs. Kusum Sharma",
     position: "Chair Person",
     twitter: "",
@@ -496,7 +519,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/Lalit%20Sharma.jpg",
+    image: lalitSharma,
     name: "Mr. Lalit Sharma",
     position: "Managing Director",
     twitter: "",
@@ -504,8 +527,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image:
-      "https://vinsumaxpress.com/assets/img/team/Amit-Sharma-Executive-director.jpg",
+    image: amitSharma,
     name: "Mr. Amit Sharma",
     position: "Executive Director",
     twitter: "",
@@ -513,7 +535,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/Ankit%20Sharma.jpg",
+    image: ankitSharma,
     name: "Mr. Ankit Sharma",
     position: "Executive Director",
     twitter: "",
@@ -521,7 +543,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/tc_web.jpg",
+    image: tcSharma,
     name: "Mr. T.C Sharma",
     position: "President",
     twitter: "",
@@ -529,7 +551,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/vimal.jpg",
+    image: vimalSharma,
     name: "Mr. Vimal Sharma",
     position: "Head Credit Control",
     twitter: "",
@@ -537,7 +559,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/BL%20SHarma.jpg",
+    image: babulalSharma,
     name: "Mr. Babulal Sharma",
     position: "Head - Audit & Cost Control",
     twitter: "",
@@ -545,7 +567,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/AK_web.jpg",
+    image: anilRajput,
     name: "Mr. Anil Rajput",
     position: "Head Billing",
     twitter: "",
@@ -553,7 +575,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/Amitabha_IT-Head1.jpg",
+    image: amitabhaMohapatra,
     name: "Amitabha Mohapatra",
     position: "Head Information Technology(IT)",
     twitter: "",
@@ -561,7 +583,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/mohit-vashisht.jpg",
+    image: mohitVashist,
     name: "Mr. Mohit Vashisht",
     position: "Manager Packaging Manufacturing Plant",
     twitter: "",
@@ -569,7 +591,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "https://vinsumaxpress.com/assets/img/team/SUPRIYA_HR.jpg",
+    image: supriyaDutt,
     name: "Mrs. Supriya Dutt",
     position: "HR HEAD",
     twitter: "",
@@ -577,7 +599,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "/images/man-placeholder.png",
+    image: profileUser,
     name: "Mr. Perminder Singh",
     position: "President (Sales & KAM)",
     twitter: "",
@@ -585,7 +607,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: "/images/Kamlesh-jha.jpeg",
+    image: profileUser,
     name: "Mr. Kamlesh Jha",
     position: "AVP (Warehouse Operation)",
     twitter: "",

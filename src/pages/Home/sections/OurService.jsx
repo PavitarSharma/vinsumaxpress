@@ -43,7 +43,7 @@ const OurService = () => {
             type="multiple"
             collapsible
           >
-            {homeServiceQuestions.map(({ title, description }, index) => {
+            {homeServiceQuestions.map(({ title, description, path }, index) => {
               const accordianTitle = title.split(" ");
               return (
                 <AccordionItem value={title} key={index}>
@@ -56,7 +56,7 @@ const OurService = () => {
                   <AccordionContent className="space-y-6">
                     <p className="text-zinc-600">{description}</p>
                     <Link
-                      to={`${ROUTES.SERVICE}#service-id`}
+                      to={`${ROUTES.SERVICE}${path}`}
                       className="flex items-center gap-1 hover:text-primary transition duration-300"
                     >
                       Learn more <LuMoveRight size={18} />

@@ -15,11 +15,13 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { navLinks, companyDetail } from "@/constants";
 import { FaFacebookF, FaPhoneAlt, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { BsThreadsFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { LuMenu } from "react-icons/lu";
 import { ROUTES } from "@/lib/routes";
 import { useCallback, useEffect, useState } from "react";
+import { Separator } from "./ui/separator";
 
 const Navbar = () => {
   const [navBg, setNavBg] = useState(false);
@@ -89,6 +91,27 @@ const Navbar = () => {
           <a href={companyDetail.youtube} target="_blank">
             <FaYoutube size={20} />
           </a>
+          <a href={companyDetail.thread} target="_blank">
+            <BsThreadsFill />
+          </a>
+          <a
+            href="http://ggco.vinsumaxpress.com"
+            target="_blank"
+            className="sm:inline hidden text-black"
+          >
+            <Button type="button" variant="outline" size="sm">
+              ERP Login
+            </Button>
+          </a>
+          <a
+            href="https://hrms.vinsumaxpress.com/Default.aspx"
+            target="_blank"
+            className="sm:inline hidden"
+          >
+            <Button type="button" size="sm">
+              HRMS Login
+            </Button>
+          </a>
         </div>
       </div>
       <div className="container h-14 flex items-center justify-between">
@@ -121,6 +144,28 @@ const Navbar = () => {
                   <Button onClick={togglePopover}>Get in Touch</Button>
                 </Link>
               </li>
+
+              <Separator className="my-4" />
+              <div className="grid grid-cols-2 gap-2">
+                <li>
+                  <a href="http://ggco.vinsumaxpress.com" target="_blank">
+                    <Button type="button" variant="outline" className="w-full">
+                      ERP Login
+                    </Button>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://hrms.vinsumaxpress.com/Default.aspx"
+                    target="_blank"
+                  >
+                    <Button type="button" variant="destructive">
+                      HRMS Login
+                    </Button>
+                  </a>
+                </li>
+              </div>
             </ul>
           </PopoverContent>
         </Popover>

@@ -30,6 +30,7 @@ import {
   FaYoutube,
   FaLinkedinIn,
   FaXTwitter,
+  FaThreads,
 } from "react-icons/fa6";
 
 const formSchema = z.object({
@@ -180,6 +181,13 @@ const Contact = () => {
                     className={socialIcon}
                   >
                     <FaLinkedinIn />
+                  </a>
+                  <a
+                    href={companyDetail.thread}
+                    target="_blank"
+                    className={socialIcon}
+                  >
+                    <FaThreads />
                   </a>
                 </div>
               </div>
