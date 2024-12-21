@@ -33,7 +33,7 @@ const OurService = () => {
             autoPlay
             title="Our service"
             poster="https://cdn.pixabay.com/photo/2014/09/11/22/00/dock-441989_1280.jpg"
-            className="rounded-2xl object-cover w-full h-full brightness-75"
+            className="rounded-2xl object-cover w-full h-full brightness-50 drop-shadow-lg"
           >
             <source src={serviceVideo} type="video/mp4" />
           </video>

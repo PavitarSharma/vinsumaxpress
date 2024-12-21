@@ -135,8 +135,14 @@ const ColumnReusableContainer = ({
         {images.map((image, index) => (
           <figure
             key={index}
-            className="border-2 border-foreground border-dashed rounded-lg w-full h-36"
-          ></figure>
+            className="border-2 border-foreground border-dashed rounded-lg w-full h-36 bg-gray-100"
+          >
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-contain"
+            />
+          </figure>
         ))}
       </div>
 
@@ -183,8 +189,14 @@ const RowReusableContainer = ({
         {images.map((image, index) => (
           <figure
             key={index}
-            className="border-2 border-foreground border-dashed rounded-lg w-full h-36"
-          ></figure>
+            className="border-2 border-foreground border-dashed rounded-lg w-full h-36 bg-gray-100"
+          >
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-contain"
+            />
+          </figure>
         ))}
       </div>
 

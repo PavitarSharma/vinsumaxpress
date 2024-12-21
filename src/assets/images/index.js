@@ -38,7 +38,7 @@ import services from "@/assets/images/services/services.png";
 import packagingSolution from "@/assets/images/services/packaging-solution.png";
 import airplaneDesignFreight from "@/assets/images/services/airplane-service.png";
 import truckDrivingRoad from "@/assets/images/services/truck-service.png";
-import railService from "@/assets/images/services/rail-service.png"
+import railService from "@/assets/images/services/rail-service.png";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -75,6 +75,42 @@ import gallery5 from "@/assets/images/gallery/gallery-5.png";
 import gallery6 from "@/assets/images/gallery/gallery-6.png";
 import gallery7 from "@/assets/images/gallery/gallery-7.png";
 import gallery8 from "@/assets/images/gallery/gallery-8.png";
+
+// Packagings
+import ppBoxesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import ppBoxesImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import ppBoxesImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import ppBoxesImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+
+import foldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import foldableCratesImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import foldableCratesImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import foldableCratesImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+
+import plsImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import plsImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import plsImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import plsImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+
+import wireMeshImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import wireMeshImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import wireMeshImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import wireMeshImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+
+import metalFoldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import metalFoldableCratesImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import metalFoldableCratesImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import metalFoldableCratesImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+
+import palletsImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import palletsImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import palletsImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import palletsImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+
+import thermoFormingImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
+import thermoFormingImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
+import thermoFormingImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import thermoFormingImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
 
 export {
   Logo,
@@ -144,4 +180,32 @@ export {
   gallery6,
   gallery7,
   gallery8,
+  plsImage1,
+  plsImage2,
+  plsImage3,
+  plsImage4,
+  wireMeshImage1,
+  wireMeshImage2,
+  wireMeshImage3,
+  wireMeshImage4,
+  metalFoldableCratesImage1,
+  metalFoldableCratesImage2,
+  metalFoldableCratesImage3,
+  metalFoldableCratesImage4,
+  palletsImage1,
+  palletsImage2,
+  palletsImage3,
+  palletsImage4,
+  thermoFormingImage1,
+  thermoFormingImage2,
+  thermoFormingImage3,
+  thermoFormingImage4,
+  ppBoxesImage1,
+  ppBoxesImage2,
+  ppBoxesImage3,
+  ppBoxesImage4,
+  foldableCratesImage1,
+  foldableCratesImage2,
+  foldableCratesImage3,
+  foldableCratesImage4,
 };

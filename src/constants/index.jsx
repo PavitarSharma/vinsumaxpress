@@ -20,6 +20,10 @@ import {
   customer,
   customerSupport,
   customizedPackaging,
+  foldableCratesImage1,
+  foldableCratesImage2,
+  foldableCratesImage3,
+  foldableCratesImage4,
   gallery1,
   gallery2,
   gallery3,
@@ -34,7 +38,23 @@ import {
   kushumSharma,
   lalitSharma,
   logistics,
+  metalFoldableCratesImage1,
+  metalFoldableCratesImage2,
+  metalFoldableCratesImage3,
+  metalFoldableCratesImage4,
   mohitVashist,
+  palletsImage1,
+  palletsImage2,
+  palletsImage3,
+  palletsImage4,
+  plsImage1,
+  plsImage2,
+  plsImage3,
+  plsImage4,
+  ppBoxesImage1,
+  ppBoxesImage2,
+  ppBoxesImage3,
+  ppBoxesImage4,
   productManagement,
   profileUser,
   railService,
@@ -44,6 +64,10 @@ import {
   supriyaDutt,
   tcSharma,
   techDriven,
+  thermoFormingImage1,
+  thermoFormingImage2,
+  thermoFormingImage3,
+  thermoFormingImage4,
   thinking,
   transportation,
   truckDrivingRoad,
@@ -53,6 +77,10 @@ import {
   warehouse1,
   warehouse2,
   warehouseService,
+  wireMeshImage1,
+  wireMeshImage2,
+  wireMeshImage3,
+  wireMeshImage4,
 } from "../assets/images";
 import { ROUTES } from "@/lib/routes";
 import {
@@ -842,7 +870,7 @@ export const packagingPage = {
       "Flat Packed to 1/5th the Assembled Size.",
       "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
     ],
-    images: ["", "", "", ""],
+    images: [ppBoxesImage1, ppBoxesImage2, ppBoxesImage3, ppBoxesImage4],
   },
 
   foldableCrates: {
@@ -854,7 +882,12 @@ export const packagingPage = {
       "Flat Packed to 1/5th the Assembled size to save reverse logistics up to 80%.",
       "Detachable side walls-top LID.",
     ],
-    images: ["", "", "", ""],
+    images: [
+      foldableCratesImage1,
+      foldableCratesImage2,
+      foldableCratesImage3,
+      foldableCratesImage4,
+    ],
   },
 
   plsBoxes: {
@@ -866,7 +899,7 @@ export const packagingPage = {
       "Can with stand Payload of up to 500-750 kg.",
       "Flat Packed to 1/3th the assembled size to save reverse logistics up to 67%.",
     ],
-    images: ["", "", "", ""],
+    images: [plsImage1, plsImage2, plsImage3, plsImage4],
   },
 
   wireMeshContainer: {
@@ -878,7 +911,7 @@ export const packagingPage = {
       "Flat Packed to 1/3th the assembled size to save reverse logistics up to 67%.",
       "Light weight as compared to Tabular structures.",
     ],
-    images: ["", "", "", ""],
+    images: [wireMeshImage1, wireMeshImage2, wireMeshImage3, wireMeshImage4],
   },
 
   metalFoldableCrates: {
@@ -889,7 +922,12 @@ export const packagingPage = {
       "Flat Packed to 1/3th the assembled size to save reverse logistics up to 60%.",
       "Customizable to light-heavy weight structure.",
     ],
-    images: ["", "", "", ""],
+    images: [
+      metalFoldableCratesImage1,
+      metalFoldableCratesImage2,
+      metalFoldableCratesImage3,
+      metalFoldableCratesImage4,
+    ],
   },
 
   pallets: {
@@ -902,7 +940,7 @@ export const packagingPage = {
       "Wooden Pallets.",
       "Steel Pallets.",
     ],
-    images: ["", "", "", ""],
+    images: [palletsImage1, palletsImage2, palletsImage3, palletsImage4],
   },
 
   thermoFormingTray: {
@@ -913,6 +951,11 @@ export const packagingPage = {
       "Designed for sensitive components.",
       "Ideal for high-value components.",
     ],
-    images: ["", "", "", ""],
+    images: [
+      thermoFormingImage1,
+      thermoFormingImage2,
+      thermoFormingImage3,
+      thermoFormingImage4,
+    ],
   },
 };
