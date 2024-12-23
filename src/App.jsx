@@ -24,6 +24,7 @@ const NotFound = lazy(() => import("@/pages/404"));
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
+import LoadingPopup from "@/components/LoadingPopup";
 import {
   Popover,
   PopoverContent,
@@ -35,6 +36,7 @@ import { LuArrowUp } from "react-icons/lu";
 
 const App = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
+  const [showLoadingPopup, setShowLoadingPopup] = useState(false);
 
   const handleShowScrollIcon = () => {
     window.scrollY >= 1200 ? setShowScrollIcon(true) : setShowScrollIcon(false);
@@ -50,6 +52,24 @@ const App = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const isShowLoadingPopup = sessionStorage.getItem("showLoadingPopup");
+
+    if (!isShowLoadingPopup) {
+      setShowLoadingPopup(true);
+      const timer = setTimeout(() => {
+        setShowLoadingPopup(false);
+        sessionStorage.setItem("showLoadingPopup", true);
+      }, 2500);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  if (showLoadingPopup) {
+    return <LoadingPopup />;
+  }
 
   return (
     <>

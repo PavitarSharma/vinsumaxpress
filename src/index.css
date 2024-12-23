@@ -161,6 +161,23 @@
     animation-delay: 5.01s;
   }
 
+  .popup-loading {
+    animation: popupslide 7s linear infinite;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  @keyframes popupslide {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
   @keyframes slide {
     0% {
       transform: translateY(100%);

@@ -75,6 +75,39 @@ import gallery5 from "@/assets/images/gallery/gallery-5.png";
 import gallery6 from "@/assets/images/gallery/gallery-6.png";
 import gallery7 from "@/assets/images/gallery/gallery-7.png";
 import gallery8 from "@/assets/images/gallery/gallery-8.png";
+import gallery9 from "@/assets/images/gallery/gallery-9.png";
+import gallery10 from "@/assets/images/gallery/gallery-10.png";
+import gallery11 from "@/assets/images/gallery/gallery-11.png";
+import gallery12 from "@/assets/images/gallery/gallery-12.png";
+import gallery13 from "@/assets/images/gallery/gallery-13.png";
+import gallery14 from "@/assets/images/gallery/gallery-14.png";
+import gallery15 from "@/assets/images/gallery/gallery-15.png";
+import gallery16 from "@/assets/images/gallery/gallery-16.png";
+import gallery17 from "@/assets/images/gallery/gallery-17.png";
+import gallery18 from "@/assets/images/gallery/gallery-18.png";
+import gallery19 from "@/assets/images/gallery/gallery-19.png";
+import gallery20 from "@/assets/images/gallery/gallery-20.png";
+import gallery21 from "@/assets/images/gallery/gallery-21.png";
+import gallery22 from "@/assets/images/gallery/gallery-22.png";
+import gallery23 from "@/assets/images/gallery/gallery-23.png";
+import gallery24 from "@/assets/images/gallery/gallery-24.png";
+import gallery25 from "@/assets/images/gallery/gallery-25.png";
+import gallery26 from "@/assets/images/gallery/gallery-26.png";
+import gallery27 from "@/assets/images/gallery/gallery-27.png";
+import gallery28 from "@/assets/images/gallery/gallery-28.png";
+import gallery29 from "@/assets/images/gallery/gallery-29.png";
+import gallery30 from "@/assets/images/gallery/gallery-30.png";
+import gallery31 from "@/assets/images/gallery/gallery-31.png";
+import gallery32 from "@/assets/images/gallery/gallery-32.png";
+import gallery33 from "@/assets/images/gallery/gallery-33.png";
+import gallery34 from "@/assets/images/gallery/gallery-34.png";
+import gallery35 from "@/assets/images/gallery/gallery-35.png";
+import gallery36 from "@/assets/images/gallery/gallery-36.png";
+import gallery37 from "@/assets/images/gallery/gallery-37.png";
+import gallery38 from "@/assets/images/gallery/gallery-38.png";
+import gallery39 from "@/assets/images/gallery/gallery-39.png";
+import gallery40 from "@/assets/images/gallery/gallery-40.png";
+import gallery41 from "@/assets/images/gallery/gallery-41.png";
 
 // Packagings
 import ppBoxesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
@@ -180,6 +213,39 @@ export {
   gallery6,
   gallery7,
   gallery8,
+  gallery9,
+  gallery10,
+  gallery11,
+  gallery12,
+  gallery13,
+  gallery14,
+  gallery15,
+  gallery16,
+  gallery17,
+  gallery18,
+  gallery19,
+  gallery20,
+  gallery21,
+  gallery22,
+  gallery23,
+  gallery24,
+  gallery25,
+  gallery26,
+  gallery27,
+  gallery28,
+  gallery29,
+  gallery30,
+  gallery31,
+  gallery32,
+  gallery33,
+  gallery34,
+  gallery35,
+  gallery36,
+  gallery37,
+  gallery38,
+  gallery39,
+  gallery40,
+  gallery41,
   plsImage1,
   plsImage2,
   plsImage3,
