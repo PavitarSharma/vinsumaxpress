@@ -433,8 +433,9 @@ const About = () => {
             </div>
 
             <p className="text-center max-w-lg text-neutral-500 mx-auto">
-              We&#39;re led by a team who constantly queations, tinkers, and
-              challengers to unlock great creativity around every turn.
+              Our dynamic team thrives on curiosity, relentlessly questioning
+              the status quo, experimenting with fresh ideas, and pushing
+              boundaries to unleash creativity at every turn.
             </p>
           </div>
 
