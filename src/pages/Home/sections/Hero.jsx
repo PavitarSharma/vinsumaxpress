@@ -39,9 +39,7 @@ const Hero = () => {
           `https://testwebsiteapi.vinsumaxpress.com/api/DocketTracking?docketno=${values.docketNumber}&isDocket=${isTracking}`
         );
         setShipment(res.data);
-        setShipment("a,jks");
         setOpenTrackShipment(true);
-        setLoading(false);
         resetForm();
         // eslint-disable-next-line no-unused-vars
       } catch (error) {

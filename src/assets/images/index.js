@@ -22,6 +22,8 @@ import warehouseControl from "@/assets/images/warehouse-control.jpg";
 import warehouseControlService from "@/assets/images/warehouse-service-contract.png";
 import franchise from "@/assets/images/franchise.png";
 import profileUser from "@/assets/images/profile.png";
+import shipmentTruck from "./shipment-truck.svg"
+import shipmentProgress from "./shipment-progress.svg"
 
 // Services
 import crafting from "@/assets/images/services/crafting.png";
@@ -159,6 +161,8 @@ export {
   warehouse,
   complianceDocument,
   creative,
+  shipmentTruck,
+  shipmentProgress,
   realTimeLocator,
   safeDelivery,
   customizedPackaging,
