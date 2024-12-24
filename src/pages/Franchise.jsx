@@ -103,14 +103,14 @@ const Franchise = () => {
     <>
       <section className="py-8">
         <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-6 ">
-          <figure className="md:order-1 order-2">
+          <figure>
             <img
               src={franchise}
               alt="franchise"
-              className="md:h-[450px]  w-full rounded-xl"
+              className="h-full  w-full rounded-xl"
             />
           </figure>
-          <Card className="md:h-[450px] md:order-2 order-1">
+          <Card>
             <CardHeader>
               <CardTitle>Join Our Franchise Network</CardTitle>
               <CardDescription>
