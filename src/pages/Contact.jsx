@@ -75,7 +75,7 @@ const Contact = () => {
       };
       delete requestBody.fullName;
       await axios.post(
-        "https://ccptestapi.vinsumaxpress.com/api/Email/SendEmail",
+        "https://testwebsiteapi.vinsumaxpress.com/api/Email/SendEmail",
         requestBody,
         {
           headers: { "Content-Type": "application/json" },

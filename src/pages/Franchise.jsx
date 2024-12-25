@@ -79,7 +79,7 @@ const Franchise = () => {
         remarks: values.remarks,
       };
       await axios.post(
-        "http://ccptestapi.vinsumaxpress.com/api/Franchise/Request",
+        "https://testwebsiteapi.vinsumaxpress.com/api/Franchise/Request",
         requestBody,
         {
           headers: { "Content-Type": "application/json" },
