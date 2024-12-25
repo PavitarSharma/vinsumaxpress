@@ -135,11 +135,7 @@
   }
 
   .slider {
-    position: relative;
-    height: 2em;
-    width: 350px;
-    overflow: hidden;
-    margin-left: 5px;
+    @apply relative h-8 overflow-hidden ml-1 sm:w-[350px] w-full;
   }
 
   .slider__word {

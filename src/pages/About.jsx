@@ -425,6 +425,7 @@ const About = () => {
         </div>
       </section>
 
+     
       <section>
         <div className="container">
           <div className="mb-8 space-y-4">
@@ -497,6 +498,18 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <section className="pt-8 pb-10">
+        <div className="container">
+          <iframe
+            width="100%"
+            height="450"
+            className="rounded-xl min-h-[500px]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.331930702625!2d77.07176171492016!3d28.49965948247041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d196bf692d653%3A0xd9f2347ba1687ed8!2sVinsum%20Axpress!5e0!3m2!1sen!2sin!4v1592554030727!5m2!1sen!2sin"
+          ></iframe>
+        </div>
+      </section>
+
     </>
   );
 };

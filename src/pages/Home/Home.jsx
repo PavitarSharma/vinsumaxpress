@@ -4,15 +4,33 @@ import WhyUs from "@/pages/Home/sections/WhyUs";
 import OurService from "@/pages/Home/sections/OurService";
 import OurJourney from "@/pages/Home/sections/OurJourney";
 import OurClients from "@/pages/Home/sections/OurClients";
-import { useEffect } from "react";
+import FranchisePopup from "@/pages/Home/sections/FranchisePopup";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [showFranchisePopup, setShowFranchisePopup] = useState(false);
+
   useEffect(() => {
     document.title = "Home | Vinsum Axpress";
   }, []);
-  
+
+  useEffect(() => {
+    const isFranchisePopup = sessionStorage.getItem("showFranchisePopup");
+
+    if (!isFranchisePopup) {
+      setShowFranchisePopup(true);
+      sessionStorage.setItem("showFranchisePopup", true);
+    }
+  }, []);
+
   return (
     <>
+      <Dialog open={showFranchisePopup} onOpenChange={setShowFranchisePopup}>
+        <DialogContent className="max-w-4xl">
+          <FranchisePopup setShowFranchisePopup={setShowFranchisePopup} />
+        </DialogContent>
+      </Dialog>
       <Hero />
       <OurValues />
       <WhyUs />

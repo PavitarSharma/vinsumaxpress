@@ -64,7 +64,7 @@ const Hero = () => {
       />
       <section id="heroSection" className=" w-full relative">
         <div className="text-white container">
-          <div className="md:pt-32 pt-28 pb-10 grid md:grid-cols-2">
+          <div className="md:pt-36  sm:pt-44 pt-32 max-[360px]:pt-36 pb-10 grid md:grid-cols-2">
             <div className="flex flex-col gap-6">
               <h1 className="sm:text-5xl text-3xl font-bold uppercase leading-tight">
                 WE WILL <span className="text-primary">DELIVER</span> YOUR

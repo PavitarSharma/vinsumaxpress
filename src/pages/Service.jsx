@@ -237,7 +237,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section id="warehouse-solution" className="py-8">
+      {/* <section id="warehouse-solution" className="py-8">
         <div className="conatiner">
           <h1 className="text-center text-4xl max-w-md mx-auto mb-8">
             See how we solve problems,{" "}
@@ -309,7 +309,7 @@ const Service = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="packaging-solution">
         <div className="bg-black text-primary-foreground py-8 space-y-2 px-4">

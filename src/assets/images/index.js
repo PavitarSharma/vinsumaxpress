@@ -22,10 +22,11 @@ import warehouseControl from "@/assets/images/warehouse-control.jpg";
 import warehouseControlService from "@/assets/images/warehouse-service-contract.png";
 import franchise from "@/assets/images/franchise.png";
 import profileUser from "@/assets/images/profile.png";
-import shipmentTruck from "./shipment-truck.svg"
-import shipmentProgress from "./shipment-progress.svg"
+import shipmentTruck from "@/assets/images/shipment-truck.svg"
+import shipmentProgress from "@/assets/images/shipment-progress.svg"
 
 // Services
+import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png"
 import crafting from "@/assets/images/services/crafting.png";
 import productManagement from "@/assets/images/services/product-management.png";
 import thinking from "@/assets/images/services/thinking.png";
@@ -180,6 +181,7 @@ export {
   warehouse1,
   inventorySearch,
   services,
+  warehouseServiceBanner,
   packagingSolution,
   airplaneDesignFreight,
   railService,
