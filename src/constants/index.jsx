@@ -675,6 +675,30 @@ export const leadershipTeams = [
     instagram: "",
     linkedin: "",
   },
+  {
+    image: profileUser,
+    name: "Umesh Panday",
+    position: "AVP (Operations & Sales",
+    twitter: "",
+    instagram: "",
+    linkedin: "",
+  },
+  {
+    image: profileUser,
+    name: "Bajrang Kumar",
+    position: "AVP (Operations & Sales",
+    twitter: "",
+    instagram: "",
+    linkedin: "",
+  },
+  {
+    image: profileUser,
+    name: "Vikas Sharma",
+    position: "VP (Operations)",
+    twitter: "",
+    instagram: "",
+    linkedin: "",
+  },
 ];
 
 // Career

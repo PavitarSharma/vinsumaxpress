@@ -18,8 +18,8 @@ import {
   vinsumNetworkMap,
   vinsumRoadMap,
   vision,
-} from "../assets/images";
-import { leadershipTeams, visnumNetwork } from "../constants";
+} from "@/assets/images";
+import { leadershipTeams, visnumNetwork } from "@/constants";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { useEffect } from "react";

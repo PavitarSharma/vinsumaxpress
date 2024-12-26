@@ -138,7 +138,7 @@ const Service = () => {
 
           <div className="bg-cardBackground grid sm:grid-cols-3 py-4">
             <ul className="list-disc px-6 sm:pl-8">
-              <li>Inbound Stroe management</li>
+              <li>Inbound Store management</li>
               <li>Warehouse operation</li>
               <li>Distribution Management</li>
               <li>Picking/Packing & CKD/CBU packing</li>
