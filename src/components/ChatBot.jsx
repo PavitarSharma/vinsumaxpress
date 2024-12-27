@@ -53,20 +53,28 @@ const ChatBot = () => {
   const onSubmit = async (values) => {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
+    const element = document.querySelector("#inviceSearch");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setLoading(true);
     if (invoiceSearch === "Invoice Search") {
-      setLoading(true);
       try {
         const res = await axios.get(
           `https://testwebsiteapi.vinsumaxpress.com/api/DocketTracking?docketno=${values.message}&isDocket=false`
         );
-        setShipment(res.data);
-        setOpenTrackShipment(true);
-        form.resetForm();
+        setTimeout(() => {
+          setShipment(res.data);
+          setOpenTrackShipment(true);
+          setLoading(false);
+          form.resetForm();
+        }, 2000);
         // eslint-disable-next-line no-unused-vars
       } catch (error) {
-        setError(true);
-      } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setError(true);
+          setLoading(false);
+        }, 5000);
       }
       return;
     } else {
@@ -216,13 +224,20 @@ const ChatBot = () => {
                   </Button>
                 ))}
               </div>
-              <p className="text-sm">
+              <p className="text-xs">
                 If you&#39;re looking for {"invoice"}, please let me know the
                 details. I can help you find the relevant documents for you.
               </p>
 
+              {loading && (
+                <div id="inviceSearch" className="flex items-center gap-1">
+                  <div className="loader"></div>
+                  <p className="text-[10px] opacity-60 font-medium">Vinsum is typing</p>
+                </div>
+              )}
+
               {error && (
-                <p className="text-destructive text-center">
+                <p id="inviceSearch" className="text-destructive text-center">
                   Failed to fetch shipment details
                 </p>
               )}
