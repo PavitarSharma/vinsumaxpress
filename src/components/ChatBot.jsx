@@ -7,13 +7,13 @@ import { z } from "zod";
 import { profileUser } from "@/assets/images";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { visnumNetwork } from "@/constants";
-import { useCallback, useState } from "react";
-import axios from "axios";
+import { useCallback, useEffect, useState } from "react";
 import TrackShipment from "../pages/Home/sections/TrackShipment";
 import { FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { homeServices } from "../constants";
 import { LuX } from "react-icons/lu";
+import useShipmentApi from "../hooks/useShipmentApi";
 
 const formSchema = z.object({
   message: z.string().min(2, {
@@ -29,86 +29,89 @@ const chatButtons = [
 ];
 
 const CHAT_TYPE = {
-  OUR_NETWORK: "Our Network",
-  DOCKET_INVOICE_SEARCH: "Docket/Invoice Search",
-  SERVICE_PROVIDED: "Service Provided",
-  CONTACT_US: "Contact Us",
+  "Our Network": "Our Network",
+  "Docket/Invoice Search": "Docket/Invoice Search",
+  "Service Provided": "Service Provided",
+  "Contact Us": "Contact Us",
 };
 
 const ChatBot = () => {
-  const [type, setType] = useState("");
-  const [invoiceSearch, setInvoiceSearch] = useState("Invoice Search");
+  const [chat, setChat] = useState({
+    type: "",
+    isLoading: false,
+  });
   const [loading, setLoading] = useState(false);
   const [shipment, setShipment] = useState(null);
   const [openTrackShipment, setOpenTrackShipment] = useState(false);
   const [error, setError] = useState(null);
 
+  const [invoiceSearch, setInvoiceSearch] = useState("Invoice Search");
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       message: "",
     },
   });
+  const { fetchShipment } = useShipmentApi();
 
   const onSubmit = async (values) => {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    const element = document.querySelector("#inviceSearch");
+    const element = document.querySelector("#chatMessage");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+    const isDocketSearch = invoiceSearch === "Docket Search";
     setLoading(true);
-    if (invoiceSearch === "Invoice Search") {
-      try {
-        const res = await axios.get(
-          `https://testwebsiteapi.vinsumaxpress.com/api/DocketTracking?docketno=${values.message}&isDocket=false`
-        );
-        setTimeout(() => {
-          setShipment(res.data);
-          setOpenTrackShipment(true);
-          setLoading(false);
-          form.resetForm();
-        }, 2000);
-        // eslint-disable-next-line no-unused-vars
-      } catch (error) {
-        setTimeout(() => {
-          setError(true);
-          setLoading(false);
-        }, 5000);
-      }
-      return;
-    } else {
-      setLoading(true);
-      try {
-        const res = await axios.get(
-          `https://testwebsiteapi.vinsumaxpress.com/api/DocketTracking?docketno=${values.message}&isDocket=true`
-        );
-        setShipment(res.data);
+    await fetchShipment({
+      message: values.message,
+      isDocketSearch,
+      onSuccess: (data) => {
+        setShipment(data);
         setOpenTrackShipment(true);
-        form.resetForm();
-        // eslint-disable-next-line no-unused-vars
-      } catch (error) {
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-
-      return;
-    }
+        form.reset();
+      },
+      onError: () => setError(true),
+      onLoading: setLoading,
+    });
   };
 
-  const handleChangeType = useCallback((chatType) => {
-    setType(chatType);
-  }, []);
+  useEffect(() => {
+    if (chat.isLoading) {
+      const element = document.getElementById("chatMessage");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+  }, [chat.isLoading]);
 
   const handleInvoiceSearchChange = useCallback((invoice) => {
     setInvoiceSearch(invoice);
   }, []);
 
+  const handleChatChange = (chatType) => {
+    setChat({ isLoading: true });
+    setTimeout(() => {
+      setChat({ type: CHAT_TYPE[chatType], isLoading: false });
+    }, 2000);
+  };
+
   const handleTrackShipmentClose = useCallback(() => {
     setOpenTrackShipment((prev) => !prev);
     setShipment(null);
   }, []);
+
+  const CHAT_MESSAGE = {
+    "Our Network": <OurNetwork />,
+    "Service Provided": <ServiceProvided />,
+    "Contact Us": <ContactUs />,
+  };
+
+  const handleClose = useCallback(() => {
+    setOpenTrackShipment(false);
+    setShipment(null);
+    setError(null);
+    setChat({ type: "", isLoading: false });
+    form.reset()
+  }, [form]);
 
   return (
     <div>
@@ -117,7 +120,6 @@ const ChatBot = () => {
         onClose={handleTrackShipmentClose}
         shipment={shipment}
       />
-      <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6"></header>
       <div className="flex-1 overflow-auto p-4 sm:p-6">
         <div className="grid gap-4 overflow-y-auto max-h-[450px] no-scrollbar">
           <div className="flex items-start gap-4">
@@ -176,39 +178,40 @@ const ChatBot = () => {
             </div>
           </div>
 
-          {type && (
+          {chat.type && (
             <Button
               type="button"
               size="icon"
               variant="outline"
-              onClick={() => setType("")}
+              onClick={handleClose}
               className="ml-auto"
             >
               <LuX />
             </Button>
           )}
 
-          {!type && (
+          {!CHAT_TYPE[chat.type] && (
             <div className="flex justify-end">
               <div className="flex flex-col gap-2 items-start">
-                {chatButtons.map((button, index) => (
+                {chatButtons.map((chatType, index) => (
                   <Button
                     type="button"
                     key={index}
                     className="py-2 px-4 text-sm"
                     variant="outline"
                     size="small"
-                    onClick={() => handleChangeType(button)}
+                    onClick={() => handleChatChange(chatType)}
                   >
-                    {button}
+                    {chatType}
                   </Button>
                 ))}
               </div>
             </div>
           )}
 
-          {type === CHAT_TYPE.OUR_NETWORK && <OurNetwork />}
-          {type === CHAT_TYPE.DOCKET_INVOICE_SEARCH && (
+          {CHAT_TYPE[chat.type] && <div>{CHAT_MESSAGE[chat.type]}</div>}
+
+          {chat.type === CHAT_TYPE["Docket/Invoice Search"] && (
             <>
               <div className="grid grid-cols-2 gap-4">
                 {["Invoice Search", "Docket Search"].map((invoice) => (
@@ -232,24 +235,40 @@ const ChatBot = () => {
               {loading && (
                 <div id="inviceSearch" className="flex items-center gap-1">
                   <div className="loader"></div>
-                  <p className="text-[10px] opacity-60 font-medium">Vinsum is typing</p>
+                  <p className="text-[10px] opacity-60 font-medium">
+                    Vinsum is typing
+                  </p>
                 </div>
               )}
 
               {error && (
-                <p id="inviceSearch" className="text-destructive text-center">
+                <p id="chatMessage" className="text-destructive text-center">
                   Failed to fetch shipment details
                 </p>
               )}
             </>
           )}
+
+          {chat.type !== "Docket/Invoice Search" && chat.isLoading  && (
+            <div id="chatMessage" className="flex items-center gap-1">
+              <div className="loader"></div>
+              <p className="text-[10px] opacity-60 font-medium">
+                Vinsum is typing
+              </p>
+            </div>
+          )}
+
+          {chat.type === "Docket/Invoice Search" && loading &&  (
+            <div id="chatMessage" className="flex items-center gap-1">
+              <div className="loader"></div>
+              <p className="text-[10px] opacity-60 font-medium">
+                Vinsum is typing
+              </p>
+            </div>
+          )}
         </div>
-
-        {type === CHAT_TYPE.SERVICE_PROVIDED && <ServiceProvided />}
-
-        {type === CHAT_TYPE.CONTACT_US && <ContactUs />}
       </div>
-      {type === CHAT_TYPE.DOCKET_INVOICE_SEARCH && (
+      {chat.type === CHAT_TYPE["Docket/Invoice Search"] && (
         <div className="sticky bottom-0 z-10 flex h-16 items-center gap-2 border-t bg-background px-4">
           <form
             onSubmit={form.handleSubmit(onSubmit)}
