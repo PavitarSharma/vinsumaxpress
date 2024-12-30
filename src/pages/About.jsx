@@ -14,7 +14,6 @@ import {
   mission,
   value,
   vinsumAxpressWarehouse,
-  vinsumMap,
   vinsumNetworkMap,
   vinsumRoadMap,
   vision,
@@ -95,13 +94,13 @@ const About = () => {
         </div>
       </section>
 
-      <section className="px-4">
+      <section className="section">
         <div className="container">
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
             OUR NETWORK
           </div>
-          <div className=" grid lg:grid-cols-2 gap-4">
-            <div className="lg:flex lg:flex-col lg:max-w-sm grid sm:grid-cols-2 gap-8 h-fit">
+          <div className="">
+            <div className="grid grid-cols-3 gap-8 h-fit">
               <figure className="bg-foreground text-primary-foreground relative  rounded-xl p-4 h-fit">
                 <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-black">
                   <img
@@ -150,9 +149,7 @@ const About = () => {
               </figure>
             </div>
 
-            <figure className="">
-              <img src={vinsumMap} alt="vinsum-map" />
-            </figure>
+            
           </div>
         </div>
       </section>
