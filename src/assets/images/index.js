@@ -136,7 +136,7 @@ import wireMeshImage4 from "@/assets/images/packaging/wire-mesh-image-3.png";
 import wireMeshImage3 from "@/assets/images/packaging/cfgb-10.png";
 
 import metalFoldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-4.png";
-import metalFoldableCratesImage2 from "@/assets/images/packaging/tfc-10.png";
+import metalFoldableCratesImage2 from "@/assets/images/packaging/GFVB.png";
 import metalFoldableCratesImage3 from "@/assets/images/packaging/download__13_-removebg-preview.png";
 import metalFoldableCratesImage4 from "@/assets/images/packaging/werf-10.png";
 
