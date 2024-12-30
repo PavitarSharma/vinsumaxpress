@@ -174,7 +174,7 @@ const ChatBot = () => {
                 {/* <div className="text-xs text-muted-foreground">2:41 PM</div> */}
               </div>
               <div>
-                <p>Sure, how can I help you with that?</p>
+                <p>Sure, please select a option below.</p>
               </div>
             </div>
           </div>

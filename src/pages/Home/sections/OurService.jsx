@@ -22,7 +22,7 @@ const OurService = () => {
           <p className="card-description">
             Vinsum is a logistics provider of integrated freight solutions.
             vinsum provides dedicated freight solution including: Less Than
-            Truck Load, Full Truck Load, Wraehousing/Fullfillment, Drayage, and
+            Truck Load, Full Truck Load, Warehousing/Fulfillment, Drayage, and
             transloading
           </p>
         </div>

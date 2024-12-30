@@ -113,6 +113,7 @@ import {
   wireMeshImage2,
   wireMeshImage3,
   wireMeshImage4,
+  truckSpeedService
 } from "@/assets/images";
 
 import { ROUTES } from "@/lib/routes";
@@ -212,7 +213,7 @@ export const homeServices = [
   },
   {
     image: logistics,
-    title: "3PL & Inventry Management",
+    title: "3PL & Inventory Management",
   },
   {
     image: creative,
@@ -221,7 +222,7 @@ export const homeServices = [
   },
   {
     image: complianceDocument,
-    title: "4PL/Inplant Logistics Project Management",
+    title: "4PL/In-plant Logistics Project Management",
   },
 ];
 
@@ -272,7 +273,7 @@ export const homeServiceQuestions = [
     path: "#multimodal-transportation",
   },
   {
-    title: "Warehouse Solution",
+    title: "Warehousing Solution",
     description:
       "We are offering wide range of services including consolidation & packaging of cargoes of various types & sizes.",
     path: "#warehouse-solution",
@@ -357,7 +358,7 @@ export const multimodalTransPortations = [
       "Catering to the needs of our clients, we offer high volume of freight transportation by roads.",
     offers: [
       "Flexible routing & GPS enabled fleet",
-      "FTL/PTL Managment",
+      "FTL/PTL Management",
       "OOC cargo movement",
       "With 920+ Fleet size covering more than 3 lakh km per day",
       "Milk run transportation",
@@ -365,12 +366,12 @@ export const multimodalTransPortations = [
     ],
   },
   {
-    image: truckDrivingRoad,
+    image: truckSpeedService,
     title: "Speed Truck Services",
     description:
-      "VINSUM is an organization who provides same day delivery to Customers at their Specified Locations considering the Customer Requirement in Current Scenario.",
+      "VINSUM is an organization which provides same day delivery to Customers at their Specified Locations considering the Customer Requirement in Current Scenario.",
     offers: [
-      "Well defined routes (Dharuhera, Pune, Jamshedpur, Chennai, Ahmedabad, Nagpur, Nashik, Pantnagar & Bangalore)",
+      "Well defined routes (Dharuhera, Pune, Jamshedpur, Chennai, Ahmadabad, Nagpur, Nashik, Pantnagar & Bangalore)",
       "24-96 hrs TAT in pan India",
       "Cut off time at 2 a.m every day",
     ],
@@ -379,10 +380,10 @@ export const multimodalTransPortations = [
     image: railService,
     title: "Rail Services",
     description:
-      "We collabarate with DFC, Indian Railways, and the Ministry of Railways under the PM Gati Shakti plan fo greener logistics. We currently operate 6 routes with dedicated freight trains and VPU wagons, connecting North India wuth Bangalore, Chennai, kolkata, Guwahati, and Gujarat.",
+      "We collaborate with DFC, Indian Railways, and the Ministry of Railways under the PM Gati Shakti plan for greener logistics. We currently operate 6 routes with dedicated freight trains and VPU wagons, connecting North India with Bangalore, Chennai, Kolkata, Guwahati, and Gujarat.",
     offers: [
       "Truck On train (TOT)/RORO services",
-      "VPU serices through dedicated freight trains",
+      "VPU services through dedicated freight trains",
       "SLR services",
       "NMG CBU Transportation",
     ],
@@ -391,7 +392,7 @@ export const multimodalTransPortations = [
     image: airplaneDesignFreight,
     title: "Air Services",
     description:
-      "Our expeienced staff organize national and international air cargo shipping for a wide range of cargoes by selecting optimal routes based on your individual needs",
+      "Our experienced staff organize national and international air cargo shipping for a wide range of cargoes by selecting optimal routes based on your individual needs",
     offers: [
       "Time-sensitive express deliveries",
       "Wide geographical reach",
@@ -433,8 +434,8 @@ export const endToEndSupplyChains = [
 export const integratedSupplyChains = [
   {
     image: thinking,
-    title: "Layered securily",
-    text: "Packaging Solutions Green returanable & Customized Packaging Solution",
+    title: "Layered securely",
+    text: "Packaging Solutions Green returnable & Customized Packaging Solution",
   },
   {
     image: serviceTransportation,
@@ -467,7 +468,7 @@ export const integratedSupplyChains = [
   // },
   // {
   //   image: "/images/",
-  //   text: "Packaging Solutions Green returanable & Customized Packaging Solution",
+  //   text: "Packaging Solutions Green returnable & Customized Packaging Solution",
   // },
   // {
   //   image: "/images/",

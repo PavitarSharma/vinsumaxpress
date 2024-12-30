@@ -64,7 +64,7 @@ const Service = () => {
         <figure className="w-full md:h-[450px] h-[400px] object-cover brightness-75">
           <img
             src={warehouseControl}
-            alt="wharehouse control"
+            alt="warehouse control"
             className="h-full w-full object-cover"
           />
         </figure>
@@ -150,15 +150,15 @@ const Service = () => {
               <li>Store/SPO/PG Warehouse Management</li>
               <li>Sequencing Project</li>
               <li>VMI Warehouse</li>
-              <li>Fulfilment center</li>
+              <li>Fulfillment center</li>
             </ul>
 
             <ul className="list-disc px-6">
               <li>Stack receipt</li>
               <li>Supply chain consultancy</li>
               <li>
-                Production Plan - Pull out servicing, kit loading, tralley
-                loading, double veining & tralley line-up.
+                Production Plan - Pull out servicing, kit loading, trolley
+                loading, double veining & trolley line-up.
               </li>
               <li>Contract Logistics</li>
             </ul>
@@ -174,7 +174,7 @@ const Service = () => {
             </figure>
             <div>
               <ul className="list-outside marker:text-primary  list-disc px-6">
-                <li>Smart Tag Trace returanable Packaging Asset Management.</li>
+                <li>Smart Tag Trace returnable Packaging Asset Management.</li>
                 <li>
                   Utilizes state-of-the-art globally standardized technologies
                   such as QR Code,RFID, sensors, and gateways.
@@ -189,12 +189,12 @@ const Service = () => {
                   Monitors critical parameters like stock levels, stock aging,
                   retention time, and cycle days.
                 </li>
-                <li>Sets thresholds for controlledandseamlessoperations.</li>
+                <li>Sets thresholds for controlled and seamless operations.</li>
                 <li>
                   Identifies and improves the performance of non-movingRPE
                   (Returnable Packaging Equipment).
                 </li>
-                <li>Reducesthe number of RPE lost in the supply chain.</li>
+                <li>Reduces the number of RPE lost in the supply chain.</li>
               </ul>
             </div>
           </div>
@@ -354,7 +354,7 @@ const Service = () => {
             <div className="grid sm:grid-cols-2 lg:order-1 order-2 ">
               <ul className="list-disc px-6">
                 <li>Eco - friendly</li>
-                <li>Benifit from the improved inbound/outbound</li>
+                <li>Benefit from the improved inbound/outbound</li>
                 <li>Freight cube efficiency</li>
                 <li>Control product damage</li>
                 <li>Reduced packaging waste</li>

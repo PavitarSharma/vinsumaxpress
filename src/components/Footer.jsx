@@ -149,7 +149,7 @@ const Footer = () => {
                   target="_blank"
                   className={menuLink}
                 >
-                  Hrms
+                  HRMS
                 </a>
               </li>
               <li>
@@ -158,7 +158,7 @@ const Footer = () => {
                   target="_blank"
                   className={menuLink}
                 >
-                  Erp
+                  ERP
                 </a>
               </li>
               <li>

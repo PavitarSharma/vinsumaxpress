@@ -13,7 +13,7 @@ import {
   chairman,
   mission,
   value,
-  vinsumAxpressWarehouse,
+  gallery22,
   vinsumNetworkMap,
   vinsumRoadMap,
   vision,
@@ -42,12 +42,12 @@ const About = () => {
               <p className="text-lg">Do you know that</p>
               <ul className="pl-4 list-disc mt-2 space-y-1">
                 <li className="">
-                  we&#39;ve been the leading logistics company in India for the
+                  We&#39;ve been the leading logistics company in India for the
                   past 18 years.
                 </li>
                 <li>
                   {" "}
-                  with 75+ branches, and 53+ warehouses across India, we&#39;ve
+                  With 75+ branches, and 53+ warehouses across India, we&#39;ve
                   got you covered.
                 </li>
                 <li>
@@ -56,10 +56,10 @@ const About = () => {
                   mantra.
                 </li>
                 <li>
-                  with a portfolio of over 100+ happy clients, we strive to
+                  With a portfolio of over 500+ happy clients, we strive to
                   provide exceptional service and build lasting relationships.
                 </li>
-                <li>we are hiring. Click the button below to join us.</li>
+                <li>We are hiring. Click the button below to join us.</li>
               </ul>
             </div>
             <Link to={ROUTES.CAREER}>
@@ -71,7 +71,7 @@ const About = () => {
 
           <figure className="lg:order-2 order-1">
             <img
-              src={vinsumAxpressWarehouse}
+              src={gallery22}
               alt="vinsum-warehouse"
               className="rounded-2xl h-full brightness-90 shadow-xl"
             />
@@ -97,7 +97,7 @@ const About = () => {
       <section className="section">
         <div className="container">
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
-            OUR NETWORK
+            OUR GOALS
           </div>
           <div className="">
             <div className="grid grid-cols-3 gap-8 h-fit">
@@ -111,10 +111,11 @@ const About = () => {
                 </div>
                 <h3 className="text-center font-semibold text-lg">MISSION</h3>
                 <p className="text-sm mt-2">
-                  To accomplish the designed goal in time bound period by the
-                  way of creating and using an infrastructure fully equipped
-                  with the latest technology and trained manpower. Customized
-                  according to market requirement.
+                  Our mission is to redefine logistics and supply chain management in India by delivering end-
+to-end solutions that are seamless, reliable, and tailored to the unique needs of our clients.
+Through the integration of advanced technology, a dedicated workforce, and sustainable
+practices, we aim to create value for businesses, contribute to their growth, and support
+India’s economic development.
                 </p>
               </figure>
 
@@ -128,10 +129,9 @@ const About = () => {
                 </div>
                 <h3 className="text-center font-semibold text-lg">VISION</h3>
                 <p className="text-sm mt-2">
-                  To accomplish the designed goal in time bound period by the
-                  way of creating and using an infrastructure fully equipped
-                  with the latest technology and trained manpower. Customized
-                  according to market requirement.
+                  To establish Vinsum Axpress as the leading logistics, supply chain, warehousing, and
+packaging solutions provider in India, renowned for our innovative services, operational
+excellence, and unwavering commitment to empowering businesses across diverse industries.
                 </p>
               </figure>
 
@@ -141,10 +141,10 @@ const About = () => {
                 </div>
                 <h3 className="text-center font-semibold text-lg">VALUE</h3>
                 <p className="text-sm mt-2">
-                  To accomplish the designed goal in time bound period by the
-                  way of creating and using an infrastructure fully equipped
-                  with the latest technology and trained manpower. Customized
-                  according to market requirement.
+                  At Vinsum Axpress, we are committed to delivering customer-focused solutions with
+integrity, innovation, and sustainability. By embracing technology and fostering
+collaboration, we ensure reliable, eco-friendly practices that drive growth for our clients and
+India’s logistics and supply chain sector.
                 </p>
               </figure>
             </div>
@@ -193,7 +193,7 @@ const About = () => {
                   </div>
 
                   <div className="lg:flex hidden flex-col gap-4 pl-8">
-                    <a
+                    {/* <a
                       href="#"
                       target="_blank"
                       className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
@@ -207,7 +207,7 @@ const About = () => {
                       className="bg-[#676767] text-white lg:w-10 lg:h-10 w-12 h-12 flex items-center justify-center text-xl cursor-pointer"
                     >
                       <FaXTwitter />
-                    </a>
+                    </a> */}
 
                     <a
                       href="#"
@@ -221,14 +221,14 @@ const About = () => {
               </div>
 
               <div className="w-full relative  flex flex-col justify-center p-4 px-8">
-                <div className="lg:block hidden absolute -left-20 top-20">
+                {/* <div className="lg:block hidden absolute -left-20 top-20">
                   <div className="w-20 h-10 bg-primary/30 -top-4 -z-1 absolute right-0"></div>
                   <h1 className="text-5xl font-bold font-lato z-10">
                     About Me.
                   </h1>
-                </div>
+                </div> */}
 
-                <div className="relative lg:pt-40 pt-10">
+                <div className="relative lg:pt-20 pt-10">
                   <p className="text-2xl leading-relaxed relative before:content-[''] before:absolute before:lg:-left-16 before:-left-12 before:top-5 before:lg:w-14 before:w-10 before:h-[1px] before:bg-black">
                     Join us on an extraordinary journey of growth, where we
                     strive for excellence and work together to achieve the best
@@ -271,7 +271,7 @@ const About = () => {
                   <div className="flex gap-4 items-start">
                     <div className="w-3 h-3 bg-black mt-2"></div>
                     <p className="flex-1">
-                      With over 18 years of experience across various
+                      With over 23+ years of experience across various
                       industries, our unwavering dedication to value delivery
                       has earned us the trust of our clients.
                     </p>

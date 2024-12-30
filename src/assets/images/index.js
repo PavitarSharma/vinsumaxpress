@@ -43,6 +43,7 @@ import packagingSolution from "@/assets/images/services/packaging-solution.png";
 import airplaneDesignFreight from "@/assets/images/services/airplane-service.png";
 import truckDrivingRoad from "@/assets/images/services/truck-service.png";
 import railService from "@/assets/images/services/rail-service.png";
+import truckSpeedService from "@/assets/images/services/truck-speed.jpg";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -113,36 +114,42 @@ import gallery39 from "@/assets/images/gallery/gallery-39.png";
 import gallery40 from "@/assets/images/gallery/gallery-40.png";
 import gallery41 from "@/assets/images/gallery/gallery-41.png";
 
+// 1, 2, 3, 4
 // Packagings
-import ppBoxesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import ppBoxesImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import ppBoxesImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import ppBoxesImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+import ppBoxesImage1 from "@/assets/images/gallery/gallery-41.png";
+import ppBoxesImage2 from "@/assets/images/gallery/gallery-41.png";
+import ppBoxesImage3 from "@/assets/images/gallery/gallery-41.png";
+import ppBoxesImage4 from "@/assets/images/gallery/gallery-41.png";
 
-import foldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import foldableCratesImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import foldableCratesImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import foldableCratesImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+// 4
+import foldableCratesImage1 from "@/assets/images/packaging/corrugated-pp-box-1603512813-5616641-removebg-preview.png";
+import foldableCratesImage2 from "@/assets/images/packaging/images__3_-removebg-preview.png";
+import foldableCratesImage3 from "@/assets/images/packaging/images__2_-removebg-preview.png";
+import foldableCratesImage4 from "@/assets/images/gallery/gallery-41.png";
 
-import plsImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import plsImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import plsImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import plsImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+// done
+import plsImage1 from "@/assets/images/packaging/images__11_-removebg-preview.png";
+import plsImage2 from "@/assets/images/packaging/download__5_-removebg-preview.png";
+import plsImage3 from "@/assets/images/packaging/download__7_-removebg-preview.png";
+import plsImage4 from "@/assets/images/packaging/download__8_-removebg-preview.png";
 
-import wireMeshImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import wireMeshImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import wireMeshImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import wireMeshImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+// 2, 4
+import wireMeshImage1 from "@/assets/images/packaging/download__10_-removebg-preview.png";
+import wireMeshImage2 from "@/assets/images/gallery/gallery-41.png";
+import wireMeshImage4 from "@/assets/images/packaging/wire-mesh-image-3.png";
+import wireMeshImage3 from "@/assets/images/gallery/gallery-41.png";
 
-import metalFoldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import metalFoldableCratesImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import metalFoldableCratesImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import metalFoldableCratesImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+// 2, 4
+import metalFoldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-4.png";
+import metalFoldableCratesImage2 from "@/assets/images/gallery/gallery-41.png";
+import metalFoldableCratesImage3 from "@/assets/images/packaging/download__13_-removebg-preview.png";
+import metalFoldableCratesImage4 from "@/assets/images/gallery/gallery-41.png";
 
-import palletsImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import palletsImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import palletsImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import palletsImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+// done
+import palletsImage1 from "@/assets/images/packaging/download__17_-removebg-preview.png";
+import palletsImage2 from "@/assets/images/packaging/images__15_-removebg-preview.png";
+import palletsImage3 from "@/assets/images/packaging/images__17_-removebg-preview.png";
+import palletsImage4 from "@/assets/images/packaging/download__16_-removebg-preview.png";
 
 import thermoFormingImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
 import thermoFormingImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
@@ -187,6 +194,7 @@ export {
   packagingSolution,
   airplaneDesignFreight,
   railService,
+  truckSpeedService,
   truckDrivingRoad,
   warehouse2,
   hub1,

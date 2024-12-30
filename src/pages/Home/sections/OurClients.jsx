@@ -31,8 +31,8 @@ const OurClients = () => {
             VINSUM ELEVATED THE CREDIBILITY BAR HIGH
           </h1>
           <p className="card-description">
-            Over 21+ years of experience in logistics and supply chain
-            management with a base of 500+ satisfied customers incluing but not
+            Over 23+ years of experience in logistics and supply chain
+            management with a base of 500+ satisfied customers including but not
             limited to:
           </p>
         </div>
