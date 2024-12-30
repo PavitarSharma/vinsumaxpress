@@ -24,6 +24,7 @@ import franchise from "@/assets/images/franchise.png";
 import profileUser from "@/assets/images/profile.png";
 import shipmentTruck from "@/assets/images/shipment-truck.svg"
 import shipmentProgress from "@/assets/images/shipment-progress.svg"
+import profileWoman from "@/assets/images/woman.png";
 
 // Services
 import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png"
@@ -149,6 +150,7 @@ import thermoFormingImage3 from "@/assets/images/packaging/wire-mesh-image-3.png
 import thermoFormingImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
 
 export {
+  profileWoman,
   Logo,
   twentyThreeYears,
   integrity,

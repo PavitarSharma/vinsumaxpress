@@ -35,10 +35,12 @@ const Career = () => {
   const { title, description, image, careerStats, careerCategories, openings } =
     careerPage;
   const itemsPerPage = 6;
-  const totalPages = Math.ceil(openings.length / itemsPerPage);
+  const [filteredOpenings, setFilteredOpenings] = useState(openings);
   const [currentPage, setCurrentPage] = useState(1);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const totalPages = Math.ceil(filteredOpenings.length / itemsPerPage);
 
   useEffect(() => {
     document.title = "Career | Vinsum Axpress";
@@ -51,24 +53,44 @@ const Career = () => {
     },
   });
 
-  const onSubmit = (values) => {
-    // Check if the form is valid before submitting it.
-    if (!form.getValues("jobTitle")) {
+  const onSubmit = () => {
+    const jobTitle = form.getValues("jobTitle");
+    const location = form.getValues("location");
+
+    // Validation checks
+    if (!jobTitle) {
       toast.error("Please enter your job title");
       return;
     }
 
-    if (!form.getValues("location")) {
+    if (!location) {
       toast.error("Please enter your location");
       return;
     }
-    // Do something with the form values.
-    console.log(values);
 
-    toast.success("Your location has been updated.");
+    setLoading(true);
+
+    // Apply filtering
+    const filtered = openings.filter((opening) => {
+      return (
+        opening.position.toLowerCase().includes(jobTitle.toLowerCase()) &&
+        opening.location.toLowerCase().includes(location.toLowerCase())
+      );
+    });
+
+    // Update filtered data and reset to the first page
+    setTimeout(() => {
+      setFilteredOpenings(filtered);
+      setCurrentPage(1);
+      setLoading(false);
+      const element = document.getElementById("jobApplication");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 2000);
   };
 
-  const currentItems = openings.slice(
+  const currentItems = filteredOpenings.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -144,8 +166,8 @@ const Career = () => {
                   className="h-full py-4 w-full outline-none border-none pl-8 pr-2 text-sm"
                 />
               </div>
-              <Button type="submit" className="">
-                Find Job
+              <Button disabled={loading} type="submit" className="">
+                {loading ? "Fetching jobs..." : "Find Job"}
               </Button>
             </form>
           </div>
@@ -208,53 +230,62 @@ const Career = () => {
           <h1 className="text-xl font-bold opacity-90 mb-6">Featured Job</h1>
 
           <div className="flex flex-col gap-4">
-            {currentItems.map(
-              ({ position, location, vacancy, experience }, index) => (
-                <div
-                  key={index}
-                  className="flex sm:items-center sm:flex-row flex-col shadow border bg-white rounded-lg px-2 py-4 cursor-pointer group gap-4 transition duration-300 hover:drop-shadow-lg"
-                >
-                  <div className="flex items-center justify-center rounded-lg w-14 h-14 bg-white shadow"></div>
-                  <div className="flex-1 gap-4 flex sm:flex-row flex-col sm:items-center justify-between">
-                    <div>
-                      <h2>{position}</h2>
-                      <div className="flex items-center flex-wrap gap-4 mt-2">
-                        <div className="flex items-center gap-1 opacity-60">
-                          <LuMapPin size={16} />
-                          <span className="text-sm">{location}</span>
-                        </div>
-                        <div className="flex items-center gap-1 opacity-60">
-                          <LuBriefcaseBusiness size={16} />
-                          <span className="text-sm">{vacancy} Opening</span>
-                        </div>
-                        <div className="flex items-center gap-1 opacity-60">
-                          <LuCalendar size={16} />
-                          <span className="text-sm">{experience} Opening</span>
+            {filteredOpenings.length > 0 ? (
+              currentItems.map(
+                ({ position, location, vacancy, experience }, index) => (
+                  <div
+                    key={index}
+                    className="flex sm:items-center sm:flex-row flex-col shadow border bg-white rounded-lg px-2 py-4 cursor-pointer group gap-4 transition duration-300 hover:drop-shadow-lg"
+                  >
+                    <div className="flex items-center justify-center rounded-lg w-14 h-14 bg-white shadow"></div>
+                    <div className="flex-1 gap-4 flex sm:flex-row flex-col sm:items-center justify-between">
+                      <div>
+                        <h2>{position}</h2>
+                        <div className="flex items-center flex-wrap gap-4 mt-2">
+                          <div className="flex items-center gap-1 opacity-60">
+                            <LuMapPin size={16} />
+                            <span className="text-sm">{location}</span>
+                          </div>
+                          <div className="flex items-center gap-1 opacity-60">
+                            <LuBriefcaseBusiness size={16} />
+                            <span className="text-sm">{vacancy} Opening</span>
+                          </div>
+                          <div className="flex items-center gap-1 opacity-60">
+                            <LuCalendar size={16} />
+                            <span className="text-sm">
+                              {experience} Opening
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                      <DialogTrigger asChild>
-                        <Button
-                          type="button"
-                          onClick={() => handleSelectJob(index)}
-                        >
-                          Apply now
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle className="text-start mb-4">
-                            Are for the {selectedJob?.position}?
-                          </DialogTitle>
-                          <JobApplication onClose={handleCloseIsDialogOpen} />
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
+                      <Dialog
+                        open={isDialogOpen}
+                        onOpenChange={setIsDialogOpen}
+                      >
+                        <DialogTrigger asChild>
+                          <Button
+                            type="button"
+                            onClick={() => handleSelectJob(index)}
+                          >
+                            Apply now
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          <DialogHeader>
+                            <DialogTitle className="text-start mb-4">
+                              Are for the {selectedJob?.position}?
+                            </DialogTitle>
+                            <JobApplication onClose={handleCloseIsDialogOpen} />
+                          </DialogHeader>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
                   </div>
-                </div>
+                )
               )
+            ) : (
+              <div className="text-xl text-center font-semibold">Not found</div>
             )}
           </div>
 

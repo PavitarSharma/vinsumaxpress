@@ -5,8 +5,7 @@ import {
   integrity,
   partnership,
   peopleCircle,
-} from "@/assets/images";
-import {
+  profileWoman,
   airplaneDesignFreight,
   amitabhaMohapatra,
   amitSharma,
@@ -68,7 +67,7 @@ import {
   hub1,
   hub2,
   inventorySearch,
-  kushumSharma,
+  // kushumSharma,
   lalitSharma,
   logistics,
   metalFoldableCratesImage1,
@@ -114,7 +113,8 @@ import {
   wireMeshImage2,
   wireMeshImage3,
   wireMeshImage4,
-} from "../assets/images";
+} from "@/assets/images";
+
 import { ROUTES } from "@/lib/routes";
 import {
   LuGlobe,
@@ -572,7 +572,7 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: kushumSharma,
+    image: profileWoman,
     name: "Mrs. Kusum Sharma",
     position: "Chair Person",
     twitter: "",

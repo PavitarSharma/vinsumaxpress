@@ -20,7 +20,7 @@ import {
   vision,
 } from "@/assets/images";
 import { leadershipTeams, visnumNetwork } from "@/constants";
-import { AiFillInstagram } from "react-icons/ai";
+// import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { useEffect } from "react";
 
@@ -101,7 +101,7 @@ const About = () => {
             OUR NETWORK
           </div>
           <div className=" grid lg:grid-cols-2 gap-4">
-            <div className="grid sm:grid-cols-2 gap-8 h-fit">
+            <div className="lg:flex lg:flex-col lg:max-w-sm grid sm:grid-cols-2 gap-8 h-fit">
               <figure className="bg-foreground text-primary-foreground relative  rounded-xl p-4 h-fit">
                 <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-black">
                   <img
@@ -151,7 +151,7 @@ const About = () => {
             </div>
 
             <figure className="">
-              <img src={vinsumNetworkMap} alt="vinsum-network-map" />
+              <img src={vinsumMap} alt="vinsum-map" />
             </figure>
           </div>
         </div>
@@ -420,12 +420,11 @@ const About = () => {
             </div>
           </div>
           <figure className="lg:block hidden">
-            <img src={vinsumMap} alt="vinsum-map" />
+            <img src={vinsumNetworkMap} alt="vinsum-network-map" />
           </figure>
         </div>
       </section>
 
-     
       <section>
         <div className="container">
           <div className="mb-8 space-y-4">
@@ -443,7 +442,13 @@ const About = () => {
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
             {leadershipTeams.map(
               (
-                { image, name, position, twitter, instagram, linkedin },
+                { 
+                  image, 
+                  name, 
+                  position, 
+                  // twitter, 
+                  // instagram, 
+                  linkedin },
                 index
               ) => (
                 <Card key={index}>
@@ -463,7 +468,7 @@ const About = () => {
 
                   <CardFooter>
                     <ul className="w-full flex items-center justify-center gap-4">
-                      <li>
+                      {/* <li>
                         <a
                           href={instagram}
                           target="_blank"
@@ -471,7 +476,7 @@ const About = () => {
                         >
                           <AiFillInstagram size={22} />
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           href={linkedin}
@@ -481,7 +486,7 @@ const About = () => {
                           <FaLinkedinIn size={22} />
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href={twitter}
                           target="_blank"
@@ -489,7 +494,7 @@ const About = () => {
                         >
                           <FaXTwitter size={20} />
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </CardFooter>
                 </Card>
@@ -509,7 +514,6 @@ const About = () => {
           ></iframe>
         </div>
       </section>
-
     </>
   );
 };
