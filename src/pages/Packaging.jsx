@@ -135,7 +135,7 @@ const ColumnReusableContainer = ({
         {images.map((image, index) => (
           <figure
             key={index}
-            className="border-2 border-foreground border-dashed rounded-lg w-full h-36 bg-gray-100"
+            className="border-2 border-foreground border-dashed rounded-lg w-full h-36 bg-white"
           >
             <img
               src={image}
@@ -189,7 +189,7 @@ const RowReusableContainer = ({
         {images.map((image, index) => (
           <figure
             key={index}
-            className="border-2 border-foreground border-dashed rounded-lg w-full h-36 bg-gray-100"
+            className="border-2 border-foreground border-dashed rounded-lg w-full h-36 bg-white"
           >
             <img
               src={image}

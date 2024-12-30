@@ -40,8 +40,8 @@ import hub2 from "@/assets/images/services/warehouse-hub-2.png";
 import inventorySearch from "@/assets/images/services/search.png";
 import services from "@/assets/images/services/services.png";
 import packagingSolution from "@/assets/images/services/packaging-solution.png";
-import airplaneDesignFreight from "@/assets/images/services/airplane-service.png";
-import truckDrivingRoad from "@/assets/images/services/truck-service.png";
+import airplaneDesignFreight from "@/assets/images/services/airplane-service.jpg";
+import truckDrivingRoad from "@/assets/images/services/truck-service.jpg";
 import railService from "@/assets/images/services/rail-service.png";
 import truckSpeedService from "@/assets/images/services/truck-speed.jpg";
 
@@ -114,47 +114,41 @@ import gallery39 from "@/assets/images/gallery/gallery-39.png";
 import gallery40 from "@/assets/images/gallery/gallery-40.png";
 import gallery41 from "@/assets/images/gallery/gallery-41.png";
 
-// 1, 2, 3, 4
-// Packagings
-import ppBoxesImage1 from "@/assets/images/gallery/gallery-41.png";
-import ppBoxesImage2 from "@/assets/images/gallery/gallery-41.png";
-import ppBoxesImage3 from "@/assets/images/gallery/gallery-41.png";
-import ppBoxesImage4 from "@/assets/images/gallery/gallery-41.png";
+// Packaging
+import ppBoxesImage1 from "@/assets/images/packaging/tdyghc-10.png";
+import ppBoxesImage2 from "@/assets/images/packaging/trg-10.png";
+import ppBoxesImage3 from "@/assets/images/packaging/hgfhcbv-10.png";
+import ppBoxesImage4 from "@/assets/images/packaging/thg-10.png";
 
-// 4
 import foldableCratesImage1 from "@/assets/images/packaging/corrugated-pp-box-1603512813-5616641-removebg-preview.png";
 import foldableCratesImage2 from "@/assets/images/packaging/images__3_-removebg-preview.png";
 import foldableCratesImage3 from "@/assets/images/packaging/images__2_-removebg-preview.png";
-import foldableCratesImage4 from "@/assets/images/gallery/gallery-41.png";
+import foldableCratesImage4 from "@/assets/images/packaging/gcdhgcv-10.png";
 
-// done
 import plsImage1 from "@/assets/images/packaging/images__11_-removebg-preview.png";
 import plsImage2 from "@/assets/images/packaging/download__5_-removebg-preview.png";
 import plsImage3 from "@/assets/images/packaging/download__7_-removebg-preview.png";
 import plsImage4 from "@/assets/images/packaging/download__8_-removebg-preview.png";
 
-// 2, 4
 import wireMeshImage1 from "@/assets/images/packaging/download__10_-removebg-preview.png";
-import wireMeshImage2 from "@/assets/images/gallery/gallery-41.png";
+import wireMeshImage2 from "@/assets/images/packaging/sedfvc-10.png";
 import wireMeshImage4 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import wireMeshImage3 from "@/assets/images/gallery/gallery-41.png";
+import wireMeshImage3 from "@/assets/images/packaging/cfgb-10.png";
 
-// 2, 4
 import metalFoldableCratesImage1 from "@/assets/images/packaging/wire-mesh-image-4.png";
-import metalFoldableCratesImage2 from "@/assets/images/gallery/gallery-41.png";
+import metalFoldableCratesImage2 from "@/assets/images/packaging/tfc-10.png";
 import metalFoldableCratesImage3 from "@/assets/images/packaging/download__13_-removebg-preview.png";
-import metalFoldableCratesImage4 from "@/assets/images/gallery/gallery-41.png";
+import metalFoldableCratesImage4 from "@/assets/images/packaging/werf-10.png";
 
-// done
 import palletsImage1 from "@/assets/images/packaging/download__17_-removebg-preview.png";
 import palletsImage2 from "@/assets/images/packaging/images__15_-removebg-preview.png";
 import palletsImage3 from "@/assets/images/packaging/images__17_-removebg-preview.png";
 import palletsImage4 from "@/assets/images/packaging/download__16_-removebg-preview.png";
 
-import thermoFormingImage1 from "@/assets/images/packaging/wire-mesh-image-1.png";
-import thermoFormingImage2 from "@/assets/images/packaging/wire-mesh-image-2.png";
-import thermoFormingImage3 from "@/assets/images/packaging/wire-mesh-image-3.png";
-import thermoFormingImage4 from "@/assets/images/packaging/wire-mesh-image-4.png";
+import thermoFormingImage1 from "@/assets/images/packaging/tfgv-10.png";
+import thermoFormingImage2 from "@/assets/images/packaging/htgbcv-10.png";
+import thermoFormingImage3 from "@/assets/images/packaging/fuyfjhv-10.png";
+import thermoFormingImage4 from "@/assets/images/packaging/B10.png";
 
 export {
   profileWoman,
