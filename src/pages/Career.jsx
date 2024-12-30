@@ -37,7 +37,8 @@ const Career = () => {
   const itemsPerPage = 6;
   const totalPages = Math.ceil(openings.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectJob, setSelectJob] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
 
   useEffect(() => {
     document.title = "Career | Vinsum Axpress";
@@ -81,8 +82,17 @@ const Career = () => {
     []
   );
 
-  const handleSelectJob = useCallback(() => {
-    setSelectJob((prev) => !prev);
+  const handleSelectJob = useCallback(
+    (index) => {
+      setSelectedJob(currentItems[index]);
+      setIsDialogOpen(true);
+    },
+    [currentItems]
+  );
+
+  const handleCloseIsDialogOpen = useCallback(() => {
+    setIsDialogOpen(false);
+    setSelectedJob(null);
   }, []);
 
   const handleScrollToSection = () => {
@@ -224,7 +234,7 @@ const Career = () => {
                       </div>
                     </div>
 
-                    <Dialog open={selectJob} onOpenChange={handleSelectJob}>
+                    <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                       <DialogTrigger asChild>
                         <Button
                           type="button"
@@ -236,9 +246,9 @@ const Career = () => {
                       <DialogContent>
                         <DialogHeader>
                           <DialogTitle className="text-start mb-4">
-                            Are for the {position}
+                            Are for the {selectedJob?.position}?
                           </DialogTitle>
-                          <JobApplication onClose={handleSelectJob} />
+                          <JobApplication onClose={handleCloseIsDialogOpen} />
                         </DialogHeader>
                       </DialogContent>
                     </Dialog>

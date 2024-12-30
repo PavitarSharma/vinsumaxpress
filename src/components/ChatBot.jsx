@@ -97,6 +97,7 @@ const ChatBot = () => {
   const handleTrackShipmentClose = useCallback(() => {
     setOpenTrackShipment((prev) => !prev);
     setShipment(null);
+    setError(null)
   }, []);
 
   const CHAT_MESSAGE = {
