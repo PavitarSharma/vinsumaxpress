@@ -119,6 +119,7 @@ import {
   linkedin,
   twitter,
   threads,
+  youtube,
 } from "@/assets/images";
 
 import { ROUTES } from "@/lib/routes";
@@ -167,6 +168,11 @@ export const companyDetail = {
 
 export const socialsLinks = [
   {
+    label: "Twitter",
+    image: twitter,
+    href: companyDetail.twitter,
+  },
+  {
     label: "Facebook",
     image: facebook,
     href: companyDetail.facebook,
@@ -177,19 +183,19 @@ export const socialsLinks = [
     href: companyDetail.instagram,
   },
   {
-    label: "Twitter",
-    image: twitter,
-    href: companyDetail.twitter,
-  },
-  {
-    label: "Thread",
-    image: threads,
-    href: companyDetail.thread,
-  },
-  {
     label: "LinkedIn",
     image: linkedin,
     href: companyDetail.linkedin,
+  },
+  {
+    label: "Youtube",
+    image: youtube,
+    href: companyDetail.youtube,
+  },
+    {
+    label: "Thread",
+    image: threads,
+    href: companyDetail.thread,
   },
 ];
 

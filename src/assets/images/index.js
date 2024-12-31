@@ -30,6 +30,7 @@ import facebook from "@/assets/images/facebook.png";
 import twitter from "@/assets/images/twitter.png";
 import linkedin from "@/assets/images/linkedin.png";
 import threads from "@/assets/images/threads.png";
+import youtube from "@/assets/images/youtube.png";
 
 // Services
 import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png";
@@ -160,6 +161,7 @@ export {
   facebook,
   linkedin,
   twitter,
+  youtube,
   threads,
   profileWoman,
   Logo,
