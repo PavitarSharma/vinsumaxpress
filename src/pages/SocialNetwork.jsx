@@ -51,7 +51,7 @@ const SocialNetwork = () => {
 
           <div>
             <p className="mt-4 sm:text-sm text-xs text-zinc-600 text-center">
-            © Copyright 2024
+            © Copyright 2024-25
             <span className="text-primary ml-1 font-medium">
               Vinsum Axpress
             </span>

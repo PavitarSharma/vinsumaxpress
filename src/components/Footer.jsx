@@ -188,7 +188,7 @@ const Footer = () => {
 
         <div className="flex sm:flex-row flex-col-reverse justify-between">
           <p className="mt-8 text-sm text-zinc-600">
-            © Copyright 2024
+            © Copyright 2024-25
             <span className="text-primary ml-1 font-medium">
               Vinsum Axpress
             </span>
