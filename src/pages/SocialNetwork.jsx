@@ -6,22 +6,22 @@ import { socialsLinks } from "../constants";
 
 const SocialNetwork = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4">
-      <Card className="sm:w-[550px] w-full  mx-auto bg-[#ffffff]" style={
+    <section className="py-16 flex items-center justify-center px-4">
+      <Card className="sm:w-[550px] w-full  mx-auto" style={
       {"background":"linear-gradient(90deg, rgba(211, 226, 249, .5) 22%, rgba(229, 241, 255, .5) 39%, rgba(229, 241, 255, .5) 68%, rgba(211, 226, 249, .5) 81%)"}
     }>
         <CardContent className="flex flex-col items-center justify-center space-y-4 py-6 px-4">
-          <img src="/logo.png" alt="logo" className="w-44" />
+          <img src="/logo.png" alt="logo" className="md:w-36 w-32" />
           <div className="items-center justify-center flex flex-col">
-            <h1 className="text-8xl font-bold text-center">
+            <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold text-center">
               <span className="text-primary">VIN</span>
               <span>SUM</span>
             </h1>
             <h3 className="text-base tantialiased text-center antialiased font-semibold tracking-wider text-black my-2 max-w-sm w-full">
               Vinsum Axpress India Private Limited.
             </h3>
-            <div className="bg-black rounded p-0 px-1 w-fit">
-              <p className="text-base tantialiased my-2 max-w-sm w-full tracking-wider text-white text-center">
+            <div className="bg-black rounded px-2 w-fit">
+              <p className="text-sm tantialiased my-2 max-w-sm w-full tracking-wider text-white text-center">
                 Delivering Satisfaction Around The Globe
               </p>
             </div>
@@ -41,9 +41,9 @@ const SocialNetwork = () => {
                   <img
                     src={image}
                     alt={label}
-                    className="w-12 h-12 object-contain"
+                    className="sm:w-12 sm:h-12 w-10 h-10 object-contain"
                   />
-                  <span className="text-sm mt-1 text-center">{label}</span>
+                  <span className="sm:text-sm text-xs mt-1 text-center">{label}</span>
                 </a>
               </li>
             ))}

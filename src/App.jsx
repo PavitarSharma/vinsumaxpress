@@ -106,15 +106,17 @@ const App = () => {
 
         <Popover>
           <PopoverTrigger asChild>
-            <button
-              type="button"
-              className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer fixed bottom-4 right-4 z-50 "
-            >
-              <MdOutlineChatBubble size={24} />
-              <div className="absolute shadow drop-shadow-md w-6 h-6 text-sm rounded-full font-semibold z-10 -top-4 -right-2 bg-primary-foreground text-foreground flex items-center justify-center">
-                1
-              </div>
-            </button>
+            {pathname !== ROUTES.SOCIAL_NETWORK && (
+              <button
+                type="button"
+                className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer fixed bottom-4 right-4 z-50 "
+              >
+                <MdOutlineChatBubble size={24} />
+                <div className="absolute shadow drop-shadow-md w-6 h-6 text-sm rounded-full font-semibold z-10 -top-4 -right-2 bg-primary-foreground text-foreground flex items-center justify-center">
+                  1
+                </div>
+              </button>
+            )}
           </PopoverTrigger>
           <PopoverContent
             align="end"
