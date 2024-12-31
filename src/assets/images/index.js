@@ -22,12 +22,17 @@ import warehouseControl from "@/assets/images/warehouse-control.jpg";
 import warehouseControlService from "@/assets/images/warehouse-service-contract.png";
 import franchise from "@/assets/images/franchise.png";
 import profileUser from "@/assets/images/profile.png";
-import shipmentTruck from "@/assets/images/shipment-truck.svg"
-import shipmentProgress from "@/assets/images/shipment-progress.svg"
+import shipmentTruck from "@/assets/images/shipment-truck.svg";
+import shipmentProgress from "@/assets/images/shipment-progress.svg";
 import profileWoman from "@/assets/images/woman.png";
+import instagram from "@/assets/images/instagram.png";
+import facebook from "@/assets/images/facebook.png";
+import twitter from "@/assets/images/twitter.png";
+import linkedin from "@/assets/images/linkedin.png";
+import threads from "@/assets/images/threads.png";
 
 // Services
-import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png"
+import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png";
 import crafting from "@/assets/images/services/crafting.png";
 import productManagement from "@/assets/images/services/product-management.png";
 import thinking from "@/assets/images/services/thinking.png";
@@ -151,6 +156,11 @@ import thermoFormingImage3 from "@/assets/images/packaging/fuyfjhv-10.png";
 import thermoFormingImage4 from "@/assets/images/packaging/B10.png";
 
 export {
+  instagram,
+  facebook,
+  linkedin,
+  twitter,
+  threads,
   profileWoman,
   Logo,
   twentyThreeYears,

@@ -88,7 +88,7 @@ const OurJourney = () => {
           </div>
         </div>
 
-        <div className="relative lg:aspect-auto lg:h-[400px] aspect-video w-full">
+        <div className="relative lg:aspect-auto lg:h-[600px] aspect-video w-full">
           <video
             ref={videoRef}
             muted

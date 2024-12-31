@@ -9,4 +9,5 @@ export const ROUTES = {
   PRIVACY_POLICY: "/privacy-policy",
   PACKAGING: "/packaging",
   ERROR_404: "/not-found",
+  SOCIAL_NETWORK: "/socialnetwork",
 };

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { MdOutlineChatBubble } from "react-icons/md";
 import { lazy, Suspense, useEffect, useState } from "react";
@@ -17,6 +17,7 @@ const Packaging = lazy(() => import("@/pages/Packaging"));
 const Franchise = lazy(() => import("@/pages/Franchise"));
 const BlogDetail = lazy(() => import("@/pages/BlogDetail/BlogDetail"));
 const NotFound = lazy(() => import("@/pages/404"));
+const SocialNetwork = lazy(() => import("@/pages/SocialNetwork"));
 
 /**
  * @components
@@ -37,6 +38,7 @@ import { LuArrowUp } from "react-icons/lu";
 const App = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
   const [showLoadingPopup, setShowLoadingPopup] = useState(false);
+  const { pathname } = useLocation();
 
   const handleShowScrollIcon = () => {
     window.scrollY >= 1200 ? setShowScrollIcon(true) : setShowScrollIcon(false);
@@ -75,7 +77,7 @@ const App = () => {
     <>
       <ScrollToTop />
       <Suspense fallback={<div></div>}>
-        <Navbar />
+        {pathname !== ROUTES.SOCIAL_NETWORK && <Navbar />}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path={ROUTES.SERVICE} element={<Service />} />
@@ -87,9 +89,10 @@ const App = () => {
           <Route path={ROUTES.PRIVACY_POLICY} element={<PrivacyPolicy />} />
           <Route path={ROUTES.FRANCHISE} element={<Franchise />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path={ROUTES.SOCIAL_NETWORK} element={<SocialNetwork />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {pathname !== ROUTES.SOCIAL_NETWORK && <Footer />}
 
         {showScrollIcon && (
           <button
@@ -108,7 +111,9 @@ const App = () => {
               className="w-10 h-10 rounded flex items-center justify-center bg-primary text-white hover:drop-shadow-xl hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer fixed bottom-4 right-4 z-50 "
             >
               <MdOutlineChatBubble size={24} />
-              <div className="absolute shadow drop-shadow-md w-6 h-6 text-sm rounded-full font-semibold z-10 -top-4 -right-2 bg-primary-foreground text-foreground flex items-center justify-center">1</div>
+              <div className="absolute shadow drop-shadow-md w-6 h-6 text-sm rounded-full font-semibold z-10 -top-4 -right-2 bg-primary-foreground text-foreground flex items-center justify-center">
+                1
+              </div>
             </button>
           </PopoverTrigger>
           <PopoverContent

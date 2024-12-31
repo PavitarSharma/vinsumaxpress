@@ -113,7 +113,12 @@ import {
   wireMeshImage2,
   wireMeshImage3,
   wireMeshImage4,
-  truckSpeedService
+  truckSpeedService,
+  instagram,
+  facebook,
+  linkedin,
+  twitter,
+  threads,
 } from "@/assets/images";
 
 import { ROUTES } from "@/lib/routes";
@@ -159,6 +164,34 @@ export const companyDetail = {
   thread:
     "https://www.threads.net/@vinsumaxpress?xmt=AQGzDAAjWD4mrASrnVqeBbOfmwtsda6Rwq99jaQj6TGSFzw",
 };
+
+export const socialsLinks = [
+  {
+    label: "Facebook",
+    image: facebook,
+    href: companyDetail.facebook,
+  },
+  {
+    label: "Instagram",
+    image: instagram,
+    href: companyDetail.instagram,
+  },
+  {
+    label: "Twitter",
+    image: twitter,
+    href: companyDetail.twitter,
+  },
+  {
+    label: "Thread",
+    image: threads,
+    href: companyDetail.thread,
+  },
+  {
+    label: "LinkedIn",
+    image: linkedin,
+    href: companyDetail.linkedin,
+  },
+];
 
 // Home page constants
 
