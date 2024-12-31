@@ -2,11 +2,11 @@ import {
   Card,
   CardContent,
 } from "@/components/ui/card";
-import { socialsLinks } from "../constants";
+import { socialsLinks, companyDetail } from "@/constants";
 
 const SocialNetwork = () => {
   return (
-    <section className="py-16 flex items-center justify-center px-4">
+    <section className="md:py-8 py-16 md:min-h-screen flex items-center justify-center px-4">
       <Card className="sm:w-[550px] w-full  mx-auto" style={
       {"background":"linear-gradient(90deg, rgba(211, 226, 249, .5) 22%, rgba(229, 241, 255, .5) 39%, rgba(229, 241, 255, .5) 68%, rgba(211, 226, 249, .5) 81%)"}
     }>
@@ -26,11 +26,11 @@ const SocialNetwork = () => {
               </p>
             </div>
             <div className="py-2" />
-            <a href="https://www.vinsumaxpress.com" target="_blank" className="text-base tantialiased text-center antialiased font-semibold tracking-wider text-black my-2 max-w-sm w-full">
+            <a href={companyDetail.website} target="_blank" className="text-base tantialiased text-center antialiased font-semibold tracking-wider text-black my-2 max-w-sm w-full">
               www.vinsumaxpress.com
             </a>
           </div>
-          <ul className="flex items-center gap-6 flex-wrap">
+          <ul className="sm:flex grid grid-cols-3 justify-center items-center gap-6 flex-wrap">
             {socialsLinks.map(({ href, label, image }, index) => (
               <li key={index}>
                 <a
@@ -50,7 +50,7 @@ const SocialNetwork = () => {
           </ul>
 
           <div>
-            <p className="mt-4 text-sm text-zinc-600">
+            <p className="mt-4 sm:text-sm text-xs text-zinc-600 text-center">
             © Copyright 2024
             <span className="text-primary ml-1 font-medium">
               Vinsum Axpress

@@ -153,6 +153,7 @@ export const navLinks = [
 export const companyDetail = {
   contact: "1800-833-3513",
   email: "care@vinsumaxpress.com",
+  website: "https://www.vinsumaxpress.com",
   location:
     "404- Electronic City, Udyog Vihar, Phase IV, Sector 18, Gurugram, 122015.",
   instagram:
