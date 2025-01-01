@@ -10,6 +10,7 @@ import { MdMail } from "react-icons/md";
 import { ROUTES } from "@/lib/routes";
 import { companyDetail } from "@/constants";
 import { qrCode } from "@/assets/images";
+import { currentYear, nextYear } from "@/lib/utils";
 
 const Footer = () => {
   const menuLink =
@@ -188,7 +189,7 @@ const Footer = () => {
 
         <div className="flex sm:flex-row flex-col-reverse justify-between">
           <p className="mt-8 text-sm text-zinc-600">
-            © Copyright 2024-25
+            © Copyright {currentYear}-{nextYear}
             <span className="text-primary ml-1 font-medium">
               Vinsum Axpress
             </span>

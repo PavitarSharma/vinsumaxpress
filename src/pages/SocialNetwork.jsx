@@ -3,6 +3,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { socialsLinks, companyDetail } from "@/constants";
+import { currentYear, nextYear } from "@/lib/utils";
 
 const SocialNetwork = () => {
   return (
@@ -51,7 +52,7 @@ const SocialNetwork = () => {
 
           <div>
             <p className="mt-4 sm:text-sm text-xs text-zinc-600 text-center">
-            © Copyright 2024-25
+            © Copyright {currentYear}-{nextYear}
             <span className="text-primary ml-1 font-medium">
               Vinsum Axpress
             </span>
