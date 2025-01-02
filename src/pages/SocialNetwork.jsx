@@ -7,9 +7,11 @@ import { currentYear, nextYear } from "@/lib/utils";
 
 const SocialNetwork = () => {
   return (
-    <section className="md:py-8 py-16 md:min-h-screen flex items-center justify-center px-4">
+    <section className="md:py-8 py-16 md:min-h-screen flex items-center justify-center px-4" style={{"background":"#e0e0e0"}}>
       <Card className="sm:w-[550px] w-full  mx-auto" style={
-      {"background":"linear-gradient(90deg, rgba(211, 226, 249, .5) 22%, rgba(229, 241, 255, .5) 39%, rgba(229, 241, 255, .5) 68%, rgba(211, 226, 249, .5) 81%)"}
+      {"border-radius": "16px", "box-shadow":  `7px 7px 13px #cccccc,
+             -7px -7px 13px #f4f4f4`,
+"background":"linear-gradient(90deg, rgba(224, 224, 224, .5) 22%, rgba(224, 224, 224, .5) 39%, rgba(224, 224, 224, .5) 68%, rgba(224, 224, 224, .5) 81%)"}
     }>
         <CardContent className="flex flex-col items-center justify-center space-y-4 py-6 px-4">
           <img src="/logo.png" alt="logo" className="md:w-36 w-32" />
