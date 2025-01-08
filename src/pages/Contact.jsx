@@ -161,13 +161,7 @@ const Contact = () => {
                   >
                     <FaFacebookF />
                   </a>
-                  <a
-                    href={companyDetail.twitter}
-                    target="_blank"
-                    className={socialIcon}
-                  >
-                    <FaXTwitter />
-                  </a>
+              
                   <a
                     href={companyDetail.youtube}
                     target="_blank"

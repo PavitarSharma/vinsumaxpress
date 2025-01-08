@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { navLinks, companyDetail } from "@/constants";
 import { FaFacebookF, FaPhoneAlt, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { BsThreadsFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
@@ -82,8 +82,8 @@ const Navbar = () => {
           <a href={companyDetail.facebook} target="_blank">
             <FaFacebookF />
           </a>
-          <a href={companyDetail.twitter} target="_blank">
-            <FaXTwitter />
+          <a href={companyDetail.linkedin} target="_blank">
+            <FaLinkedin />
           </a>
           <a href={companyDetail.instagram} target="_blank">
             <AiFillInstagram size={20} />

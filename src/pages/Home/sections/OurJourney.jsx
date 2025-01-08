@@ -49,7 +49,7 @@ const OurJourney = () => {
     <section id="ourJourney" className="section px-4">
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="max-w-xl space-y-3">
-          <p className="card-name">Our journey</p>
+          <p className="text-lg text-red-600">Our journey</p>
           <h1 className="card-title">
             <span className="text-primary">Vinsum</span> Is One Of The Best
             Shipping And Logistics Companies.

@@ -15,7 +15,7 @@ const OurService = () => {
     <section id="ourService" className="section px-4">
       <div className="container bg-white rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="max-w-xl space-y-3">
-          <p className="card-name">Our Service</p>
+          <p className="text-lg text-red-600">Our Service</p>
           <h1 className="card-title">
             Manage Your Package From Local To The World
           </h1>

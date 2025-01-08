@@ -25,7 +25,7 @@ const OurClients = () => {
     <section id="ourClients" className="section px-4">
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="max-w-xl space-y-3">
-          <p className="card-name">Our Clients</p>
+          <h1 className="text-lg text-red-600">Our Clients</h1>
           <h1 className="card-title">
             WITH OVER <span className="text-primary">500+ HAPPY CLIENTS</span> —
             VINSUM ELEVATED THE CREDIBILITY BAR HIGH

@@ -225,15 +225,6 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href={companyDetail.twitter}
-                target="_blank"
-                className={`w-8 h-8 rounded-full flex items-center justify-center bg-zinc-200 hover:bg-primary hover:text-white transition duration-300 focus:bg-primary focus:text-white`}
-              >
-                <FaXTwitter />
-              </a>
-            </li>
-            <li>
-              <a
                 href={companyDetail.youtube}
                 target="_blank"
                 className={`w-8 h-8 rounded-full flex items-center justify-center bg-zinc-200 hover:bg-primary hover:text-white transition duration-300 focus:bg-primary focus:text-white`}

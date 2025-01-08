@@ -169,11 +169,6 @@ export const companyDetail = {
 
 export const socialsLinks = [
   {
-    label: "Twitter",
-    image: twitter,
-    href: companyDetail.twitter,
-  },
-  {
     label: "Facebook",
     image: facebook,
     href: companyDetail.facebook,
@@ -446,11 +441,11 @@ export const multimodalTransPortations = [
 
 export const endToEndSupplyChains = [
   {
-    title: "Customer 1",
+    title: "Supplier",
     image: customer,
   },
   {
-    title: "Warehouse 1",
+    title: "Warehouse-1",
     image: warehouse1,
   },
   {
@@ -462,11 +457,11 @@ export const endToEndSupplyChains = [
     image: hub2,
   },
   {
-    title: "Warehouse 2",
+    title: "Warehouse-2",
     image: warehouse2,
   },
   {
-    title: "Customer 2",
+    title: "End Mile Delivery",
     image: customer,
   },
 ];

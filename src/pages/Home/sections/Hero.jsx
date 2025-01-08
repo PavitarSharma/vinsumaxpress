@@ -82,7 +82,7 @@ const Hero = () => {
               </div>
               <div className="max-w-96 w-full border rounded-2xl p-4 space-y-10 bg-white text-black isolate bg-white/20 shadow-lg ring-1 ring-black/5">
                 <div className="flex items-center justify-between gap-3">
-                  <span className="text-sm font-medium text-white">
+                  <span className="text-base font-medium text-white">
                     Invoice Search
                   </span>
                   <label className="inline-flex items-center cursor-pointer">
@@ -94,7 +94,7 @@ const Hero = () => {
                     />
                     <div className="relative w-[52px] h-7 bg-neutral-200 rounded-full cursor-pointer peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-primary after:rounded-full after:h-6 after:w-6 after:transition-all"></div>
                   </label>
-                  <span className="text-sm font-medium text-white">
+                  <span className="text-base font-medium text-white">
                     Docket Search
                   </span>
                 </div>
@@ -186,7 +186,7 @@ const Hero = () => {
               <img
                 src={twentyThreeYears}
                 alt="twentyThreeYears"
-                className="md:h-80 md:w-80 h-40 w-40 object-contain md:block hidden"
+                className="md:h-60 md:w-60 h-40 w-40 object-contain md:block hidden"
               />
               <div className="space-y-6 md:ml-auto">
                 <p className="max-w-72">

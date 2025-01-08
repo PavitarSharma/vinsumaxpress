@@ -30,7 +30,7 @@ const OurValues = () => {
                 >
                   {title}
                 </h2>
-                <div className="w-20 h-20 border-[6px] p-1 border-primary rounded-full">
+                <div className="w-28 h-28 border-[6px] p-1 border-primary rounded-full">
                   <img
                     src={image}
                     alt={title}
@@ -48,10 +48,10 @@ const OurValues = () => {
           <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-x-4 gap-y-6 max-w-screen-lg mx-auto">
             {homeServices.map(({ title, image }, index) => (
               <div key={index} className="text-primary-foreground space-y-3">
-                <div className="w-20 h-20  border-[3px] p-2 border-white rounded-full mx-auto">
-                  <img src={image} alt={title} className="object-contain p-1" />
+                <div className="w-28 h-28  border-[3px] p-3 border-white rounded-full mx-auto">
+                  <img src={image} alt={title} className="object-contain p-2" />
                 </div>
-                <h2 className="font-semibold text-center text-sm mx-auto max-w-[150px] w-full">
+                <h2 className="font-semibold text-center text-base mx-auto max-w-[150px] w-full">
                   {title}
                 </h2>
               </div>
