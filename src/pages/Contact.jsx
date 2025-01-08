@@ -161,7 +161,6 @@ const Contact = () => {
                   >
                     <FaFacebookF />
                   </a>
-              
                   <a
                     href={companyDetail.youtube}
                     target="_blank"

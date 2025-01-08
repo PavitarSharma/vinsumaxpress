@@ -85,14 +85,15 @@ const Service = () => {
             <div className="grid grid-cols-6 gap-4 w-[700px] mx-auto ">
               {endToEndSupplyChains.map(({ image, title }, index) => (
                 <figure key={index} className="flex flex-col items-center">
-                  <div className="border-4 border-primary p-2 w-20 h-20 rounded-full flex flex-row">
+                  <div className="border-2 border-primary p-2 w-20 h-20 rounded-full flex place-self-auto	place-items-center">
                     <img
                       src={image}
                       alt="image"
                       className="w-full h-full p-2 object-contain"
                     />
+                    { index + 1 == endToEndSupplyChains.length ? null : <div className="ms-2"> ⸻ </div> }
                   </div>
-                  <h3 className="text-sm font-medium text-center mt-2">{title}</h3>
+                  <h4 className="font-normal text-center mt-2 text-sm">{title}</h4>
                 </figure>
               ))}
             </div>
