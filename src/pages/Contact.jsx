@@ -32,6 +32,7 @@ import {
   FaXTwitter,
   FaThreads,
 } from "react-icons/fa6";
+import { FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 
 const formSchema = z.object({
   fullName: z
@@ -101,15 +102,15 @@ const Contact = () => {
     <>
       <section className="py-8">
         <div className="container">
-          <p className="text-sm text-primary font-medium text-center">
+          {/* <p className="text-sm text-primary font-medium text-center">
             Contact us
-          </p>
+          </p> */}
           <h1 className="sm:text-4xl text-3xl font-bold text-center">
             Get in touch with our team
           </h1>
-          <p className="text-gray-800 text-center">
+          {/* <p className="text-gray-800 text-center">
             We have the team and know-how to help your scale 10x faster
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -117,10 +118,18 @@ const Contact = () => {
         <div className="container grid md:grid-cols-2 gap-6">
           <Card>
             <CardHeader>
-              <CardTitle>Address</CardTitle>
-              <CardDescription>
-                404- Electronic City, Udyog Vihar, Phase IV, Sector 18,
-                Gurugram, 122015.
+              <CardTitle className="text-2xl" >Head Office</CardTitle>
+              <CardDescription className="text-base">
+                <div
+                href="mailto:care@vinsumaxpress.com"
+                className="flex gap-2 text-base text-text my-4 hover:text-primary transition duration-300"
+              >
+                <FaMapMarkedAlt size={18} />
+                <span className="flex-1 text-base">
+                  404- Electronic City, Udyog Vihar, Phase IV, Sector 18,
+                  Gurugram, 122015.
+                </span>
+              </div>
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -272,6 +281,9 @@ const Contact = () => {
       </section>
 
       <section className="pt-8">
+        <h1 className="sm:text-4xl text-3xl font-bold text-center py-12">
+            Head Office
+          </h1>
         <div className="container">
           <iframe
             width="100%"

@@ -47,8 +47,49 @@ const OurJourney = () => {
 
   return (
     <section id="ourJourney" className="section px-4">
-      <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
-        <div className="max-w-xl space-y-3">
+
+      <div className="bg-cardBackground rounded-2xl  overflow-hidden shadow">
+
+      <div className="w-full h-60 flex rounded-2xl">
+          <div className="w-1/3 bg-red-500 flex items-center grid justify-items-center">
+            <div>
+              <p className="text-5xl font-bold text-text text-white justify-self-center	">VINSUM</p>
+              <p className="text-5xl font-bold text-text text-white justify-self-center	my-3">IN</p>
+              <p className="text-5xl font-bold text-text text-white justify-self-center	">NUMBERS</p>
+            </div>
+          </div>
+
+          <div className="w-2/3 bg-black flex items-center place-items-center grid justify-items-center">
+             <div className="my-8 flex gap-8 flex-wrap">
+          <div className="flex flex-col gap-1">
+            <h3 className="text-4xl font-bold text-white">
+              <CountUp end={700} duration={2} />+
+            </h3>
+            <p className="text-base text-text text-white">Current Workforce</p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h3 className="text-4xl font-bold text-white">
+              <CountUp end={60} duration={2} />+
+            </h3>
+            <p className="text-base text-text text-white">Office Locations</p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h3 className="text-4xl font-bold text-white">
+              <CountUp end={23} duration={2} />+
+            </h3>
+            <p className="text-base text-text text-white">Years Experience</p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h3 className="text-4xl font-bold text-white">
+              <CountUp end={500} duration={2} />+
+            </h3>
+            <p className="text-base text-text text-white">Happy Clients</p>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        {/* <div className="max-w-xl space-y-3">
           <p className="text-lg text-red-600">Our journey</p>
           <h1 className="card-title">
             <span className="text-primary">Vinsum</span> Is One Of The Best
@@ -59,33 +100,10 @@ const OurJourney = () => {
             leader in the logistics industry, consistently delivering excellence
             and innovative solutions.
           </p>
-        </div>
+        </div> */}
 
-        <div className="my-8 flex gap-8 flex-wrap">
-          <div className="flex flex-col gap-1">
-            <h3 className="text-3xl font-bold">
-              <CountUp end={700} duration={2} />+
-            </h3>
-            <p className="text-sm text-text">Current Workforce</p>
-          </div>
-          <div className="flex flex-col gap-1">
-            <h3 className="text-3xl font-bold">
-              <CountUp end={60} duration={2} />+
-            </h3>
-            <p className="text-sm text-text">Office Locations</p>
-          </div>
-          <div className="flex flex-col gap-1">
-            <h3 className="text-3xl font-bold">
-              <CountUp end={23} duration={2} />+
-            </h3>
-            <p className="text-sm text-text">Years Experience</p>
-          </div>
-          <div className="flex flex-col gap-1">
-            <h3 className="text-3xl font-bold">
-              <CountUp end={500} duration={2} />+
-            </h3>
-            <p className="text-sm text-text">Happy Clients</p>
-          </div>
+        <div className="my-8 text-center text-base antialiased w-1/5 tracking-wider text-red-600 bg-background rounded p-1 py-2 justify-self-center">
+          Our Journey
         </div>
 
         <div className="relative lg:aspect-auto lg:h-[600px] aspect-video w-full">

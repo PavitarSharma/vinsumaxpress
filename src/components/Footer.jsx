@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="px-4">
       <div className="container bg-cardBackground shadow p-8 py-14 rounded-lg my-10">
         <div className="flex flex-col mx-auto items-center justify-center gap-10 w-full">
-          <h1 className="antialiased tracking-normal text-base text-center w-full">
+          <h1 className="antialiased tracking-normal text-lg text-center w-full">
             Unlock Tech driven solutions on the go—download our app from the{" "}
             <span className="text-primary">Play Store!</span>
           </h1>

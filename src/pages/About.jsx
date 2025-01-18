@@ -32,18 +32,18 @@ const About = () => {
       <section className="py-6">
         <div className="container grid lg:grid-cols-2 gap-4">
           <div className="lg:order-1 order-2">
-            <div className="bg-neutral-200 rounded p-1 px-2 w-fit">
+            {/* <div className="bg-neutral-200 rounded p-1 px-2 w-fit">
               “Delivering More Than Just Packages.”
-            </div>
-            <h1 className="sm:text-4xl text-3xl font-bold my-4">
-              An astonishing expedition of curiosities—one mile at a time.
+            </div> */}
+            <h1 className="sm:text-5xl text-5xl font-bold my-4">
+              About Us
             </h1>
             <div>
               <p className="text-lg">Do you know that</p>
               <ul className="pl-4 list-disc mt-2 space-y-1">
                 <li className="">
                   We&#39;ve been the leading logistics company in India for the
-                  past 18 years.
+                  past 23+ years.
                 </li>
                 <li>
                   {" "}
@@ -59,19 +59,19 @@ const About = () => {
                   With a portfolio of over 500+ happy clients, we strive to
                   provide exceptional service and build lasting relationships.
                 </li>
-                <li>We are hiring. Click the button below to join us.</li>
+                {/* <li>We are hiring. Click the button below to join us.</li> */}
               </ul>
             </div>
-            <Link to={ROUTES.CAREER}>
+            {/* <Link to={ROUTES.CAREER}>
               <Button className="mt-4">
                 We are hiring <LuMoveRight size={18} />
               </Button>
-            </Link>
+            </Link> */}
           </div>
 
           <figure className="lg:order-2 order-1">
             <img
-              src={gallery22}
+              src={vinsumNetworkMap}
               alt="vinsum-warehouse"
               className="rounded-2xl h-full brightness-90 shadow-xl"
             />
@@ -79,7 +79,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-6">
+      {/* <section className="py-6">
         <div className="container">
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-4">
             OUR JOURNEY
@@ -92,7 +92,7 @@ const About = () => {
             />
           </figure>
         </div>
-      </section>
+      </section> */}
 
       <section className="section">
         <div className="container">
@@ -392,7 +392,7 @@ India’s logistics and supply chain sector.
         </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <div className="container grid lg:grid-cols-2 gap-6">
           <div>
             <h1 className="text-3xl font-bold">{visnumNetwork.title}</h1>
@@ -420,7 +420,7 @@ India’s logistics and supply chain sector.
             <img src={vinsumNetworkMap} alt="vinsum-network-map" />
           </figure>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <div className="container">
@@ -503,6 +503,9 @@ India’s logistics and supply chain sector.
 
       <section className="pt-8 pb-10">
         <div className="container">
+          <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
+            Head Office
+          </div>
           <iframe
             width="100%"
             height="450"
