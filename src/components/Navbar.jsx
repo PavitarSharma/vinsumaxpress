@@ -4,17 +4,24 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { navLinks, companyDetail } from "@/constants";
 import { FaFacebookF, FaPhoneAlt, FaYoutube } from "react-icons/fa";
-import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { BsThreadsFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
@@ -22,6 +29,7 @@ import { LuMenu } from "react-icons/lu";
 import { ROUTES } from "@/lib/routes";
 import { useCallback, useEffect, useState } from "react";
 import { Separator } from "./ui/separator";
+import { ChevronsUpDown } from "lucide-react";
 
 const Navbar = () => {
   const [navBg, setNavBg] = useState(false);
@@ -119,33 +127,68 @@ const Navbar = () => {
 
         <Popover open={popoverOpen} onOpenChange={togglePopover}>
           <PopoverTrigger asChild>
-            <button type="button" id="menu" className="md:hidden inline-block">
+            <button type="button" id="menu" className="lg:hidden inline-block">
               <LuMenu size={26} />
             </button>
           </PopoverTrigger>
           <PopoverContent align="end" className="">
-            <ul className="">
-              {navLinks.map(({ label, path }, index) => (
-                <li key={index} className="hover:bg-zinc-100 py-2 px-2">
-                  <NavLink
-                    to={path}
-                    onClick={togglePopover}
-                    className={({ isActive }) =>
-                      `block w-full ${isActive ? "text-primary" : ""}`
-                    }
-                  >
-                    {label}
-                  </NavLink>
+            <ul className="mb-3 space-y-1">
+              {navLinks.map(({ href, label, submenu }, index) => (
+                <li key={index}>
+                  {submenu ? (
+                    <Collapsible>
+                      <CollapsibleTrigger asChild>
+                        <Button
+                          variant="ghost"
+                          className="w-full justify-between"
+                        >
+                          {label}
+                          <ChevronsUpDown />
+                        </Button>
+                      </CollapsibleTrigger>
+
+                      <CollapsibleContent className="ps-2">
+                        <ul className="border-l border-l-muted-foreground/20">
+                          {submenu.map(({ href, label }, index) => (
+                            <li key={index}>
+                              <Button
+                                asChild
+                                variant="ghost"
+                                className={`${
+                                  pathname === href
+                                    ? "text-primary"
+                                    : "text-muted-foreground"
+                                }  hover:bg-transparent whitespace-pre-wrap`}
+                              >
+                                <Link to={href}>{label}</Link>
+                              </Button>
+                            </li>
+                          ))}
+                        </ul>
+                      </CollapsibleContent>
+                    </Collapsible>
+                  ) : (
+                    <Button
+                      asChild
+                      variant="ghost"
+                      className={`${
+                        pathname === href
+                          ? "text-primary hover:text-primary bg-neutral-100"
+                          : ""
+                      } w-full justify-start`}
+                    >
+                      <Link to={href}>{label}</Link>
+                    </Button>
+                  )}
                 </li>
               ))}
-
               <li className="px-2 mt-2">
-                <Link to={ROUTES.CONTACT}>
-                  <Button onClick={togglePopover}>Get in Touch</Button>
+                <Link to={ROUTES.CONTACT} className="block">
+                  <Button onClick={togglePopover} className="w-full">Get in Touch</Button>
                 </Link>
               </li>
 
-              <Separator className="my-4" />
+              <Separator className="!my-4" />
               <div className="grid grid-cols-2 gap-2">
                 <li>
                   <a href="http://ggco.vinsumaxpress.com" target="_blank">
@@ -167,22 +210,62 @@ const Navbar = () => {
                 </li>
               </div>
             </ul>
+
+          
           </PopoverContent>
         </Popover>
 
         {/* Nav menus */}
-        <NavigationMenu className="md:block hidden">
+        <NavigationMenu className="lg:block hidden">
           <NavigationMenuList className="space-x-6">
-            {navLinks.map(({ label, path }, index) => (
+            {navLinks.map(({ href, label, submenu }, index) => (
               <NavigationMenuItem key={index}>
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    isActive ? "text-primary font-medium" : "hover:text-primary"
-                  }
-                >
-                  <NavigationMenuLink>{label}</NavigationMenuLink>
-                </NavLink>
+                {submenu ? (
+                  <>
+                    <NavigationMenuTrigger>
+                      <p className="text-base font-normal">{label}</p>
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid grid-cols-2 gap-2 p-2 xl:w-[640px] md:w-[540px]">
+                        {submenu.map(({ href, label, icon }, index) => (
+                          <li key={index}>
+                            <NavigationMenuLink href={href} asChild>
+                              <Link
+                                to={href}
+                                className="flex gap-3 select-none p-2 rounded-sm transition-colors hover:bg-foreground/5 items-center"
+                              >
+                                <div className="w-10 h-10 bg-foreground/10 rounded-sm shadow-sm border-t border-foreground/5 flex-shrink-0 grid place-items-center">
+                                  {icon}
+                                </div>
+
+                                <div
+                                  className={`text-[13px] leading-normal mb-1 ${
+                                    pathname === href
+                                      ? "text-primary font-medium"
+                                      : ""
+                                  }`}
+                                >
+                                  {label}
+                                </div>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </>
+                ) : (
+                  <NavLink
+                    to={href}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-primary font-medium"
+                        : "hover:text-primary"
+                    }
+                  >
+                    <NavigationMenuLink>{label}</NavigationMenuLink>
+                  </NavLink>
+                )}
               </NavigationMenuItem>
             ))}
             <NavigationMenuItem>
@@ -191,6 +274,7 @@ const Navbar = () => {
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
+         
         </NavigationMenu>
       </div>
     </header>

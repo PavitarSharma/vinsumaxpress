@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import {
   Card,
   CardDescription,
@@ -6,19 +6,22 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { ROUTES } from "@/lib/routes";
-import { LuMoveRight } from "react-icons/lu";
+// import { Link } from "react-router-dom";
+// import { ROUTES } from "@/lib/routes";
+// import { LuMoveRight } from "react-icons/lu";
 import {
   chairman,
-  mission,
-  value,
-  gallery22,
+  // mission,
+  // value,
+  // gallery22,
   vinsumNetworkMap,
-  vinsumRoadMap,
+  // vinsumRoadMap,
   vision,
 } from "@/assets/images";
-import { leadershipTeams, visnumNetwork } from "@/constants";
+import {
+  leadershipTeams,
+  // visnumNetwork
+} from "@/constants";
 // import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { useEffect } from "react";
@@ -35,9 +38,7 @@ const About = () => {
             {/* <div className="bg-neutral-200 rounded p-1 px-2 w-fit">
               “Delivering More Than Just Packages.”
             </div> */}
-            <h1 className="sm:text-5xl text-5xl font-bold my-4">
-              About Us
-            </h1>
+            <h1 className="sm:text-5xl text-5xl font-bold my-4">About Us</h1>
             <div>
               <p className="text-lg">Do you know that</p>
               <ul className="pl-4 list-disc mt-2 space-y-1">
@@ -95,12 +96,33 @@ const About = () => {
       </section> */}
 
       <section className="section">
-        <div className="container">
-          <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
-            OUR GOALS
-          </div>
-          <div className="">
-            <div className="grid grid-cols-3 gap-8 h-fit">
+        <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
+          OUR GOALS
+        </div>
+
+        <div
+          style={
+            {
+              // backgroundImage: `url(${})`
+            }
+          }
+          className="bg-red-100 bg-cover bg-no-repeat bg-center bg-fixed min-h-[80vh] h-full flex items-center justify-center"
+        >
+          <div className="container  flex items-center justify-center h-full relative">
+            <figure className="bg-white text-foreground relative  rounded-xl p-4 h-full my-auto py-8 max-w-lg w-full">
+              <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-primary">
+                <img src={vision} alt="vision" className="w-full h-full p-2" />
+              </div>
+              <h3 className="text-center font-semibold text-lg">VISION</h3>
+              <p className="text-sm mt-2">
+                To establish Vinsum Axpress as the leading logistics, supply
+                chain, warehousing, and packaging solutions provider in India,
+                renowned for our innovative services, operational excellence,
+                and unwavering commitment to empowering businesses across
+                diverse industries.
+              </p>
+            </figure>
+            {/* <div className="grid grid-cols-3 gap-8 h-fit">
               <figure className="bg-foreground text-primary-foreground relative  rounded-xl p-4 h-fit">
                 <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-black">
                   <img
@@ -111,15 +133,17 @@ const About = () => {
                 </div>
                 <h3 className="text-center font-semibold text-lg">MISSION</h3>
                 <p className="text-sm mt-2">
-                  Our mission is to redefine logistics and supply chain management in India by delivering end-
-to-end solutions that are seamless, reliable, and tailored to the unique needs of our clients.
-Through the integration of advanced technology, a dedicated workforce, and sustainable
-practices, we aim to create value for businesses, contribute to their growth, and support
-India’s economic development.
+                  Our mission is to redefine logistics and supply chain
+                  management in India by delivering end- to-end solutions that
+                  are seamless, reliable, and tailored to the unique needs of
+                  our clients. Through the integration of advanced technology, a
+                  dedicated workforce, and sustainable practices, we aim to
+                  create value for businesses, contribute to their growth, and
+                  support India’s economic development.
                 </p>
               </figure>
 
-              <figure className="bg-primary text-primary-foreground relative  rounded-xl p-4 h-fit">
+              <figure className="bg-white text-foreground relative  rounded-xl p-4 h-full py-8">
                 <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-primary">
                   <img
                     src={vision}
@@ -129,9 +153,11 @@ India’s economic development.
                 </div>
                 <h3 className="text-center font-semibold text-lg">VISION</h3>
                 <p className="text-sm mt-2">
-                  To establish Vinsum Axpress as the leading logistics, supply chain, warehousing, and
-packaging solutions provider in India, renowned for our innovative services, operational
-excellence, and unwavering commitment to empowering businesses across diverse industries.
+                  To establish Vinsum Axpress as the leading logistics, supply
+                  chain, warehousing, and packaging solutions provider in India,
+                  renowned for our innovative services, operational excellence,
+                  and unwavering commitment to empowering businesses across
+                  diverse industries.
                 </p>
               </figure>
 
@@ -141,15 +167,15 @@ excellence, and unwavering commitment to empowering businesses across diverse in
                 </div>
                 <h3 className="text-center font-semibold text-lg">VALUE</h3>
                 <p className="text-sm mt-2">
-                  At Vinsum Axpress, we are committed to delivering customer-focused solutions with
-integrity, innovation, and sustainability. By embracing technology and fostering
-collaboration, we ensure reliable, eco-friendly practices that drive growth for our clients and
-India’s logistics and supply chain sector.
+                  At Vinsum Axpress, we are committed to delivering
+                  customer-focused solutions with integrity, innovation, and
+                  sustainability. By embracing technology and fostering
+                  collaboration, we ensure reliable, eco-friendly practices that
+                  drive growth for our clients and India’s logistics and supply
+                  chain sector.
                 </p>
               </figure>
-            </div>
-
-            
+            </div> */}
           </div>
         </div>
       </section>
@@ -439,13 +465,14 @@ India’s logistics and supply chain sector.
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
             {leadershipTeams.map(
               (
-                { 
-                  image, 
-                  name, 
-                  position, 
-                  // twitter, 
-                  // instagram, 
-                  linkedin },
+                {
+                  image,
+                  name,
+                  position,
+                  // twitter,
+                  // instagram,
+                  linkedin,
+                },
                 index
               ) => (
                 <Card key={index}>

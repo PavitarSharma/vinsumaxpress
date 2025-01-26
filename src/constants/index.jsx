@@ -117,7 +117,7 @@ import {
   instagram,
   facebook,
   linkedin,
-  twitter,
+  // twitter,
   threads,
   youtube,
 } from "@/assets/images";
@@ -131,22 +131,38 @@ import {
 } from "react-icons/lu";
 
 export const navLinks = [
-  { label: "Home", path: ROUTES.HOME },
+  { label: "Home", href: ROUTES.HOME },
   {
     label: "About",
-    path: ROUTES.ABOUT,
+    href: ROUTES.ABOUT,
   },
   {
     label: "Service",
-    path: ROUTES.SERVICE,
+    href: ROUTES.SERVICE,
+    submenu: [
+      {
+        label: "MultiModal Transportation",
+        href: ROUTES.MULTIMODAL_TRANSPORTATION,
+      },
+      { label: "Warehousing Solution", href: ROUTES.WAREHOUSE_SOLUTION },
+      { label: "Packaging Solution", href: ROUTES.PACKAGING_SOLUTION },
+      {
+        label: "3PL & Inventory Solution",
+        href: ROUTES.THREEPL_INVENTORY_MANAGEMENT,
+      },
+      {
+        label: "4PL/Inplant Logistics/Project Management",
+        href: ROUTES.FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT,
+      },
+    ],
   },
   {
     label: "Media Center",
-    path: ROUTES.MEDIACENTER,
+    href: ROUTES.MEDIACENTER,
   },
   {
     label: "Career",
-    path: ROUTES.CAREER,
+    href: ROUTES.CAREER,
   },
 ];
 
@@ -188,7 +204,7 @@ export const socialsLinks = [
     image: youtube,
     href: companyDetail.youtube,
   },
-    {
+  {
     label: "Thread",
     image: threads,
     href: companyDetail.thread,

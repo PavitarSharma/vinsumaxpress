@@ -19,6 +19,23 @@ const BlogDetail = lazy(() => import("@/pages/BlogDetail/BlogDetail"));
 const NotFound = lazy(() => import("@/pages/404"));
 const SocialNetwork = lazy(() => import("@/pages/SocialNetwork"));
 
+// Services Page
+const MultiModalTransportation = lazy(() =>
+  import("@/pages/Services/MultiModalTransportation")
+);
+const WarehouseSolution = lazy(() =>
+  import("@/pages/Services/WarehouseSolution")
+);
+const PackagingSolution = lazy(() =>
+  import("@/pages/Services/PackagingSolution")
+);
+const ThreePlInventoryManagement = lazy(() =>
+  import("@/pages/Services/ThreePlInventoryManagement")
+);
+const FourPlInplantLogistics = lazy(() =>
+  import("@/pages/Services/FourPlInplantLogistics")
+);
+
 /**
  * @components
  */
@@ -81,6 +98,27 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path={ROUTES.SERVICE} element={<Service />} />
+          <Route
+            path={ROUTES.MULTIMODAL_TRANSPORTATION}
+            element={<MultiModalTransportation />}
+          />
+          <Route
+            path={ROUTES.WAREHOUSE_SOLUTION}
+            element={<WarehouseSolution />}
+          />
+          <Route
+            path={ROUTES.PACKAGING_SOLUTION}
+            element={<PackagingSolution />}
+          />
+          <Route
+            path={ROUTES.THREEPL_INVENTORY_MANAGEMENT}
+            element={<ThreePlInventoryManagement />}
+          />
+          <Route
+            path={ROUTES.FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT}
+            element={<FourPlInplantLogistics />}
+          />
+
           <Route path={ROUTES.ABOUT} element={<About />} />
           <Route path={ROUTES.MEDIACENTER} element={<MediaCenter />} />
           <Route path={ROUTES.CAREER} element={<Career />} />
