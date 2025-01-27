@@ -50,10 +50,19 @@ import airplaneDesignFreight from "@/assets/images/services/airplane-service.jpg
 import truckDrivingRoad from "@/assets/images/services/truck-service.jpg";
 import railService from "@/assets/images/services/rail-service.png";
 import truckSpeedService from "@/assets/images/services/truck-speed.jpg";
-import fourPlInplantLogistics1 from "@/assets/images/services/4Pl-inplant-logistics.png"
-import fourPlInplantLogistics2 from "@/assets/images/services/4Pl-inplant-logistics-2.jpg"
-import fourPlInplantLogistics3 from "@/assets/images/services/4Pl-inplant-logistics-3.jpg"
-
+import fourPlInplantLogistics1 from "@/assets/images/services/4Pl-inplant-logistics.png";
+import fourPlInplantLogistics2 from "@/assets/images/services/4Pl-inplant-logistics-2.jpg";
+import fourPlInplantLogistics3 from "@/assets/images/services/4Pl-inplant-logistics-3.jpg";
+import threePl from "@/assets/images/services/threepl.png";
+import transferOrder from "@/assets/images/services/transfer.png";
+import lookup from "@/assets/images/services/seo.png";
+import shipment from "@/assets/images/services/fast.png";
+import itemReceipt from "@/assets/images/services/item.png";
+import purchaseOrder from "@/assets/images/services/management.png";
+import inventoryAdjustment from "@/assets/images/services/order-delivery.png";
+import inventoryCount from "@/assets/images/services/inventory.png";
+import binPutWay from "@/assets/images/services/waste-bin.png";
+import binTransfer from "@/assets/images/services/recycle.png";
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
 import vinsumMap from "@/assets/images/about/map.png";
@@ -302,4 +311,14 @@ export {
   fourPlInplantLogistics1,
   fourPlInplantLogistics2,
   fourPlInplantLogistics3,
+  transferOrder,
+  lookup,
+  shipment,
+  inventoryAdjustment,
+  inventoryCount,
+  itemReceipt,
+  binPutWay,
+  binTransfer,
+  purchaseOrder,
+  threePl,
 };

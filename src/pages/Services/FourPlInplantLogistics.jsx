@@ -5,9 +5,8 @@ import {
   fourPlInplantLogistics1,
   fourPlInplantLogistics2,
   fourPlInplantLogistics3,
-} from "../../assets/images";
-import { homeServices } from "../../constants";
-import { Link } from "react-router-dom";
+} from "@/assets/images";
+import MoreService from "@/components/MoreService";
 
 const fourPLInplant = {
   title: "4PL / INPLANT LOGISTICS / PROJECT MANAGEMENT",
@@ -164,7 +163,7 @@ const FourPlInplantLogistics = () => {
 
       <section className="section">
         <div className="container">
-          <p className="py-4 bg-neutral-200 rounded-lg px-4">
+          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
             To know more about our 4PL /Inplant Logistics /Project Management,
             please reach us through the appended form or write to us at.
             <a
@@ -177,22 +176,7 @@ const FourPlInplantLogistics = () => {
         </div>
       </section>
 
-      <section className="section bg-neutral-100">
-        <div className="container">
-          <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-x-4 gap-y-6 max-w-screen-lg mx-auto">
-            {homeServices.map(({ title, image, href }, index) => (
-              <Link to={href} key={index} className="space-y-3 group cursor-pointer block">
-                <div className="w-28 h-28  border-[3px] p-3 border-white rounded-full mx-auto">
-                  <img src={image} alt={title} className="object-contain p-2 brightness-0" />
-                </div>
-                <h2 className="font-semibold text-center text-sm mx-auto max-w-[150px] w-full group-hover:text-primary">
-                  {title}
-                </h2>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <MoreService />
     </>
   );
 };
