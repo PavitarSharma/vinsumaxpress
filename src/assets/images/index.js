@@ -50,6 +50,9 @@ import airplaneDesignFreight from "@/assets/images/services/airplane-service.jpg
 import truckDrivingRoad from "@/assets/images/services/truck-service.jpg";
 import railService from "@/assets/images/services/rail-service.png";
 import truckSpeedService from "@/assets/images/services/truck-speed.jpg";
+import fourPlInplantLogistics1 from "@/assets/images/services/4Pl-inplant-logistics.png"
+import fourPlInplantLogistics2 from "@/assets/images/services/4Pl-inplant-logistics-2.jpg"
+import fourPlInplantLogistics3 from "@/assets/images/services/4Pl-inplant-logistics-3.jpg"
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -296,4 +299,7 @@ export {
   foldableCratesImage2,
   foldableCratesImage3,
   foldableCratesImage4,
+  fourPlInplantLogistics1,
+  fourPlInplantLogistics2,
+  fourPlInplantLogistics3,
 };

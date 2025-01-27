@@ -257,23 +257,28 @@ export const homeServices = [
   {
     image: transportation,
     title: "Multimodal Transportation",
+    href: ROUTES.MULTIMODAL_TRANSPORTATION,
   },
   {
     image: warehouse,
     title: "Warehousing Solution",
+    href: ROUTES.WAREHOUSE_SOLUTION,
   },
   {
     image: logistics,
     title: "3PL & Inventory Management",
+    href: ROUTES.PACKAGING_SOLUTION,
   },
   {
     image: creative,
     title: "Packaging Solution",
     path: "#packaging-solution",
+    href: ROUTES.THREEPL_INVENTORY_MANAGEMENT,
   },
   {
     image: complianceDocument,
     title: "4PL/In-plant Logistics Project Management",
+    href: ROUTES.FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT,
   },
 ];
 

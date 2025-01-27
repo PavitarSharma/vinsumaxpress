@@ -29,10 +29,9 @@ import {
   FaInstagram,
   FaYoutube,
   FaLinkedinIn,
-  FaXTwitter,
   FaThreads,
 } from "react-icons/fa6";
-import { FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkedAlt } from "react-icons/fa";
 
 const formSchema = z.object({
   fullName: z
