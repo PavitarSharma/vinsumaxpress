@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { ROUTES } from "@/lib/routes";
 import {
   binPutWay,
   binTransfer,
@@ -54,7 +53,7 @@ const threePlManagement = {
 
 const ThreePlInventoryManagement = () => {
   useEffect(() => {
-    document.title = ROUTES.THREEPL_INVENTORY_MANAGEMENT;
+    document.title = "3PL Inventory Management";
   }, []);
 
   const { title, section01, section02, section03 } = threePlManagement;

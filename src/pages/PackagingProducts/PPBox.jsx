@@ -1,19 +1,20 @@
+
 import { useEffect } from "react";
 
-const WarehouseSolution = () => {
+const PPBox = () => {
   useEffect(() => {
-    document.title = "Warehouse Solution";
+    document.title = "PP Box";
   }, []);
 
   return (
     <>
       <section>
         <div className="container">
-          <div>Warehouse Solution</div>
+          <div>PP Box</div>
         </div>
       </section>
     </>
   );
 };
 
-export default WarehouseSolution;
+export default PPBox;

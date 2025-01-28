@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 
-const WarehouseSolution = () => {
+const SteelPallets = () => {
   useEffect(() => {
-    document.title = "Warehouse Solution";
+    document.title = "Steel Pallets";
   }, []);
 
   return (
     <>
       <section>
         <div className="container">
-          <div>Warehouse Solution</div>
+          <div>Steel Pallets</div>
         </div>
       </section>
     </>
   );
 };
 
-export default WarehouseSolution;
+export default SteelPallets;

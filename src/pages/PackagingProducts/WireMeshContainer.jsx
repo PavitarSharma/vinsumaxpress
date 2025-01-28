@@ -1,19 +1,20 @@
+
 import { useEffect } from "react";
 
-const WarehouseSolution = () => {
+const WireMeshContainer = () => {
   useEffect(() => {
-    document.title = "Warehouse Solution";
+    document.title = "Wire Mesh Container";
   }, []);
 
   return (
     <>
       <section>
         <div className="container">
-          <div>Warehouse Solution</div>
+          <div>Wire Mesh Container</div>
         </div>
       </section>
     </>
   );
 };
 
-export default WarehouseSolution;
+export default WireMeshContainer;

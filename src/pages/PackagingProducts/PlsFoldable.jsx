@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 
-const WarehouseSolution = () => {
+const PlsFoldable = () => {
   useEffect(() => {
-    document.title = "Warehouse Solution";
+    document.title = "Pls Foldable";
   }, []);
 
   return (
     <>
       <section>
         <div className="container">
-          <div>Warehouse Solution</div>
+          <div>Pls Foldable</div>
         </div>
       </section>
     </>
   );
 };
 
-export default WarehouseSolution;
+export default PlsFoldable;

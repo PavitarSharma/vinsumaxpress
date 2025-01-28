@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { ROUTES } from "@/lib/routes";
+
 const MultiModalTransportation = () => {
   useEffect(() => {
-    document.title = ROUTES.MultiModalTransportation;
+    document.title = "Multi Modal Transportation";
   }, []);
 
   return (

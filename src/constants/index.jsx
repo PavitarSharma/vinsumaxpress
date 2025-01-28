@@ -282,6 +282,57 @@ export const homeServices = [
   },
 ];
 
+export const packagingProducts = [
+  {
+    label: "PP BOX",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PP_BOX}`,
+  },
+  {
+    label: "Foldable Crates Bin",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FOLDABLE_CRATES_BIN}`,
+  },
+  {
+    label: "PLS Foldable",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLS_FOLDABLE}`,
+  },
+  {
+    label: "FLC Foldable",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FLC_FOLDABLE}`,
+  },
+  {
+    label: "Wire Mesh Container",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WIRE_MESH_CONTAINER}`,
+  },
+  {
+    label: "Metal Foldable Bin",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.METAL_FOLDABLE_BIN}`,
+  },
+  {
+    label: "Pallets",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PALLETS}`,
+  },
+  {
+    label: "Plastic Pallets",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLASTIC_PALLETS}`,
+  },
+  {
+    label: "Wooden Pallets",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WOODEN_PALLETS}`,
+  },
+  {
+    label: "Steel Pallets",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.STEEL_PALLETS}`,
+  },
+  {
+    label: "Thermoforming Trays",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.THERMOFORMING_TRAYS}`,
+  },
+  {
+    label: "Customized Wooden Packaging Box",
+    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.CUSTOMIZE_WOODEN_PACKAGING_BOX}`,
+  },
+];
+
 export const homeAboutCards = [
   {
     image: realTimeLocator,

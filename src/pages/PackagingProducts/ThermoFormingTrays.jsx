@@ -1,19 +1,22 @@
+
 import { useEffect } from "react";
 
-const WarehouseSolution = () => {
+const ThermoFormingTrays = () => {
   useEffect(() => {
-    document.title = "Warehouse Solution";
+    document.title = "Thermo Forming Trays";
   }, []);
 
   return (
     <>
       <section>
         <div className="container">
-          <div>Warehouse Solution</div>
+          <div>Thermo Forming Trays</div>
         </div>
       </section>
     </>
   );
 };
 
-export default WarehouseSolution;
+export default ThermoFormingTrays;
+
+

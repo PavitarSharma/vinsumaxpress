@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { ROUTES } from "@/lib/routes";
 import { FaHandPointRight } from "react-icons/fa";
 import {
   fourPlInplantLogistics1,
@@ -60,7 +59,7 @@ const fourPLInplant = {
 };
 const FourPlInplantLogistics = () => {
   useEffect(() => {
-    document.title = ROUTES.FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT;
+    document.title = "4PL Inplant Logistics Project Management";
   }, []);
 
   const { section01, section02, section03, title } = fourPLInplant;

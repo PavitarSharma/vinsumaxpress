@@ -168,6 +168,21 @@ import thermoFormingImage2 from "@/assets/images/packaging/htgbcv-10.png";
 import thermoFormingImage3 from "@/assets/images/packaging/fuyfjhv-10.png";
 import thermoFormingImage4 from "@/assets/images/packaging/B10.png";
 
+// Packaging
+import packagingSolutionManagment from "@/assets/images/packaging/packaging-solution-managment.png";
+import returnablePackaging from "@/assets/images/packaging/returanable-packaging.png";
+import timeConsuming from "@/assets/images/packaging/demerits-icon-time.png";
+import transitDamageLimited from "@/assets/images/packaging/demerits-icon6-transit-damage.svg";
+import oneTimeUsageGreen from "@/assets/images/packaging/demerits-icon3-one-time.svg";
+import unsafeCombustible from "@/assets/images/packaging/demerits-icon-unsafe.png";
+import scrapManagementSpaceCost from "@/assets/images/packaging/demerits-icon-time.png";
+import fumigationRequired from "@/assets/images/packaging/demerits-icon2-fumigation.svg";
+import vinsumAxpressPlantImage01 from "@/assets/images/packaging/vinsum-axpress-plant-image1.jpeg";
+import vinsumAxpressPlantImage02 from "@/assets/images/packaging/vinsum-axpress-plant-image2.jpeg";
+import vinsumAxpressPlantImage03 from "@/assets/images/packaging/vinsum-axpress-plant-image3.jpg";
+import vinsumAxpressPlantImage04 from "@/assets/images/packaging/vinsum-axpress-plant-image4.jpg";
+import vinsumAxpressPlantImage05 from "@/assets/images/packaging/vinsum-axpress-plant-image5.jpg";
+
 export {
   instagram,
   facebook,
@@ -321,4 +336,17 @@ export {
   binTransfer,
   purchaseOrder,
   threePl,
+  packagingSolutionManagment,
+  returnablePackaging,
+  timeConsuming,
+  transitDamageLimited,
+  oneTimeUsageGreen,
+  unsafeCombustible,
+  scrapManagementSpaceCost,
+  fumigationRequired,
+  vinsumAxpressPlantImage01,
+  vinsumAxpressPlantImage02,
+  vinsumAxpressPlantImage03,
+  vinsumAxpressPlantImage04,
+  vinsumAxpressPlantImage05,
 };

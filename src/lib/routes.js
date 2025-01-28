@@ -17,4 +17,18 @@ export const ROUTES = {
   THREEPL_INVENTORY_MANAGEMENT: "/3pl-inventory-management",
   FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT:
     "/4pl-inplant-logistics-project-management",
+
+  PACKAGING_PRODUCTS: "/packaging-products",
+  PP_BOX: "/pp-box",
+  FOLDABLE_CRATES_BIN: "/foldable-crates-bin",
+  PLS_FOLDABLE: "/pls-foldable",
+  FLC_FOLDABLE: "/flc-foldable",
+  WIRE_MESH_CONTAINER: "/wire-mesh-container",
+  METAL_FOLDABLE_BIN: "/metal-foldable-bin",
+  PALLETS: "/pallets",
+  PLASTIC_PALLETS: "/plastic-pallets",
+  STEEL_PALLETS: "/steel-pallets",
+  WOODEN_PALLETS: "/wooden-pallets",
+  THERMOFORMING_TRAYS: "/thermoforming-trays",
+  CUSTOMIZE_WOODEN_PACKAGING_BOX: "/customize-wooden-packaging-box",
 };
