@@ -120,6 +120,9 @@ import {
   // twitter,
   threads,
   youtube,
+  airService,
+  trainService,
+  roadService,
 } from "@/assets/images";
 
 import { ROUTES } from "@/lib/routes";
@@ -396,6 +399,60 @@ export const homeServiceQuestions = [
     description:
       "Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
     path: "#3pl-4pl-management",
+  },
+];
+
+export const multimodalTransPortationServices = [
+  {
+    title: "Air Services",
+    description:
+      "We at Vinsum axpress provides you Express , time bound services with incomparable levels of assurance , safety & convenience . With our wide network , partners & geographical reach we are able to handle & deliver shipments nationally as well as internationally by providing personalized services to our customers and end to end in-transit movement information.Our experienced staff organize national and international air cargo shipping for a wide range of cargoes by selecting optimal routes based on your individual needs Fixed schedule on our daily flights gives you the flexibility to hold or expedite delivery of goods to meet your supply chain requirement.",
+    image: airService,
+    offers: [
+      "Time sensitive express deliveries.",
+      "Broad geographical reach.",
+      "Cost effective routing of cargoes.",
+      "Round the clock service.",
+      "Dedicated cargo flight (GCR Cargo flight, Fast track, Hand carry).",
+      "Door-to-Door / Door-to-Airport services & Airport-to-airport, Airport-to-Door.",
+      "Intelligent tracking and tracing (Road, Rail & air).",
+      "Intelligent alerts of shipment status.",
+      "Multi-platform (Web, iOS & Android).",
+    ],
+    path: ROUTES.AIR_SERVICE,
+  },
+  {
+    title: "Rail Services",
+    description:
+      "With over 18 years of experience in cargo movement , Vinsum Axpress hold an expertise in offering rail cargo services by transporting the cargoes safely & securely from one location to another . Our experienced staff ensures the utmost care right from the packaging ggods till it gets delivered . We offer highly sofisticated & customizable services as per the specific requirements by clients. Also , our inbuilt ERP & Mobile application helps in closely monitoring the movement of in-transit cargoes.",
+    image: trainService,
+    offers: [
+      "High level expertise & experience.",
+      "Single integrated service provider.",
+      "Multimodal movement.",
+      "Efficient handling of huge bulk shipments.",
+      "In transit monitoring.",
+      "Break bulk & full train movement.",
+      "Offer both SLR & VPU facilities.",
+    ],
+    path: ROUTES.RAIL_SERVICE,
+  },
+  {
+    title: "Road Services",
+    description:
+      "Catering to the needs of our clients, we offer high volume of freight transportation by roads. Promising efficient deliveries 24hrs a day regardless of airport railway and port operating schedules. We at Vinsum take into consideration the individual needs of clients & provide transportation in strict conformity with agreed terms at the best price.",
+    image: roadService,
+    offers: [
+      "Flexible routing & GPS enabled fleet.",
+      "FTL/PTL Management.",
+      "Speed Truck.",
+      "ODC cargo movement.",
+      "With 450+ Fleet size covering more than 1.5 lakh km per day. Milk run transportation.",
+      "Weather proof containerized vehicle.",
+      "Axpress logistics offer both unmatched dependability and flexibility with our customized over the road. Trucking / transportation solution which provides an efficient and reliable surface cargo services, movement pan- india.",
+      "With over 650 plus dedicated fleet of vehicle with trained drivers, covering 1 lakh kilometer every day in entire country. We are best in catering to any transportation requirement across the country with fast, efficient and express logistics services.",
+    ],
+    path: ROUTES.ROAD_SERVICE,
   },
 ];
 

@@ -35,23 +35,42 @@ const ThreePlInventoryManagement = lazy(() =>
 const FourPlInplantLogistics = lazy(() =>
   import("@/pages/Services/FourPlInplantLogistics")
 );
+const AirService = lazy(() => import("@/pages/Services/AirService"));
+const RailService = lazy(() => import("@/pages/Services/RailService"));
+const RoadService = lazy(() => import("@/pages/Services/RoadService"));
 
 // Packaging products
 const PackagingProducts = lazy(() =>
   import("@/pages/PackagingProducts/PackagingProducts")
 );
 const PPBox = lazy(() => import("@/pages/PackagingProducts/PPBox"));
-const CustomizeWoodenPackagingBox = lazy(() => import("@/pages/PackagingProducts/CustomizeWoodenPackagingBox"));
+const CustomizeWoodenPackagingBox = lazy(() =>
+  import("@/pages/PackagingProducts/CustomizeWoodenPackagingBox")
+);
 const FlcFoldable = lazy(() => import("@/pages/PackagingProducts/FlcFoldable"));
-const FoldableCratesBin = lazy(() => import("@/pages/PackagingProducts/FoldableCratesBin"));
-const MetalFoldableBin = lazy(() => import("@/pages/PackagingProducts/MetalFoldableBin"));
+const FoldableCratesBin = lazy(() =>
+  import("@/pages/PackagingProducts/FoldableCratesBin")
+);
+const MetalFoldableBin = lazy(() =>
+  import("@/pages/PackagingProducts/MetalFoldableBin")
+);
 const Pallets = lazy(() => import("@/pages/PackagingProducts/Pallets"));
-const PlasticPallets = lazy(() => import("@/pages/PackagingProducts/PlasticPallets"));
+const PlasticPallets = lazy(() =>
+  import("@/pages/PackagingProducts/PlasticPallets")
+);
 const PlsFoldable = lazy(() => import("@/pages/PackagingProducts/PlsFoldable"));
-const SteelPallets = lazy(() => import("@/pages/PackagingProducts/SteelPallets"));
-const ThermoFormingTrays = lazy(() => import("@/pages/PackagingProducts/ThermoFormingTrays"));
-const WireMeshContainer = lazy(() => import("@/pages/PackagingProducts/WireMeshContainer"));
-const WoodenPallets = lazy(() => import("@/pages/PackagingProducts/WoodenPallets"));
+const SteelPallets = lazy(() =>
+  import("@/pages/PackagingProducts/SteelPallets")
+);
+const ThermoFormingTrays = lazy(() =>
+  import("@/pages/PackagingProducts/ThermoFormingTrays")
+);
+const WireMeshContainer = lazy(() =>
+  import("@/pages/PackagingProducts/WireMeshContainer")
+);
+const WoodenPallets = lazy(() =>
+  import("@/pages/PackagingProducts/WoodenPallets")
+);
 
 /**
  * @components
@@ -135,6 +154,9 @@ const App = () => {
             path={ROUTES.FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT}
             element={<FourPlInplantLogistics />}
           />
+          <Route path={ROUTES.AIR_SERVICE} element={<AirService />} />
+          <Route path={ROUTES.RAIL_SERVICE} element={<RailService />} />
+          <Route path={ROUTES.ROAD_SERVICE} element={<RoadService />} />
 
           <Route path={ROUTES.ABOUT} element={<About />} />
           <Route path={ROUTES.MEDIACENTER} element={<MediaCenter />} />
@@ -149,19 +171,54 @@ const App = () => {
             path={ROUTES.PACKAGING_PRODUCTS}
             element={<PackagingProducts />}
           >
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PP_BOX}`} element={<PPBox />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.CUSTOMIZE_WOODEN_PACKAGING_BOX}`} element={<CustomizeWoodenPackagingBox />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FLC_FOLDABLE}`} element={<FlcFoldable />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FOLDABLE_CRATES_BIN}`} element={<FoldableCratesBin />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.METAL_FOLDABLE_BIN}`} element={<MetalFoldableBin />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PALLETS}`} element={<Pallets />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLASTIC_PALLETS}`} element={<PlasticPallets />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLS_FOLDABLE}`} element={<PlsFoldable />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.STEEL_PALLETS}`} element={<SteelPallets />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.THERMOFORMING_TRAYS}`} element={<ThermoFormingTrays />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WIRE_MESH_CONTAINER}`} element={<WireMeshContainer />} />
-            <Route path= {`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WOODEN_PALLETS}`} element={<WoodenPallets />} />
-            
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PP_BOX}`}
+              element={<PPBox />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.CUSTOMIZE_WOODEN_PACKAGING_BOX}`}
+              element={<CustomizeWoodenPackagingBox />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FLC_FOLDABLE}`}
+              element={<FlcFoldable />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FOLDABLE_CRATES_BIN}`}
+              element={<FoldableCratesBin />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.METAL_FOLDABLE_BIN}`}
+              element={<MetalFoldableBin />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PALLETS}`}
+              element={<Pallets />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLASTIC_PALLETS}`}
+              element={<PlasticPallets />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLS_FOLDABLE}`}
+              element={<PlsFoldable />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.STEEL_PALLETS}`}
+              element={<SteelPallets />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.THERMOFORMING_TRAYS}`}
+              element={<ThermoFormingTrays />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WIRE_MESH_CONTAINER}`}
+              element={<WireMeshContainer />}
+            />
+            <Route
+              path={`${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WOODEN_PALLETS}`}
+              element={<WoodenPallets />}
+            />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

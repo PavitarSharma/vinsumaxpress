@@ -49,9 +49,9 @@ const WarehouseSolution = () => {
       <section className="section">
         <div className="container grid md:grid-cols-2 gap-6">
           <div className="md:order-1 order-2">
-            <h2 className="lg:text-5xl text-4xl font-bold">We Offer</h2>
+            <h2 className="md:text-3xl text-2xl font-bold">We Offer</h2>
 
-            <ul className="ps-2 flex flex-col items-start my-6 gap-2">
+            <ul className="ps-2 flex flex-col items-start my-4 gap-2">
               {offers.map((service, index) => (
                 <li
                   key={index}

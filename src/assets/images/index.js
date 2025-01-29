@@ -64,6 +64,9 @@ import inventoryCount from "@/assets/images/services/inventory.png";
 import binPutWay from "@/assets/images/services/waste-bin.png";
 import binTransfer from "@/assets/images/services/recycle.png";
 import warehouseSolution from "@/assets/images/services/wraehouse-solution.png";
+import airService from "@/assets/images/services/air-service.png";
+import trainService from "@/assets/images/services/train-service.png";
+import roadService from "@/assets/images/services/road-service.png";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -352,4 +355,7 @@ export {
   vinsumAxpressPlantImage03,
   vinsumAxpressPlantImage04,
   vinsumAxpressPlantImage05,
+  airService,
+  trainService,
+  roadService,
 };

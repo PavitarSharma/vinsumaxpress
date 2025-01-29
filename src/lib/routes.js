@@ -31,4 +31,8 @@ export const ROUTES = {
   WOODEN_PALLETS: "/wooden-pallets",
   THERMOFORMING_TRAYS: "/thermoforming-trays",
   CUSTOMIZE_WOODEN_PACKAGING_BOX: "/customize-wooden-packaging-box",
+
+  AIR_SERVICE: "/air-service",
+  RAIL_SERVICE: "/rail-service",
+  ROAD_SERVICE: "/road-service",
 };
