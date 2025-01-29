@@ -63,6 +63,8 @@ import inventoryAdjustment from "@/assets/images/services/order-delivery.png";
 import inventoryCount from "@/assets/images/services/inventory.png";
 import binPutWay from "@/assets/images/services/waste-bin.png";
 import binTransfer from "@/assets/images/services/recycle.png";
+import warehouseSolution from "@/assets/images/services/wraehouse-solution.png";
+
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
 import vinsumMap from "@/assets/images/about/map.png";
@@ -168,7 +170,7 @@ import thermoFormingImage2 from "@/assets/images/packaging/htgbcv-10.png";
 import thermoFormingImage3 from "@/assets/images/packaging/fuyfjhv-10.png";
 import thermoFormingImage4 from "@/assets/images/packaging/B10.png";
 
-// Packaging
+// Packaging Solution
 import packagingSolutionManagment from "@/assets/images/packaging/packaging-solution-managment.png";
 import returnablePackaging from "@/assets/images/packaging/returanable-packaging.png";
 import timeConsuming from "@/assets/images/packaging/demerits-icon-time.png";
@@ -328,6 +330,7 @@ export {
   fourPlInplantLogistics3,
   transferOrder,
   lookup,
+  warehouseSolution,
   shipment,
   inventoryAdjustment,
   inventoryCount,
