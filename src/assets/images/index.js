@@ -1,5 +1,6 @@
 import Logo from "@/assets/images/logo.svg";
 import twentyThreeYears from "@/assets/images/23-Years.png";
+import twentyThreeYearsSvg from "@/assets/images/23_years.svg";
 import integrity from "@/assets/images/integrity.png";
 import partnership from "@/assets/images/parntnership.png";
 import excellence from "@/assets/images/excellence.png";
@@ -31,6 +32,7 @@ import twitter from "@/assets/images/twitter.png";
 import linkedin from "@/assets/images/linkedin.png";
 import threads from "@/assets/images/threads.png";
 import youtube from "@/assets/images/youtube.png";
+import erp from "@/assets/images/erp.png";
 
 // Services
 import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png";
@@ -358,4 +360,6 @@ export {
   airService,
   trainService,
   roadService,
+  erp,
+  twentyThreeYearsSvg
 };

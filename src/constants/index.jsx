@@ -466,9 +466,9 @@ export const clients = [
   {
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Fiat_logo23.png",
   },
-  {
-    logo: "https://upload.wikimedia.org/wikipedia/en/3/34/Logo_for_Maruti_Suzuki.svg",
-  },
+  // {
+  //   logo: "https://upload.wikimedia.org/wikipedia/en/3/34/Logo_for_Maruti_Suzuki.svg",
+  // },
   {
     logo: "https://vinsumaxpress.com/assets/img/clients/sonalika-international-logo.png",
   },
@@ -484,24 +484,24 @@ export const clients = [
   {
     logo: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Yazaki_company_logo.svg",
   },
-  {
-    logo: "https://www.jtekt.co.in/Images/logo.png",
-  },
+  // {
+  //   logo: "https://www.jtekt.co.in/Images/logo.png",
+  // },
   {
     logo: "https://upload.wikimedia.org/wikipedia/en/d/df/Ashok_Leyland_logo.svg",
   },
-  {
-    logo: "/clients/moonlight.png",
-  },
+  // {
+  //   logo: "/clients/moonlight.png",
+  // },
   {
     logo: "https://musashi.co.in/images/logo.png",
   },
   {
     logo: "https://cnhi-p-001-delivery.sitecorecontenthub.cloud/api/public/content/f68ff49b2cb542afb061e36729b1da2a?v=80d468ad&t=Size200",
   },
-  {
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFIU2-8eAR2Kw/company-logo_200_200/company-logo_200_200/0/1728074552776/carraro_technologies_india_pvt_ltd_logo?e=2147483647&v=beta&t=vwUAM0nkeBHKLmzAWHGSnF266rT84NEsBud-sGqcmvk",
-  },
+  // {
+  //   logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFIU2-8eAR2Kw/company-logo_200_200/company-logo_200_200/0/1728074552776/carraro_technologies_india_pvt_ltd_logo?e=2147483647&v=beta&t=vwUAM0nkeBHKLmzAWHGSnF266rT84NEsBud-sGqcmvk",
+  // },
   {
     logo: "https://www.surinauto.com/wp-content/uploads/2023/09/logo.webp",
   },
@@ -728,14 +728,14 @@ export const visnumNetwork = {
 };
 
 export const leadershipTeams = [
-  {
-    image: chairman,
-    name: "Mr. Vinod Sharma",
-    position: "Chairman & Managing Director",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
+  // {
+  //   image: chairman,
+  //   name: "Mr. Vinod Sharma",
+  //   position: "Chairman & Managing Director",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
   {
     image: profileUser,
     name: "Mrs. Kusum Sharma",

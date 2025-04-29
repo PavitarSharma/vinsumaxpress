@@ -87,6 +87,8 @@ import {
 import { ROUTES } from "@/lib/routes";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { LuArrowUp } from "react-icons/lu";
+import { Sidebar } from "lucide-react";
+import SocialSidebar from "./components/Sidebar";
 
 const App = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
@@ -233,6 +235,17 @@ const App = () => {
             <LuArrowUp size={26} />
           </button>
         )}
+
+        {/* <div className="fixed top-1/2 right-0 transform -translate-y-1/2 flex flex-col space-y-4 z-50">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-r-lg shadow-md">
+            Button 1
+          </button>
+          <button className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-r-lg shadow-md">
+            Button 2
+          </button>
+        </div> */}
+
+        <SocialSidebar />
 
         <Popover>
           <PopoverTrigger asChild>

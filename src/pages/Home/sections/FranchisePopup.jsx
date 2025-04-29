@@ -29,6 +29,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { franchise } from "@/assets/images";
 import { memo, useState } from "react";
+import { twentyThreeYearsSvg } from "@/assets/images";
 
 const formSchema = z.object({
   panNumber: z
@@ -89,15 +90,24 @@ const Franchise = ({ setShowFranchisePopup }) => {
   };
 
   return (
-    <div className="grid md:grid-cols-2 gap-6">
-      <figure className="h-full md:block hidden">
+    <div className="grid md:grid-cols-[60%_40%] gap-6">
+      <figure className="h-full md:block hidden bg-white">
         <img
           src={franchise}
           alt="franchise"
           className="h-full w-full rounded-xl"
         />
       </figure>
-      <Card>
+      <figure className="h-full md:block hidden bg-white">
+        <img
+          src={twentyThreeYearsSvg}
+          alt="franchise"
+          className="h-full w-full rounded-xl"
+        />
+      </figure>
+
+
+      {/* <Card className="bg-primary">
         <CardHeader>
           <CardTitle>Join Our Franchise Network</CardTitle>
           <CardDescription>
@@ -167,7 +177,7 @@ const Franchise = ({ setShowFranchisePopup }) => {
             </form>
           </Form>
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   );
 };

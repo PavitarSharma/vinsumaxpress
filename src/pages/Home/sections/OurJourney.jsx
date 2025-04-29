@@ -83,20 +83,22 @@ const OurJourney = () => {
           </p>
         </div> */}
 
-        <div className="my-8 text-center text-base antialiased  tracking-wider text-red-600 bg-background rounded px-6 py-2.5 font-semibold justify-self-center">
+        <div className="my-8 text-center text-4xl antialiased  tracking-wider text-red-600 bg-background rounded px-6 py-2.5 font-semibold justify-self-center w-100 h-16">
           Our Journey
         </div>
 
-        <div className="relative lg:aspect-auto lg:h-[600px] aspect-video w-full">
-          <video
-            ref={videoRef}
-            muted
-            autoPlay
-            title="Growth Track"
-            className="w-full h-full object-cover"
-          >
-            <source src={growthTrackerVideo} type="video/mp4" />
-          </video>
+          <div className="relative w-full aspect-video">
+            <video
+              ref={videoRef}
+              muted
+              autoPlay
+              loop
+              playsInline
+              title="Growth Track"
+              className="w-full h-full object-cover"
+            >
+              <source src={growthTrackerVideo} type="video/mp4" />
+            </video>
           <div className="absolute  right-0 top-0 bottom-0 bg-cardBackground w-1 z-10 h-full"></div>
           <div className="absolute bottom-0 left-0 right-0 bg-cardBackground h-2"></div>
         </div>

@@ -18,7 +18,7 @@ const WhyUs = () => {
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="max-w-xl space-y-3">
           {/* <p className="text-lg text-red-600">About us</p> */}
-          <h1 className="card-title">WHY US.</h1>
+          <h1 className="card-title">WHY CHOOSE US.</h1>
           <p className="card-description">
             Innovative Solutions for Every Journey: From real-time tracking to
             customized logistics plans, we adapt to your needs for maximum

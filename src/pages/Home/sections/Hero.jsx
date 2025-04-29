@@ -4,12 +4,58 @@ import { useNavigate } from "react-router-dom";
 import { ROUTES } from "@/lib/routes";
 import { LuArrowRight } from "react-icons/lu";
 import { useFormik } from "formik";
+import { useCallback, useState } from "react";
+import TrackShipment from "@/pages/Home/sections/TrackShipment";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 import toast from "react-hot-toast";
 import axios from "axios";
-import { useCallback, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import TrackShipment from "@/pages/Home/sections/TrackShipment";
+import { franchise } from "@/assets/images";
+import { memo } from "react";
+import { twentyThreeYearsSvg } from "@/assets/images";
+
+
+const formSchema = z.object({
+  panNumber: z
+    .string()
+    .regex(/[A-Z]{5}[0-9]{4}[A-Z]{1}$/, "Invalid PAN number format")
+    .length(10, { message: "PAN number must be exactly 10 characters" })
+    .trim(),
+  name: z.string().min(1, "Name is required").trim(),
+  mobile: z
+    .string()
+    .regex(/^\d{10}$/, { message: "Mobile number must be exactly 10 digits" })
+    .trim(),
+  address: z.string().min(1, "Address is required").trim(),
+  remarks: z.string().min(1, "Remarks are required").trim(),
+  service: z.string().min(1, "Please select your service.").trim(),
+});
+
 const Hero = () => {
   const [isTracking, setIsTracking] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -50,6 +96,49 @@ const Hero = () => {
     },
   });
 
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      panNumber: "",
+      name: "",
+      mobile: "",
+      address: "",
+      remarks: "",
+      service: "",
+    },
+  });
+
+  const onSubmit = async (values) => {
+    setIsLoading(true);
+    try {
+      const requestBody = {
+        panNo: values.panNumber,
+        name: values.name,
+        address: values.address,
+        customerType: values.service,
+        mobileNumber: +values.mobile,
+        remarks: values.remarks,
+      };
+      await axios.post(
+        "http://ccptestapi.vinsumaxpress.com/api/Franchise/Request",
+        requestBody,
+        { headers: { "Content-Type": "application/json" } }
+      );
+      toast.success("Request submitted successfully");
+      form.reset();
+      setTimeout(() => setShowFranchisePopup(false), 500);
+      // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  
+
   const handleTrackShipmentClose = useCallback(() => {
     setOpenTrackShipment((prev) => !prev);
     setShipment(null);
@@ -64,14 +153,27 @@ const Hero = () => {
       />
       <section id="heroSection" className=" w-full relative">
         <div className="text-white container">
-          <div className="md:pt-36  sm:pt-44 pt-32 max-[360px]:pt-36 pb-10 grid md:grid-cols-2">
-            <div className="flex flex-col gap-6">
+          <div className="md:pt-36  sm:pt-44 pt-32 max-[360px]:pt-36 pb-4 grid md:grid-cols-2">
+            <div className="flex flex-col gap-6 mt-12 ">
               <h1 className="sm:text-5xl text-3xl font-bold uppercase leading-tight">
-                WE WILL <span className="text-primary">DELIVER</span> YOUR
+                WE <span className="text-primary">DELIVER</span> YOUR
                 PACKAGE ALL OVER{" "}
                 <span className="text-primary">THE WORLD.</span>
               </h1>
-              <div className="px-4  rounded w-full bg-zinc-400/50 slider">
+             <div className="grid md:grid-cols-2 gap-6">
+          
+          <div className="space-y-6 md:ml-auto">
+            <p className="max-w-72">
+              Become a franchisee, and invest in a promising partnership.
+            </p>
+            <Button onClick={() => navigate(ROUTES.FRANCHISE)}>
+              JOIN TODAY <LuArrowRight size={18} />
+            </Button>
+          </div>
+        </div>
+            </div>
+            <div className="md:ml-auto md:mt-0 mt-8  gap-10 flex flex-col h-full mr-24">
+               <div className="px-4  rounded w-full bg-zinc-400/50 slider">
                 <span className="slider__word">“Lightning-fast delivery!”</span>
                 <span className="slider__word">
                   “Efficient. Accurate. On-Time.”
@@ -99,7 +201,7 @@ const Hero = () => {
                   </span>
                 </div>
 
-                <form
+                {/* <form
                   onSubmit={formik.handleSubmit}
                   className="rounded-2xl p-4 space-y-3 isolate bg-white/20 shadow-lg ring-1 ring-black/5"
                 >
@@ -178,38 +280,83 @@ const Hero = () => {
                   ) : (
                     "Track Now"
                   )}
-                </Button> */}
-                </form>
-              </div>
-            </div>
-            <div className="md:ml-auto md:mt-0 mt-8  gap-10 flex flex-col h-full">
-              <img
-                src={twentyThreeYears}
-                alt="twentyThreeYears"
-                className="md:h-60 md:w-60 h-40 w-40 object-contain md:block hidden"
-              />
-              <div className="space-y-6 md:ml-auto">
-                <p className="max-w-72">
-                  Become a franchisee, and invest in a promising partnership.
-                </p>
-                <Button onClick={() => navigate(ROUTES.FRANCHISE)}>
-                  JOIN TODAY <LuArrowRight size={18} />
-                </Button>
-              </div>
-            </div>
-          </div>
+                </Button> 
+                </form> */}
 
-          {/* <div className="grid md:grid-cols-2 gap-6 py-10">
-          
-          <div className="space-y-6 md:ml-auto">
-            <p className="max-w-72">
-              Become a franchisee, and invest in a promising partnership.
-            </p>
-            <Button onClick={() => navigate(ROUTES.FRANCHISE)}>
-              JOIN TODAY <LuArrowRight size={18} />
-            </Button>
+                <Card className="bg-primary">
+        <CardHeader>
+          <CardTitle>Join Our Franchise Network</CardTitle>
+          <CardDescription>
+            Join our growing network of franchises and take the first step
+            toward success.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { name: "panNumber", label: "Pan Number" },
+                  { name: "name", label: "Name" },
+                  { name: "mobile", label: "Mobile No" },
+                  { name: "address", label: "Address" },
+                  { name: "remarks", label: "Remarks" },
+                ].map((field) => (
+                  <FormField
+                    key={field.name}
+                    control={form.control}
+                    name={field.name}
+                    render={({ field: inputField }) => (
+                      <FormItem>
+                        <FormLabel>{field.label}</FormLabel>
+                        <FormControl>
+                          <Input {...inputField} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                ))}
+                <FormField
+                  control={form.control}
+                  name="service"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Service</FormLabel>
+                      <Select onValueChange={field.onChange}>
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select service" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          {[
+                            "Booking Agent",
+                            "Delivery Agent",
+                            "Vendor/Partner",
+                          ].map((value) => (
+                            <SelectItem key={value} value={value}>
+                              {value}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <Button type="submit" disabled={isLoading}>
+                {isLoading ? "Loading..." : "Submit"}
+              </Button>
+            </form>
+          </Form>
+        </CardContent>
+      </Card>
+              </div>
+            </div>
           </div>
-        </div> */}
         </div>
 
         <video

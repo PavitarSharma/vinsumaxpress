@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const isFranchisePopup = sessionStorage.getItem("showFranchisePopup");
 
-    if (!isFranchisePopup) {
+    if (!isFranchisePopup || isFranchisePopup) {
       setShowFranchisePopup(true);
       sessionStorage.setItem("showFranchisePopup", true);
     }
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <>
       <Dialog open={showFranchisePopup} onOpenChange={setShowFranchisePopup}>
-        <DialogContent className="max-w-4xl">
+        <DialogContent className="max-w-4xl bg-primary">
           <FranchisePopup setShowFranchisePopup={setShowFranchisePopup} />
         </DialogContent>
       </Dialog>

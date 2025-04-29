@@ -102,7 +102,7 @@ const Navbar = () => {
           <a href={companyDetail.thread} target="_blank">
             <BsThreadsFill />
           </a>
-          <a
+          {/* <a
             href="http://ggco.vinsumaxpress.com"
             target="_blank"
             className="sm:inline hidden text-black"
@@ -119,7 +119,7 @@ const Navbar = () => {
             <Button type="button" size="sm">
               HRMS Login
             </Button>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="container h-14 flex items-center justify-between">
