@@ -16,8 +16,8 @@ const OurService = () => {
       <div className="container bg-white rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="max-w-xl space-y-3">
           <p className="text-lg text-red-600">Our Service</p>
-          <h1 className="card-title">
-            Manage Your Package From Local To The World
+          <h1 className="card-title md:w-full">
+            Comprehensive Package Solutions—Locally and Globally
           </h1>
           <p className="card-description">
             Vinsum is a logistics provider of integrated freight solutions.

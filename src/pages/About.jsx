@@ -33,14 +33,14 @@ const About = () => {
   return (
     <>
       <section className="py-6">
-        <div className="container grid lg:grid-cols-2 gap-4">
+        <div className="container grid lg:grid-cols-[55%_45%] gap-4 ">
           <div className="lg:order-1 order-1">
-            <div className="bg-neutral-200 rounded p-1 px-2 w-fit">
+            {/* <div className="bg-neutral-200 rounded p-1 px-2 w-fit">
               “Delivering More Than Just Packages.”
-            </div>
+            </div> */}
             <h1 className="sm:text-5xl text-5xl font-bold my-4">About Us</h1>
             <div>
-              <p className="text-lg">Do you know that</p>
+              {/* <p className="text-lg">Do you know that</p>
               <ul className="pl-4 list-disc mt-2 space-y-1">
                 <li className="">
                   We&#39;ve been the leading logistics company in India for the
@@ -61,20 +61,30 @@ const About = () => {
                   provide exceptional service and build lasting relationships.
                 </li>
                 <li>We are hiring. Click the button below to join us.</li>
-              </ul>
+              </ul> */}
+              <p className="text-base">
+                At Vinsum Axpress, we’ve been shaping the future of logistics in India for over 23 years—earning a reputation as one of the country’s most trusted and innovative logistics providers. <br/><br/>
+With a robust network of 75+ strategically located branches and 53+ fully equipped warehouses across India, we ensure seamless connectivity and reliable coverage to meet your logistics needs—no matter where you are.  <br/><br/>
+Our commitment is grounded in our core values:
+ Integrity. Accountability. Excellence. Innovation.
+ These principles guide everything we do—from operations to customer engagement—ensuring we deliver consistent value and superior service.  <br/><br/>
+We’re proud to serve a growing portfolio of 500+ satisfied clients, ranging from dynamic startups to Fortune 100 companies. At Vinsum, we believe in building not just business partnerships but lasting relationships built on trust, performance, and mutual growth. <br/><br/>
+And we’re growing!
+ We're always on the lookout for passionate, talented individuals to join our journey.
+              </p>
             </div>
             <Link to={ROUTES.CAREER}>
               <Button className="mt-4">
-                We are hiring <LuMoveRight size={18} />
+                Join our Vinsum family <LuMoveRight size={18} />
               </Button>
             </Link>
           </div>
 
-          <figure className="lg:order-2 order-2">
+          <figure className="lg:order-2 order-2 h-[95%] w-full">
             <img
               src={vinsumNetworkMap}
               alt="vinsum-warehouse"
-              className="rounded-2xl h-full brightness-90 shadow-xl p-1"
+              className="rounded-2xl h-full brightness-90 shadow-xl p-5"
             />
           </figure>
         </div>
@@ -228,12 +238,10 @@ const About = () => {
 
               <div className="w-full relative  flex flex-col justify-center p-4 px-8">
                 <div className="relative lg:pt-20 pt-10">
-  
+                  <p className="text-3xl leading-relaxed relative text-black font-bold">Welcome to Vinsum Axpress</p>
                   <p className="text-2xl leading-relaxed relative before:content-[''] before:absolute before:lg:-left-16 before:-left-12 before:top-5 before:lg:w-14 before:w-10 before:h-[1px] before:bg-black">
-                    Join us on an extraordinary journey of growth, where we
-                    strive for excellence and work together to achieve the best
-                    for
-                    <strong> our business.</strong>
+                    Join us on a remarkable journey of growth, innovation, and excellence. At Vinsum Axpress, we believe in the power of collaboration to drive success
+                    <strong> — for our business, our partners, and our clients.</strong>
                   </p>
                 </div>
 
@@ -241,44 +249,42 @@ const About = () => {
                   <div className="flex gap-4 items-start">
                     <div className="w-3 h-3 bg-black mt-2"></div>
                     <p className="flex-1">
-                      On behalf of Vinsum Axpress, I warmly welcome you all and
-                      extend our heartfelt gratitude to our customers for their
-                      continued support, particularly during our initial years.
+                      On behalf of the entire Vinsum Axpress team, I extend a warm welcome and sincere gratitude to our valued customers for their continued support, especially during our formative years. Your trust has been the foundation of our progress.
                     </p>
                   </div>
 
                   <div className="flex gap-4 items-start">
                     <div className="w-3 h-3 bg-black mt-2"></div>
                     <p className="flex-1">
-                      Vinsum Axpress is dedicated to offering cost-effective
-                      transportation solutions. Our services span across surface
-                      transport, warehouse management, international freight
-                      forwarding, express distribution, 3PL/4PL solutions, and
-                      packaging.
+                      Vinsum Axpress is committed to delivering cost-effective, reliable, and scalable transportation and logistics solutions. Our comprehensive offerings include: <br/>
+                      ♦ Surface Transportation <br/>
+                      ♦ Warehouse Management <br/>
+                      ♦ Global Freight Forwarding <br/>
+                      ♦ Express Distribution <br/>
+                      ♦ 3PL & 4PL Logistics Solutions <br/>
+                      ♦ Specialized Packaging Services
+                    </p>
+                    <p></p>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-3 h-3 bg-black mt-2"></div>
+                    <p className="flex-1">
+                      We are proud to be a preferred logistics partner for several Fortune 100 automobile companies and a trusted contributor to the modernization of India’s logistics ecosystem. Our focus remains on delivering value, fostering long-term partnerships, and continuously enhancing service quality through innovation and technology.
                     </p>
                   </div>
 
                   <div className="flex gap-4 items-start">
                     <div className="w-3 h-3 bg-black mt-2"></div>
                     <p className="flex-1">
-                      We are honored to be the preferred supplier for Fortune
-                      100 automobile companies and a key point of contact for
-                      enhancing efficiency within India&#39;s logistics
-                      landscape.
-                    </p>
-                  </div>
-
-                  <div className="flex gap-4 items-start">
-                    <div className="w-3 h-3 bg-black mt-2"></div>
-                    <p className="flex-1">
-                      With over 23+ years of experience across various
-                      industries, our unwavering dedication to value delivery
-                      has earned us the trust of our clients.
+                      With over 23 years of cross-industry experience, we have cultivated a deep understanding of complex supply chain dynamics. Our solutions are tailored to maximize efficiency, reduce operational costs, and ensure end-to-end visibility.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+            <p className="w-full text-center font-semibold text-base" >Thank you for being a part of the Vinsum Axpress journey.</p>
+            <br/><br/>
           </div>
         </div>
       </section>
@@ -290,10 +296,8 @@ const About = () => {
               LEADERSHIP TEAM
             </div>
 
-            <p className="text-center max-w-lg text-neutral-500 mx-auto">
-              Our dynamic team thrives on curiosity, relentlessly questioning
-              the status quo, experimenting with fresh ideas, and pushing
-              boundaries to unleash creativity at every turn.
+            <p className="sm:w-full text-center text-neutral-500 mx-auto md:px-40">
+              Our dynamic team is driven by curiosity and innovation—constantly challenging conventions, embracing bold ideas, and pushing boundaries to unlock creativity and deliver forward-thinking solutions at every step.
             </p>
           </div>
 

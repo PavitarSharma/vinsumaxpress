@@ -350,37 +350,37 @@ export const homeAboutCards = [
     image: realTimeLocator,
     title: "Real Time Tracking",
     description:
-      "Experience immediate updates and reduced concerns. Prepare to engage with the future of logistics, where efficiency and reliability are paramount.",
+      "Stay informed with real-time updates and worry-free service. Step into the future of logistics—where efficiency meets unwavering reliability.",
   },
   {
     image: safeDelivery,
     title: "Damage-free Delivery",
     description:
-      "Count on us to ensure damage-free delivery with every shipment, setting the standard for excellence!",
+      "Rely on us for safe, damage-free deliveries—setting the benchmark for quality and reliability in every shipment.",
   },
   {
     image: customizedPackaging,
     title: "Flexible Packaging Service",
     description:
-      "We offer Versatile Packaging that provides limitless possibilities to meet the diverse needs of your organization effectively.",
+      "We provide versatile packaging solutions designed to meet your organization's diverse and evolving needs seamlessly.",
   },
   {
     image: warehouseService,
     title: "Warehouse Services",
     description:
-      "Streamline your warehouse, supercharge your efficiency! From storage to shipping, our smart solutions keep your operations moving at the speed of success.",
+      "Optimize your warehouse and boost efficiency with ease. From storage to shipping, our smart solutions keep your operations running smoothly and at peak performance.",
   },
   {
     image: techDriven,
     title: "Tech-Driven Solutions",
     description:
-      "Unlock the future with tech-driven solutions that turn challenges into opportunities! Let innovation lead the way to smarter, faster, and more connected possibilities.",
+      "Embrace the future with technology-driven solutions that transform challenges into opportunities. Let innovation drive smarter, faster, and more connected outcomes.",
   },
   {
     image: customerSupport,
     title: "24/7 Customer Support",
     description:
-      "We are Here for You Around the Clock: Just a call away, our dedicated team is ready to assist 24/7",
+      "Our dedicated team is always just a call away, ready to support you anytime, day or night.",
   },
 ];
 

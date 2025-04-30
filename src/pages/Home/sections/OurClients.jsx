@@ -24,22 +24,18 @@ const OurClients = () => {
   return (
     <section id="ourClients" className="section px-4">
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
-        <div className="max-w-xl space-y-3">
+        <div className="space-y-3">
           <h1 className="text-lg text-red-600">Our Clients</h1>
           <h1 className="card-title">
-            WITH OVER <span className="text-primary">500+ HAPPY CLIENTS</span> —
-            VINSUM ELEVATED THE CREDIBILITY BAR HIGH
+            WITH OVER <span className="text-primary">500+ satisfied CLIENTS</span>, Vinsum has set a new standard for trust and reliability in the logistics industry.
           </h1>
           <p className="card-description">
-            Over 23+ years of experience in logistics and supply chain
-            management with a base of 500+ satisfied customers including but not
-            limited to:
+            With over 23 years of expertise in logistics and supply chain management, Vinsum proudly serves a diverse base of 500+ satisfied customers, including but not limited to
           </p>
         </div>
 
         <div className="my-8 text-center text-base antialiased w-full tracking-wider text-red-600 bg-background rounded p-1 py-2 ">
-          Vinsum is the trusted choice of industry leaders for accelerating
-          revenue growth.
+          Vinsum is the preferred partner for industry leaders seeking to drive accelerated revenue growth.
         </div>
 
         <Swiper

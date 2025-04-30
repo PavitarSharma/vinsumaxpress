@@ -47,25 +47,25 @@ const OurJourney = () => {
 
   return (
     <section id="ourJourney" className="section px-4">
-      <div className="bg-cardBackground rounded-2xl  overflow-hidden shadow">
-        <div className="w-full  flex md:flex-row flex-col rounded-2xl">
+      <div className="bg-cardBackground rounded-2xl overflow-hidden shadow">
+        <div className="w-full flex md:flex-row flex-col rounded-2xl">
           <div className="bg-primary md:py-4 py-8 text-white text-center flex items-center justify-center">
-            <p className="md:text-5xl text-4xl font-bold text-text text-white justify-self-center	leading-tight">
-              VINSUM IN NUMBERS
+            <p className="md:text-5xl text-4xl font-bold text-text text-white justify-self-center	leading-tight uppercase">
+              Behind the Success
             </p>
           </div>
-          <div className="md:w-2/3 w-full bg-black text-white md:py-6 py-10 px-4 flex gap-8 flex-wrap items-center justify-center">
-              <VinsumCoutup total={700} title="Current Workforce" />
-              <VinsumCoutup total={60} title="Office Locations" />
-              <VinsumCoutup total={23} title="Years Experience" />
-              <VinsumCoutup total={500} title="Happy Clients" />
+          <div className="md:w-2/3 w-full bg-black text-white md:py-6 py-10 px-4 flex gap-16 flex-wrap items-center justify-center">
+              <VinsumCountup total={700} title="Current Workforce" />
+              <VinsumCountup total={60} title="Office Locations" />
+              <VinsumCountup total={23} title="Years Experience" />
+              <VinsumCountup total={500} title="Happy Clients" />
             </div>
           {/* <div className="w-2/3 bg-black">
             <div className="my-8 flex gap-8 flex-wrap">
-              <VinsumCoutup total={700} title="Current Workforce" />
-              <VinsumCoutup total={60} title="Office Locations" />
-              <VinsumCoutup total={23} title="Years Experience" />
-              <VinsumCoutup total={500} title="Happy Clients" />
+              <VinsumCountup total={700} title="Current Workforce" />
+              <VinsumCountup total={60} title="Office Locations" />
+              <VinsumCountup total={23} title="Years Experience" />
+              <VinsumCountup total={500} title="Happy Clients" />
             </div>
           </div> */}
         </div>
@@ -83,11 +83,11 @@ const OurJourney = () => {
           </p>
         </div> */}
 
-        <div className="my-8 text-center text-4xl antialiased  tracking-wider text-red-600 bg-background rounded px-6 py-2.5 font-semibold justify-self-center w-100 h-16">
+        <div className="my-8 text-center text-4xl antialiased tracking-wider text-red-600 bg-background rounded px-6 py-2.5 font-semibold justify-self-center w-100 h-16">
           Our Journey
         </div>
 
-          <div className="relative w-full aspect-video">
+          <div className="relative w-full bg-red-800 h-96 mt-8 mb-8">
             <video
               ref={videoRef}
               muted
@@ -95,11 +95,11 @@ const OurJourney = () => {
               loop
               playsInline
               title="Growth Track"
-              className="w-full h-full object-cover"
+              className="w-full h-96 object-cover "
             >
               <source src={growthTrackerVideo} type="video/mp4" />
             </video>
-          <div className="absolute  right-0 top-0 bottom-0 bg-cardBackground w-1 z-10 h-full"></div>
+          <div className="absolute right-0 top-0 bottom-0 bg-cardBackground w-1 z-10 h-full"></div>
           <div className="absolute bottom-0 left-0 right-0 bg-cardBackground h-2"></div>
         </div>
       </div>
@@ -107,10 +107,10 @@ const OurJourney = () => {
   );
 };
 
-const VinsumCoutup = ({ total, title }) => {
+const VinsumCountup = ({ total, title }) => {
   return (
     <div className="flex flex-col gap-1 items-center">
-      <h3 className="text-4xl font-bold text-white">
+      <h3 className="text-5xl font-bold text-white">
         <CountUp end={total} duration={2} />+
       </h3>
       <p className="text-base text-text text-white">{title}</p>

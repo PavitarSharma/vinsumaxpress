@@ -20,9 +20,9 @@ const WhyUs = () => {
           {/* <p className="text-lg text-red-600">About us</p> */}
           <h1 className="card-title">WHY CHOOSE US.</h1>
           <p className="card-description">
-            Innovative Solutions for Every Journey: From real-time tracking to
-            customized logistics plans, we adapt to your needs for maximum
-            efficiency and transparency.
+            Innovative Logistics, Tailored for You:
+From real-time tracking to personalized delivery strategies, we provide adaptive solutions that maximize efficiency and ensure complete transparency throughout your journey.
+
           </p>
         </div>
 
