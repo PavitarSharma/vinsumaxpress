@@ -47,6 +47,8 @@ const formSchema = z.object({
   service: z.string().min(1, "Please select your service.").trim(),
 });
 
+// FEBA17
+
 const Franchise = ({ setShowFranchisePopup }) => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -90,19 +92,19 @@ const Franchise = ({ setShowFranchisePopup }) => {
   };
 
   return (
-    <div className="grid md:grid-cols-[60%_40%] gap-6">
-      <figure className="h-full md:block hidden bg-white">
+    <div className="grid md:grid-cols-[60%_40%] text-center">
+      <figure className="h-full">
         <img
           src={franchise}
           alt="franchise"
           className="h-full w-full rounded-xl"
         />
       </figure>
-      <figure className="h-full md:block hidden bg-white">
+      <figure className="h-full md:block hidden content-center">
         <img
           src={twentyThreeYearsSvg}
           alt="franchise"
-          className="h-full w-full rounded-xl"
+          className="w-[70%] h-[60%] mx-auto"
         />
       </figure>
 

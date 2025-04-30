@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-50  w-full top-0 left-0 ${
+      className={`z-50  w-full uppercase top-0 left-0  ${
         pathname === "/" ? "fixed" : "sticky text-black"
       } ${
         navBg
@@ -62,32 +62,39 @@ const Navbar = () => {
           : pathname === "/" && "text-primary-foreground"
       }`}
     >
-      <div className="container py-3 flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <a
+      <div className="px-5 md:px-14 py-2  flex flex-wrap items-center justify-between bg-gray-300 w-full">
+        <div className="text-black">
+          {/* <a
             href={`tel:${companyDetail.contact}`}
             className="flex items-center gap-2"
           >
             <FaPhoneAlt />
-            <span className="text-sm">{companyDetail.contact}</span>
-          </a>
+            <span className="text-sm text-black">{companyDetail.contact}</span>
+          </a> */}
           {/* <div className="flex items-center gap-2">
           <FaLocationDot />
           <span className="text-sm">{companyDetail.location}</span>
         </div> */}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 text-black">
+          <a
+            href={`tel:${companyDetail.contact}`}
+            className="flex items-center gap-2"
+          >
+            <FaPhoneAlt />
+            <span className="text-base">{companyDetail.contact}</span>
+          </a>
           <a
             href={`mailto:${companyDetail.email}`}
             className="flex items-center gap-2"
           >
             <IoMdMail size={20} />
-            <span className="text-sm sm:inline hidden">
+            <span className="text-base sm:inline hidden">
               {companyDetail.email}
             </span>
           </a>
-          <a href={companyDetail.facebook} target="_blank">
+          {/* <a href={companyDetail.facebook} target="_blank">
             <FaFacebookF />
           </a>
           <a href={companyDetail.linkedin} target="_blank">
@@ -101,7 +108,7 @@ const Navbar = () => {
           </a>
           <a href={companyDetail.thread} target="_blank">
             <BsThreadsFill />
-          </a>
+          </a> */}
           {/* <a
             href="http://ggco.vinsumaxpress.com"
             target="_blank"
@@ -223,10 +230,10 @@ const Navbar = () => {
                 {submenu ? (
                   <>
                     <NavigationMenuTrigger>
-                      <p className="text-base font-normal">{label}</p>
+                      <p className="text-lg uppercase font-normal text-black hover:font-semibold">{label}</p>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid grid-cols-2 gap-2 p-2 xl:w-[640px] md:w-[540px]">
+                      <ul className="grid grid-cols-2 gap-2 p-2 xl:w-[640px] md:w-[540px] uppercase text-black font-normal">
                         {submenu.map(({ href, label, icon }, index) => (
                           <li key={index}>
                             <NavigationMenuLink href={href} asChild>
@@ -234,8 +241,12 @@ const Navbar = () => {
                                 to={href}
                                 className="flex gap-3 select-none p-2 rounded-sm transition-colors hover:bg-foreground/5 items-center"
                               >
-                                <div className="w-10 h-10 bg-foreground/10 rounded-sm shadow-sm border-t border-foreground/5 flex-shrink-0 grid place-items-center">
-                                  {icon}
+                                <div className="w-10 h-10 bg-gray-500 rounded-sm shadow-sm border-t border-foreground/5 flex-shrink-0 grid place-items-center">
+                                  <img
+                                    src={icon}
+                                    alt="logo"
+                                    className="w-8 h-8 object-contain"
+                                  />
                                 </div>
 
                                 <div
@@ -259,8 +270,8 @@ const Navbar = () => {
                     to={href}
                     className={({ isActive }) =>
                       isActive
-                        ? "text-primary font-medium"
-                        : "hover:text-primary"
+                        ? "text-primary font-medium text-lg"
+                        : "hover:font-semibold text-lg text-black font-normal"
                     }
                   >
                     <NavigationMenuLink>{label}</NavigationMenuLink>
@@ -270,7 +281,7 @@ const Navbar = () => {
             ))}
             <NavigationMenuItem>
               <Link to={ROUTES.CONTACT}>
-                <Button>Get in Touch</Button>
+                <Button className="uppercase text-lg">Get in Touch</Button>
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>

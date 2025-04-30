@@ -125,6 +125,12 @@ import {
   roadService,
 } from "@/assets/images";
 
+import { multiModelTransportServiceIcon,
+  threePlServiceIcon,
+  fourPlServiceIcon,
+  warehouseServiceIcon,
+  packagingServiceIcon } from "@/assets/images";
+
 import { ROUTES } from "@/lib/routes";
 import {
   LuGlobe,
@@ -146,16 +152,19 @@ export const navLinks = [
       {
         label: "MultiModal Transportation",
         href: ROUTES.MULTIMODAL_TRANSPORTATION,
+        icon: multiModelTransportServiceIcon
       },
-      { label: "Warehousing Solution", href: ROUTES.WAREHOUSE_SOLUTION },
-      { label: "Packaging Solution", href: ROUTES.PACKAGING_SOLUTION },
+      { label: "Warehousing Solution", href: ROUTES.WAREHOUSE_SOLUTION, icon: warehouseServiceIcon },
+      { label: "Packaging Solution", href: ROUTES.PACKAGING_SOLUTION, icon: packagingServiceIcon },
       {
         label: "3PL & Inventory Solution",
         href: ROUTES.THREEPL_INVENTORY_MANAGEMENT,
+        icon: threePlServiceIcon
       },
       {
         label: "4PL/Inplant Logistics/Project Management",
         href: ROUTES.FOURPL_INPLANT_LOGISTICS_PROJECT_MANAGEMENT,
+        icon: fourPlServiceIcon
       },
     ],
   },

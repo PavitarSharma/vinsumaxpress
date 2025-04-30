@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const isFranchisePopup = sessionStorage.getItem("showFranchisePopup");
 
-    if (!isFranchisePopup || isFranchisePopup) {
+    if (!isFranchisePopup) {
       setShowFranchisePopup(true);
       sessionStorage.setItem("showFranchisePopup", true);
     }

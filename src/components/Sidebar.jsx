@@ -7,7 +7,7 @@ export default function SocialSidebar() {
   return (
     <div className="fixed top-1/2 right-0 transform -translate-y-1/2 flex flex-col items-end space-y-4 z-50">
       {/* Social icons */}
-      <div className="flex flex-col space-y-1">
+      <div className="flex flex-col space-y-1 sm:block hidden">
         <SocialButton icon={<FaFacebookF />} label="Facebook" bgColor="bg-blue-600" link={companyDetail.facebook} />
         <SocialButton icon={<FaLinkedin />} label="Linkedin" bgColor="bg-sky-600" link={companyDetail.linkedin} />
         <SocialButton icon={<FaInstagram />} label="Instagram" bgColor="bg-pink-600" link={companyDetail.instagram} />

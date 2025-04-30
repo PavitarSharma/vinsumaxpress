@@ -1,5 +1,5 @@
 import { heroBannerVideo } from "@/assets/videos";
-import { twentyThreeYears } from "@/assets/images";
+import { heroSectionBg } from "@/assets/images";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "@/lib/routes";
 import { LuArrowRight } from "react-icons/lu";
@@ -151,38 +151,105 @@ const Hero = () => {
         onClose={handleTrackShipmentClose}
         shipment={shipment}
       />
-      <section id="heroSection" className=" w-full relative">
+      <section id="heroSection" className="w-full relative">
         <div className="text-white container">
-          <div className="md:pt-36  sm:pt-44 pt-32 max-[360px]:pt-36 pb-4 grid md:grid-cols-2">
-            <div className="flex flex-col gap-6 mt-12 ">
-              <h1 className="sm:text-5xl text-3xl font-bold uppercase leading-tight">
-                WE <span className="text-primary">DELIVER</span> YOUR
-                PACKAGE ALL OVER{" "}
-                <span className="text-primary">THE WORLD.</span>
-              </h1>
+          <div className="md:pt-32 sm:pt-44 pt-32 max-[360px]:pt-36 pb-4 grid md:grid-cols-2">
+            <div className="content-center md:mt-24">
+              <div className="text-3xl md:text-5xl font-bold uppercase">
+                <p>Worldwide package</p>
+                <p className="md:mt-6">delivery made <span className="text-primary">Seamless</span></p>
+                <p className="md:mt-6">secure and dependable</p>
+              </div>
              <div className="grid md:grid-cols-2 gap-6">
           
-          <div className="space-y-6 md:ml-auto">
-            <p className="max-w-72">
-              Become a franchisee, and invest in a promising partnership.
-            </p>
-            <Button onClick={() => navigate(ROUTES.FRANCHISE)}>
-              JOIN TODAY <LuArrowRight size={18} />
+          <div className="mt-4">
+            <Button className="px-8 py-6 text-xl" onClick={() => navigate(ROUTES.FRANCHISE)}>
+              TRACK YOUR SHIPMENT <LuArrowRight size={20} />
             </Button>
           </div>
         </div>
             </div>
-            <div className="md:ml-auto md:mt-0 mt-8  gap-10 flex flex-col h-full mr-24">
-               <div className="px-4  rounded w-full bg-zinc-400/50 slider">
-                <span className="slider__word">“Lightning-fast delivery!”</span>
-                <span className="slider__word">
-                  “Efficient. Accurate. On-Time.”
-                </span>
-                <span className="slider__word">
-                  “From Us to You, Absolutely Flawless!”
+            <div className="md:ml-auto md:mt-0 mt-4 gap-8 flex flex-col h-full md:mr-24">
+              <div className="md:text-center md:text-3xl text-lg font-bold">
+                             <span className="">BECOME A FRANCHISEE AND INVEST IN A </span>
+                <span className="">
+                  PROMISING PARTNERSHIP
                 </span>
               </div>
-              <div className="max-w-96 w-full border rounded-2xl p-4 space-y-10 bg-white text-black isolate bg-white/20 shadow-lg ring-1 ring-black/5">
+
+      <Card className="w-full border rounded-2xl p-1 bg-white text-black isolate bg-white shadow-lg ring-1 ring-black/5" >
+        <CardHeader>
+          <CardTitle className="text-lg">Join Our Franchise Network</CardTitle>
+          <CardDescription className="text-base text-gray-800">
+            Join our growing network of franchises and take the first step
+            toward success.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { name: "panNumber", label: "Pan Number" },
+                  { name: "name", label: "Name" },
+                  { name: "mobile", label: "Mobile No" },
+                  { name: "address", label: "Address" },
+                  { name: "remarks", label: "Remarks" },
+                ].map((field) => (
+                  <FormField
+                    key={field.name}
+                    control={form.control}
+                    name={field.name}
+                    render={({ field: inputField }) => (
+                      <FormItem>
+                        <FormLabel className="text-lg">{field.label}</FormLabel>
+                        <FormControl>
+                          <Input className="border-black" {...inputField} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                ))}
+                <FormField
+                  control={form.control}
+                  name="service"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-lg">Service</FormLabel>
+                      <Select className="text-lg" onValueChange={field.onChange}>
+                        <FormControl>
+                          <SelectTrigger className="border-black">
+                            <SelectValue placeholder="Select service" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          {[
+                            "Booking Agent",
+                            "Delivery Agent",
+                            "Vendor/Partner",
+                          ].map((value) => (
+                            <SelectItem key={value} value={value}>
+                              {value}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <Button type="submit" disabled={isLoading} className="text-lg">
+                {isLoading ? "Loading..." : "Submit"}
+              </Button>
+            </form>
+          </Form>
+        </CardContent>
+      </Card>
+
+              {/* <div className="max-w-96 w-full border rounded-2xl p-4 space-y-10 bg-white text-black isolate bg-white/20 shadow-lg ring-1 ring-black/5">
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-base font-medium text-white">
                     Invoice Search
@@ -201,7 +268,7 @@ const Hero = () => {
                   </span>
                 </div>
 
-                {/* <form
+                <form
                   onSubmit={formik.handleSubmit}
                   className="rounded-2xl p-4 space-y-3 isolate bg-white/20 shadow-lg ring-1 ring-black/5"
                 >
@@ -281,85 +348,16 @@ const Hero = () => {
                     "Track Now"
                   )}
                 </Button> 
-                </form> */}
+                </form>
 
-                <Card className="bg-primary">
-        <CardHeader>
-          <CardTitle>Join Our Franchise Network</CardTitle>
-          <CardDescription>
-            Join our growing network of franchises and take the first step
-            toward success.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { name: "panNumber", label: "Pan Number" },
-                  { name: "name", label: "Name" },
-                  { name: "mobile", label: "Mobile No" },
-                  { name: "address", label: "Address" },
-                  { name: "remarks", label: "Remarks" },
-                ].map((field) => (
-                  <FormField
-                    key={field.name}
-                    control={form.control}
-                    name={field.name}
-                    render={({ field: inputField }) => (
-                      <FormItem>
-                        <FormLabel>{field.label}</FormLabel>
-                        <FormControl>
-                          <Input {...inputField} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                ))}
-                <FormField
-                  control={form.control}
-                  name="service"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Service</FormLabel>
-                      <Select onValueChange={field.onChange}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select service" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {[
-                            "Booking Agent",
-                            "Delivery Agent",
-                            "Vendor/Partner",
-                          ].map((value) => (
-                            <SelectItem key={value} value={value}>
-                              {value}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <Button type="submit" disabled={isLoading}>
-                {isLoading ? "Loading..." : "Submit"}
-              </Button>
-            </form>
-          </Form>
-        </CardContent>
-      </Card>
-              </div>
+      
+              </div> */}
             </div>
           </div>
         </div>
 
-        <video
+               
+        {/* <video
           id="bannerVideo"
           muted
           loop
@@ -369,7 +367,15 @@ const Hero = () => {
           className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover"
         >
           <source src={heroBannerVideo} type="video/mp4" />
-        </video>
+        </video> */}
+
+      <figure className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover">
+        <img
+          src={heroSectionBg}
+          alt="franchise"
+          className="h-full w-full"
+        />
+      </figure>
       </section>
     </>
   );

@@ -1,6 +1,7 @@
 import Logo from "@/assets/images/logo.svg";
 import twentyThreeYears from "@/assets/images/23-Years.png";
 import twentyThreeYearsSvg from "@/assets/images/23_years.svg";
+import heroSectionBg from "@/assets/images/hero_section_bg.jpg";
 import integrity from "@/assets/images/integrity.png";
 import partnership from "@/assets/images/parntnership.png";
 import excellence from "@/assets/images/excellence.png";
@@ -37,6 +38,11 @@ import erp from "@/assets/images/erp.png";
 // Services
 import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png";
 import crafting from "@/assets/images/services/crafting.png";
+import threePlServiceIcon from "@/assets/images/services/threepl_service_icon.png";
+import fourPlServiceIcon from "@/assets/images/services/fourpl_service_icon.png";
+import packagingServiceIcon from "@/assets/images/services/packaging_service_icon.png";
+import warehouseServiceIcon from "@/assets/images/services/warehouse_service_icon.png";
+import multiModelTransportServiceIcon from "@/assets/images/services/multimodel_transport_service_icon.png";
 import productManagement from "@/assets/images/services/product-management.png";
 import thinking from "@/assets/images/services/thinking.png";
 import serviceTransportation from "@/assets/images/services/transportation.png";
@@ -361,5 +367,11 @@ export {
   trainService,
   roadService,
   erp,
-  twentyThreeYearsSvg
+  twentyThreeYearsSvg,
+  heroSectionBg,
+  multiModelTransportServiceIcon,
+  threePlServiceIcon,
+  fourPlServiceIcon,
+  warehouseServiceIcon,
+  packagingServiceIcon
 };
