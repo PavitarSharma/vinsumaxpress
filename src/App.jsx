@@ -14,7 +14,7 @@ const Career = lazy(() => import("@/pages/Career"));
 const Contact = lazy(() => import("@/pages/Contact"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const Packaging = lazy(() => import("@/pages/Packaging"));
-const Franchise = lazy(() => import("@/pages/Franchise"));
+const TrackShipment = lazy(() => import("@/pages/TrackShipment"));
 const BlogDetail = lazy(() => import("@/pages/BlogDetail/BlogDetail"));
 const NotFound = lazy(() => import("@/pages/404"));
 const SocialNetwork = lazy(() => import("@/pages/SocialNetwork"));
@@ -166,7 +166,8 @@ const App = () => {
           <Route path={ROUTES.CONTACT} element={<Contact />} />
           <Route path={ROUTES.PACKAGING} element={<Packaging />} />
           <Route path={ROUTES.PRIVACY_POLICY} element={<PrivacyPolicy />} />
-          <Route path={ROUTES.FRANCHISE} element={<Franchise />} />
+          {/* <Route path={ROUTES.FRANCHISE} element={<Franchise />} /> */}
+          <Route path={ROUTES.TRACK_SHIPMENT} element={<TrackShipment />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path={ROUTES.SOCIAL_NETWORK} element={<SocialNetwork />} />
           <Route

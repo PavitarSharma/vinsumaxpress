@@ -4,7 +4,7 @@ export const ROUTES = {
   CONTACT: "/contact",
   SERVICE: "/service",
   CAREER: "/career",
-  FRANCHISE: "/franchise",
+  TRACK_SHIPMENT: "/trackshipment",
   MEDIACENTER: "/media-center",
   PRIVACY_POLICY: "/privacy-policy",
   PACKAGING: "/packaging",

@@ -1,6 +1,7 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { shipmentProgress, shipmentTruck } from "../../../assets/images";
-const TrackShipment = ({ onClose, show, shipment }) => {
+import { shipmentProgress, shipmentTruck } from "../assets/images";
+
+const TrackShipmentPopup = ({ onClose, show, shipment }) => {
   const status = shipment?.docketInfo[0]["Status"];
 
   if (!shipment) return null;
@@ -198,4 +199,4 @@ const TrackShipment = ({ onClose, show, shipment }) => {
   );
 };
 
-export default TrackShipment;
+export default TrackShipmentPopup;

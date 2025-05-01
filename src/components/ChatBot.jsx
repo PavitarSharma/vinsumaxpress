@@ -8,7 +8,7 @@ import { profileUser } from "@/assets/images";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { visnumNetwork } from "@/constants";
 import { useCallback, useEffect, useState } from "react";
-import TrackShipment from "../pages/Home/sections/TrackShipment";
+import TrackShipmentPopup from "../components/TrackShipmentPopup";
 import { FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { homeServices } from "../constants";
@@ -116,7 +116,7 @@ const ChatBot = () => {
 
   return (
     <div>
-      <TrackShipment
+      <TrackShipmentPopup
         show={openTrackShipment}
         onClose={handleTrackShipmentClose}
         shipment={shipment}

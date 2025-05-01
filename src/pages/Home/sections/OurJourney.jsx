@@ -3,15 +3,19 @@ import CountUp from "react-countup";
 import { growthTrackerVideo } from "@/assets/videos";
 
 const OurJourney = () => {
-  const [, setIsCounterSectionVisible] = useState(false);
+  const [isCounterSectionVisible, setIsCounterSectionVisible] = useState(false);
   const videoRef = useRef(null);
+  const countRef = useRef(null);
 
   useEffect(() => {
     // Create IntersectionObserver for the counter section
     const counterSectionObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
+      ([entry]) => {
+        console.log("INSIDE OBSERVE")
+        if (entry.isIntersecting) {
           setIsCounterSectionVisible(true); // Start counter animation
+          console.log("start counter")
+          counterSectionObserver.disconnect()
         }
       },
       { threshold: 0.5 }
@@ -23,9 +27,11 @@ const OurJourney = () => {
         if (entries[0].isIntersecting) {
           videoRef.current.play(); // Play video when visible
           // setIsPaused(false);
+          console.log("play video")
         } else {
           videoRef.current.pause(); // Pause video when out of view
           // setIsPaused(true);
+          console.log("pause video")
         }
       },
       { threshold: 0.5 }
@@ -35,37 +41,45 @@ const OurJourney = () => {
     const counterSection = document.querySelector("#counterSection");
     const videoSection = document.querySelector("#videoSection");
 
-    if (counterSection) counterSectionObserver.observe(counterSection);
     if (videoSection) videoSectionObserver.observe(videoSection);
+
+    if (countRef.current) {
+      console.log("observe with ref")
+      counterSectionObserver.observe(countRef.current);
+    }
 
     // Cleanup observers on unmount
     return () => {
-      if (counterSection) counterSectionObserver.unobserve(counterSection);
       if (videoSection) videoSectionObserver.unobserve(videoSection);
+
+      if (countRef.current) {
+        console.log("unobserve")
+        counterSectionObserver.unobserve(countRef.current);
+      }
     };
   }, []);
 
   return (
     <section id="ourJourney" className="section px-4">
-      <div className="bg-cardBackground rounded-2xl overflow-hidden shadow">
+      <div className="bg-cardBackground rounded-2xl  overflow-hidden shadow">
         <div className="w-full flex md:flex-row flex-col rounded-2xl">
           <div className="bg-primary md:py-4 py-8 text-white text-center flex items-center justify-center">
             <p className="md:text-5xl text-4xl font-bold text-text text-white justify-self-center	leading-tight uppercase">
               Behind the Success
             </p>
           </div>
-          <div className="md:w-2/3 w-full bg-black text-white md:py-6 py-10 px-4 flex gap-16 flex-wrap items-center justify-center">
-              <VinsumCountup total={700} title="Current Workforce" />
-              <VinsumCountup total={60} title="Office Locations" />
-              <VinsumCountup total={23} title="Years Experience" />
-              <VinsumCountup total={500} title="Happy Clients" />
+          <div className="md:w-2/3 w-full bg-black text-white md:py-6 py-10 px-4 flex gap-16 flex-wrap items-center justify-center" ref={countRef} >
+              <VinsumCountUp  ref={countRef} total={700} title="Current Workforce" start={isCounterSectionVisible} />
+              <VinsumCountUp  ref={countRef} total={60} title="Office Locations" start={isCounterSectionVisible} />
+              <VinsumCountUp  ref={countRef} total={23} title="Years Experience" start={isCounterSectionVisible} />
+              <VinsumCountUp  ref={countRef} total={500} title="Happy Clients" start={isCounterSectionVisible} />
             </div>
           {/* <div className="w-2/3 bg-black">
             <div className="my-8 flex gap-8 flex-wrap">
-              <VinsumCountup total={700} title="Current Workforce" />
-              <VinsumCountup total={60} title="Office Locations" />
-              <VinsumCountup total={23} title="Years Experience" />
-              <VinsumCountup total={500} title="Happy Clients" />
+              <VinsumCountUp total={700} title="Current Workforce" />
+              <VinsumCountUp total={60} title="Office Locations" />
+              <VinsumCountUp total={23} title="Years Experience" />
+              <VinsumCountUp total={500} title="Happy Clients" />
             </div>
           </div> */}
         </div>
@@ -83,11 +97,11 @@ const OurJourney = () => {
           </p>
         </div> */}
 
-        <div className="my-8 text-center text-4xl antialiased tracking-wider text-red-600 bg-background rounded px-6 py-2.5 font-semibold justify-self-center w-100 h-16">
+        <div className="my-8 text-center text-4xl antialiased  tracking-wider text-red-600 bg-background rounded px-6 py-2.5 font-semibold justify-self-center w-100 h-16">
           Our Journey
         </div>
 
-          <div className="relative w-full bg-red-800 h-96 mt-8 mb-8">
+          <div className="relative w-full aspect-video">
             <video
               ref={videoRef}
               muted
@@ -95,7 +109,7 @@ const OurJourney = () => {
               loop
               playsInline
               title="Growth Track"
-              className="w-full h-96 object-cover "
+              className="w-full h-full object-cover"
             >
               <source src={growthTrackerVideo} type="video/mp4" />
             </video>
@@ -107,11 +121,11 @@ const OurJourney = () => {
   );
 };
 
-const VinsumCountup = ({ total, title }) => {
+const VinsumCountUp = ({ total, title, start }) => {
   return (
     <div className="flex flex-col gap-1 items-center">
       <h3 className="text-5xl font-bold text-white">
-        <CountUp end={total} duration={2} />+
+        {start ? <CountUp end={total} duration={2} /> : 0}+
       </h3>
       <p className="text-base text-text text-white">{title}</p>
     </div>

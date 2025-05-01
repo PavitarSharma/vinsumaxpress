@@ -2,30 +2,29 @@ import { FaFacebookF, FaLinkedin, FaYoutube, FaInstagram, FaGlobe, FaSignInAlt }
 import { BsThreadsFill } from "react-icons/bs";
 import { companyDetail } from "@/constants";
 
-
 export default function SocialSidebar() {
   return (
     <div className="fixed top-1/2 right-0 transform -translate-y-1/2 flex flex-col items-end space-y-4 z-50">
-      {/* Social icons */}
-      <div className="flex flex-col space-y-1 sm:block hidden">
-        <SocialButton icon={<FaFacebookF />} label="Facebook" bgColor="bg-blue-600" link={companyDetail.facebook} />
-        <SocialButton icon={<FaLinkedin />} label="Linkedin" bgColor="bg-sky-600" link={companyDetail.linkedin} />
-        <SocialButton icon={<FaInstagram />} label="Instagram" bgColor="bg-pink-600" link={companyDetail.instagram} />
-        <SocialButton icon={<FaYoutube />} label="Youtube" bgColor="bg-red-600" link={companyDetail.youtube} />
-        <SocialButton icon={<BsThreadsFill />} label="Threads" bgColor="bg-gray-600" link={companyDetail.thread} />
+       {/* HRMS icon */}
+      <div className="space-y-1 flex flex-col mb-8 sm:block hidden">
+        <SocialButton icon={<FaSignInAlt /> } label="HRMS" bgColor="bg-primary" link="https://hrms.vinsumaxpress.com/Default.aspx" width="w-32" opacity="opacity-100" />
+        <SocialButton icon={<FaGlobe /> } label="ERP Login" bgColor="bg-primary" link="http://ggco.vinsumaxpress.com" width="w-32" opacity="opacity-100" />
       </div>
 
-       {/* HRMS icon */}
-      <div className="mt-8 space-y-1 flex flex-col">
-        <SocialButton icon={<FaSignInAlt /> } label="HRMS" bgColor="bg-gray-600" link="https://hrms.vinsumaxpress.com/Default.aspx" />
-        <SocialButton icon={<FaGlobe /> } label="ERP" bgColor="bg-gray-600" link="http://ggco.vinsumaxpress.com" />
+      {/* Social icons */}
+      <div className="flex flex-col space-y-1  sm:block hidden">
+        <SocialButton icon={<FaFacebookF />} label="Facebook" bgColor="bg-gradient-to-r from-[#0B53B0] to-[#3390FF]" link={companyDetail.facebook} width="" opacity="opacity-0" />
+        <SocialButton icon={<FaLinkedin />} label="Linkedin" bgColor="bg-gradient-to-r from-[#004182] to-[#0A66C2]" link={companyDetail.linkedin} width="" opacity="opacity-0" />
+        <SocialButton icon={<FaInstagram />} label="Instagram" bgColor="bg-gradient-to-r from-[#DD2A7B] to-[#F58529]" link={companyDetail.instagram} width="" opacity="opacity-0" />
+        <SocialButton icon={<FaYoutube />} label="Youtube" bgColor="bg-gradient-to-r from-[#BB0000] to-[#FF0000]" link={companyDetail.youtube} width="" opacity="opacity-0" />
+        <SocialButton icon={<BsThreadsFill />} label="Threads" bgColor="bg-gradient-to-r from-[#111111] to-[#444444]" link={companyDetail.thread} width="" opacity="opacity-0" />
       </div>
 
     </div>
   );
 }
 
-function SocialButton({ icon, label, bgColor, link }) {
+function SocialButton({ icon, label, bgColor, link, width, opacity }) {
   return (
     <a
       href={link}
@@ -34,10 +33,10 @@ function SocialButton({ icon, label, bgColor, link }) {
       className="group relative flex items-center justify-end overflow-hidden"
     >
       <div
-        className={`flex items-center p-3 text-white ${bgColor} rounded-l-lg hover:w-36 transition-all duration-300 ease-in-out w-10`}
+        className={`flex items-center p-3 text-white ${bgColor} ${width} rounded-l-lg hover:w-32 transition-all duration-300 ease-in-out w-10`}
       >
-        <span className="text-lg">{icon}</span>
-        <span className="ml-4 opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity duration-300">
+        <span className="text-base">{icon}</span>
+        <span className={`ml-2 ${opacity} group-hover:opacity-100 whitespace-nowrap transition-opacity duration-300`}>
           {label}
         </span>
       </div>

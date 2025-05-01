@@ -404,7 +404,7 @@ export const homeServiceQuestions = [
     path: "#packaging-solution",
   },
   {
-    title: "3LP/4LP Management",
+    title: "3PL/PL Management",
     description:
       "Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
     path: "#3pl-4pl-management",
