@@ -404,7 +404,7 @@ export const homeServiceQuestions = [
     path: "#packaging-solution",
   },
   {
-    title: "3PL/PL Management",
+    title: "3PL/4PL Management",
     description:
       "Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
     path: "#3pl-4pl-management",
@@ -1045,6 +1045,44 @@ export const blogs = [
     author: "Vinsum Axpress",
     cratedAt: "May 20, 2020",
   },
+];
+
+export const youtubeVideos = [
+  {
+    id: 1,
+    title: "Vinsum celebrated its 21st Foundation Day. Mr. Vinod Sharma (CMD)",
+    description:
+      'VINSUM AXPRESS PVT. LTD. is committed to offer logistics solutions and services to the Indian industry, designed to customer\'s satisfaction in order to grow together in a win-win situation. On this glorious occasion, let’s chase a few of the faces Behind The #Success of #Deftsoft with some interesting theme and candid shots. 😃😄',
+    link: "nfgJHecqKgw",
+  },
+  {
+    id: 2,
+    title: "Vinsum Axpress Acquires 140 New Trucks | Driving Logistics Excellence Across India",
+    description:
+      'Driving Progress, One Truck at a Time! 🚛. We\’re thrilled to share a significant milestone at Vinsum Axpress — the acquisition of 140 new trucks! \nThis expansion not only boosts our operational capacity but also reaffirms our commitment to delivering seamless logistics solutions across India.',
+    link: "0edQVCO4tBQ",
+  },
+  {
+    id: 3,
+    title: "Vinsum Axpress x Toyota: Pioneering Green Logistics with Indian Railways! 🚆🌱",
+    description:
+      'We are thrilled to announce a significant milestone at Vinsum Axpress—the rollout of our first consignment of automobile parts via the VAN Parcel Train from Bangalore to Delhi, in collaboration with Toyota and Indian Railways.',
+    link: "wT6tQX5eT9A",
+  },
+  {
+      id: 4,
+      title: "📦 How Efficient Warehousing Transforms Supply Chain Success! 🚛 | VINSUM AXPRESS 🌍",
+      description:
+        'Efficient warehousing is the backbone of a successful supply chain! It ensures smooth operations, cost savings, and happy customers—but how exactly does warehousing improve supply chain efficiency? 🤔',
+      link: "PXrPv1vrm2s",
+    },
+    {
+      id: 5,
+      title: "Warehouse Safety Standards - essential guidelines for a safe workplace | VINSUM AXPRESS",
+      description:
+        'Warehouses are the backbone of any supply chain, and ensuring safety is crucial for maintaining efficiency and productivity. In this video, we cover essential warehouse safety standards that every worker, manager, and visitor must follow to create a safe working environment.',
+      link: "oxzWBEKlpx8",
+    },
 ];
 
 export const galleries = [

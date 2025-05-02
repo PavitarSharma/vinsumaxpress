@@ -187,7 +187,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex sm:flex-row flex-col-reverse justify-between">
+        <div className="flex sm:flex-row flex-col-reverse justify-between md:justify-center">
           <p className="mt-8 text-sm text-zinc-600">
             © Copyright {currentYear}-{nextYear}
             <span className="text-primary ml-1 font-medium">
@@ -195,7 +195,7 @@ const Footer = () => {
             </span>
             . All Rights Reserved
           </p>
-          <ul className="mt-2 flex items-center md:justify-center gap-4 flex-wrap">
+          <ul className="mt-2 flex items-center gap-4 flex-wrap md:hidden">
             <li>
               <a
                 href={companyDetail.facebook}

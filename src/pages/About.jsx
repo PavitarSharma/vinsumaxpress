@@ -292,7 +292,7 @@ And we’re growing!
       <section>
         <div className="container">
           <div className="mb-8 space-y-4">
-            <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
+            <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-5 text-3xl font-semibold rounded-tr-3xl rounded-bl-3xl">
               LEADERSHIP TEAM
             </div>
 

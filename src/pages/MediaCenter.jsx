@@ -5,11 +5,12 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { LuArrowRight } from "react-icons/lu";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { blogs, galleries } from "@/constants";
+import { blogs, galleries, youtubeVideos } from "@/constants";
 import { LuArrowUpRight } from "react-icons/lu";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const formSchema = z.object({
   email: z
@@ -32,6 +33,22 @@ const MediaCenter = () => {
     },
   });
 
+  const tabs = ["ARTICLES", "MEDIA", "GALLERY"];
+  const [activeTab, setActiveTab] = useState("ARTICLES");
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case "ARTICLES":
+        return<ArticlesSection />;
+      case "MEDIA":
+        return <MediaSection />;
+      case "GALLERY":
+        return <GallerySection />;
+      default:
+        return null;
+    }
+  };
+
   const onSubmit = (values) => {
     const errors = form.formState.errors;
 
@@ -47,12 +64,27 @@ const MediaCenter = () => {
       return; // Stop further execution
     }
     console.log(values);
-    toast.success(`Thanks for susbcribing ${values.email}`);
+    toast.success(`Thanks for subscribing ${values.email}`);
   };
+
   return (
     <>
       <section className="py-8">
-        <div className="container grid md:grid-cols-2 md:items-center gap-6">
+        <div className="grid grid-cols-3 gap-4 md:gap-16 p-4 md:px-60">
+        {tabs.map((tab) => (
+          <Button
+            className="text-xl p-6 font-semibold"
+            key={tab}
+            type="button"
+            variant={activeTab === tab ? "destructive" : "outline"}
+            onClick={() => setActiveTab(tab)}
+          >
+            {tab}
+          </Button>
+        ))}
+      </div>
+      {renderTabContent()}
+        {/* <div className="container grid md:grid-cols-2 md:items-center gap-6">
           <div>
             <h1 className="sm:text-5xl text-3xl font-bold">Vinsum Blog</h1>
 
@@ -88,61 +120,16 @@ const MediaCenter = () => {
             New product features, the latest in the technology, solutions, and
             updates.
           </p>
-        </div>
+        </div> */}
       </section>
+    </>
+  );
+};
 
-      <section className="py-8">
-        <div className="wrapper">
-          <div className="flex md:flex-row flex-col">
-            {blogs.map((blog, index) => (
-              <div key={index} className="w-full  relative">
-                <div className="h-[400px] relative">
-                  <img
-                    src={blog.images[0]}
-                    alt={blog.title}
-                    className="w-full h-full  object-cover"
-                  />
-                  <div className="absolute inset-0 bg-background/20" />
-                  <div className="w-full p-4 py-10 absolute backdrop-blur-sm bg-white/30 text-white  left-0 right-0 bottom-0">
-                    <div className="z-10">
-                      <h3 className="font-semibold">{blog.author}</h3>
-                      <p className="text-white font-medium">{blog.cratedAt}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-4">
-                  <Link
-                    to={`/blog/${blog.id}`}
-                    className="text-xl font-bold relative w-full cursor-pointer underline"
-                  >
-                    {blog.title}
-                  </Link>
-                  <p
-                    className="line-clamp-2 my-4 font-medium"
-                    dangerouslySetInnerHTML={{ __html: blog.description }}
-                    aria-label="Blog information content"
-                  ></p>
-
-                  <Link
-                    to={`/blog/${blog.id}`}
-                    className="flex items-center font-semibold gap-1 text-sm"
-                  >
-                    Read post <LuArrowUpRight size={18} />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-8 ">
-        <div className="wrapper space-y-12 ">
-          <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-8">
-            OUR GALLERY
-          </div>
-
+const GallerySection = () => {
+  return (
+    <section className="py-8">
+        <div className="wrapper space-y-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {galleries.map((image, index) => (
               <div key={index} className="grid gap-4">
@@ -167,8 +154,125 @@ const MediaCenter = () => {
           </div>
         </div>
       </section>
-    </>
-  );
-};
+  )
+}
+
+const ArticlesSection = () => {
+  return (
+    <section className="py-14 px-8">
+        <div className="wrapper">
+          <div className="flex flex-col">
+            {blogs.map((blog, index) => (
+              <div key={index} className="w-full md:grid md:grid-cols-[30%_70%] gap-20 mb-10">
+                {/* Left: Image Section */}
+                <div className="w-full h-[200px] border-2 border-black rounded-md relative overflow-hidden mb-6">
+                  <img
+                    src={blog.images[0]}
+                    alt={blog.title}
+                    className="w-full h-full object-cover"
+                  />
+
+                  <div className="absolute inset-0 bg-background/20" />
+
+                  <div className="absolute bottom-0 left-0 right-0 h-[30%] backdrop-blur-sm bg-white/30 text-white px-4 py-2">
+                    <div className="z-10">
+                      <h3 className="font-semibold text-black">{blog.author}</h3>
+                      <p className="font-medium text-black">{blog.cratedAt}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right: Info Section */}
+                <div className="flex flex-col md:w-[80%]">
+                  <Link
+                    to={`/blog/${blog.id}`}
+                    className="text-xl font-bold relative w-full cursor-pointer underline"
+                  >
+                    {blog.title}
+                  </Link>
+                  <p
+                    className="line-clamp-3 my-4 font-medium"
+                    dangerouslySetInnerHTML={{ __html: blog.description }}
+                    aria-label="Blog information content"
+                  ></p>
+
+                  <Link
+                    to={`/blog/${blog.id}`}
+                    className="flex w-fit items-center font-semibold gap-1 text-lg bg-primary text-center text-white px-4 py-3 rounded-md"
+                  >
+                    READ FULL ARTICLE
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>      
+  )
+}
+
+const MediaSection = () => {
+  return (
+    <section className="py-14 px-8">
+        <div className="wrapper">
+          <div className="flex flex-col">
+            {youtubeVideos.map((video, index) => (
+              <div key={index} className="w-full md:grid md:grid-cols-[30%_70%] gap-20 mb-14">
+                {/* Left: Image Section */}
+                <div className="w-full h-[200px] border-2 border-black rounded-md relative overflow-hidden mb-6">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${video.link}`}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+
+                {/* Right: Info Section */}
+                <div className="flex flex-col md:w-[80%]">
+                  <a
+                    href={`https://www.youtube.com/watch?v=${video.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-bold relative w-full cursor-pointer underline"
+                  >
+                    {video.title}
+                  </a>
+
+                  <p
+                    className="line-clamp-3 my-4 font-medium"
+                    dangerouslySetInnerHTML={{ __html: video.description }}
+                    aria-label="Blog information content"
+                  ></p>
+
+                  <a
+                    href={`https://www.youtube.com/watch?v=${video.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex w-fit items-center font-semibold gap-1 text-lg bg-primary text-white px-4 py-3 rounded-md"
+                  >
+                    WATCH FULL VIDEO
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="w-full text-center mt-6">
+          <a
+            href="https://www.youtube.com/@vinsumaxpressindiapvtltd.8044"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center items-center font-semibold gap-1 text-lg bg-primary text-white px-8 py-3 rounded-md"
+          >
+            WATCH ALL VIDEOS ON OUR YOUTUBE CHANNEL
+        </a>
+        </div>
+      </section>      
+  )
+}
 
 export default MediaCenter;

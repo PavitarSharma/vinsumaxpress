@@ -43,7 +43,7 @@ const OurValues = () => {
         </div>
       </section>
 
-      <section className="bg-primary py-10">
+      {/* <section className="bg-primary py-10">
         <div className="container">
           <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-x-4 gap-y-6 max-w-screen-lg mx-auto">
             {homeServices.map(({ title, image }, index) => (
@@ -58,7 +58,7 @@ const OurValues = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
