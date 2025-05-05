@@ -131,19 +131,19 @@ const About = () => {
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
             OUR JOURNEY
           </div>
-          <div className="relative w-full aspect-video">
-            <video
-              ref={videoRef}
-              muted
-              autoPlay
-              loop
-              playsInline
-              title="Growth Track"
-              className="w-full h-full object-cover"
-            >
-              <source src={growthTrackerVideo} type="video/mp4" />
-            </video>
-            </div>
+          <div className="w-full aspect-video h-[400px] mt-16">
+          <video
+            ref={videoRef}
+            muted
+            autoPlay
+            loop
+            playsInline
+            title="Growth Track"
+            className="w-full h-full object-fill block"
+          >
+            <source src={growthTrackerVideo} type="video/mp4" />
+          </video>
+        </div>
         </div>
       </section>
 
