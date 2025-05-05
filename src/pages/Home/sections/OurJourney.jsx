@@ -74,46 +74,30 @@ const OurJourney = () => {
               <VinsumCountUp  ref={countRef} total={23} title="Years Experience" start={isCounterSectionVisible} />
               <VinsumCountUp  ref={countRef} total={500} title="Happy Clients" start={isCounterSectionVisible} />
             </div>
-          {/* <div className="w-2/3 bg-black">
-            <div className="my-8 flex gap-8 flex-wrap">
-              <VinsumCountUp total={700} title="Current Workforce" />
-              <VinsumCountUp total={60} title="Office Locations" />
-              <VinsumCountUp total={23} title="Years Experience" />
-              <VinsumCountUp total={500} title="Happy Clients" />
-            </div>
-          </div> */}
         </div>
 
-        {/* <div className="max-w-xl space-y-3">
-          <p className="text-lg text-red-600">Our journey</p>
-          <h1 className="card-title">
-            <span className="text-primary">Vinsum</span> Is One Of The Best
-            Shipping And Logistics Companies.
-          </h1>
-          <p className="card-description">
-            For the past two decades, Vinsum has proudly established itself as a
-            leader in the logistics industry, consistently delivering excellence
-            and innovative solutions.
-          </p>
-        </div> */}
-
-        <div className="my-8 text-center text-4xl antialiased tracking-wider text-red-600 rounded px-6 py-2.5 font-semibold justify-self-center w-100 h-16">
-          Our Journey
+        <div className="my-8 text-center">
+          <h2 className="text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-700 to-red-500 animate-text-gradient bg-[length:200%_200%]">
+            Our Journey
+          </h2>
         </div>
 
-        <div className="w-full aspect-video h-[400px]">
-          <video
-            ref={videoRef}
-            muted
-            autoPlay
-            loop
-            playsInline
-            title="Growth Track"
-            className="w-full h-full object-fill block"
-          >
-            <source src={growthTrackerVideo} type="video/mp4" />
-          </video>
-        </div>
+          <div className="w-full aspect-video h-[440px] overflow-hidden bg-transparent">
+            <video
+              ref={videoRef}
+              muted
+              autoPlay
+              loop
+              playsInline
+              title="Growth Track"
+              className="w-full h-full object-fill block overflow-hidden"
+              style={{
+                clipPath: 'inset(12px 1px)',
+              }}
+            >
+              <source src={growthTrackerVideo} type="video/mp4" />
+            </video>
+          </div>
       </div>
     </section>
   );
