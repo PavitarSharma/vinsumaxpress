@@ -1,10 +1,48 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { shipmentProgress, shipmentTruck } from "../assets/images";
+import { useRef } from "react";
+import { truckAnimation, roadTrack} from "@/assets/images";
 
 const TrackShipmentPopup = ({ onClose, show, shipment }) => {
   const status = shipment?.docketInfo[0]["Status"];
 
-  if (!shipment) return null;
+  //if (!shipment) return null;
+
+  const truckRef = useRef(null);
+  const truckMoment = (currentDestination) => {
+  const stopPositions = [
+    "22%",  // Stop 1
+    "42%",  // Stop 2
+    "62%",  // Stop 3
+    "82%",  // Stop 4
+  ];
+
+  let step = 0;
+  const truck = truckRef.current;
+
+  const moveTruck = () => {
+    if (step >= currentDestination) return;
+
+    if (truck) {
+      truck.classList.remove("truck-idle");
+      truck.style.transition = "left 2.95s cubic-bezier(0.42, 0, 0.58, 1)";
+      truck.style.left = stopPositions[step];
+    }
+
+    setTimeout(() => {
+      if (truck) {
+        truck.style.transition = "none";
+        truck.classList.add("truck-idle");
+      }
+
+    setTimeout(() => {
+      step++;
+      moveTruck();}, 400); // 800ms stop time
+    }, 2950); // 2.95s travel time
+  };
+
+    moveTruck();
+  };
 
   return (
     <Dialog open={show} onOpenChange={onClose}>
@@ -19,6 +57,29 @@ const TrackShipmentPopup = ({ onClose, show, shipment }) => {
             {status}
           </div>
         </div>
+
+         <div className="relative w-full h-full">
+            <img
+              src={roadTrack}
+              alt="road"
+              className="h-fit w-full object-cover"
+            />
+
+            <img
+              src={truckAnimation}
+              alt="truck"
+              ref={truckRef}
+              style={{ transition: "left 0.5s linear", left: -16 }}
+              className="absolute bottom-2 h-20 w-[160px]"
+            />
+          </div>
+
+           <button
+              className="bg-blue-500 text-white px-4 py-2 rounded"
+              onClick={() => truckMoment(5)} // Move to stop 3
+            >
+              Move to Stop 3
+            </button>
 
         <div className="my-4 space-y-2 text-sm">
           <div className="flex items-center justify-between gap-4">

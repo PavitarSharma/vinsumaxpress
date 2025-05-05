@@ -411,6 +411,27 @@ export const homeServiceQuestions = [
   },
 ];
 
+export const faqTrackShipment = [
+  {
+    title: "Tracking Number",
+    question: "What is Tracking Number & Where can I find it?",
+    answer:
+      "Multimodal transport can ease the journey by optimizing routes and using the most efficient modes for each leg of the journey.",
+  },
+  {
+    title: "tracking information",
+    question: "When will my tracking information appear?",
+    answer:
+      "We are offering wide range of services including consolidation & packaging of cargoes of various types & sizes.",
+  },
+  {
+    title: "tracking number/ID",
+    question: "Why is my tracking number/ID not working?",
+    answer:
+      "Dedicated solution design team that can design solutions based on inputs provided by the customer about the component / part and produce feasibility reports for all your packaging needs consultation.",
+  },
+];
+
 export const multimodalTransPortationServices = [
   {
     title: "Air Services",

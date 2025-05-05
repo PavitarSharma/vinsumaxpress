@@ -34,6 +34,8 @@ import linkedin from "@/assets/images/linkedin.png";
 import threads from "@/assets/images/threads.png";
 import youtube from "@/assets/images/youtube.png";
 import erp from "@/assets/images/erp.png";
+import roadTrack from "@/assets/images/road_track.png";
+import truckAnimation from "@/assets/images/truck_animation.png";
 
 // Services
 import warehouseServiceBanner from "@/assets/images/services/warehouse-service.png";
@@ -373,5 +375,7 @@ export {
   threePlServiceIcon,
   fourPlServiceIcon,
   warehouseServiceIcon,
-  packagingServiceIcon
+  packagingServiceIcon,
+  truckAnimation,
+  roadTrack
 };

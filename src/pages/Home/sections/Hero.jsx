@@ -123,79 +123,77 @@ const Hero = () => {
                 </span>
               </div>
 
-      <Card className="w-full border rounded-2xl p-1 bg-white text-black isolate bg-white shadow-lg ring-1 ring-black/5" >
-        <CardHeader>
-          <CardTitle className="text-lg">Join Our Franchise Network</CardTitle>
-          <CardDescription className="text-base text-gray-800">
-            Join our growing network of franchises and take the first step
-            toward success.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { name: "panNumber", label: "Pan Number" },
-                  { name: "name", label: "Name" },
-                  { name: "mobile", label: "Mobile No" },
-                  { name: "address", label: "Address" },
-                  { name: "remarks", label: "Remarks" },
-                ].map((field) => (
-                  <FormField
-                    key={field.name}
-                    control={form.control}
-                    name={field.name}
-                    render={({ field: inputField }) => (
-                      <FormItem>
-                        <FormLabel className="text-lg">{field.label}</FormLabel>
-                        <FormControl>
-                          <Input className="border-black" {...inputField} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                ))}
-                <FormField
-                  control={form.control}
-                  name="service"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-lg">Service</FormLabel>
-                      <Select className="text-lg" onValueChange={field.onChange}>
-                        <FormControl>
-                          <SelectTrigger className="border-black">
-                            <SelectValue placeholder="Select service" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {[
-                            "Booking Agent",
-                            "Delivery Agent",
-                            "Vendor/Partner",
-                          ].map((value) => (
-                            <SelectItem key={value} value={value}>
-                              {value}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
+              <Card className="w-full border rounded-2xl p-1 bg-white text-black isolate bg-white shadow-lg ring-1 ring-black/5" >
+                <CardHeader>
+                  <CardTitle className="text-lg">Join Our Franchise Network</CardTitle>
+                  <CardDescription className="text-base text-gray-800">
+                    Join our growing network of franchises and take the first step
+                    toward success.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
+                      <div className="grid grid-cols-2 gap-4">
+                        {[
+                          { name: "panNumber", label: "Pan Number" },
+                          { name: "name", label: "Name" },
+                          { name: "mobile", label: "Mobile No" },
+                          { name: "address", label: "Address" },
+                          { name: "remarks", label: "Remarks" },
+                        ].map((field) => (
+                          <FormField
+                            key={field.name}
+                            control={form.control}
+                            name={field.name}
+                            render={({ field: inputField }) => (
+                              <FormItem>
+                                <FormLabel className="text-lg">{field.label}</FormLabel>
+                                <FormControl>
+                                  <Input className="border-black" {...inputField} />
+                                </FormControl>
+                                <FormMessage />
+                              </FormItem>
+                            )}
+                          />
+                        ))}
+                        <FormField
+                          control={form.control}
+                          name="service"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-lg">Service</FormLabel>
+                              <Select className="text-lg" onValueChange={field.onChange}>
+                                <FormControl>
+                                  <SelectTrigger className="border-black">
+                                    <SelectValue placeholder="Select service" />
+                                  </SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  {[
+                                    "Booking Agent",
+                                    "Delivery Agent",
+                                    "Vendor/Partner",
+                                  ].map((value) => (
+                                    <SelectItem key={value} value={value}>
+                                      {value}
+                                    </SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
 
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <Button type="submit" disabled={isLoading} className="text-lg">
-                {isLoading ? "Loading..." : "Submit"}
-              </Button>
-            </form>
-          </Form>
-        </CardContent>
-      </Card>
-
-              
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+                      <Button type="submit" disabled={isLoading} className="text-lg">
+                        {isLoading ? "Loading..." : "Submit"}
+                      </Button>
+                    </form>
+                  </Form>
+                </CardContent>
+              </Card>     
             </div>
           </div>
         </div>
