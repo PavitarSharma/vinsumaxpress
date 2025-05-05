@@ -7,7 +7,7 @@ export default function SocialSidebar() {
     <div className="fixed top-1/2 right-0 transform -translate-y-1/2 flex flex-col items-end space-y-4 z-50">
        {/* HRMS icon */}
       <div className="space-y-1 flex flex-col mb-8 sm:block hidden">
-        <SocialButton icon={<FaSignInAlt /> } label="HRMS" bgColor="bg-primary" link="https://hrms.vinsumaxpress.com/Default.aspx" width="w-32" opacity="opacity-100" />
+        {/* <SocialButton icon={<FaSignInAlt /> } label="HRMS" bgColor="bg-primary" link="https://hrms.vinsumaxpress.com/Default.aspx" width="w-32" opacity="opacity-100" /> */}
         <SocialButton icon={<FaGlobe /> } label="ERP Login" bgColor="bg-primary" link="http://ggco.vinsumaxpress.com" width="w-32" opacity="opacity-100" />
       </div>
 

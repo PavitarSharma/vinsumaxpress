@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { FaHandPointRight } from "react-icons/fa";
 import { packagingProducts } from "@/constants";
+import { ROUTES } from "@/lib/routes";
 import { Link } from "react-router-dom";
 import MoreService from "@/components/MoreService";
 import {
@@ -38,7 +39,7 @@ const packagingSolution = {
     "Metal Identification of Parts & products.",
   ],
   dermitsPackaging: [
-    { title: "Time Cunsuming", image: timeConsuming },
+    { title: "Time Consuming", image: timeConsuming },
     { title: "Transit Damages Limited Strength", image: transitDamageLimited },
     { title: "One time usage-Non Green", image: oneTimeUsageGreen },
     { title: "Unsafe-Combustible", image: unsafeCombustible },
@@ -274,9 +275,9 @@ const PackagingSolution = () => {
           </div>
 
           <div className="flex flex-wrap gap-6">
-            {packagingProducts.map(({ label, href }, index) => (
+            {packagingProducts.map(({ label }, index) => (
               <Link
-                to={href}
+                to={ROUTES.PACKAGING}
                 key={index}
                 className="bg-red-50 hover:bg-red-100 transition duration-300 text-sm font-medium border border-primary py-2.5 px-4 rounded-full w-fit"
               >

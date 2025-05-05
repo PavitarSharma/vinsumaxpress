@@ -25,11 +25,47 @@ import {
 // import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { useEffect } from "react";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+import { growthTrackerVideo } from "@/assets/videos";
+import { useRef } from "react";
 
 const About = () => {
+  const videoRef = useRef(null);
+
   useEffect(() => {
     document.title = "About us | Vinsum Axpress";
   }, []);
+
+  useEffect(() => {
+    // Create IntersectionObserver for the video section
+    const videoSectionObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          videoRef.current.play(); // Play video when visible
+          // setIsPaused(false);
+          console.log("play video")
+        } else {
+          videoRef.current.pause(); // Pause video when out of view
+          // setIsPaused(true);
+          console.log("pause video")
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    // Target the counter and video sections
+    const videoSection = document.querySelector("#videoSection");
+
+    if (videoSection) videoSectionObserver.observe(videoSection);
+
+    // Cleanup observers on unmount
+    return () => {
+      if (videoSection) videoSectionObserver.unobserve(videoSection);
+    };
+  }, []);
+
   return (
     <>
       <section className="py-6">
@@ -64,13 +100,13 @@ const About = () => {
               </ul> */}
               <p className="text-base">
                 At Vinsum Axpress, we’ve been shaping the future of logistics in India for over 23 years—earning a reputation as one of the country’s most trusted and innovative logistics providers. <br/><br/>
-With a robust network of 75+ strategically located branches and 53+ fully equipped warehouses across India, we ensure seamless connectivity and reliable coverage to meet your logistics needs—no matter where you are.  <br/><br/>
-Our commitment is grounded in our core values:
- Integrity. Accountability. Excellence. Innovation.
- These principles guide everything we do—from operations to customer engagement—ensuring we deliver consistent value and superior service.  <br/><br/>
-We’re proud to serve a growing portfolio of 500+ satisfied clients, ranging from dynamic startups to Fortune 100 companies. At Vinsum, we believe in building not just business partnerships but lasting relationships built on trust, performance, and mutual growth. <br/><br/>
-And we’re growing!
- We're always on the lookout for passionate, talented individuals to join our journey.
+                With a robust network of 75+ strategically located branches and 53+ fully equipped warehouses across India, we ensure seamless connectivity and reliable coverage to meet your logistics needs—no matter where you are.  <br/><br/>
+                Our commitment is grounded in our core values:
+                Integrity. Accountability. Excellence. Innovation.
+                These principles guide everything we do—from operations to customer engagement—ensuring we deliver consistent value and superior service.  <br/><br/>
+                We’re proud to serve a growing portfolio of 500+ satisfied clients, ranging from dynamic startups to Fortune 100 companies. At Vinsum, we believe in building not just business partnerships but lasting relationships built on trust, performance, and mutual growth. <br/><br/>
+                And we’re growing!
+                We're always on the lookout for passionate, talented individuals to join our journey.
               </p>
             </div>
             <Link to={ROUTES.CAREER}>
@@ -95,13 +131,19 @@ And we’re growing!
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
             OUR JOURNEY
           </div>
-          <figure className="mt-14">
-            <img
-              src={vinsumRoadMap}
-              alt="vinsum-road-map"
-              className="lg:w-[70%] mx-auto"
-            />
-          </figure>
+          <div className="relative w-full aspect-video">
+            <video
+              ref={videoRef}
+              muted
+              autoPlay
+              loop
+              playsInline
+              title="Growth Track"
+              className="w-full h-full object-cover"
+            >
+              <source src={growthTrackerVideo} type="video/mp4" />
+            </video>
+            </div>
         </div>
       </section>
 
@@ -109,83 +151,11 @@ And we’re growing!
         <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
           OUR GOALS
         </div>
-
         <div
-          style={
-            {
-              // backgroundImage: `url(${})`
-            }
-          }
           className="bg-gray-100 bg-cover bg-no-repeat bg-center bg-fixed min-h-[50vh] h-full flex items-center justify-center"
         >
           <div className="container flex items-center justify-center h-full relative">
-            {/* <figure className="bg-white text-foreground relative  rounded-xl p-4 h-full my-auto py-8 max-w-lg w-full">
-              <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-primary">
-                <img src={vision} alt="vision" className="w-full h-full p-2" />
-              </div>
-              <h3 className="text-center font-semibold text-lg">VISION</h3>
-              <p className="text-sm mt-2">
-                To establish Vinsum Axpress as the leading logistics, supply
-                chain, warehousing, and packaging solutions provider in India,
-                renowned for our innovative services, operational excellence,
-                and unwavering commitment to empowering businesses across
-                diverse industries.
-              </p>
-            </figure> */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-fit">
-              <figure className="bg-foreground text-primary-foreground relative rounded-xl p-4 h-fit">
-                <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-black">
-                  <img
-                    src={mission}
-                    alt="mission"
-                    className="w-full h-full p-2"
-                  />
-                </div>
-                <h3 className="text-center font-semibold text-lg">MISSION</h3>
-                <p className="text-sm mt-2">
-                  Our mission is to redefine logistics and supply chain
-                  management in India by delivering end- to-end solutions that
-                  are seamless, reliable, and tailored to the unique needs of
-                  our clients. Through the integration of advanced technology, a
-                  dedicated workforce, and sustainable practices, we aim to
-                  create value for businesses, contribute to their growth, and
-                  support India’s economic development.
-                </p>
-              </figure>
-
-              <figure className="bg-white text-foreground relative  rounded-xl p-4 h-full py-8">
-                <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-primary">
-                  <img
-                    src={vision}
-                    alt="vision"
-                    className="w-full h-full p-2"
-                  />
-                </div>
-                <h3 className="text-center font-semibold text-lg">VISION</h3>
-                <p className="text-sm mt-2">
-                  To establish Vinsum Axpress as the leading logistics, supply
-                  chain, warehousing, and packaging solutions provider in India,
-                  renowned for our innovative services, operational excellence,
-                  and unwavering commitment to empowering businesses across
-                  diverse industries.
-                </p>
-              </figure>
-
-              <figure className="bg-foreground text-primary-foreground relative rounded-xl p-4 h-fit">
-                <div className="bg-white absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] border-black">
-                  <img src={value} alt="value" className="w-full h-full p-2" />
-                </div>
-                <h3 className="text-center font-semibold text-lg">VALUE</h3>
-                <p className="text-sm mt-2">
-                  At Vinsum Axpress, we are committed to delivering
-                  customer-focused solutions with integrity, innovation, and
-                  sustainability. By embracing technology and fostering
-                  collaboration, we ensure reliable, eco-friendly practices that
-                  drive growth for our clients and India’s logistics and supply
-                  chain sector.
-                </p>
-              </figure>
-            </div>
+            <HighlightCards />
           </div>
         </div>
       </section>
@@ -267,14 +237,14 @@ And we’re growing!
                     <p></p>
                   </div>
 
-                  <div className="flex gap-4 items-start">
+                  <div className="flex gap-4 items-start md:hidden">
                     <div className="w-3 h-3 bg-black mt-2"></div>
                     <p className="flex-1">
                       We are proud to be a preferred logistics partner for several Fortune 100 automobile companies and a trusted contributor to the modernization of India’s logistics ecosystem. Our focus remains on delivering value, fostering long-term partnerships, and continuously enhancing service quality through innovation and technology.
                     </p>
                   </div>
 
-                  <div className="flex gap-4 items-start">
+                  <div className="flex gap-4 items-start md:hidden">
                     <div className="w-3 h-3 bg-black mt-2"></div>
                     <p className="flex-1">
                       With over 23 years of cross-industry experience, we have cultivated a deep understanding of complex supply chain dynamics. Our solutions are tailored to maximize efficiency, reduce operational costs, and ensure end-to-end visibility.
@@ -282,6 +252,15 @@ And we’re growing!
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className="hidden md:flex ms-24 w-[65%] items-start relative"
+              style={{ top: -150 }}
+            >
+              <div className="w-3 h-3 bg-black mt-2 me-5"></div>
+              <p className="flex-1">
+                We are proud to be a preferred logistics partner for several Fortune 100 automobile companies and a trusted contributor to the modernization of India’s logistics ecosystem. Our focus remains on delivering value, fostering long-term partnerships, and continuously enhancing service quality through innovation and technology. With over 23 years of cross-industry experience, we have cultivated a deep understanding of complex supply chain dynamics. Our solutions are tailored to maximize efficiency, reduce operational costs, and ensure end-to-end visibility.
+              </p>
             </div>
             <p className="w-full text-center font-semibold text-base" >Thank you for being a part of the Vinsum Axpress journey.</p>
             <br/><br/>
@@ -362,5 +341,82 @@ And we’re growing!
     </>
   );
 };
+
+const cardData = [
+  {
+    title: "MISSION",
+    image: mission,
+    text: `Our mission is to redefine logistics and supply chain management in India by delivering end- to-end solutions that are seamless, reliable, and tailored to the unique needs of our clients. Through the integration of advanced technology, a dedicated workforce, and sustainable practices, we aim to create value for businesses, contribute to their growth, and support India’s economic development.`,
+  },
+  {
+    title: "VISION",
+    image: vision,
+    text: `To establish Vinsum Axpress as the leading logistics, supply chain, warehousing, and packaging solutions provider in India, renowned for our innovative services, operational excellence, and unwavering commitment to empowering businesses across diverse industries.`,
+  },
+  {
+    title: "VALUE",
+    image: value,
+    text: `At Vinsum Axpress, we are committed to delivering customer-focused solutions with integrity, innovation, and sustainability. By embracing technology and fostering collaboration, we ensure reliable, eco-friendly practices that drive growth for our clients and India’s logistics and supply chain sector.`,
+  },
+];
+
+
+function HighlightCards() {
+  const [highlightedIndex, setHighlightedIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHighlightedIndex((prev) => (prev + 1) % cardData.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-fit">
+      {cardData.map((card, index) => (
+        <Dialog key={card.title}>
+          <DialogTrigger asChild>
+            <figure
+              className={`relative rounded-xl p-4 cursor-pointer transition-all duration-700 ${
+                highlightedIndex === index
+                  ? "bg-red-600 text-white shadow-xl scale-105"
+                  : "bg-white text-black"
+              }`}
+            >
+              <div
+                className={`absolute -top-6 -left-4 w-16 h-16 rounded-full border-[3px] ${
+                  highlightedIndex === index
+                    ? "border-white bg-black"
+                    : "border-black bg-white"
+                }`}
+              >
+              <img
+                    src={card.image}
+                    alt={card.title}
+                    className={`w-full h-full p-2 transition-all duration-300 ${
+                      highlightedIndex === index && card.title !== "VISION" ? "filter invert" : ""
+                    }`}
+                />
+              </div>
+              <h3 className="text-center font-semibold text-lg">{card.title}</h3>
+              <p className="text-sm mt-2 line-clamp-4">{card.text}</p>
+            </figure>
+          </DialogTrigger>
+
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>{card.title}</DialogTitle>
+            </DialogHeader>
+            <div className="mt-4 space-y-4 text-sm text-muted-foreground">
+              <img src={card.image} alt={card.title} className="w-12 h-12" />
+              <p>{card.text}</p>
+            </div>
+          </DialogContent>
+        </Dialog>
+      ))}
+    </div>
+  );
+}
+
 
 export default About;

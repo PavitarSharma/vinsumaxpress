@@ -2,11 +2,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { Autoplay } from "swiper/modules";
-
+import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css/navigation";
 import { clients } from "@/constants";
+import { useRef } from "react";
 
 const OurClients = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   const breakpoints = {
     0: {
       slidesPerView: 2,
@@ -34,33 +38,70 @@ const OurClients = () => {
           </p>
         </div>
 
-        <div className="my-8 text-center text-base antialiased w-full tracking-wider text-red-600 bg-background rounded p-1 py-2 ">
-          Vinsum is the preferred partner for industry leaders seeking to drive accelerated revenue growth.
+        <div className="relative my-8 w-full flex justify-center">
+          <div className="relative px-6 py-4 rounded-xl bg-gradient-to-r from-red-200 to-red-100 shadow-md text-center max-w-4xl">
+            <p className="text-primary text-lg font-semibold tracking-wide">
+              <span className="relative inline-block">
+                Vinsum
+                <span className="absolute left-0 bottom-0 w-full h-1 bg-primary rounded animate-pulse" />
+              </span>{' '}
+              is the <span className="text-black font-bold">preferred partner</span> for
+              industry leaders seeking to drive{' '}
+              <span className="underline decoration-red-500 underline-offset-4">accelerated revenue growth</span>.
+            </p>
+          </div>
         </div>
 
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={5}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          fade={true}
-          modules={[Autoplay]}
-          breakpoints={breakpoints}
-        >
-          {clients.map((client, index) => (
-            <SwiperSlide key={index} className="py-4">
-              <div className="flex overflow-hidden border-1 p-4 bg-gray-50 rounded-lg">
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="h-16 w-full object-contain"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="relative">
+      {/* Arrows */}
+      <div
+        ref={prevRef}
+        className="swiper-button-prev-custom absolute left-0 top-1/2 z-10 -translate-y-1/2 cursor-pointer p-2 bg-white rounded-lg shadow"
+      >
+        ◀
+      </div>
+      <div
+        ref={nextRef}
+        className="swiper-button-next-custom absolute right-0 top-1/2 z-10 -translate-y-1/2 cursor-pointer p-2 bg-white rounded-lg shadow"
+      >
+        ▶
+      </div>
+
+      {/* Swiper */}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={5}
+        modules={[Autoplay, Navigation]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        onInit={(swiper) => {
+          // Assign refs once Swiper is ready
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        breakpoints={{
+          320: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 5 },
+        }}
+      >
+        {clients.map((client, index) => (
+          <SwiperSlide key={index} className="py-4">
+            <div className="flex overflow-hidden border p-4 bg-gray-50 rounded-lg">
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="h-16 w-full object-contain"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
       </div>
     </section>
   );
