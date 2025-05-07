@@ -10,50 +10,50 @@ import MoreService from "@/components/MoreService";
 const fourPLInplant = {
   title: "4PL / INPLANT LOGISTICS / PROJECT MANAGEMENT",
   section01: {
-    title: "4PL",
+    title: "Lead Logistics Provider (LLP) / 4PL Solutions",
     description:
-      "Lead Logistics Provider (LLPs), also refered to as fourth - party logistics(4PL). We as a 4PL typically directs every moving part within the customer's supply chain & serus as a single point of contact for all the parties involved.",
+      "As a <strong>Fourth-Party Logistics (4PL)</strong> partner, <strong>Vinsum Axpress</strong> serves as the strategic orchestrator of your entire supply chain. Acting as a <strong>single point of contact</strong>, we manage and coordinate all logistics functions and service providers to ensure seamless, efficient, and end-to-end operations.",
     image: fourPlInplantLogistics1,
     services: [
       "Distribution Management.",
-      "Picking/Packing & CKD/CBU pakaging.",
-      "Assemble line operation.",
-      "Quality inspection.",
-      "Inbound Store management.",
-      "Warehouse operation.",
+      "Picking & Packing, CKD/CBU Packaging.",
+      "Assembly Line Operations.",
+      "Quality Inspection & Assurance.",
+      "Inbound Store Management.",
+      "Comprehensive Warehouse Operations.",
     ],
   },
   section02: {
-    title: "Inplant Logistics",
+    title: "In-Plant Logistics Solutions",
     description:
-      'We mean "Inplant logistics" as the range of logistics services those required to move the row material or finished product with in the factory or plant to carry out the operation Vinsum Axpress Group can support your team or even be your team by handling such task as labour management, yard management. among others functional area as well.',
+      'At <strong>Vinsum Axpress</strong>, we define <strong>In-Plant Logistics</strong> as the comprehensive management of material flow—be it raw materials or finished goods—within a manufacturing facility. Our services are designed to support or fully manage your internal logistics operations, enhancing productivity, efficiency, and operational precision.<br> Whether it\'s <strong>labour management, yard operations</strong>, or internal material movement, we integrate seamlessly with your team—or act as your extended team—to keep your plant running smoothly.',
     image: fourPlInplantLogistics2,
     services: [
       "Store / SPD / PG Warehouse Management.",
-      "Sequencing Project.",
-      "VMI Warehouse.",
-      "Fulfilment centre.",
-      "Supply chain consultancy.",
-      "Production Plan - Pull out servicing, kit loading, trolley loading, double veining & trolley line-up.",
+      "Sequencing Projects.",
+      "VMI (Vendor Managed Inventory) Warehousing.",
+      "Fulfillment Center Operations.",
+      "Supply Chain Consulting.",
+      "Production Support: Pull-Out Servicing, Kit Loading, Trolley Loading, Double Veining, Trolley Line-Up.",
       "Contract Logistics.",
     ],
   },
   section03: {
-    title: "Project Mangement",
+    title: "End-to-End Project Management Services",
     description:
-      "Whatever it takes to carry out the project successfully we deliver it all starting from the application of processes , methods , skills , knowledge & experience according to the project acceptance criteria within the agreed parameter.",
+      "At <strong>Vinsum Axpress</strong>, we take full ownership of project execution — applying proven processes, methodologies, skills, and experience to deliver successful outcomes within defined scope, time, and budget parameters.",
     image: fourPlInplantLogistics3,
     services: [
-      "Defining the need / reason of project.",
-      "Capturing project requirement, specifying quality of deliverables, estimating resources & timescales.",
-      "Business case preparation.",
-      "Corporate agreement & funding.",
-      "Developing & implementing a management plan for the project.",
-      "Managing risks , issues & changes on the project.",
-      "Monitoring progress against plan.",
-      "Managing the project budget.",
-      "Maintaining communications with stakeholder & project organization.",
-      "Closing the project in a controlled fashion.",
+      "Identifying project goals and defining the core business need.",
+      "Capturing requirements, setting quality benchmarks, and estimating time & resource needs.",
+      "Preparing a comprehensive business case.",
+      "Securing corporate approvals and funding.",
+      "Developing and executing a detailed project management plan.",
+      "Proactively managing risks, issues, and change controls.",
+      "Tracking progress and ensuring alignment with project milestones.",
+      "Budget management and cost control.",
+      "Stakeholder communication and alignment throughout the lifecycle.",
+      "Structured and controlled project closure.",
     ],
   },
 };
@@ -72,17 +72,17 @@ const FourPlInplantLogistics = () => {
       <section className="section">
         <div className="container grid md:grid-cols-2 gap-6">
           <div className="md:order-1 order-2">
-            <h2 className="lg:text-5xl text-4xl font-bold">
+            <h2 className="lg:text-3xl text-3xl font-bold">
               {section01.title}
             </h2>
-            <p className="my-4">{section01.description}</p>
+            <p className="my-4" dangerouslySetInnerHTML={{ __html: section01.description }}></p>
             <div>
-              <p className="text-xl font-semibold">Services</p>
+              <p className="text-xl font-semibold">Our Core 4PL Services Include:</p>
               <ul className="ps-2 flex flex-col items-start my-2 gap-2">
                 {section01.services.map((service, index) => (
                   <li
                     key={index}
-                    className="flex items-center justify-center gap-2"
+                    className="flex items-center justify-center gap-2 font-semibold"
                   >
                     <FaHandPointRight size={16} className="opacity-70" />
                     <span className="flex-1 text-sm">{service}</span>
@@ -109,12 +109,12 @@ const FourPlInplantLogistics = () => {
           </div>
 
           <div>
-            <h2 className="lg:text-5xl text-4xl font-bold">
+            <h2 className="lg:text-3xl text-3xl font-bold">
               {section02.title}
             </h2>
-            <p className="my-4">{section02.description}</p>
+            <p className="my-4" dangerouslySetInnerHTML={{ __html: section02.description }}></p>
             <div>
-              <p className="text-xl font-semibold">Services</p>
+              <p className="text-xl font-semibold">Our In-Plant Logistics Services Include:</p>
               <ul className="ps-2 flex flex-col items-start my-2 gap-2">
                 {section02.services.map((service, index) => (
                   <li
@@ -137,9 +137,9 @@ const FourPlInplantLogistics = () => {
             <h2 className="lg:text-5xl text-4xl font-bold">
               {section03.title}
             </h2>
-            <p className="my-4">{section03.description}</p>
+            <p className="my-4" dangerouslySetInnerHTML={{ __html: section03.description }}></p>
             <div>
-              <p className="text-xl font-semibold">Services</p>
+              <p className="text-xl font-semibold">Our Project Management Capabilities Include:</p>
               <ul className="ps-2 flex flex-col items-start my-2 gap-2">
                 {section03.services.map((service, index) => (
                   <li

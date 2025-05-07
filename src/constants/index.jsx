@@ -416,71 +416,70 @@ export const faqTrackShipment = [
     title: "Tracking Number",
     question: "What is Tracking Number & Where can I find it?",
     answer:
-      "Multimodal transport can ease the journey by optimizing routes and using the most efficient modes for each leg of the journey.",
+      "A tracking number or ID is a combination of numbers and possibly letters that uniquely identifies your shipment for national or international tracking. <br><br> Usually, the shipper or online shop is able to provide the tracking number or ID. If you have ordered a product in an online shop, the confirmation email or shipment tracking notification often contains the tracking number or ID. If not, please contact your shipper or online shop.",
   },
   {
     title: "tracking information",
     question: "When will my tracking information appear?",
     answer:
-      "We are offering wide range of services including consolidation & packaging of cargoes of various types & sizes.",
+      "Tracking events usually appear 24-48 hours after receiving the Track and Trace ID. In general, once the shipment has reached our facility, a tracking event will appear.",
   },
   {
     title: "tracking number/ID",
     question: "Why is my tracking number/ID not working?",
     answer:
-      "Dedicated solution design team that can design solutions based on inputs provided by the customer about the component / part and produce feasibility reports for all your packaging needs consultation.",
+      "Please make sure you entered the correct tracking number in the correct format: Check for the minimum length of 5 characters, and if there are any special characters in your input. Tab, comma, space, and semicolon are understood as separators between several tracking IDs. If your tracking ID is not working, please contact your shipper or online shop.",
   },
 ];
 
 export const multimodalTransPortationServices = [
   {
-    title: "Air Services",
+    title: "Air Logistics Services – Vinsum Axpress",
     description:
-      "We at Vinsum axpress provides you Express , time bound services with incomparable levels of assurance , safety & convenience . With our wide network , partners & geographical reach we are able to handle & deliver shipments nationally as well as internationally by providing personalized services to our customers and end to end in-transit movement information.Our experienced staff organize national and international air cargo shipping for a wide range of cargoes by selecting optimal routes based on your individual needs Fixed schedule on our daily flights gives you the flexibility to hold or expedite delivery of goods to meet your supply chain requirement.",
+      "At Vinsum Axpress, we offer express, time-bound services with unmatched assurance, safety, and convenience. With our extensive network, trusted partners, and broad geographical reach, we handle and deliver shipments both nationally and internationally, providing personalized service and end-to-end in-transit tracking for our customers. Our experienced team expertly manages domestic and international air cargo shipments across a wide range of goods, selecting optimal routes tailored to your specific needs. Our fixed schedules on daily flights offer you the flexibility to expedite or hold deliveries, ensuring seamless alignment with your supply chain requirements.",
     image: airService,
     offers: [
-      "Time sensitive express deliveries.",
-      "Broad geographical reach.",
-      "Cost effective routing of cargoes.",
+      "Time-sensitive express deliveries.",
+      "Extensive geographical reach.",
+      "Cost-effective cargo routing.",
       "Round the clock service.",
-      "Dedicated cargo flight (GCR Cargo flight, Fast track, Hand carry).",
-      "Door-to-Door / Door-to-Airport services & Airport-to-airport, Airport-to-Door.",
-      "Intelligent tracking and tracing (Road, Rail & air).",
-      "Intelligent alerts of shipment status.",
-      "Multi-platform (Web, iOS & Android).",
+      "Dedicated cargo flights (GCR, Fast Track, Hand Carry).",
+      "Door-to-Door, Door-to-Airport, Airport-to-Door, Airport-to-Airport services.",
+      "Real-time tracking and intelligent shipment alerts (Road, Rail & Air).",
+      "Multi-platform access (Web, iOS & Android).",
     ],
     path: ROUTES.AIR_SERVICE,
   },
   {
-    title: "Rail Services",
+    title: "Rail Cargo Services",
     description:
-      "With over 18 years of experience in cargo movement , Vinsum Axpress hold an expertise in offering rail cargo services by transporting the cargoes safely & securely from one location to another . Our experienced staff ensures the utmost care right from the packaging ggods till it gets delivered . We offer highly sofisticated & customizable services as per the specific requirements by clients. Also , our inbuilt ERP & Mobile application helps in closely monitoring the movement of in-transit cargoes.",
+      `With over 23 years of expertise in cargo transportation, <strong>Vinsum Axpress</strong> specializes in delivering safe, reliable, and efficient <strong>rail logistics solutions</strong>. Our dedicated team ensures careful handling at every stage—from secure packaging to final delivery—guaranteeing the integrity of your cargo throughout the journey. We provide fully customizable rail freight services tailored to meet the unique needs of each client. Supported by our advanced ERP system and mobile application, we offer real-time tracking and end-to-end visibility, ensuring total control and transparency over in-transit cargo.`,
     image: trainService,
     offers: [
-      "High level expertise & experience.",
-      "Single integrated service provider.",
-      "Multimodal movement.",
-      "Efficient handling of huge bulk shipments.",
-      "In transit monitoring.",
-      "Break bulk & full train movement.",
-      "Offer both SLR & VPU facilities.",
+      "Extensive industry expertise and proven experience.",
+      "End-to-end solutions from a single, integrated logistics provider.",
+      "Seamless multimodal cargo movement.",
+      "Specialized handling of large-volume and bulk shipments.",
+      "Real-time in-transit cargo monitoring.",
+      "Support for both break-bulk and full train consignments.",
+      "Availability of both SLR (Seating-cum-Luggage Rake) and VPU (Van Parcel Unit) options.",
     ],
     path: ROUTES.RAIL_SERVICE,
   },
   {
     title: "Road Services",
     description:
-      "Catering to the needs of our clients, we offer high volume of freight transportation by roads. Promising efficient deliveries 24hrs a day regardless of airport railway and port operating schedules. We at Vinsum take into consideration the individual needs of clients & provide transportation in strict conformity with agreed terms at the best price.",
+      "At <strong>Vinsum Axpress</strong>, we specialize in high-volume freight transportation via road, delivering reliable and efficient service around the clock—independent of airport, railway, or port schedules. Our road logistics solutions are tailored to meet each client’s unique requirements, ensuring deliveries are made in strict alignment with agreed timelines and at the most competitive rates. With a focus on flexibility, precision, and cost-efficiency, we provide dependable overland transport solutions designed to support your supply chain seamlessly.",
     image: roadService,
     offers: [
-      "Flexible routing & GPS enabled fleet.",
-      "FTL/PTL Management.",
-      "Speed Truck.",
-      "ODC cargo movement.",
-      "With 450+ Fleet size covering more than 1.5 lakh km per day. Milk run transportation.",
-      "Weather proof containerized vehicle.",
-      "Axpress logistics offer both unmatched dependability and flexibility with our customized over the road. Trucking / transportation solution which provides an efficient and reliable surface cargo services, movement pan- india.",
-      "With over 650 plus dedicated fleet of vehicle with trained drivers, covering 1 lakh kilometer every day in entire country. We are best in catering to any transportation requirement across the country with fast, efficient and express logistics services.",
+      "GPS-enabled fleet with flexible routing.",
+      "Full Truckload (FTL) and Part Truckload (PTL) management.",
+      "High-speed trucking and ODC (Over Dimensional Cargo) movement.",
+      "450+ fleet covering over 1.5 lakh km daily across India.",
+      "Milk-run transportation for optimized deliveries.",
+      "Weather-proof, containerized vehicles for safe transit.",
+      "650+ dedicated vehicles with trained drivers.",
+      "Reliable, pan-India surface cargo services with express delivery options.",
     ],
     path: ROUTES.ROAD_SERVICE,
   },
@@ -1043,26 +1042,46 @@ export const blogs = [
   {
     id: 1,
     title: "Champion of Supply Chain Management 2020",
-    images: [
-      "https://vinsumaxpress.com/assets/img/blog/ET_01.png",
-      "https://vinsumaxpress.com/assets/img/blog/ET_02.jpg",
-      "https://vinsumaxpress.com/assets/img/blog/ET_03.jpg",
-    ],
-    description:
+    featuredImage: "https://vinsumaxpress.com/assets/img/blog/ET_01.png",
+    image1: null,
+    image2: null,
+    description1:
       'It is very pleasure and also a proud moment for us that The Economic Times has recognized our Company "VINSUM AXPRESS INDIA PVT LTD" as a Champion of Supply Chain Management 2020.',
+    description2:
+      'It is very pleasure and also a proud moment for us that The Economic Times has recognized our Company "VINSUM AXPRESS INDIA PVT LTD" as a Champion of Supply Chain Management 2020.',
+    description3:
+      'It is very pleasure and also a proud moment for us that The Economic Times has recognized our Company "VINSUM AXPRESS INDIA PVT LTD" as a Champion of Supply Chain Management 2020.',
+    faq: null,
     author: "Vinsum Axpress",
     cratedAt: "Jan 21, 2021",
   },
   {
     id: 2,
     title: "Champion of Supply Chain Management 2020",
-    images: [
-      "https://vinsumaxpress.com/assets/img/blog/road-freight-services.jpg",
-      "https://vinsumaxpress.com/assets/img/blog/ET_02.jpg",
-      "https://vinsumaxpress.com/assets/img/blog/ET_03.jpg",
-    ],
-    description:
+    featuredImage: "https://vinsumaxpress.com/assets/img/blog/road-freight-services.jpg",
+    description1:
       "<p>Trucks come in various shapes and sizes that support different types of loads. All these trucks are specially designed to do a particular type of job. These trucks, based on their size and shape, make transportation of goods easier. Now, many people need assistance in finding the most appropriate truck for the type of cargo. In this article, we will explain to you what types of trucks are there and what types of loads they are capable of.</p><h1>Refrigerated truck</h1><p>These types of trucks have refrigeration facilities. Goods prone to destruction are transported by these trucks as they provide freezing service and everyone knows that cold prevents things from being destroyed. Milk, eggs, edibles, medicines etc. are transported through them. Typically, transportation is done overnight.</p><h1>Flatbeds</h1><p>What is a flatbed? Flatbed trucks have a cabin for the driver and the rest of the truck is open. These trucks are best for loading wood, pipes {concrete or plastic whatever}, and other things like that. They are long and open which makes easy loading and unloading. A single flatbed trailer can carry a maximum fare of 48,000 pounds which it can easily handle.</p><h1>Box Truck</h1><p>They are simple trucks also known as cube trucks. These trucks are small in size, well sealed. Typically, these trucks are used for home furniture, while families move from one place to another. These are generally in good demand as they require low license requirements and are usually easily controlled and managed.</p><h1>Liftgate Trucks</h1><p>Liftgates is a generic term used in American slang. In British English the British lift tail is used for the same. These have an installed rear end that collects goods from the ground level and then loads it into the truck. This reduces heavy lifting to a great extent and also facilitates better service. Up-lifters can be hydraulic, mechanic, etc. depending on the truck and technology.</p><h1>Semi-trailer truck</h1><p>Now, the semi-trailer type of trucks is also widely used. They have an open edge, roof, or rear that suits you to load freight. Their capacity is 24,000 kg. It is best for items that are stored in the stack.</p><h1>Jumbo trailer truck</h1><p>They are as beautiful as the ones mentioned above. These trailers have more capacity than semi-trailer trucks because they have a lower wheel diameter and a G-shaped floor that supports capacity. These trucks are best for capacitive accessories as these trucks are very spacious and lightweight. Like a semi-trailer truck, one can load from either side or top or rear wherever it seems convenient.</p><p>Therefore, all of these were commonly used trucks in the logistics sector. One can easily understand their way of working and they can carry with ability and other features and can easily decide what kind of goods the customer supports. One should wisely choose the type of truck they need as they are all different rates that affect the freight rates.</p><h1>List of truck types</h1><p>The purpose of this list of truck types is to classify trucks and provide links to articles on different types. The three main classifications for road trucks by weight are light trucks, medium trucks, and heavy trucks. On top of this, there are particularly very heavy trucks and transporters such as heavy hellers for oversized moves, and off-road heavy trucks and very large trucks used for mining and highway use without special permits.</p>",
+    author: "Vinsum Axpress",
+    cratedAt: "May 20, 2020",
+  },
+  {
+    id: 3,
+    title: "What is Last Mile Delivery? A Step-by-Step Guide",
+    featuredImage: "https://vinsumaxpress.com/assets/img/blog/road-freight-services.jpg",
+    description1:
+      `Imagine the final over of a nail-biting cricket match—the team needs just a few runs, but every delivery counts. One mistake could cost the entire game. In logistics, <strong>last-mile delivery</strong> is much the same—high-stakes, high-pressure, and critical. It’s the final stretch where timing, precision, and performance matter most. Last-mile delivery can account for over <strong>53% of total shipping costs</strong> (Source: Chain Store Age), making it one of the most complex and costly parts of the supply chain. <br><br>
+       Today, the logistics industry stands at a crucial juncture. The rapid rise of quick commerce and e-commerce has intensified the demands placed on last-mile operations. Consider this: in 2023 alone, India recorded <strong>345 million online shoppers</strong> (Source: Statista), resulting in the shipment of more than <strong>300 million packages</strong>. The scale is staggering—and only set to grow. <br><br>
+       So, what does this mean for businesses? The message is clear: the pressure on last-mile delivery will continue to escalate, and <strong>mastering this final leg of the journey is essential to staying competitive</strong> in a dynamic market. <br><br>
+       At <strong>Vinsum Axpress</strong>, we understand the critical importance of last-mile delivery. That’s why we’re focused on building efficient, agile, and tech-driven last-mile solutions that help businesses meet rising customer expectations—on time, every time. Because in this game, <strong>every delivery is a winning run</strong>.<br><br>`,
+    description2: 
+      `<br> <span class="text-xl font-bold">Winning the last-mile delivery race</span><br><br> The key to thriving under the growing demands of modern logistics lies in partnering with experts who specialize in last-mile delivery. <strong>Vinsum Axpress</strong> empowers businesses to achieve precision, speed, and reliability right where it matters most—at the customer’s doorstep. With last-mile delivery coverage spanning <strong>19,000+ pin codes</strong> and backed by a solid logistics infrastructure, Vinsum Axpress is built to handle the pressure. <br><br>
+       But what exactly does last-mile delivery involve? <br>
+       The term refers to the <strong>final phase of the supply chain—</strong>moving goods from a distribution hub, fulfillment center, warehouse, or retail outlet directly to the end customer. This stage is not just the last link in the chain; it’s the most crucial. It significantly shapes the customer’s overall experience, making it a critical focus area for any business aiming to excel in today’s competitive market. <br><br>
+       <span class="text-base font-semibold">With Vinsum Axpress, the last mile isn’t just the end—it’s where excellence is delivered.</span><br><br>
+       <span class="text-lg font-semibold">Why is last-mile delivery so challenging?</span><br>
+       Now, let’s address the million-dollar question—<strong>why is last-mile delivery considered the most complex and costly phase of the logistics chain?</strong> The answer lies in customer expectations: for <strong>98% of consumers</strong>, delivery experience directly impacts their brand loyalty (Source: Meteor Space). That’s a high-stakes game for any business.<br><br>
+       Here are some of the key challenges that make last-mile delivery so demanding:<br><br>
+      `,
     author: "Vinsum Axpress",
     cratedAt: "May 20, 2020",
   },

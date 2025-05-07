@@ -26,13 +26,12 @@ const MultiModalTransportation = () => {
               <Fragment key={index}>
                 <div className={`grid md:grid-cols-2 gap-6`}>
                   <div className={`${isOdd ? "md:order-2" : ""}`}>
-                    <img src={image} alt={title} className="w-full h-auto" />
+                    <img src={image} alt={title} className="w-full h-auto rounded-xl" />
                   </div>
 
                   <div>
                     <h1 className="sm:text-3xl text-2xl font-bold">{title}</h1>
-                    <p className="my-4 sm:text-base text-sm opacity-80">
-                      {description}
+                    <p className="my-4 sm:text-base text-sm opacity-80" dangerouslySetInnerHTML={{ __html: description }}>
                     </p>
                     <Link to={path}>
                       <Button>Read More...</Button>
@@ -48,8 +47,8 @@ const MultiModalTransportation = () => {
 
       <section className="section">
         <div className="container">
-          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
-            To know more about our multi modal transportaion, please reach us
+          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto text-center">
+            To know more about our multi modal transportation, please reach us
             through the appended form or write to us at.
             <a
               href="mailto:care@vinsumaxpress.com"

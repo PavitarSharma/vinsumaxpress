@@ -18,7 +18,7 @@ const threePlManagement = {
   section01: {
     title: "3PL Inventory Management",
     description:
-      "We are Third-party logistics providers typically specialize in integrated operations of warehousing and transportation services that can be scaled and customized to customer's needs, based on market conditions to meet the demands and delivery service requirements for their products. Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
+      "We are a third-party logistics provider specializing in <strong>integrated warehousing and transportation solutions</strong> that are fully <strong>scalable and customizable</strong> to meet evolving market demands. Our services also include <strong>value-added support</strong> such as supply chain integration, procurement assistance, and production-related logistics.",
     image: threePl,
   },
   section02: {
@@ -66,10 +66,10 @@ const ThreePlInventoryManagement = () => {
       <section className="section">
         <div className="container grid md:grid-cols-2 gap-6">
           <div className="md:order-1 order-2">
-            <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold">
+            <h2 className="lg:text-4xl sm:text-4xl text-3xl font-bold">
               {section01.title}
             </h2>
-            <p className="my-4">{section01.description}</p>
+            <p className="my-4" dangerouslySetInnerHTML={{ __html: section01.description }}></p>
           </div>
 
           <div className="md:order-2 order-1">
@@ -126,7 +126,7 @@ const ThreePlInventoryManagement = () => {
 
       <section className="section">
         <div className="container">
-          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
+          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto text-center">
             To know more about our 3PL and Inventory Management, please reach us
             through the appended form or write to us at.
             <a

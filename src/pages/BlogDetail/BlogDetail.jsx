@@ -45,31 +45,43 @@ const BlogDetail = () => {
           </div>
 
           <img
-            src={blog.images[image]}
+            src={blog.featuredImage}
             alt={blog.title}
-            className="w-full h-[500px] object-cover my-6"
+            className="w-full h-[500px] object-cover my-6 rounded-xl"
           />
-
-          <div className="flex flex-wrap gap-8 my-6">
-            {blog.images.map((image, idx) => {
-              return (
-                <img
-                  onClick={() => toggleImage(idx)}
-                  key={idx}
-                  src={image}
-                  alt={blog.title}
-                  className="w-[250px] h-[250px] object-contain rounded-lg"
-                />
-              );
-            })}
-          </div>
 
           <div
             className="mt-10 space-y-2"
             // dangerouslySetInnerHTML={{ __html: blog.description }}
             aria-label="Blog information content"
           >
-            {parse(blog.description)}
+            {blog.description1 && (
+              <p dangerouslySetInnerHTML={{ __html: blog.description1 }}></p>
+            )}
+
+            {blog.image1 && (
+              <img
+                src={blog.image1}
+                alt="blog image 1"
+                className="w-full h-fit object-cover"
+              />
+            )}
+
+            {blog.description2 && (
+              <p dangerouslySetInnerHTML={{ __html: blog.description2 }}></p>
+            )}
+
+            {blog.image2 && (
+              <img
+                src={blog.image2}
+                alt="blog image 2"
+                className="w-full h-fit object-cover"
+              />
+            )}
+
+            {blog.description3 && (
+              <p dangerouslySetInnerHTML={{ __html: blog.description3 }}></p>
+            )}
           </div>
         </div>
       </section>

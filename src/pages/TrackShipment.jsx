@@ -18,6 +18,7 @@ import { LuMoveRight } from "react-icons/lu";
 import { heroSectionBg } from "@/assets/images";
 
 const TrackShipment = () => {
+  callDocketEnquiry()
   const [isTracking, setIsTracking] = useState(false);
   const [loading, setLoading] = useState(false);
   const [shipment, setShipment] = useState(null);
@@ -166,7 +167,7 @@ const TrackShipment = () => {
                     </h2>
                   </AccordionTrigger>
                   <AccordionContent className="space-y-6">
-                    <p className="text-zinc-600">{answer}</p>
+                    <p className="text-zinc-600" dangerouslySetInnerHTML={{ __html: answer }} ></p>
                     {/* <Link
                       to={`${ROUTES.SERVICE}${answer}`}
                       className="flex items-center gap-1 hover:text-primary transition duration-300"
@@ -181,6 +182,21 @@ const TrackShipment = () => {
       </section>
     </>
   );
+};
+
+const callDocketEnquiry = async () => {
+  const payload = { dwbno: "2000001260" };
+
+  const response = await fetch("http://webservice.asmx/docketEnquiry", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json", // or try text/plain if it fails
+    },
+    body: JSON.stringify(payload),
+  });
+
+  const result = await response.text(); // or .json() if it's proper JSON
+  console.log(result);
 };
 
 export default TrackShipment;

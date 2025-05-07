@@ -13,6 +13,7 @@ import {
   timeConsuming,
   transitDamageLimited,
   unsafeCombustible,
+  packagingSolution,
   vinsumAxpressPlantImage01,
   vinsumAxpressPlantImage02,
   vinsumAxpressPlantImage03,
@@ -20,23 +21,17 @@ import {
   vinsumAxpressPlantImage05,
 } from "../../assets/images";
 
-const packagingSolution = {
+const packaging_Solution = {
   returnablePackagingServices: [
-    "Eco - Friendly.",
-    "Benefit from the improved inbound/outbound.",
-    "Freight cube efficiency.",
-    "Control product damage.",
-    "Reduced packaging waste.",
-    "Improved quality control.",
-    "Improved workplace safety.",
-    "Reduce inspection.",
-    "Loading & Unloading time.",
-    "Reduces warehousing and storage needs.",
-    "Reduce labor costs.",
-    "Reduced transportation costs.",
-    "Supports lean production.",
-    "Improves inventory management.",
-    "Metal Identification of Parts & products.",
+    "Eco-friendly and sustainable.",
+    "Enhanced inbound/outbound efficiency.",
+    "Optimized freight cube utilization.",
+    "Minimized product damage and packaging waste.",
+    "Improved quality control and workplace safety.",
+    "Reduced inspection, handling, and loading/unloading time.",
+    "Lower warehousing, labor, and transportation costs.",
+    "Supports lean production and better inventory management",
+    "Metal-based part and product identification.",
   ],
   dermitsPackaging: [
     { title: "Time Consuming", image: timeConsuming },
@@ -52,13 +47,13 @@ const PackagingSolution = () => {
     document.title = "Packaging Solution";
   }, []);
 
-  const { returnablePackagingServices, dermitsPackaging } = packagingSolution;
+  const { returnablePackagingServices, dermitsPackaging } = packaging_Solution;
 
   return (
     <>
       <div className="container py-8">
         <h1 className="text-primary sm:text-2xl text-xl font-bold">
-          Packaging Solution
+          PACKAGING SOLUTIONS
         </h1>
       </div>
       <section>
@@ -66,27 +61,19 @@ const PackagingSolution = () => {
           <div className="md:order-1 order-2">
             <div>
               <h2 className="md:text-3xl sm:text-2xl text-xl font-bold">
-                Visual Packaging Solution Designing
+                Visual Packaging Solution Design
               </h2>
               <p className="my-4 sm:text-base text-sm">
-                We have a dedicated solution design team that specializes in
-                material level knowledge and can design solutions based on
-                inputs provided by the customer about the component / part and
-                produce feasibility reports for all your packaging needs
-                consultation.
+                We have a dedicated solution design team with in-depth material expertise, capable of developing tailored packaging solutions based on customer inputs regarding components or parts. We also provide comprehensive feasibility reports to support all your packaging consultation needs.
               </p>
             </div>
 
             <div>
               <h2 className="md:text-3xl sm:text-2xl text-xl font-bold">
-                Packaging Product Manufacturing & Development
+                Customized Packaging Solutions & Production
               </h2>
               <p className="my-4 sm:text-base text-sm">
-                The range of products and services by VINSUM AXPRESS are
-                designed keeping in mind the flexible and customized needs of a
-                customer as per their demand. We offer customized solution in
-                various materials i.e. PP, Plastic (HDP/LDP), Metal (Iron,
-                Steel, Wiremesh), Wood & Paper Corrugated etc.
+                At <strong>Vinsum Axpress</strong>, our product and service offerings are designed with a focus on flexibility and customization to meet the unique requirements of each customer. We provide tailored solutions across a wide range of materials, including PP, plastics (HDP/LDP), metals (iron, steel, wire mesh), wood, and paper corrugated products.
               </p>
             </div>
           </div>
@@ -111,12 +98,7 @@ const PackagingSolution = () => {
               Product on Rent (Per Trip Basis)
             </p>
             <p className="my-2 sm:text-base text-sm">
-              The returnable packaging/Pooling Concept Services in a way that
-              VINSUM AXPRESS owned product provided on Rental as a Service. A
-              nominal rent is charged for the use of product on per trip basis
-              with Reverse logistics facilities It is a growing service to
-              reduce capital expenditures and improve Day to Day Supply Chain
-              Operations for Customers.
+              <strong>Vinsum Axpress</strong> offers <strong>Returnable Packaging and Pooling Services</strong> through a <strong>Rental-as-a-Service model</strong>, where company-owned packaging assets are provided to clients on a per-trip rental basis. This solution includes comprehensive reverse logistics support, enabling efficient return and reuse of packaging materials. Designed to minimize capital expenditure, this growing service helps clients streamline their daily supply chain operations while promoting cost-effectiveness and sustainability.
             </p>
           </div>
 
@@ -128,31 +110,26 @@ const PackagingSolution = () => {
               (Product on Sale)
             </p>
             <p className="my-2 sm:text-base text-sm">
-              In Capex Model we design and develop Customized packaging product
-              for their specific needs. The ownership of the packaging product
-              lies with the customer as it is a one time sale by VINSUM AXPRESS
-              and the services for reverse logistics to keep the supply chain
-              moving can be managed by VINSUM AXPRESS.
+              Under the <strong>Capex Model, Vinsum Axpress</strong> designs and develops customized packaging solutions tailored to the specific needs of each customer. In this model, ownership of the packaging products is transferred to the customer through a one-time purchase. To ensure seamless supply chain continuity, Vinsum Axpress can also manage the associated reverse logistics services, offering end-to-end operational support.
             </p>
           </div>
         </div>
       </section>
 
+
       <section className="section">
         <div className="container">
-          <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl mb-12">
-            RETURNABLE SOLUTION BENEFIT
+          <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
+            RETURNABLE SOLUTIONS BENEFIT
           </div>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-            <div>
-              <img src={returnablePackaging} alt="returnablePackaging" />
-            </div>
-            <div>
-              <ul className="space-y-2">
+
+          <div className="space-y-8  py-4 grid lg:grid-cols-2 items-center">
+            <div className="lg:order-1 order-2 w-full">
+              <ul className="space-y-2 w-full">
                 {returnablePackagingServices.map((service, index) => (
                   <li
                     key={index}
-                    className="flex items-center justify-center gap-2"
+                    className="flex items-center justify-center gap-2 w-full md:text-2xl"
                   >
                     <FaHandPointRight size={16} className="opacity-70" />
                     <span className="flex-1">{service}</span>
@@ -160,6 +137,14 @@ const PackagingSolution = () => {
                 ))}
               </ul>
             </div>
+
+            <figure className="order-1 lg:order-2">
+              <img
+                src={packagingSolution}
+                alt="packaging_Solution"
+                className="sm:w-[500px] lg:ml-auto mx-auto"
+              />
+            </figure>
           </div>
         </div>
       </section>
@@ -187,14 +172,7 @@ const PackagingSolution = () => {
               PACKAGING MANUFACTURING PLANT
             </h2>
             <p className="my-2 opacity-70 sm:text-base text-sm">
-              VINSUM AXPRESS has a state-of-art manufacturing set up at
-              sector-37 Gurgaon & Ambala in 50,000 sq. ft area. Vinsum axpress
-              has an installed capacity of 50,000 boxes per month which can be
-              scaled upto 1.5 lakh boxes per month as per the requirement. For
-              manufacturing quality product in time, the facility boasts all the
-              major machinery under one-roof for PP box manufacturing , Wire
-              mesh containers, Metal foldable Containers and HDPE/LDPE foldable
-              crates.
+              <strong>Vinsum Axpress</strong> operates advanced manufacturing units in Gurgaon and Ambala, covering <strong>50,000 sq. ft</strong> with a scalable capacity from <strong>50,000 to 1.5 lakh boxes/month</strong>. Our integrated facility supports in-house production of <strong>PP boxes, wire mesh containers, metal foldable containers, and HDPE/LDPE crates</strong>—ensuring quality, efficiency, and timely delivery.
             </p>
           </div>
 
@@ -246,13 +224,7 @@ const PackagingSolution = () => {
               Fabrication Units
             </h2>
             <p className="my-2 opacity-70 sm:text-base text-sm">
-              Our avant-garde infrastructure consist of the fabrication units to
-              develop and supply customized solutions to our-customers. These
-              units are equipped with Hi-Tech fabrication equipment, tools and
-              software such as hydraulic press Jigsaw cutting tool, forming,
-              adhesive coating line, heating tool, AutoCAD software, punching
-              machines sets of dies and punch, and peacemaking machine. We also
-              have our Own template and design Centre.
+              Our advanced infrastructure features dedicated fabrication units equipped with <strong>hydraulic presses, cutting and forming tools, adhesive coating lines, punching machines</strong>, and <strong>AutoCAD software</strong>. We also operate a fully functional <strong>in-house design and template center</strong> to deliver precise, customized solutions.
             </p>
           </div>
 
@@ -261,8 +233,7 @@ const PackagingSolution = () => {
               Testing Facilities:
             </h2>
             <p className="my-2 opacity-70 sm:text-base text-sm">
-              Our units are equipped with Universal testing Machine,
-              Electrostatic Charge Tester-and GSM Testing Facility.
+              Our facilities are equipped with advanced testing tools, including a <strong>Universal Testing Machine, Electrostatic Charge Tester</strong>, and <strong>GSM Testing Equipment</strong>, ensuring consistent quality and performance of our products.
             </p>
           </div>
         </div>
@@ -290,7 +261,7 @@ const PackagingSolution = () => {
 
       <section className="section">
         <div className="container">
-          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
+          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto text-center">
             To know more about our Packaging Solutions, please reach us through
             the appended form or write to us at
             <a

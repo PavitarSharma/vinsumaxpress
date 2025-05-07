@@ -167,7 +167,7 @@ const ArticlesSection = () => {
                 {/* Left: Image Section */}
                 <div className="w-full h-[200px] border-2 border-black rounded-md relative overflow-hidden mb-6">
                   <img
-                    src={blog.images[0]}
+                    src={blog.featuredImage}
                     alt={blog.title}
                     className="w-full h-full object-cover"
                   />
@@ -192,7 +192,7 @@ const ArticlesSection = () => {
                   </Link>
                   <p
                     className="line-clamp-3 my-4 font-medium"
-                    dangerouslySetInnerHTML={{ __html: blog.description }}
+                    dangerouslySetInnerHTML={{ __html: blog.description1 }}
                     aria-label="Blog information content"
                   ></p>
 

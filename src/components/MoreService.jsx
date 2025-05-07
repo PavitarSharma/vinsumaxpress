@@ -8,9 +8,7 @@ const MoreService = () => {
         <div className="flex flex-col items-center justify-center">
           <h3 className="text-3xl font-bold">More Service</h3>
           <p className="max-w-xl w-full text-center text-sm my-4 opacity-80">
-            Vinsum Axpress is commited to offer logistics solutions and services
-            to the indian industry, desgined to customer&#39;s satisfaction in
-            orger to grow together in a win-win situation.
+            <strong>Vinsum Axpress</strong> is dedicated to providing logistics solutions tailored to the needs of Indian industries, with a strong focus on customer satisfaction—fostering mutual growth in a win-win partnership.
           </p>
         </div>
         <div className="grid mt-8 lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-x-4 gap-y-6 max-w-screen-lg mx-auto">

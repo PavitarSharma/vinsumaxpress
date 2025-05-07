@@ -74,9 +74,9 @@ import inventoryCount from "@/assets/images/services/inventory.png";
 import binPutWay from "@/assets/images/services/waste-bin.png";
 import binTransfer from "@/assets/images/services/recycle.png";
 import warehouseSolution from "@/assets/images/services/wraehouse-solution.png";
-import airService from "@/assets/images/services/air-service.png";
-import trainService from "@/assets/images/services/train-service.png";
-import roadService from "@/assets/images/services/road-service.png";
+import airService from "@/assets/images/services/air-service.jpg";
+import trainService from "@/assets/images/services/train-service.jpg";
+import roadService from "@/assets/images/services/road-service.jpg";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -85,6 +85,7 @@ import vinsumNetworkMap from "@/assets/images/about/network-map.png";
 import mission from "@/assets/images/about/mission.png";
 import vision from "@/assets/images/about/vision.png";
 import value from "@/assets/images/about/value.png";
+import aboutUsHero from "@/assets/images/about/about-us-hero.png";
 import vinsumAxpressWarehouse from "@/assets/images/about/vinsum-axpress-warehouse.png";
 
 // Career
@@ -185,7 +186,7 @@ import thermoFormingImage4 from "@/assets/images/packaging/B10.png";
 
 // Packaging Solution
 import packagingSolutionManagment from "@/assets/images/packaging/packaging-solution-managment.png";
-import returnablePackaging from "@/assets/images/packaging/returanable-packaging.png";
+import returnablePackaging from "@/assets/images/packaging/returanable-packaging.svg";
 import timeConsuming from "@/assets/images/packaging/demerits-icon-time.png";
 import transitDamageLimited from "@/assets/images/packaging/demerits-icon6-transit-damage.svg";
 import oneTimeUsageGreen from "@/assets/images/packaging/demerits-icon3-one-time.svg";
@@ -377,5 +378,6 @@ export {
   warehouseServiceIcon,
   packagingServiceIcon,
   truckAnimation,
-  roadTrack
+  roadTrack,
+  aboutUsHero
 };

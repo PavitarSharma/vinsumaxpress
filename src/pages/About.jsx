@@ -15,6 +15,7 @@ import {
   value,
   gallery22,
   vinsumNetworkMap,
+  aboutUsHero,
   vinsumRoadMap,
   vision,
 } from "@/assets/images";
@@ -116,11 +117,11 @@ const About = () => {
             </Link>
           </div>
 
-          <figure className="lg:order-2 order-2 h-[95%] w-full">
+          <figure className="lg:order-2 order-2 h-full w-full mt-8">
             <img
-              src={vinsumNetworkMap}
+              src={aboutUsHero}
               alt="vinsum-warehouse"
-              className="rounded-2xl h-full brightness-90 shadow-xl p-5"
+              className="rounded-2xl h-full brightness-90 shadow-xl object-cover"
             />
           </figure>
         </div>
@@ -131,7 +132,7 @@ const About = () => {
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
             OUR JOURNEY
           </div>
-          <div className="w-full aspect-video h-[465px] overflow-hidden  mt-16 rounded-md">
+          <div className="w-full aspect-video h-[465px] overflow-hidden mt-16 rounded-md">
             <video
               ref={videoRef}
               muted
@@ -296,32 +297,42 @@ const About = () => {
                 },
                 index
               ) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <figure>
-                      <img
-                        src={image}
-                        alt={name}
-                        className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
-                      />
-                    </figure>
-                    <CardTitle className="text-center">{name}</CardTitle>
-                    <CardDescription className="text-center">
-                      {position}
-                    </CardDescription>
-                  </CardHeader>
-
-                  <CardFooter>     
-                    <div className="w-full text-center">
-                      <button className="bg-sky-600 hover:bg-sky-700 text-white text-center justify-self-center py-2 rounded-md border border-sky-600 px-4 rounded inline-flex items-center justify-center">
-                        <p className="flex items-center text-base">Connect on LinkedIn</p>
-                        <div className="bg-white text-sky-600 p-1 ms-2 flex items-center justify-center">
-                          <FaLinkedinIn />
-                        </div>
-                      </button>
+                <div>
+                  <figure className="relative w-48 h-48 mx-auto mb-4">
+                    <img
+                      src={image}
+                      alt={name}
+                      className="w-full h-full rounded-full object-cover"
+                    />
+                    <div className="absolute left-1/2 top-1/2 translate-x-[148%] translate-y-[148%] rounded-full bg-blue-600">
+                      <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedinIn className="text-white text-4xl p-2" />
+                      </a>
                     </div>
-                  </CardFooter>
-                </Card>
+                  </figure>
+                  <p className="text-center font-semibold text-lg">{name}</p>
+                  <p className="text-center text-base text-gray-400">{position}</p>
+                </div>
+                // <Card key={index}>
+                //   <CardHeader>
+                    
+                //     <CardTitle className="text-center">{name}</CardTitle>
+                //     <CardDescription className="text-center">
+                //       {position}
+                //     </CardDescription>
+                //   </CardHeader>
+
+                //   <CardFooter>     
+                //     <div className="w-full text-center">
+                //       <button className="bg-sky-600 hover:bg-sky-700 text-white text-center justify-self-center py-2 rounded-md border border-sky-600 px-4 rounded inline-flex items-center justify-center">
+                //         <p className="flex items-center text-base">Connect on LinkedIn</p>
+                //         <div className="bg-white text-sky-600 p-1 ms-2 flex items-center justify-center">
+                //           <FaLinkedinIn />
+                //         </div>
+                //       </button>
+                //     </div>
+                //   </CardFooter>
+                // </Card>
               )
             )}
           </div>

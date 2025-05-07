@@ -64,26 +64,21 @@ const AirService = () => {
 
           <div>
             <h2 className="md:text-3xl text-2xl font-bold">
-              Vinsum Axpress Premium Services ( Air)
+              Vinsum Axpress – Premium Air Freight Services
             </h2>
 
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div>
                 <h1 className="md:text-2xl text-xl font-bold">Air Plus</h1>
                 <p className="sm:text-base text-sm opacity-80 my-2">
-                  Air Plus service is specially designed to cater to the time
-                  critical shipments. This service promises delivery within 24
-                  hours or before next day noon across all major ports in India.
+                  <strong>Air Plus</strong> is a premium service tailored for time-critical shipments, ensuring delivery within 24 hours or by noon the next day across all major ports in India.
                 </p>
               </div>
 
               <div>
                 <h1 className="md:text-2xl text-xl font-bold">Air Premium</h1>
                 <p className="sm:text-base text-sm opacity-80 my-2">
-                  Air Premium service is designed for shipments that require
-                  urgency in delivery with an advantage of being cost effective.
-                  The service assures delivery within 24 hours, 48 hours and
-                  more than 48 hours to all the metro & non metro locations.
+                  <strong>Air Premium Service</strong> is tailored for urgent shipments, offering a balance of speed and cost-efficiency. It guarantees delivery within 24, 48, or over 48 hours to both metro and non-metro locations.
                 </p>
               </div>
             </div>
@@ -94,7 +89,7 @@ const AirService = () => {
       <section className="section">
         <div className="container">
           <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
-            To know more about our multi modal transportaion, please reach us
+            To know more about our multi modal transportation, please reach us
             through the appended form or write to us at.
             <a
               href="mailto:care@vinsumaxpress.com"
