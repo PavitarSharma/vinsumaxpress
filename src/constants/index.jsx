@@ -123,6 +123,9 @@ import {
   airService,
   trainService,
   roadService,
+  lastMileDelivery,
+  ftl,
+  amitShandilay
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -813,14 +816,14 @@ export const leadershipTeams = [
     instagram: "",
     linkedin: "",
   },
-  {
-    image: babulalSharma,
-    name: "Mr. Babulal Sharma",
-    position: "Head - Audit & Cost Control",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
+  // {
+  //   image: babulalSharma,
+  //   name: "Mr. Babulal Sharma",
+  //   position: "Head - Audit & Cost Control",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
   {
     image: anilRajput,
     name: "Mr. Anil Rajput",
@@ -830,9 +833,9 @@ export const leadershipTeams = [
     linkedin: "",
   },
   {
-    image: amitabhaMohapatra,
-    name: "Amitabha Mohapatra",
-    position: "Head Information Technology(IT)",
+    image: amitShandilay,
+    name: "Amit Shandilay",
+    position: "GM - Information Technology (IT)",
     twitter: "",
     instagram: "",
     linkedin: "",
@@ -861,38 +864,38 @@ export const leadershipTeams = [
     instagram: "",
     linkedin: "",
   },
-  {
-    image: profileUser,
-    name: "Mr. Kamlesh Jha",
-    position: "AVP (Warehouse Operation)",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
-  {
-    image: profileUser,
-    name: "Umesh Panday",
-    position: "AVP (Operations & Sales",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
-  {
-    image: profileUser,
-    name: "Bajrang Kumar",
-    position: "AVP (Operations & Sales",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
-  {
-    image: profileUser,
-    name: "Vikas Sharma",
-    position: "VP (Operations)",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
+  // {
+  //   image: profileUser,
+  //   name: "Mr. Kamlesh Jha",
+  //   position: "AVP (Warehouse Operation)",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
+  // {
+  //   image: profileUser,
+  //   name: "Umesh Panday",
+  //   position: "AVP (Operations & Sales",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
+  // {
+  //   image: profileUser,
+  //   name: "Bajrang Kumar",
+  //   position: "AVP (Operations & Sales",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
+  // {
+  //   image: profileUser,
+  //   name: "Vikas Sharma",
+  //   position: "VP (Operations)",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
 ];
 
 // Career
@@ -1067,7 +1070,7 @@ export const blogs = [
   {
     id: 3,
     title: "What is Last Mile Delivery? A Step-by-Step Guide",
-    featuredImage: "https://vinsumaxpress.com/assets/img/blog/road-freight-services.jpg",
+    featuredImage: lastMileDelivery,
     description1:
       `Imagine the final over of a nail-biting cricket match—the team needs just a few runs, but every delivery counts. One mistake could cost the entire game. In logistics, <strong>last-mile delivery</strong> is much the same—high-stakes, high-pressure, and critical. It’s the final stretch where timing, precision, and performance matter most. Last-mile delivery can account for over <strong>53% of total shipping costs</strong> (Source: Chain Store Age), making it one of the most complex and costly parts of the supply chain. <br><br>
        Today, the logistics industry stands at a crucial juncture. The rapid rise of quick commerce and e-commerce has intensified the demands placed on last-mile operations. Consider this: in 2023 alone, India recorded <strong>345 million online shoppers</strong> (Source: Statista), resulting in the shipment of more than <strong>300 million packages</strong>. The scale is staggering—and only set to grow. <br><br>
@@ -1080,10 +1083,214 @@ export const blogs = [
        <span class="text-base font-semibold">With Vinsum Axpress, the last mile isn’t just the end—it’s where excellence is delivered.</span><br><br>
        <span class="text-lg font-semibold">Why is last-mile delivery so challenging?</span><br>
        Now, let’s address the million-dollar question—<strong>why is last-mile delivery considered the most complex and costly phase of the logistics chain?</strong> The answer lies in customer expectations: for <strong>98% of consumers</strong>, delivery experience directly impacts their brand loyalty (Source: Meteor Space). That’s a high-stakes game for any business.<br><br>
-       Here are some of the key challenges that make last-mile delivery so demanding:<br><br>
+       &emsp;Here are some of the key challenges that make last-mile delivery so demanding:<br><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <span class="text-base font-semibold">Cost Pressures:</span><br>
+            Last-mile delivery is expensive. Rising fuel prices, labor costs, vehicle maintenance, and other operational expenses can significantly impact profit margins and cost-efficiency. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Urban Traffic & Congestion:</span><br>
+            Navigating traffic in densely populated cities and dealing with poor road infrastructure can delay deliveries and reduce route efficiency. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Inaccurate Delivery Addresses:</span><br>
+            Incomplete or incorrect addresses lead to failed delivery attempts, causing delays, added costs, and customer dissatisfaction. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Customer Unavailability:</span><br>
+            When recipients aren’t available to receive packages, re-delivery attempts are often necessary—further increasing operational costs and resource usage. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Delivery Delays:</span><br>
+            Time-sensitive deliveries are vulnerable to unpredictable disruptions such as weather, traffic, or unforeseen logistics hurdles. These delays not only impact delivery schedules but can trigger a domino effect, affecting customer trust and incurring financial losses. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Parcel Size & Special Handling:</span><br>
+            Delivering oversized, fragile, or temperature-sensitive items often requires extra packaging, specialized vehicles, or trained personnel—adding complexity to the last-mile process. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Labor Shortages:</span><br>
+            A lack of trained delivery staff, particularly during high-demand seasons, can impact delivery timelines and overall service reliability. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Regulatory Challenges:</span><br>
+            Varying regional laws, taxes, permits, and regulations—especially for cross-border deliveries—can introduce additional layers of complexity. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Returns Management:</span><br>
+            Efficiently handling returned items is another major challenge. Reverse logistics can disrupt forward delivery operations and inflate operational costs. <br><br>
+          </li>
+        </ul>
+        <br>
+        At <strong>Vinsum Axpress</strong>, we understand these pain points and are committed to solving them through tailored last-mile solutions that balance speed, accuracy, and cost-effectiveness—helping your business stay ahead in a rapidly evolving delivery landscape. <br><br><br>
+        <span class="text-lg font-semibold">What are the key elements of a successful last-mile delivery process?</span><br><br>
+        The final stage of delivery is often the deciding factor for customer satisfaction. However, last-mile delivery is much more than simply moving a package from point A to point B—it requires careful planning and precise execution. Each step plays a critical role from when the order is processed, sorted, dispatched, tracked, and finally delivered. Managing all these stages effectively is essential to ensuring efficiency and reliability, but it can become a daunting task without the right support.
+        <br><br>This is where partnering with top-tier last-mile delivery services, such as <strong>Vinsum Axpress</strong>, becomes essential. With over 4,500 pick-up and delivery centers across India, <strong>Vinsum Axpress</strong> covers every part of the delivery process, ensuring smooth and timely operations. <br><br>
+        But we don’t stop at simply delivering packages. At <strong>Vinsum Axpress</strong>, we go above and beyond the basics to offer additional features that enhance the entire logistics experience. Let’s explore how we ensure your logistics operations run at their best, making last-mile delivery seamless and efficient for your business.<br><br><br>
+        <span class="text-lg font-semibold">How does Vinsum Axpress transform challenges into opportunities?</span>
+        <br><br>Did you know that 84% of consumers would avoid shopping from a retailer after a poor delivery experience (Source: Meteor Space)? This is why Vinsum Axpress places a strong emphasis on last-mile delivery, ensuring that shipments are delivered promptly, efficiently, and without delay. Let’s explore how Vinsum Axpress, one of India’s top last-mile delivery providers, rises to the challenge and delivers excellence.<br><br>
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <span class="text-base font-semibold">Extensive Reach:</span><br>
+            Vinsum Axpress has a comprehensive last-mile delivery network covering over 19,000+ pin codes, ensuring that businesses can reach customers in even the most remote areas of the country. This wide coverage enables businesses to expand their service footprint seamlessly. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Expert Workforce:</span><br>
+            With a dedicated team of over 28,000 field service representatives, Vinsum Axpress ensures reliable, efficient service. The expertise of their personnel minimizes errors and maximizes customer satisfaction, delivering consistent and professional service across all operations. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Strategic Infrastructure:</span><br>
+            Vinsum Axpress is equipped with a network of warehouses across 40+ cities, streamlining operations and enabling faster deliveries. This strong infrastructure helps reduce transit times, increase operational efficiency, and keep businesses competitive in the logistics market. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Advanced Technology:</span><br>
+            With over 10 automated sorters in use, Vinsum Axpress handles large volumes of shipments with precision. The integration of automation not only speeds up the sorting process but also reduces manual handling, ensuring greater accuracy and faster dispatch. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">High Efficiency:</span><br>
+            Maintaining an on-time delivery rate of 90%+, Vinsum Axpress sets a high standard for reliability within the logistics sector. By consistently meeting delivery deadlines, they help businesses build trust and loyalty with customers. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Real-Time Tracking:</span><br>
+            Vinsum Axpress offers cutting-edge tracking systems that provide businesses and customers with full visibility throughout the last-mile delivery journey. This transparency helps manage expectations, ensuring a smooth and predictable delivery experience. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Rapid Delivery Solutions:</span><br>
+            With same-day delivery in 50+ cities and 1,700+ pin codes, along with next-day delivery in 7,000+ pin codes, Vinsum Axpress caters to the increasing demand for speed and convenience in the marketplace. These flexible delivery options enable businesses to stay competitive in today’s fast-paced e-commerce world. <br><br>
+          </li>
+        </ul>
+        The global last-mile delivery market is expected to reach a staggering USD 10,552.72 million by 2032 (Credence Research), highlighting its critical importance in shaping the future of logistics. As consumer expectations continue to rise, Vinsum Axpress isn’t just keeping up; it's setting the industry standard. With innovations like automated sorting technology and an ever-expanding network, Vinsum Axpress ensures that businesses stay ahead in the fast-evolving logistics landscape. <br><br><br><br>
+        <span class="text-4xl font-semibold">Frequently Asked Questions</span><br><br><br>
+        <ol style="padding-left: 3rem; list-style-type: decimal;">
+          <li>
+            <span class="text-base font-semibold">Why is last-mile delivery considered the most challenging and costly phase of logistics?</span><br><br>
+            Last-mile delivery is widely regarded as the most complex and expensive stage of logistics, driven by challenges such as traffic congestion, incorrect delivery addresses, and the need for precise and on-time deliveries. These factors can lead to delays and increased operational costs. As the demand for faster delivery services grows, so does the complexity, especially with the need to handle a variety of parcel sizes, including large or fragile items. Furthermore, rising customer expectations for reliable and timely service place additional pressure on businesses to balance cost efficiency with a smooth, hassle-free delivery experience. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Why do businesses need last-mile delivery solutions?</span><br><br>
+            Last-mile delivery solutions are essential for businesses to meet customer expectations of fast, reliable, and hassle-free deliveries. They play a significant role in enhancing customer satisfaction, building brand loyalty, and staying competitive in a rapidly evolving e-commerce landscape. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">How does XpressBees ensure reliable last-mile delivery?</span><br><br>
+            <strong>Vinsum Axpress</strong> leverages a vast network covering over <strong>19,000+ pin codes</strong>, a dedicated team of <strong>28,000+ field service representatives</strong>, and advanced technologies like automated sorters to ensure exceptional service. With an impressive on-time delivery rate of <strong>90%+, Vinsum Axpress</strong> demonstrates its commitment to reliability and operational efficiency. <br><br>
+          </li>
+        </ol><br>
       `,
     author: "Vinsum Axpress",
-    cratedAt: "May 20, 2020",
+    cratedAt: "January 17, 2025",
+  },
+  {
+    id: 4,
+    title: "Full Truckload (FTL) Shipping: Meaning and Advantages",
+    featuredImage: ftl,
+    description1:
+      `Think back to the last time you saw a massive truck speeding down the highway, fully loaded with goods. Ever wondered where it’s headed or what it’s carrying? It’s not just a random mix of cargo—it’s a carefully planned shipment, possibly moving products from different regions across the country, all packed into one organized load. This is the essence of Full Truckload (FTL) shipping: optimizing large shipments into a streamlined, cost-efficient transport solution.<br><br>
+       Just how significant is this sector? The global Full Truckload (FTL) market is expected to hit a staggering US$3.7 trillion by 2030 (source: Research and Markets). This impressive projection clearly shows how businesses are increasingly depending on FTL service providers to deliver large volumes quickly, economically, and reliably across vast distances.<br><br>
+       So, what’s fueling this growing demand? Take India, for example—home to approximately 250 million online shoppers in 2023, a number forecasted to rise to 427 million by 2027 (source: Statista). That’s nearly double in just two years!<br><br>
+       This explosive growth in e-commerce signals an urgent need for scalable, high-performance logistics solutions that can keep up with rising consumer expectations. The volume of goods that will need to move seamlessly, securely, and swiftly is enormous. That’s where a dependable logistics partner like Vinsum Axpress comes in. With its strong infrastructure, cutting-edge technology, and customer-centric approach, Vinsum Axpress is well-positioned to deliver excellence in FTL shipping—helping businesses scale and succeed in today’s fast-paced market.<br><br>
+       <span class="text-xl font-semibold">What is a Full Truck Load?</span><br><br>
+       Full Truckload (FTL) shipping refers to the use of an entire truck exclusively for transporting a large shipment from one business to a specific destination. Unlike less-than-truckload (LTL) options, where space is shared with cargo from multiple shippers, FTL offers dedicated use of the vehicle. This results in quicker delivery, less handling, and a lower risk of damage. It’s a preferred solution for companies dealing with bulk freight or requiring prompt, time-critical deliveries. <br><br>Although full truckload (FTL) shipping is renowned for its efficiency and cost advantages, it comes with its own set of operational challenges. Logistics providers must navigate a complex landscape that requires strategic foresight and flawless execution. So, what are the key obstacles? <br><br>
+       <strong>Capacity Management:</strong> Balancing truck availability—especially during peak seasons or sudden demand surges—can be difficult. Providers must accurately forecast needs to avoid both shortages and underutilized fleets.<br><br>
+       <strong>Regulatory Hurdles:</strong> Complying with ever-changing government policies, such as GST regulations, customs protocols, and local transportation laws, adds layers of complexity to daily operations.<br><br>
+       <strong>Labour Shortages:</strong> The industry continues to face a lack of skilled personnel, particularly for specialized roles like handling hazardous materials or managing cold chain logistics. Retaining experienced drivers and warehouse staff is also a growing concern due to increasing attrition rates.<br><br>
+       <strong>Limited Shipment Visibility:</strong> Today’s businesses expect real-time insights into their deliveries to streamline inventory and operations. When tracking systems fail to provide timely or accurate data, it disrupts planning and can lead to delivery delays.<br><br>
+       <strong>Security Risks:</strong> High-value shipments are vulnerable to theft, making cargo security a top priority for logistics providers.<br><br>
+       <strong>Technology Challenges:</strong> While advanced tools like automation and real-time tracking are essential for competitiveness, implementing and integrating them can be both costly and complex. Ensuring these technologies work seamlessly within existing systems is vital.<br><br>
+       At Vinsum Axpress, we recognize the intricate challenges involved in full truckload logistics across India and the day-to-day obstacles businesses encounter. That’s why we’ve developed a solutions-focused strategy—powered by cutting-edge technology, a scalable infrastructure, and a strong nationwide network—to tackle these issues directly and deliver smooth, efficient, and dependable service every time. <br><br><br>
+       The Indian Full Truck Load (FTL) market is expected to reach $123.8 billion by 2025 (source: Mordor Intelligence), highlighting the surging demand for efficient, large-scale transportation solutions across the country. <br><br>
+       In today’s competitive landscape, businesses are under constant pressure to meet rising customer expectations while navigating increasingly complex supply chains. With such rapid growth on the horizon, companies cannot afford to compromise—they need reliable, forward-thinking logistics partners. This is where Vinsum Axpress steps in to deliver. <br><br>
+       <span class="text-xl font-semibold">How Vinsum Axpress is Driving FTL Excellence:</span><br><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <span class="text-base font-semibold">Optimized Delivery Routes:</span><br>
+             With an expansive route network, Vinsum Axpress streamlines full truckload transportation by minimizing delays and maximizing delivery speed, ensuring efficient movement of goods nationwide. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Advanced Fleet Management:</span><br>
+            Regular investments in fleet expansion and maintenance ensure timely deliveries while reducing operational downtimes and enhancing overall efficiency. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Reliable Heavy Shipment Deliveries:</span><br>
+            Serving over 19,000 pin codes across India, Vinsum Axpress ensures dependable delivery of bulky shipments—even to remote and hard-to-reach areas—broadening your business’s reach. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Strategically Located Hubs:</span><br>
+            A widespread network of 260+ hubs across key urban and industrial centers enables fast and seamless handling of FTL shipments, cutting down delays and optimizing turnaround times. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Real-Time Shipment Tracking:</span><br>
+            With GPS-enabled vehicles, Vinsum Axpress provides end-to-end visibility, allowing clients to monitor their shipments in real time for greater transparency and reliability. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Technology Integration:</span><br>
+             Leveraging AI and Machine Learning for load optimization, demand forecasting, and smarter route planning enhances operational efficiency and service predictability. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Dedicated Customer Support:</span><br>
+            Tailored assistance for FTL clients ensures quick resolution of queries, smooth communication, and seamless logistics management. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Enhanced Security Infrastructure:</span><br>
+            <ul style="padding-left: 2rem; list-style-type: decimal;">
+              <li><i>Cargo Safety:</i> GPS tracking, anti-theft systems, and secure handling protect high-value goods throughout the journey.</li>
+              <li><i>Cybersecurity:</i> Robust digital safeguards protect customer data and logistics platforms from threats.</li><br>
+            </ul>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Scaling for the Future:</span><br>
+            <ul style="padding-left: 2rem; list-style-type: decimal;">
+              <li><i>Strategic Collaborations:</i> Partnering with key industry players to strengthen service offerings and expand logistics capabilities.</li>
+              <li><i>Network Expansion:</i>  Constantly growing presence across India and developing global reach to support cross-border shipments.</li><br>
+            </ul>
+          </li>
+        </ul> <br><br>
+        Maximizing capacity with Full Truck Load services is no longer just an option—it’s a strategic move for businesses looking to enhance efficiency, reduce costs, and elevate customer satisfaction. With its unmatched service coverage, reliable fleet, and tech-enabled operations, <strong>Vinsum Axpress</strong> offers the FTL solutions you can count on—whether you're scaling up or streamlining. <br><br>
+        <strong>Ready to move smarter?</strong> Connect with <strong>Vinsum Axpress</strong> to discover the right FTL strategy for your business growth. <br><br><br><br>
+        <span class="text-4xl font-semibold">Frequently Asked Questions</span><br><br><br>
+        <ol style="padding-left: 3rem; list-style-type: decimal;">
+          <li>
+            <span class="text-base font-semibold">What types of goods are best suited for Full Truck Load shipping?</span><br><br>
+            FTL shipping is ideal for large, heavy, or bulky items and high-value or time-sensitive goods requiring dedicated space and direct transport. It’s also well-suited for shipments with a single origin and destination, ensuring minimal handling and faster delivery. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">How does FTL shipping ensure faster delivery times?</span><br><br>
+            Full truckload shipments use a single truck dedicated to one shipment, minimizing stops and transfers, which significantly reduces transit times compared to LTL (Less-than-Truckload) shipments. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Are there specific industries that rely heavily on Full TruckLoad freight?</span><br><br>
+            Yes, industries like retail, manufacturing, e-commerce, and FMCG often rely on full truckload freight to move bulk orders, raw materials, and finished goods quickly and efficiently. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">What is the maximum weight or volume limit for FTL shipments?</span><br><br>
+            The maximum weight and volume for Full Truckload (FTL) shipments typically depends on the type of truck being used. Generally: <br><br>
+            <ol style="padding-left: 2rem; list-style-type: disc">
+              <li>
+                <span class="text-base font-semibold"><u>Weight Limit</u></span><br>
+                The weight limit for FTL shipments is governed by the Central Motor Vehicles Rules (CMVR) and varies depending on the truck’s axle configuration. Standard Trucks: Typically range from 16 tons to 49 tons, including the weight of the vehicle (Gross Vehicle Weight or GVW). Multi-Axle Trucks: These can carry up to 55 tons or more, depending on the number of axles and the type of truck. The permissible weight also depends on the truck's registration and load capacity. Overloading is strictly prohibited as it can lead to penalties. <br><br>
+              </li>
+              <li>
+                <span class="text-base font-semibold"><u>Volume Limit</u></span><br>
+                Volume capacity depends on the truck type and size. Here are common truck types used in FTL: 12-14 ft Trucks: ~550-750 cubic feet. 17-19 ft Trucks: ~1,200-1,400 cubic feet. 22-24 ft Trucks: ~1,600-1,800 cubic feet. 32 ft Multi-Axle Trucks: ~2,200-2,400 cubic feet. The volume limit is affected by the type of cargo, whether it is lightweight but bulky or dense and heavy. <br><br>
+              </li>
+            </ol>  
+          </li>
+          <li>
+            <span class="text-base font-semibold">What safety measures are in place for Full Truck Load freight?</span><br><br>
+            FTL shipping includes measures like GPS tracking, tamper-proof seals, and compliance with safety regulations to ensure cargo remains secure throughout transit. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Can FTL shipments include multiple stops or destinations?</span><br><br>
+            While FTL is generally dedicated to one shipment and destination, it can accommodate multiple stops if arranged beforehand, although this might increase costs and delivery time. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold"> How can businesses optimize costs with FTL shipping?</span><br><br>
+            Businesses can optimize costs by consolidating shipments, leveraging return loads, and working with experienced logistics providers to ensure efficient routing and scheduling. <br><br>
+          </li>
+        </ol><br>
+       `,
+    author: "Vinsum Axpress",
+    cratedAt: "Feb 21, 2025",
   },
 ];
 

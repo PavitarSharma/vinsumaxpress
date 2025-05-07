@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { blogs, galleries, youtubeVideos } from "@/constants";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom';
 
 const formSchema = z.object({
   email: z
@@ -22,6 +23,10 @@ const formSchema = z.object({
 });
 
 const MediaCenter = () => {
+  const location = useLocation();
+  const tab = location.state?.tab;
+  console.log("tab ::::: " + tab)
+
   useEffect(() => {
     document.title = "Media center | Vinsum Axpress";
   }, []);
@@ -34,7 +39,14 @@ const MediaCenter = () => {
   });
 
   const tabs = ["ARTICLES", "MEDIA", "GALLERY"];
-  const [activeTab, setActiveTab] = useState("ARTICLES");
+  const [activeTab, setActiveTab] = useState(tab ?? "ARTICLES");
+
+  useEffect(() => {
+    if (location.state?.tab) {
+      setActiveTab(location.state.tab);
+      window.scrollTo(0, 0)
+    }
+  }, [location.state?.tab]);
 
   const renderTabContent = () => {
     switch (activeTab) {

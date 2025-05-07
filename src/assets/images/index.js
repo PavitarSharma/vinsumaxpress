@@ -104,6 +104,7 @@ import anilRajput from "@/assets/images/teams/anil-rajput.png";
 import amitabhaMohapatra from "@/assets/images/teams/amitabha-mohapatra.png";
 import mohitVashist from "@/assets/images/teams/mohit-vashisht.png";
 import supriyaDutt from "@/assets/images/teams/supriya-dutt.png";
+import amitShandilay from "@/assets/images/teams/amit-shandilay.png";
 
 // Gallery
 import gallery1 from "@/assets/images/gallery/gallery-1.png";
@@ -198,6 +199,10 @@ import vinsumAxpressPlantImage02 from "@/assets/images/packaging/vinsum-axpress-
 import vinsumAxpressPlantImage03 from "@/assets/images/packaging/vinsum-axpress-plant-image3.jpg";
 import vinsumAxpressPlantImage04 from "@/assets/images/packaging/vinsum-axpress-plant-image4.jpg";
 import vinsumAxpressPlantImage05 from "@/assets/images/packaging/vinsum-axpress-plant-image5.jpg";
+
+// blog
+import lastMileDelivery from "@/assets/images/blog/last_mile_delivery.jpg";
+import ftl from "@/assets/images/blog/ftl.jpg";
 
 export {
   instagram,
@@ -379,5 +384,8 @@ export {
   packagingServiceIcon,
   truckAnimation,
   roadTrack,
-  aboutUsHero
+  aboutUsHero,
+  lastMileDelivery,
+  ftl,
+  amitShandilay
 };

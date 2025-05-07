@@ -160,6 +160,7 @@ const Navbar = () => {
                             <li key={index}>
                               <Button
                                 asChild
+                                onClick={togglePopover}
                                 variant="ghost"
                                 className={`${
                                   pathname === href
@@ -178,6 +179,7 @@ const Navbar = () => {
                     <Button
                       asChild
                       variant="ghost"
+                      onClick={togglePopover}
                       className={`${
                         pathname === href
                           ? "text-primary hover:text-primary bg-neutral-100"
@@ -199,7 +201,7 @@ const Navbar = () => {
               <div className="grid grid-cols-2 gap-2">
                 <li>
                   <a href="http://ggco.vinsumaxpress.com" target="_blank">
-                    <Button type="button" variant="outline" className="w-full">
+                    <Button type="button" variant="outline" onClick={togglePopover} className="w-full">
                       ERP Login
                     </Button>
                   </a>
@@ -210,7 +212,7 @@ const Navbar = () => {
                     href="https://hrms.vinsumaxpress.com/Default.aspx"
                     target="_blank"
                   >
-                    <Button type="button" variant="destructive">
+                    <Button type="button" variant="destructive" onClick={togglePopover}>
                       HRMS Login
                     </Button>
                   </a>

@@ -132,39 +132,21 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold">Resources</h3>
+            <h3 className="font-semibold">Media Center</h3>
             <ul className="space-y-2 mt-2">
               <li>
-                <Link to={ROUTES.CONTACT} className={menuLink}>
-                  Help & Support
+                <Link to={ROUTES.MEDIACENTER} state={{ tab: "ARTICLES" }} className={menuLink}>
+                  Articles
                 </Link>
               </li>
               <li>
-                <Link to={ROUTES.MEDIACENTER} className={menuLink}>
-                  Blog
+                <Link to={ROUTES.MEDIACENTER} state={{ tab: "MEDIA" }} className={menuLink}>
+                  Videos
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://hrms.vinsumaxpress.com/Default.aspx"
-                  target="_blank"
-                  className={menuLink}
-                >
-                  HRMS
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://ggco.vinsumaxpress.com"
-                  target="_blank"
-                  className={menuLink}
-                >
-                  ERP
-                </a>
-              </li>
-              <li>
-                <Link to={ROUTES.PRIVACY_POLICY} className={menuLink}>
-                  Privacy
+                <Link to={ROUTES.MEDIACENTER} state={{ tab: "GALLERY" }} className={menuLink}>
+                  Gallery
                 </Link>
               </li>
             </ul>

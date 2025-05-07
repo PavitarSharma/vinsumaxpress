@@ -15,6 +15,20 @@ const BlogDetail = () => {
 
   if (!blog) return null;
 
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: blog.title,
+        text: blog.excerpt || "Check out this blog!",
+        url: window.location.href,
+      })
+      .then(() => console.log("Shared successfully"))
+      .catch((error) => console.error("Error sharing", error));
+    } else {
+      alert("Web Share API not supported in this browser.");
+    }
+  };
+
   return (
     <>
       <section className="py-8">
@@ -24,9 +38,9 @@ const BlogDetail = () => {
             <div className="my-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <img
-                  src={profileUser}
+                  src="/logo.png"
                   alt="profile"
-                  className="w-10 h-10 rounded-full object-cover"
+                  className="w-10 h-10 object-contain"
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-sm">{blog.author}</h3>
@@ -37,8 +51,8 @@ const BlogDetail = () => {
               </div>
 
               <div>
-                <button className="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-white">
-                  <LuShare2 size={18} className="opacity-60" />
+                <button className="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-white" onClick={handleShare}>
+                  <LuShare2 size={18} className="opacity-100" />
                 </button>
               </div>
             </div>
@@ -47,7 +61,7 @@ const BlogDetail = () => {
           <img
             src={blog.featuredImage}
             alt={blog.title}
-            className="w-full h-[500px] object-cover my-6 rounded-xl"
+            className="w-full h-full object-cover my-6 rounded-xl"
           />
 
           <div

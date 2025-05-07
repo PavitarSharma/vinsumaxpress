@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
-import { growthTrackerVideo } from "@/assets/videos";
+import { growthTrackerVideo, growthTrackerVideoMob } from "@/assets/videos";
 
 const OurJourney = () => {
   const [isCounterSectionVisible, setIsCounterSectionVisible] = useState(false);
@@ -82,7 +82,7 @@ const OurJourney = () => {
           </h2>
         </div>
 
-          <div className="w-full aspect-video h-[440px] overflow-hidden bg-transparent">
+          <div className="w-full aspect-video h-[220px] overflow-hidden bg-transparent">
             <video
               ref={videoRef}
               muted
@@ -95,7 +95,7 @@ const OurJourney = () => {
                 clipPath: 'inset(12px 1px)',
               }}
             >
-              <source src={growthTrackerVideo} type="video/mp4" />
+              <source src={growthTrackerVideoMob} type="video/mp4" />
             </video>
           </div>
       </div>
