@@ -59,6 +59,15 @@ const OurJourney = () => {
     };
   }, []);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
   return (
     <section id="ourJourney" className="section px-4">
       <div className="bg-cardBackground rounded-2xl  overflow-hidden shadow">
@@ -82,7 +91,7 @@ const OurJourney = () => {
           </h2>
         </div>
 
-          <div className="w-full aspect-video h-[220px] overflow-hidden bg-transparent">
+          <div className="w-full aspect-video overflow-hidden bg-transparent h-[220px] md:h-[440px]">
             <video
               ref={videoRef}
               muted
@@ -95,7 +104,7 @@ const OurJourney = () => {
                 clipPath: 'inset(12px 1px)',
               }}
             >
-              <source src={growthTrackerVideoMob} type="video/mp4" />
+              <source src={isMobile ? growthTrackerVideoMob : growthTrackerVideo} type="video/mp4" />
             </video>
           </div>
       </div>

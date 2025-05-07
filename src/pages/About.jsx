@@ -29,7 +29,7 @@ import { useEffect } from "react";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { growthTrackerVideo } from "@/assets/videos";
+import { growthTrackerVideo, growthTrackerVideoMob } from "@/assets/videos";
 import { useRef } from "react";
 
 const About = () => {
@@ -65,6 +65,15 @@ const About = () => {
     return () => {
       if (videoSection) videoSectionObserver.unobserve(videoSection);
     };
+  }, []);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
   }, []);
 
   return (
@@ -132,7 +141,7 @@ const About = () => {
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
             OUR JOURNEY
           </div>
-          <div className="w-full aspect-video h-[465px] overflow-hidden mt-16 rounded-md">
+          <div className="w-full aspect-video overflow-hidden mt-16 rounded-md h-[230px] md:h-[465px]">
             <video
               ref={videoRef}
               muted
@@ -145,7 +154,7 @@ const About = () => {
                 clipPath: 'inset(13px 1px)',
               }}
             >
-              <source src={growthTrackerVideo} type="video/mp4" />
+              <source src={isMobile ? growthTrackerVideoMob : growthTrackerVideo} type="video/mp4" />
             </video>
           </div>
         </div>
