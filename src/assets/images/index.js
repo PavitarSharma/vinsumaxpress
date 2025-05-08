@@ -203,8 +203,15 @@ import vinsumAxpressPlantImage05 from "@/assets/images/packaging/vinsum-axpress-
 // blog
 import lastMileDelivery from "@/assets/images/blog/last_mile_delivery.jpg";
 import ftl from "@/assets/images/blog/ftl.jpg";
+import honored2020blog from "@/assets/images/blog/honored2020blog.jpg";
+
+// popup
+import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
+import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 
 export {
+  techDrivenSolution,
+  damageFreeDelivery,
   instagram,
   facebook,
   linkedin,
@@ -387,5 +394,6 @@ export {
   aboutUsHero,
   lastMileDelivery,
   ftl,
-  amitShandilay
+  amitShandilay,
+  honored2020blog
 };

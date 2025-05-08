@@ -174,7 +174,8 @@ const ArticlesSection = () => {
     <section className="py-14 px-8">
         <div className="wrapper">
           <div className="flex flex-col">
-            {blogs.map((blog, index) => (
+            {[...blogs]
+              .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((blog, index) => (
               <div key={index} className="w-full md:grid md:grid-cols-[30%_70%] gap-20 mb-10">
                 {/* Left: Image Section */}
                 <div className="w-full h-[200px] border-2 border-black rounded-md relative overflow-hidden mb-6">
@@ -189,31 +190,53 @@ const ArticlesSection = () => {
                   <div className="absolute bottom-0 left-0 right-0 h-[30%] backdrop-blur-sm bg-white/30 text-white px-4 py-2">
                     <div className="z-10">
                       <h3 className="font-semibold text-black">{blog.author}</h3>
-                      <p className="font-medium text-black">{blog.cratedAt}</p>
+                      <p className="font-medium text-black">{blog.createdAt}</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Right: Info Section */}
                 <div className="flex flex-col md:w-[80%]">
-                  <Link
-                    to={`/blog/${blog.id}`}
-                    className="text-xl font-bold relative w-full cursor-pointer underline"
-                  >
-                    {blog.title}
-                  </Link>
-                  <p
-                    className="line-clamp-3 my-4 font-medium"
-                    dangerouslySetInnerHTML={{ __html: blog.description1 }}
-                    aria-label="Blog information content"
-                  ></p>
+                  {blog.isExternal ? (
+                      <a
+                        href={blog.externalLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xl font-bold relative w-full cursor-pointer underline"
+                      >
+                        {blog.title}
+                      </a>
+                    ) : (
+                      <Link
+                        to={`/blog/${blog.id}`}
+                        className="text-xl font-bold relative w-full cursor-pointer underline"
+                      >
+                        {blog.title}
+                      </Link>
+                    )}
+                    <p
+                      className="line-clamp-3 my-4 font-medium"
+                      dangerouslySetInnerHTML={{ __html: blog.description1 }}
+                      aria-label="Blog information content"
+                    ></p>
 
-                  <Link
-                    to={`/blog/${blog.id}`}
-                    className="flex w-fit items-center font-semibold gap-1 text-lg bg-primary text-center text-white px-4 py-3 rounded-md"
-                  >
-                    READ FULL ARTICLE
-                  </Link>
+                  {blog.isExternal ? (
+                    <a
+                      href={blog.externalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex w-fit items-center font-semibold gap-1 text-lg bg-primary text-center text-white px-4 py-3 rounded-md"
+                    >
+                      READ FULL ARTICLE
+                    </a>
+                  ) : (
+                    <Link
+                      to={`/blog/${blog.id}`}
+                      className="flex w-fit items-center font-semibold gap-1 text-lg bg-primary text-center text-white px-4 py-3 rounded-md"
+                    >
+                      READ FULL ARTICLE
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}

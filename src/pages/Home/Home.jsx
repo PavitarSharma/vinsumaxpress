@@ -28,7 +28,7 @@ const Home = () => {
     <>
       <Dialog open={showFranchisePopup} onOpenChange={setShowFranchisePopup}>
         <DialogContent className="max-w-4xl bg-primary">
-          <FranchisePopup setShowFranchisePopup={setShowFranchisePopup} />
+          <FranchisePopup />
         </DialogContent>
       </Dialog>
       <Hero />

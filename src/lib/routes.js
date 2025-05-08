@@ -10,6 +10,8 @@ export const ROUTES = {
   PACKAGING: "/packaging",
   ERROR_404: "/not-found",
   SOCIAL_NETWORK: "/socialnetwork",
+  DAMAGE_FREE_DELIVERY: "/damage-free-delivery",
+  TECH_DRIVEN_SOLUTION: "/tech-driven-solution",
 
   MULTIMODAL_TRANSPORTATION: "/multimodal-transport",
   WAREHOUSE_SOLUTION: "/warehouse-solution",

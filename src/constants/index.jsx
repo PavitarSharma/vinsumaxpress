@@ -125,7 +125,8 @@ import {
   roadService,
   lastMileDelivery,
   ftl,
-  amitShandilay
+  amitShandilay,
+  honored2020blog
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -359,7 +360,7 @@ export const homeAboutCards = [
   },
   {
     image: safeDelivery,
-    path: ROUTES.TRACK_SHIPMENT,
+    path: ROUTES.DAMAGE_FREE_DELIVERY,
     title: "Damage-free Delivery",
     description:
       "Rely on us for safe, damage-free deliveries—setting the benchmark for quality and reliability in every shipment.",
@@ -380,7 +381,7 @@ export const homeAboutCards = [
   },
   {
     image: techDriven,
-    path: ROUTES.TRACK_SHIPMENT,
+    path: ROUTES.TECH_DRIVEN_SOLUTION,
     title: "Tech-Driven Solutions",
     description:
       "Embrace the future with technology-driven solutions that transform challenges into opportunities. Let innovation drive smarter, faster, and more connected outcomes.",
@@ -1067,23 +1068,44 @@ export const blogs = [
       'It is very pleasure and also a proud moment for us that The Economic Times has recognized our Company "VINSUM AXPRESS INDIA PVT LTD" as a Champion of Supply Chain Management 2020.',
     description3:
       'It is very pleasure and also a proud moment for us that The Economic Times has recognized our Company "VINSUM AXPRESS INDIA PVT LTD" as a Champion of Supply Chain Management 2020.',
-    faq: null,
+    isExternal: false,
+    externalLink: null,
     author: "Vinsum Axpress",
-    cratedAt: "Jan 21, 2021",
+    createdAt: "Jan 21, 2021",
   },
   {
     id: 2,
-    title: "Champion of Supply Chain Management 2020",
-    featuredImage: "https://vinsumaxpress.com/assets/img/blog/road-freight-services.jpg",
+    title: "Honored as the 2020 Supply Chain Management Champion",
+    featuredImage: honored2020blog,
     description1:
-      "<p>Trucks come in various shapes and sizes that support different types of loads. All these trucks are specially designed to do a particular type of job. These trucks, based on their size and shape, make transportation of goods easier. Now, many people need assistance in finding the most appropriate truck for the type of cargo. In this article, we will explain to you what types of trucks are there and what types of loads they are capable of.</p><h1>Refrigerated truck</h1><p>These types of trucks have refrigeration facilities. Goods prone to destruction are transported by these trucks as they provide freezing service and everyone knows that cold prevents things from being destroyed. Milk, eggs, edibles, medicines etc. are transported through them. Typically, transportation is done overnight.</p><h1>Flatbeds</h1><p>What is a flatbed? Flatbed trucks have a cabin for the driver and the rest of the truck is open. These trucks are best for loading wood, pipes {concrete or plastic whatever}, and other things like that. They are long and open which makes easy loading and unloading. A single flatbed trailer can carry a maximum fare of 48,000 pounds which it can easily handle.</p><h1>Box Truck</h1><p>They are simple trucks also known as cube trucks. These trucks are small in size, well sealed. Typically, these trucks are used for home furniture, while families move from one place to another. These are generally in good demand as they require low license requirements and are usually easily controlled and managed.</p><h1>Liftgate Trucks</h1><p>Liftgates is a generic term used in American slang. In British English the British lift tail is used for the same. These have an installed rear end that collects goods from the ground level and then loads it into the truck. This reduces heavy lifting to a great extent and also facilitates better service. Up-lifters can be hydraulic, mechanic, etc. depending on the truck and technology.</p><h1>Semi-trailer truck</h1><p>Now, the semi-trailer type of trucks is also widely used. They have an open edge, roof, or rear that suits you to load freight. Their capacity is 24,000 kg. It is best for items that are stored in the stack.</p><h1>Jumbo trailer truck</h1><p>They are as beautiful as the ones mentioned above. These trailers have more capacity than semi-trailer trucks because they have a lower wheel diameter and a G-shaped floor that supports capacity. These trucks are best for capacitive accessories as these trucks are very spacious and lightweight. Like a semi-trailer truck, one can load from either side or top or rear wherever it seems convenient.</p><p>Therefore, all of these were commonly used trucks in the logistics sector. One can easily understand their way of working and they can carry with ability and other features and can easily decide what kind of goods the customer supports. One should wisely choose the type of truck they need as they are all different rates that affect the freight rates.</p><h1>List of truck types</h1><p>The purpose of this list of truck types is to classify trucks and provide links to articles on different types. The three main classifications for road trucks by weight are light trucks, medium trucks, and heavy trucks. On top of this, there are particularly very heavy trucks and transporters such as heavy hellers for oversized moves, and off-road heavy trucks and very large trucks used for mining and highway use without special permits.</p>",
+      `Trucks come in a wide range of shapes and sizes, each designed to handle specific types of cargo. These specialized vehicles are built for particular tasks, and their dimensions and configurations make transporting goods more efficient. However, many people often need help choosing the right truck for their cargo needs. This article will explore the different types of trucks available and the kinds of loads each is best suited to carry.
+       <br><br><span class="text-xl font-semibold">Temperature-controlled truck</span><br><br>
+       These trucks are equipped with refrigeration systems and are used to transport perishable goods that require cold storage to prevent spoilage. Items such as milk, eggs, food products, and medicines are commonly carried in these vehicles. Since lower temperatures help preserve these goods, refrigerated trucks are ideal for maintaining their quality during transit. Transportation is often carried out overnight to ensure freshness and efficiency.<br><br>
+       <span class="text-xl font-semibold">Flatbed trucks</span><br><br>
+       A flatbed truck features a driver's cabin at the front and an open, flat platform at the back. This design makes it ideal for transporting items like lumber, concrete, or plastic pipes, and similar bulky materials. The open structure allows for easy loading and unloading from all sides. A standard flatbed trailer can typically handle a load of up to 48,000 pounds with ease.<br><br>
+       <span class="text-xl font-semibold">Box trucks</span><br><br>
+       These are basic trucks, commonly referred to as cube trucks. They are compact, fully enclosed, and well-sealed, making them ideal for transporting household furniture, especially during residential moves. Due to their smaller size, they are easier to drive and manage, often requiring minimal licensing. This ease of use contributes to their consistent demand.<br><br>
+       <span class="text-xl font-semibold">Liftgate</span><br><br>   
+       "Liftgate" is a commonly used term in American English, while in British English, the equivalent term is "tail lift." These trucks are equipped with a rear platform that can lift goods from ground level into the truck, significantly reducing the need for manual lifting and enhancing efficiency. The lifting mechanism can be hydraulic, mechanical, or vary based on the truck's design and technology.<br><br> 
+        <span class="text-xl font-semibold">Semi-trailer truck</span><br><br> 
+        Semi-trailer trucks are also commonly used. They feature open sides, roofs, or rear sections that make loading freight easier. With a capacity of up to 24,000 kg, they are ideal for transporting items that can be stacked.<br><br>
+        <span class="text-xl font-semibold">Jumbo trailer truck</span><br><br>
+        These trailers offer greater capacity than semi-trailer trucks, thanks to their lower wheel diameter and G-shaped floor. They are ideal for carrying large, capacitive items due to their spacious and lightweight design. Like semi-trailers, they allow loading from the sides, top, or rear.<br>
+        In the logistics industry, these trucks are commonly used, with their capabilities making it easy to choose the right one for different goods. It's important to select wisely, as different truck types affect freight costs.<br><br>
+        <span class="text-xl font-semibold">List of truck types</span><br><br>
+        The purpose of this list is to categorize various truck types and provide links to articles about each. Road trucks are primarily classified by weight into three main categories: light trucks, medium trucks, and heavy trucks. Additionally, there are specialized trucks, such as extremely heavy vehicles used for oversized shipments, off-road trucks, and large trucks designed for mining and highway use, which may require special permits.<br><br>
+       `,
     author: "Vinsum Axpress",
-    cratedAt: "May 20, 2020",
+    createdAt: "May 20, 2020",
+    isExternal: false,
+    externalLink: null,
   },
   {
     id: 3,
     title: "What is Last Mile Delivery? A Step-by-Step Guide",
     featuredImage: lastMileDelivery,
+    isExternal: false,
+    externalLink: null,
     description1:
       `Imagine the final over of a nail-biting cricket match—the team needs just a few runs, but every delivery counts. One mistake could cost the entire game. In logistics, <strong>last-mile delivery</strong> is much the same—high-stakes, high-pressure, and critical. It’s the final stretch where timing, precision, and performance matter most. Last-mile delivery can account for over <strong>53% of total shipping costs</strong> (Source: Chain Store Age), making it one of the most complex and costly parts of the supply chain. <br><br>
        Today, the logistics industry stands at a crucial juncture. The rapid rise of quick commerce and e-commerce has intensified the demands placed on last-mile operations. Consider this: in 2023 alone, India recorded <strong>345 million online shoppers</strong> (Source: Statista), resulting in the shipment of more than <strong>300 million packages</strong>. The scale is staggering—and only set to grow. <br><br>
@@ -1191,10 +1213,12 @@ export const blogs = [
         </ol><br>
       `,
     author: "Vinsum Axpress",
-    cratedAt: "January 17, 2025",
+    createdAt: "Jan 17, 2025",
   },
   {
     id: 4,
+    isExternal: false,
+    externalLink: null,
     title: "Full Truckload (FTL) Shipping: Meaning and Advantages",
     featuredImage: ftl,
     description1:
@@ -1303,7 +1327,67 @@ export const blogs = [
         </ol><br>
        `,
     author: "Vinsum Axpress",
-    cratedAt: "Feb 21, 2025",
+    createdAt: "Feb 21, 2025",
+  },
+  {
+    id: 5,
+    title: "In a first, trucks with auto parts take train from Haryana to Gujarat",
+    featuredImage: "https://static.toiimg.com/thumb/msid-107922803,imgsize-110860,width-400,resizemode-4/107922803.jpg",
+    image1: null,
+    image2: null,
+    description1:
+      'GURGAON: The \'truck on train\' service for the auto parts was rolled out on the western freight corridor fror the first time on Wednesday, opening a direct and much shorter line between the two largest Indian manufacturing hubs...',
+    description2: '',
+    description3: '',
+    isExternal: true,
+    externalLink: "https://timesofindia.indiatimes.com/india/in-a-first-trucks-with-auto-parts-take-train-from-haryana-to-gujarat/articleshow/107922826.cms",
+    author: "Times Of India",
+    createdAt: "Feb 22, 2024",
+  },
+  {
+    id: 6,
+    title: "गुरुग्राम की विनसम एक्सप्रेस रेलवे के साथ मिलकर गति शक्ति योजना को देगी गति",
+    featuredImage: "https://www.totaltv.in/wp-content/uploads/2024/02/IMG-20240225-WA0021.jpg",
+    image1: null,
+    image2: null,
+    description1:
+      'भारतीय रेलवे एनसीआर बेस्ड लोजिस्टिक कंपनी विनसम से मिलकर प्रधानमंत्री नरेन्द्र मोदी की गति शक्ति योजना को गति देगी। सड़कों से ट्रकों के ट्रैफिक और टायरों से उत्पन्न कार्बन व ईंधन की खपत कम करने के उद्देश्य से रेलवे द्वारा विनसम लोजिस्टिक से मिलकर शुरू की गई “ट्रक ऑन ट्रेन” सेवा का पहला ट्रायल पूरा कर लिया गया है। इसके कुल आठ ट्रायल होंगे और इसके बाद भारतीय रेलवे विनसम से मिलकर पूरे देश में इस योजना का विस्तार करेगा। पहला ट्रायल हरियाणा के रेवाड़ी जंक्शन से गुजरात के पालनपुर तक हुआ...',
+    description2: '',
+    description3: '',
+    isExternal: true,
+    externalLink: "https://www.totaltv.in/gurugram-winsome-express-railway/",
+    author: "Totaltv.in",
+    createdAt: "Feb 25, 2024",
+  },
+  {
+    id: 7,
+    title: "समाज कल्याण में योगदान के लिए गुरुग्राम की विनसम एक्सप्रेस अटल सम्मान से सम्मानित",
+    featuredImage: "https://www.khaskhabar.com/s3-storage/khaskhabar/khaskhabarimages/img500/16-74-1734779140-691291-khaskhabar.jpg",
+    image1: null,
+    image2: null,
+    description1:
+      'गुरुग्राम। - समाज कल्याण में महत्वपूर्ण योगदान देने के लिए एनसीआर बेस्ड विनसम एक्सप्रेस को प्रतिष्ठित अटल सम्मान समारोह 2024 में अटल सम्मान देकर सम्मानित किया गया। विनसम एक्सप्रेस को उनके उत्कृष्ट सेवाओं और समाज कल्याण के क्षेत्र में योगदान के लिए सम्मानित किया गया। विनसम एक्सप्रेस के निदेशक सुमित शर्मा ने समारोह में पहुंचकर यह सम्मान ग्रहण किया। नई दिल्ली के प्रधानमंत्री संग्रहालय में अटल फाउंडेशन द्वारा आयोजित समारोह में देश भर के अनेक उधमियों और समाज कल्याण में अपना योगदान देने वाली विभूतियों को अटल पुरस्कार देकर सम्मानित किया गया। विनसम एक्सप्रेस के निदेशक सुमित शर्मा ने यह पुरस्कार मिलने पर खुशी जाहिर की है।...',
+    description2: '',
+    description3: '',
+    isExternal: true,
+    externalLink: "https://www.khaskhabar.com/local/haryana/gurugram-news/news-gurugram-winsome-express-honoured-with-atal-samman-for-contribution-to-social-welfare-news-hindi-1-691291-KKN.html",
+    author: "KhasKhabar - Haryana",
+    createdAt: "Dec 21, 2024",
+  },
+  {
+    id: 8,
+    title: "रेवाड़ी से गुजरात तक ट्रेन में ट्रक सेवा का ट्रायल",
+    featuredImage: "https://www.khaskhabar.com/s3-storage/khaskhabar/khaskhabarimages/img500/16-74-1734779140-691291-khaskhabar.jpg",
+    image1: null,
+    image2: null,
+    description1:
+      'रेवाड़ी। - भारतीय रेलवे और विनसम एक्सप्रेस के साझा प्रयास से ट्रेन में ट्रक सेवा का पहला ट्रायल सफलतापूर्वक किया गया। ट्रायल रेवाड़ी जंक्शन से गुजरात के पालनपुर तक किया। इसमें ऑटोमोबाइल पार्ट्स से भरे चार ट्रक को पालनपुर पहुंचाया गया।...',
+    description2: '',
+    description3: '',
+    isExternal: true,
+    externalLink: "https://www.livehindustan.com/ncr/gurgaon/story-trial-of-truck-service-in-train-from-rewari-to-gujarat-9388870.html",
+    author: "Live Hinudstan",
+    createdAt: "Feb 24, 2024",
   },
 ];
 

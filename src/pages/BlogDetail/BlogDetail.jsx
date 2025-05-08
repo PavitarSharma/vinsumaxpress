@@ -45,7 +45,7 @@ const BlogDetail = () => {
                 <div className="flex-1">
                   <h3 className="font-semibold text-sm">{blog.author}</h3>
                   <p className="text-xs font-bold opacity-50">
-                    {blog.cratedAt}
+                    {blog.createdAt}
                   </p>
                 </div>
               </div>

@@ -89,6 +89,7 @@ import ScrollToTop from "@/lib/ScrollToTop";
 import { LuArrowUp } from "react-icons/lu";
 import { Sidebar } from "lucide-react";
 import SocialSidebar from "./components/Sidebar";
+import WhyUsPopup from "./components/WhyUsPopup";
 
 const App = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
@@ -223,6 +224,8 @@ const App = () => {
               element={<WoodenPallets />}
             />
           </Route>
+          <Route path={`${ROUTES.DAMAGE_FREE_DELIVERY}`} element={<WhyUsPopup id={1} />} />
+          <Route path={`${ROUTES.TECH_DRIVEN_SOLUTION}`} element={<WhyUsPopup id={4} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {pathname !== ROUTES.SOCIAL_NETWORK && <Footer />}

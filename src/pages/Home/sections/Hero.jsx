@@ -128,7 +128,7 @@ const Hero = () => {
             </div>
             <div className="md:ml-auto md:mt-0 mt-4 gap-8 flex flex-col h-full md:mr-24">
               <div className="md:text-center md:text-3xl text-lg font-bold">
-                             <span className="">BECOME A FRANCHISEE AND INVEST IN A </span>
+                <span className="">BECOME A FRANCHISEE AND INVEST IN A </span>
                 <span className="">
                   PROMISING PARTNERSHIP
                 </span>

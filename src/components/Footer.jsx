@@ -23,10 +23,10 @@ const Footer = () => {
     <footer className="px-4">
       <div className="container bg-cardBackground shadow p-8 py-14 rounded-lg my-10">
         <div className="flex flex-col mx-auto items-center justify-center gap-10 w-full">
-          <h1 className="antialiased tracking-normal text-lg text-center w-full">
+          <p className="antialiased tracking-normal text-xl text-black text-center w-full font-semibold">
             Unlock Tech driven solutions on the go—download our app from the{" "}
             <span className="text-primary">Play Store!</span>
-          </h1>
+          </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <a
               href="https://play.google.com/store/apps/developer?id=Vinsum&hl=en_IN"
@@ -164,9 +164,9 @@ const Footer = () => {
                 className="md:w-auto md:h-auto w-40 h-40 object-contain"
               /> */}
               <div className="flex flex-col items-center">
-                <QRCodeSVG value={pdfUrl} size={180} />
+                <QRCodeSVG value={pdfUrl} size={220} />
               </div>
-              <figcaption className="text-xs text-text text-center mt-2">
+              <figcaption className="text-xs text-text text-center mt-4">
                 Scan the QR code to download our brochure!
               </figcaption>
             </figure>
