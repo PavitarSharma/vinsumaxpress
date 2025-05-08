@@ -14,7 +14,7 @@ import { currentYear, nextYear } from "@/lib/utils";
 import {QRCodeSVG} from 'qrcode.react';
 
 const Footer = () => {
-  const pdfUrl = `${window.location.origin}/assets//Users/apple/Downloads/vinsum_brochure_single_page.pdf`;
+  const pdfUrl = `/assets//Users/apple/Downloads/vinsum_brochure_single_page.pdf`;
 
   const menuLink =
     "hover:text-primary text-sm text-text transition duration-300";
