@@ -4,15 +4,7 @@ import { ROUTES } from "@/lib/routes";
 
 const WhyUs = () => {
   const navigate = useNavigate();
-  const handleClick = (index) => {
-    if (index === homeAboutCards.length - 1) {
-      navigate(ROUTES.CONTACT);
-    } else if (index === 0) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      navigate(ROUTES.SERVICE);
-    }
-  };
+
   return (
     <section id="whyUs" className="section px-4">
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
@@ -21,16 +13,16 @@ const WhyUs = () => {
           <h1 className="card-title">WHY CHOOSE US.</h1>
           <p className="card-description">
             Innovative Logistics, Tailored for You:
-From real-time tracking to personalized delivery strategies, we provide adaptive solutions that maximize efficiency and ensure complete transparency throughout your journey.
+            From real-time tracking to personalized delivery strategies, we provide adaptive solutions that maximize efficiency and ensure complete transparency throughout your journey.
 
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 mt-10">
-          {homeAboutCards.map(({ image, title, description }, index) => (
+          {homeAboutCards.map(({ image, title, description, path }, index) => (
             <figure
               key={index}
-              onClick={() => handleClick(index)}
+              onClick={() => navigate(path)}
               className={`bg-white  border drop-shadow w-full rounded-2xl p-6 space-y-4 hover:bg-primary hover:text-white transition duration-300 group cursor-pointer`}
             >
               <img

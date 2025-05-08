@@ -15,7 +15,7 @@ const OurService = () => {
     <section id="ourService" className="section px-4">
       <div className="container bg-white rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="max-w-xl space-y-3">
-          <p className="text-lg text-red-600">Our Service</p>
+          <p className="text-3xl text-red-600">Our Service</p>
           <h1 className="card-title md:w-full">
             Comprehensive Package Solutions—Locally and Globally
           </h1>
@@ -40,7 +40,6 @@ const OurService = () => {
 
           <Accordion
             defaultValue={["Multimodal Transportation"]}
-            type="multiple"
             collapsible
           >
             {homeServiceQuestions.map(({ title, description, path }, index) => {
@@ -56,7 +55,7 @@ const OurService = () => {
                   <AccordionContent className="space-y-6">
                     <p className="text-zinc-600">{description}</p>
                     <Link
-                      to={`${ROUTES.SERVICE}${path}`}
+                      to={`${path}`}
                       className="flex items-center gap-1 hover:text-primary transition duration-300"
                     >
                       Learn more <LuMoveRight size={18} />

@@ -19,7 +19,7 @@ import { heroSectionBg } from "@/assets/images";
 
 const TrackShipment = () => {
   callDocketEnquiry()
-  const [isTracking, setIsTracking] = useState(false);
+  const [isTracking, setIsTracking] = useState(true);
   const [loading, setLoading] = useState(false);
   const [shipment, setShipment] = useState(null);
 

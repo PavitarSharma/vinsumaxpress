@@ -11,10 +11,14 @@ import { ROUTES } from "@/lib/routes";
 import { companyDetail } from "@/constants";
 import { qrCode } from "@/assets/images";
 import { currentYear, nextYear } from "@/lib/utils";
+import {QRCodeSVG} from 'qrcode.react';
 
 const Footer = () => {
+  const pdfUrl = `${window.location.origin}/assets//Users/apple/Downloads/vinsum_brochure_single_page.pdf`;
+
   const menuLink =
     "hover:text-primary text-sm text-text transition duration-300";
+
   return (
     <footer className="px-4">
       <div className="container bg-cardBackground shadow p-8 py-14 rounded-lg my-10">
@@ -153,15 +157,18 @@ const Footer = () => {
           </div>
 
           <div>
-            <figure className="w-fit">
-              <img
+            <figure className="w-full">
+              {/* <img
                 src={qrCode}
                 alt="qr-code"
                 className="md:w-auto md:h-auto w-40 h-40 object-contain"
-              />
-              {/* <figcaption className="text-xs text-text text-center">
-                Scan this QR code to download our app
-              </figcaption> */}
+              /> */}
+              <div className="flex flex-col items-center">
+                <QRCodeSVG value={pdfUrl} size={180} />
+              </div>
+              <figcaption className="text-xs text-text text-center mt-2">
+                Scan the QR code to download our brochure!
+              </figcaption>
             </figure>
 
             {/* <h3 className="font-semibold">Social Media</h3>

@@ -95,16 +95,27 @@ const Hero = () => {
     }
   };
 
+  const lines = [
+    "Worldwide package",
+    "delivery made <span class='text-primary'>Seamless</span>",
+    "secure and dependable",
+  ];
+
   return (
     <>
       <section id="heroSection" className="w-full relative">
         <div className="text-white container">
           <div className="md:pt-32 sm:pt-44 pt-32 max-[360px]:pt-36 pb-4 grid md:grid-cols-2">
             <div className="content-center md:mt-24">
-              <div className="text-3xl md:text-5xl font-bold uppercase">
-                <p>Worldwide package</p>
-                <p className="md:mt-6">delivery made <span className="text-primary">Seamless</span></p>
-                <p className="md:mt-6">secure and dependable</p>
+              <div className="text-3xl md:text-5xl font-bold uppercase space-y-4">
+                {lines.map((line, idx) => (
+                  <p
+                    key={idx}
+                    className={`reveal-line depth-text glow-text`}
+                    style={{ animationDelay: `${idx * 0.9}s` }}
+                    dangerouslySetInnerHTML={{ __html: line }}
+                  />
+                ))}
               </div>
              <div className="grid md:grid-cols-2 gap-6">
           

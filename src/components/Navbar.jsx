@@ -193,7 +193,7 @@ const Navbar = () => {
               ))}
               <li className="px-2 mt-2">
                 <Link to={ROUTES.CONTACT} className="block">
-                  <Button onClick={togglePopover} className="w-full">Get in Touch</Button>
+                  <Button onClick={togglePopover} className="w-full">Download Our Brochure</Button>
                 </Link>
               </li>
 
@@ -282,9 +282,14 @@ const Navbar = () => {
               </NavigationMenuItem>
             ))}
             <NavigationMenuItem>
-              <Link to={ROUTES.CONTACT}>
-                <Button className="uppercase text-lg">Get in Touch</Button>
-              </Link>
+              <a
+                href="/assets/brochure.pdf"
+                download="vinsum_brochure.pdf"
+              >
+                <Button className="uppercase text-lg">Download Our Brochure</Button>
+              </a>
+              {/* <Link to={ROUTES.CONTACT}>
+              </Link> */}
             </NavigationMenuItem>
           </NavigationMenuList>
          

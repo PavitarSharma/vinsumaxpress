@@ -120,7 +120,7 @@ const About = () => {
               </p>
             </div>
             <Link to={ROUTES.CAREER}>
-              <Button className="mt-4">
+              <Button className="mt-4 text-lg py-6">
                 Join our Vinsum family <LuMoveRight size={18} />
               </Button>
             </Link>
@@ -184,8 +184,8 @@ const About = () => {
               <div className="w-full px-4 relative flex items-center justify-center flex-col py-32">
                 <div className="bg-[#DEDEDE] lg:h-[530px] w-1/2 absolute lg:right-0 -right-4 top-0 bottom-0 border-b-8 border-primary">
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 hidden lg:flex flex-col w-full items-center justify-center">
-                    <p>Mr. Vinod Sharma</p>
-                    <p className="font-bold mb-1">Chairman & Managing Director</p>
+                    <p className="text-xl">Mr. Vinod Sharma</p>
+                    <p className="font-semibold mb-1">Chairman & Managing Director</p>
                     <button className="bg-sky-600 hover:bg-sky-700 text-white text-center justify-self-center py-2 rounded-md border border-sky-600 px-4 rounded inline-flex items-center justify-center">
                       <p className="flex items-center text-lg">Connect on LinkedIn</p>
                       <div className="bg-white text-sky-600 p-1 ms-2 flex items-center justify-center">

@@ -179,6 +179,7 @@ export const navLinks = [
     label: "Career",
     href: ROUTES.CAREER,
   },
+  { label: "Contact", href: ROUTES.CONTACT },
 ];
 
 export const companyDetail = {
@@ -351,36 +352,42 @@ export const packagingProducts = [
 export const homeAboutCards = [
   {
     image: realTimeLocator,
+    path: ROUTES.TRACK_SHIPMENT,
     title: "Real Time Tracking",
     description:
       "Stay informed with real-time updates and worry-free service. Step into the future of logistics—where efficiency meets unwavering reliability.",
   },
   {
     image: safeDelivery,
+    path: ROUTES.TRACK_SHIPMENT,
     title: "Damage-free Delivery",
     description:
       "Rely on us for safe, damage-free deliveries—setting the benchmark for quality and reliability in every shipment.",
   },
   {
     image: customizedPackaging,
+    path: ROUTES.PACKAGING_SOLUTION,
     title: "Flexible Packaging Service",
     description:
       "We provide versatile packaging solutions designed to meet your organization's diverse and evolving needs seamlessly.",
   },
   {
     image: warehouseService,
+    path: ROUTES.WAREHOUSE_SOLUTION,
     title: "Warehouse Services",
     description:
       "Optimize your warehouse and boost efficiency with ease. From storage to shipping, our smart solutions keep your operations running smoothly and at peak performance.",
   },
   {
     image: techDriven,
+    path: ROUTES.TRACK_SHIPMENT,
     title: "Tech-Driven Solutions",
     description:
       "Embrace the future with technology-driven solutions that transform challenges into opportunities. Let innovation drive smarter, faster, and more connected outcomes.",
   },
   {
     image: customerSupport,
+    path: ROUTES.CONTACT,
     title: "24/7 Customer Support",
     description:
       "Our dedicated team is always just a call away, ready to support you anytime, day or night.",
@@ -392,25 +399,31 @@ export const homeServiceQuestions = [
     title: "Multimodal Transportation",
     description:
       "Multimodal transport can ease the journey by optimizing routes and using the most efficient modes for each leg of the journey.",
-    path: "#multimodal-transportation",
+    path: "multimodal-transport",
   },
   {
     title: "Warehousing Solution",
     description:
       "We are offering wide range of services including consolidation & packaging of cargoes of various types & sizes.",
-    path: "#warehouse-solution",
+    path: "warehouse-solution",
   },
   {
     title: "Packaging Solutions",
     description:
       "Dedicated solution design team that can design solutions based on inputs provided by the customer about the component / part and produce feasibility reports for all your packaging needs consultation.",
-    path: "#packaging-solution",
+    path: "packaging-solution",
   },
   {
-    title: "3PL/4PL Management",
+    title: "3PL Management",
     description:
       "Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
-    path: "#3pl-4pl-management",
+    path: "3pl-inventory-management",
+  },
+  {
+    title: "4PL Management",
+    description:
+      "Our Services often extend beyond logistics to include value-added services related to the production or procurement of goods, such as services that integrate parts of the supply chain.",
+    path: "4pl-inplant-logistics-project-management",
   },
 ];
 

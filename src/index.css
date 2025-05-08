@@ -222,3 +222,109 @@
     }
   }
 }
+
+
+/* banner home page heading animation */
+@keyframes revealLine {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes highlightSweep {
+  0% {
+    background-size: 0% 100%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes underlineGrow {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* Reveal with fade-up */
+.reveal-line {
+  opacity: 0;
+  animation: revealLine 0.6s ease-out forwards;
+}
+
+/* Highlight effect — safe and visible */
+.highlight-sweep {
+  background: linear-gradient(to right, #facc15, #facc15);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #facc15;
+  /* Visible fallback */
+  animation: highlightSweep 1s ease forwards;
+}
+
+/* Optional glow */
+.glow-text {
+  text-shadow:
+    0 0 2px #fff,
+    0 0 4px #f8bdbd,
+    /* light red */
+    0 0 8px #d66464;
+  /* deep red */
+  /* fallback for browsers without text-shadow */
+}
+
+/* Underline animation */
+.underline-trail {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-trail::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  background-color: #facc15;
+  width: 0%;
+  animation: underlineGrow 0.6s ease forwards;
+}
+
+.glass-text {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.depth-text {
+  color: #fff;
+  text-shadow:
+    1px 1px 0 #1d1c1c,
+    2px 2px 0 #292727,
+    3px 3px 0 #1d1b1b;
+}
+
+.tilt-3d {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.tilt-3d:hover {
+  transform: rotateX(8deg) rotateY(-8deg);
+}

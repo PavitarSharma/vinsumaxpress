@@ -29,7 +29,7 @@ const OurClients = () => {
     <section id="ourClients" className="section px-4">
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="space-y-3">
-          <h1 className="text-lg text-red-600">Our Clients</h1>
+          <h1 className="text-3xl text-red-600">Our Clients</h1>
           <h1 className="card-title">
             WITH OVER <span className="text-primary">500+ satisfied CLIENTS</span>, Vinsum has set a new standard for trust and reliability in the logistics industry.
           </h1>
@@ -39,8 +39,8 @@ const OurClients = () => {
         </div>
 
         <div className="relative my-8 w-full flex justify-center">
-          <div className="relative px-6 py-4 rounded-xl bg-gradient-to-r from-red-200 to-red-100 shadow-md text-center max-w-4xl">
-            <p className="text-primary text-lg font-semibold tracking-wide">
+          <div className="relative px-6 py-4 rounded-xl shadow-md text-center max-w-4xl">
+            <p className="text-primary text-xl font-semibold tracking-wide">
               <span className="relative inline-block">
                 Vinsum
                 <span className="absolute left-0 bottom-0 w-full h-1 bg-primary rounded animate-pulse" />
