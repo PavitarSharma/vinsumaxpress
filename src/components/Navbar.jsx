@@ -284,7 +284,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <a
                 href="/assets/vinsum_brochure_single_page.pdf"
-                download="vinsum_brochure_single_page.pdf"
+                download
               >
                 <Button className="uppercase text-lg">Download Our Brochure</Button>
               </a>
