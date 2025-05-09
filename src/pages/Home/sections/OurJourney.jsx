@@ -68,6 +68,12 @@ const OurJourney = () => {
     return () => window.removeEventListener('resize', check);
   }, []);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [isMobile]);
+
   return (
     <section id="ourJourney" className="section px-4">
       <div className="bg-cardBackground rounded-2xl  overflow-hidden shadow">
@@ -101,7 +107,7 @@ const OurJourney = () => {
               title="Growth Track"
               className="w-full h-full object-fill block overflow-hidden"
               style={{
-                clipPath: 'inset(12px 1px)',
+                clipPath: 'inset(12px 2px)',
               }}
             >
               <source src={isMobile ? growthTrackerVideoMob : growthTrackerVideo} type="video/mp4" />

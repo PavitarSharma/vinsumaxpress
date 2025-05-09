@@ -129,7 +129,9 @@ import {
   amitShandilay,
   honored2020blog,
   multiModalTransportBlog,
-  threePlBlog
+  threePlBlog,
+  threePlService,
+  fourPlService,
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -1472,7 +1474,7 @@ export const blogs = [
     isExternal: false,
     externalLink: null,
     title: "3PL Inventory Management: Streamlining Your Supply Chain with Vinsum Axpress",
-    featuredImage: threePlBlog,
+    featuredImage: threePlService,
     description1:
       `Inventory management can be the difference between operational efficiency and missed opportunities in today's fast-paced and hyper-competitive market. As businesses scale, the complexity of managing inventory in real-time across multiple locations becomes a significant challenge. This is where a reliable <strong>Third-Party Logistics (3PL)</strong> provider like <strong>Vinsum Axpress</strong> becomes your strategic advantage. <br><br><br>
        <span class="text-xl font-semibold">What is 3PL Inventory Management?</span><br><br>
@@ -1520,7 +1522,7 @@ export const blogs = [
     isExternal: false,
     externalLink: null,
     title: "4PL, In-Plant Logistics & Project Management: Integrated Solutions by Vinsum Axpress",
-    featuredImage: threePlBlog,
+    featuredImage: fourPlService,
     description1:
       `In the age of smart manufacturing and complex supply chains, businesses are looking for <strong>end-to-end logistics partners—</strong>not just service providers. That’s where <strong>Vinsum Axpress</strong> steps in, offering a comprehensive blend of <strong>Fourth-Party Logistics (4PL), In-Plant Logistics</strong, and <strong>Project Management</strong> services tailored to streamline operations, reduce costs, and increase operational control. <br><br><br>
        <span class="text-xl font-semibold">What is 4PL (Fourth-Party Logistics)?</span><br><br>

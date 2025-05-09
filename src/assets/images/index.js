@@ -207,6 +207,8 @@ import honored2020blog from "@/assets/images/blog/honored2020blog.jpg";
 import lastMileDelivery2 from "@/assets/images/blog/last_mile_delivery_blog_2.png";
 import multiModalTransportBlog from "@/assets/images/blog/multimodal_transport_blog.jpg";
 import threePlBlog from "@/assets/images/blog/threePlBlog.jpg";
+import threePlService from "@/assets/images/blog/threeplservice.png";
+import fourPlService from "@/assets/images/blog/fourplservice.jpg";
 
 // popup
 import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
@@ -217,6 +219,8 @@ export {
   damageFreeDelivery,
   lastMileDelivery2,
   threePlBlog,
+  threePlService,
+  fourPlService,
   multiModalTransportBlog,
   instagram,
   facebook,

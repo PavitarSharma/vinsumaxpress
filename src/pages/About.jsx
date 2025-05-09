@@ -76,6 +76,14 @@ const About = () => {
     return () => window.removeEventListener('resize', check);
   }, []);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [isMobile]);
+
+  console.log("isMobile :: " + isMobile)
+
   return (
     <>
       <section className="py-6">
@@ -141,7 +149,7 @@ const About = () => {
           <div className="bg-primary uppercase text-primary-foreground text-center w-fit mx-auto px-6 py-3 text-2xl font-semibold rounded-tr-3xl rounded-bl-3xl">
             OUR JOURNEY
           </div>
-          <div className="w-full aspect-video overflow-hidden mt-16 rounded-md h-[230px] md:h-[465px]">
+          <div className="w-full aspect-video overflow-hidden mt-16 rounded-md h-[260px] md:h-[465px]">
             <video
               ref={videoRef}
               muted
@@ -151,7 +159,7 @@ const About = () => {
               title="Growth Track"
               className="w-full h-full object-fill block overflow-hidden mt-5"
               style={{
-                clipPath: 'inset(13px 1px)',
+                clipPath: 'inset(13px 2px)',
               }}
             >
               <source src={isMobile ? growthTrackerVideoMob : growthTrackerVideo} type="video/mp4" />
