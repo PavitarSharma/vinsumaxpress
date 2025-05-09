@@ -204,6 +204,9 @@ import vinsumAxpressPlantImage05 from "@/assets/images/packaging/vinsum-axpress-
 import lastMileDelivery from "@/assets/images/blog/last_mile_delivery.jpg";
 import ftl from "@/assets/images/blog/ftl.jpg";
 import honored2020blog from "@/assets/images/blog/honored2020blog.jpg";
+import lastMileDelivery2 from "@/assets/images/blog/last_mile_delivery_blog_2.png";
+import multiModalTransportBlog from "@/assets/images/blog/multimodal_transport_blog.jpg";
+import threePlBlog from "@/assets/images/blog/threePlBlog.jpg";
 
 // popup
 import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
@@ -212,6 +215,9 @@ import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 export {
   techDrivenSolution,
   damageFreeDelivery,
+  lastMileDelivery2,
+  threePlBlog,
+  multiModalTransportBlog,
   instagram,
   facebook,
   linkedin,

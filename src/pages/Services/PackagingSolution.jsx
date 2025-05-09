@@ -20,6 +20,8 @@ import {
   vinsumAxpressPlantImage04,
   vinsumAxpressPlantImage05,
 } from "../../assets/images";
+import { packagingVideo } from "@/assets/videos";
+import { useRef } from "react";
 
 const packaging_Solution = {
   returnablePackagingServices: [
@@ -42,7 +44,38 @@ const packaging_Solution = {
     { title: "Fumigation Required", image: fumigationRequired },
   ],
 };
+
 const PackagingSolution = () => {
+  const videoRef = useRef(null);
+  
+  useEffect(() => {
+    // Create IntersectionObserver for the video section
+    const videoSectionObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          videoRef.current.play(); // Play video when visible
+          // setIsPaused(false);
+          console.log("play video")
+        } else {
+          videoRef.current.pause(); // Pause video when out of view
+          // setIsPaused(true);
+          console.log("pause video")
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    // Target the counter and video sections
+    const videoSection = document.querySelector("#videoSection");
+
+    if (videoSection) videoSectionObserver.observe(videoSection);
+
+    // Cleanup observers on unmount
+    return () => {
+      if (videoSection) videoSectionObserver.unobserve(videoSection);
+    };
+  }, []);  
+
   useEffect(() => {
     document.title = "Packaging Solution";
   }, []);
@@ -246,9 +279,9 @@ const PackagingSolution = () => {
           </div>
 
           <div className="flex flex-wrap gap-6">
-            {packagingProducts.map(({ label }, index) => (
+            {packagingProducts.map(({ label, href }, index) => (
               <Link
-                to={ROUTES.PACKAGING}
+                to={href}
                 key={index}
                 className="bg-red-50 hover:bg-red-100 transition duration-300 text-sm font-medium border border-primary py-2.5 px-4 rounded-full w-fit"
               >
@@ -258,6 +291,29 @@ const PackagingSolution = () => {
           </div>
         </div>
       </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="w-full aspect-video overflow-hidden bg-transparent h-[400px] md:h-[500px]">
+            <video
+              ref={videoRef}
+              muted
+              autoPlay
+              loop
+              playsInline
+              title="Growth Track"
+              className="w-full h-full object-fill block overflow-hidden"
+              // style={{
+              //   clipPath: 'inset(12px 1px)',
+              // }}
+            >
+              <source src={packagingVideo} type="video/mp4" />
+            </video>                      
+          </div>
+        </div>
+      </section>
+
+      
 
       <section className="section">
         <div className="container">

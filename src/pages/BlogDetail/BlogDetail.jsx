@@ -77,7 +77,7 @@ const BlogDetail = () => {
               <img
                 src={blog.image1}
                 alt="blog image 1"
-                className="w-full h-fit object-cover"
+                className="w-full h-fit object-fill rounded-lg"
               />
             )}
 

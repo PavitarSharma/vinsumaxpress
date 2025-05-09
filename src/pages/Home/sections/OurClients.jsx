@@ -29,11 +29,13 @@ const OurClients = () => {
     <section id="ourClients" className="section px-4">
       <div className="container bg-cardBackground rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
         <div className="space-y-3">
-          <h1 className="text-3xl text-red-600">Our Clients</h1>
-          <h1 className="card-title">
+          <h2 className="text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-700 to-red-500 animate-text-gradient bg-[length:200%_200%]">
+            Our Clients
+          </h2>
+          <h1 className="text-4xl font-bold uppercase">
             WITH OVER <span className="text-primary">500+ satisfied CLIENTS</span>, Vinsum has set a new standard for trust and reliability in the logistics industry.
           </h1>
-          <p className="card-description">
+          <p className="text-lg">
             With over 23 years of expertise in logistics and supply chain management, Vinsum proudly serves a diverse base of 500+ satisfied customers, including but not limited to
           </p>
         </div>

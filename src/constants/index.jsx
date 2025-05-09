@@ -124,9 +124,12 @@ import {
   trainService,
   roadService,
   lastMileDelivery,
+  lastMileDelivery2,
   ftl,
   amitShandilay,
-  honored2020blog
+  honored2020blog,
+  multiModalTransportBlog,
+  threePlBlog
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -1102,6 +1105,7 @@ export const blogs = [
   },
   {
     id: 3,
+    image1: lastMileDelivery2,
     title: "What is Last Mile Delivery? A Step-by-Step Guide",
     featuredImage: lastMileDelivery,
     isExternal: false,
@@ -1388,6 +1392,229 @@ export const blogs = [
     externalLink: "https://www.livehindustan.com/ncr/gurgaon/story-trial-of-truck-service-in-train-from-rewari-to-gujarat-9388870.html",
     author: "Live Hinudstan",
     createdAt: "Feb 24, 2024",
+  },
+  {
+    id: 9,
+    isExternal: false,
+    externalLink: null,
+    title: "Multimodal Transportation: Integrated Logistics Solutions by Vinsum Axpress",
+    featuredImage: multiModalTransportBlog,
+    description1:
+      `In an era where efficiency, flexibility, and reliability define supply chain success, businesses increasingly turn to <strong>multimodal transportation</strong> as a strategic logistics solution. By intelligently combining various modes of transport—such as <strong>road, rail, and air</strong>—under a unified system, <strong>multimodal logistics</strong> enables faster deliveries, optimized costs, and extended reach..<br><br>
+       At <strong>Vinsum Axpress</strong>, we specialize in <strong>end-to-end multimodal transportation services</strong> that help companies build resilient, scalable, and future-ready supply chains across India.<br><br>
+       <span class="text-xl font-semibold">What is Multimodal Transportation?</span><br><br>
+       Multimodal transportation is the movement of goods using two or more modes of transport under a <strong>single contract and centralized control system.</strong> This differs from intermodal logistics, where each leg is managed independently. With multimodal solutions from Vinsum Axpress, your cargo travels seamlessly across road, rail, and air routes—all managed by one logistics partner, with one point of accountability. <br><br>
+       <span class="text-xl font-semibold">Our Approach to Multimodal Logistics</span><br><br>
+       <strong>Vinsum Axpress</strong> designs bespoke multimodal transport plans tailored to the nature of your cargo, delivery timelines, and regional demands. Whether you’re shipping time-sensitive goods or bulk freight, we engineer a route that balances <strong>speed, reliability, and cost-efficiency.</strong><br><br>
+       Our multimodal strategy leverages:<br><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <span class="text-base font-semibold">Rail for long-haul efficiency</span><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Road for flexible reach and last-mile delivery</span><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Air for critical express shipments</span><br>
+          </li>
+        </ul><br>  
+       <span class="text-xl font-semibold">Key Benefits of Multimodal Transportation with Vinsum Axpress</span><br><br>  
+       <ul style="padding-left: 3rem; list-style-type: decimal;">
+          <li>
+            <span class="text-base font-semibold">End-to-End Visibility</span><br>
+             We provide real-time tracking and centralized oversight across all transport modes. You get a single dashboard to monitor the journey from origin to destination. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Optimized Transit Times</span><br>
+            Our experts dynamically select the most efficient route and mode mix, reducing delivery lead times without escalating costs. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Cost Control</span><br>
+            Multimodal logistics helps minimize fuel, labor, and handling costs by using the right mode for each leg of the journey. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Pan-India Reach</span><br>
+            Our national network of logistics hubs and transport corridors connects metros, tier-2/3 cities, and remote industrial clusters. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Reduced Risk and Improved Security</span><br>
+            Fewer handovers and a unified tracking system reduce the chances of cargo damage, theft, or loss. <br><br>
+          </li>
+        </ul> <br><br>
+        <span class="text-4xl font-semibold">Why Choose Vinsum Axpress?</span><br><br><br>
+        With over two decades of industry experience, <strong>Vinsum Axpress</strong> combines <strong>operational excellence</strong> with <strong>technology-driven logistics solutions.</strong> Our integrated multimodal network, skilled logistics planners, and digital control towers ensure that every shipment moves efficiently—regardless of complexity or destination.
+        <br><br>We offer:<br><br>
+        <ol style="padding-left: 3rem; list-style-type: decimal;">
+          <li>
+            A single point of contact for multimodal coordination <br><br>
+          </li>
+          <li>
+            Smart mode-switching strategies for better agility <br><br>
+          </li>
+          <li>
+            Technology integration with client systems (ERP, WMS, TMS) <br><br>
+          </li>
+          <li>
+            Sustainable transport planning with reduced carbon footprint <br><br>             
+          </li>
+        </ol><br>
+        <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-xl font-semibold">Let's Move Forward—Together</span><br><br>
+        Whether you’re looking to reduce shipping costs, accelerate delivery times, or expand distribution, multimodal transportation from Vinsum Axpress is built to elevate your logistics strategy. <br><br>
+        📩 Contact us today to explore a customized multimodal solution tailored to your business goals. <br><br>
+        🌐 Visit <a href="https://www.vinsumaxpress.com" target="_blank" rel="noopener noreferrer"><u>www.vinsumaxpress.com</u></a> for more.<br>
+       `,
+    author: "Vinsum Axpress",
+    createdAt: "Mar 08, 2025",
+  },
+  {
+    id: 10,
+    isExternal: false,
+    externalLink: null,
+    title: "3PL Inventory Management: Streamlining Your Supply Chain with Vinsum Axpress",
+    featuredImage: threePlBlog,
+    description1:
+      `Inventory management can be the difference between operational efficiency and missed opportunities in today's fast-paced and hyper-competitive market. As businesses scale, the complexity of managing inventory in real-time across multiple locations becomes a significant challenge. This is where a reliable <strong>Third-Party Logistics (3PL)</strong> provider like <strong>Vinsum Axpress</strong> becomes your strategic advantage. <br><br><br>
+       <span class="text-xl font-semibold">What is 3PL Inventory Management?</span><br><br>
+       <strong>3PL inventory management</strong> refers to outsourcing the storage, tracking, and movement of goods to a third-party logistics provider. It’s more than just warehousing—it’s about real-time visibility, demand forecasting, order accuracy, and seamless integration with your supply chain. <br><br>
+       At <strong>Vinsum Axpress</strong>, we offer an integrated inventory management solution that ties into our robust multimodal logistics network, giving our clients real-time control without the overhead. <br><br> 
+       <span class="text-xl font-semibold">Key Benefits of Vinsum Axpress 3PL Inventory Management</span><br><br>  
+       <ul style="padding-left: 3rem; list-style-type: decimal;">
+          <li>
+            <span class="text-base font-semibold">Real-Time Inventory Visibility</span><br>
+            Gain 24/7 access to inventory levels across all locations with our cloud-based tracking systems. We eliminate guesswork and enable data-driven decisions. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Optimized Storage & Space Utilization</span><br>
+            Our strategically located warehouses across India ensure faster delivery and efficient storage solutions—reducing lead times and last-mile delays. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Reduced Operational Costs</span><br>
+            Cut down on fixed infrastructure costs. We manage staffing, equipment, and technology—so you can focus on your core business. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Scalable to Your Growth</span><br>
+            Whether you're managing seasonal surges or launching in new markets, our 3PL model scales with your needs—offering flexibility without compromising service quality. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Accurate Order Fulfillment</span><br>
+            Our systems ensure high accuracy in order picking, packing, and dispatch, minimizing returns and boosting customer satisfaction. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Integrated Technology Solutions</span><br>
+            Our inventory management tools integrate with your ERP and order platforms, offering smooth, end-to-end visibility from order to delivery. <br><br>
+          </li>
+        </ul> <br><br>
+        <span class="text-4xl font-semibold">Why Choose Vinsum Axpress?</span><br><br><br>
+        With a pan-India presence, multimodal transport expertise, and a commitment to performance-driven logistics, <strong>Vinsum Axpress</strong> is not just a service provider—we are your logistics partner. Our approach to 3PL inventory management blends <strongtechnology, strategy, and execution</strong> to empower your business to operate leaner, smarter, and faster.<br><br>
+        <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-xl font-semibold">📞 Ready to Upgrade Your Inventory Management?</span><br><br>
+        Let’s discuss how we can streamline your supply chain. <br>
+        Contact Vinsum Axpress today for a customized 3PL solution.
+       `,
+    author: "Vinsum Axpress",
+    createdAt: "Apr 03, 2025",
+  },
+  {
+    id: 11,
+    isExternal: false,
+    externalLink: null,
+    title: "4PL, In-Plant Logistics & Project Management: Integrated Solutions by Vinsum Axpress",
+    featuredImage: threePlBlog,
+    description1:
+      `In the age of smart manufacturing and complex supply chains, businesses are looking for <strong>end-to-end logistics partners—</strong>not just service providers. That’s where <strong>Vinsum Axpress</strong> steps in, offering a comprehensive blend of <strong>Fourth-Party Logistics (4PL), In-Plant Logistics</strong, and <strong>Project Management</strong> services tailored to streamline operations, reduce costs, and increase operational control. <br><br><br>
+       <span class="text-xl font-semibold">What is 4PL (Fourth-Party Logistics)?</span><br><br>
+       Unlike traditional 3PL providers who manage transportation and warehousing, <strong>4PL providers</strong> oversee the <strong>entire supply chain</strong> as a single point of contact. Vinsum Axpress acts as your <strong>logistics integrator</strong>, managing multiple vendors, systems, and operations with a focus on <strong>strategic control</strong> and <strong>optimization</strong>. <br><br> 
+       <span class="text-base font-semibold">Key Functions of 4PL:</span><br><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Centralized supply chain management<br>
+          </li>
+          <li>
+            Data-driven decision-making and analytics<br>
+          </li>
+          <li>
+            Vendor coordination and performance oversight<br>
+          </li>
+          <li>
+            Strategic sourcing and optimization<br>
+          </li>
+        </ul><br>
+       <span class="text-xl font-semibold">What is In-Plant Logistics?</span><br><br>
+       <strong>In-Plant Logistics</strong> refers to the management of material flow within the premises of a manufacturing facility. Vinsum Axpress ensures <strong>real-time inventory control, line feeding, material handling</strong>, and <strong>returns management</strong>, allowing your production team to focus on core manufacturing without bottlenecks. <br><br> 
+       <span class="text-base font-semibold">Our In-Plant Services Include:</span><br><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Line-side delivery of components<br>
+          </li>
+          <li>
+            Material movement within the plant<br>
+          </li>
+        </ul><br>
+       <span class="text-xl font-semibold">What is Logistics Project Management?</span><br><br>
+       From setting up a new warehouse to executing high-value, time-bound shipments, <strong>logistics project management</strong> ensures that complex logistics needs are planned, coordinated, and delivered efficiently. Vinsum Axpress brings <strong>domain expertise, planning tools</strong>, and <strong>execution excellence</strong> to your logistics projects <br><br> 
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Just-in-Time (JIT) supply to assembly lines<br>
+          </li>
+          <li>
+            Empty packaging return and recycling<br>
+          </li>
+          <li>
+            On-site manpower and equipment management<br>
+          </li>
+        </ul><br>
+       <span class="text-base font-semibold">What We Deliver:</span><br><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Site analysis and operational planning<br>
+          </li>
+          <li>
+            Route mapping and risk mitigation<br>
+          </li>
+          <li>
+            Equipment mobilization and coordination<br>
+          </li>
+          <li>
+            Real-time monitoring of milestones<br>
+          </li>
+          <li>
+            End-to-end documentation and compliance<br>
+          </li>
+        </ul><br>     
+        <span class="text-xl font-semibold">Benefits of Partnering with Vinsum Axpress</span><br><br>  
+        <ul style="padding-left: 0rem; list-style-type: none;">
+          <li>
+            <span class="text-base font-semibold">One-Stop Supply Chain Partner</span><br>
+            Reduce the complexity of managing multiple vendors. We consolidate planning, execution, and optimization under one roof. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Real-Time Visibility & Control</span><br>
+            Track performance, inventory, and movement with integrated dashboards and advanced reporting tools. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Customized Solutions</span><br>
+            Every operation is unique—our services are tailored to your processes, plant layout, and business goals. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Increased Productivity</span><br>
+            With smoother in-plant flows and well-managed supply lines, your teams can focus on production and innovation. <br><br>
+          </li>
+          <li>
+            <span class="text-base font-semibold">Cost Optimization</span><br>
+            Reduce waste, improve resource utilization, and lower overall logistics costs through strategic planning and execution. <br><br>
+          </li>
+        </ul> <br><br>
+        <span class="text-4xl font-semibold">Why Vinsum Axpress?</span><br><br><br>
+        With a legacy in <strong>multimodal logistics, pan-India reach</strong>, and <strong>industry-grade execution</strong>, Vinsum Axpress stands out as a <strong>4PL and project logistics expert</strong>. Our solutions are trusted by businesses across the <strong>automotive, FMCG, manufacturing, pharma, and infrastructure sectors.</strong> <br><br>
+        <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-xl font-semibold">Ready to Transform Your Supply Chain?</span><br><br>
+        Whether you're planning an expansion, optimizing your factory logistics, or need a strategic 4PL partner—Vinsum Axpress has the expertise to deliver. <br><br>
+        Contact us today to explore customized 4PL, in-plant, or project logistics solutions. <br>
+        Visit: www.vinsumaxpress.com
+       `,
+    author: "Vinsum Axpress",
+    createdAt: "Apr 29, 2025",
   },
 ];
 
