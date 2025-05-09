@@ -42,12 +42,11 @@ const OurClients = () => {
           <div className="relative px-6 py-4 rounded-xl shadow-md text-center max-w-4xl">
             <p className="text-primary text-xl font-semibold tracking-wide">
               <span className="relative inline-block">
-                Vinsum
-                <span className="absolute left-0 bottom-0 w-full h-1 bg-primary rounded animate-pulse" />
-              </span>{' '}
-              is the <span className="text-black font-bold">preferred partner</span> for
-              industry leaders seeking to drive{' '}
-              <span className="underline decoration-red-500 underline-offset-4">accelerated revenue growth</span>.
+                Vinsum 
+              </span>
+                <span className="text-black font-bold"> is the preferred partner for
+              industry leaders seeking to drive </span>
+              <span className="decoration-red-500">accelerated revenue growth</span>.
             </p>
           </div>
         </div>

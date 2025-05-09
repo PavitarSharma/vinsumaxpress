@@ -12,21 +12,22 @@ import { Link } from "react-router-dom";
 
 const OurService = () => {
   return (
-    <section id="ourService" className="section px-4">
-      <div className="container bg-white rounded-2xl md:px-8 px-6 py-8 overflow-hidden shadow">
-        <div className="max-w-xl space-y-3">
-          <p className="text-3xl text-red-600">Our Service</p>
-          <h1 className="card-title md:w-full">
+    <section id="ourService" className="section container bg-white rounded-2xl">
+      <div className="w-full px-8">
+          <h2 className="text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-700 to-red-500 animate-text-gradient bg-[length:200%_200%] mb-3">
+            Our Services
+          </h2>
+          <h1 className="text-3xl font-semibold md:w-full">
             Comprehensive Package Solutions—Locally and Globally
           </h1>
-          <p className="card-description">
+          {/* <p className="card-description">
             Vinsum is a logistics provider of integrated freight solutions.
             vinsum provides dedicated freight solution including: Less Than
             Truck Load, Full Truck Load, Warehousing/Fulfillment, Drayage, and
             transloading
-          </p>
-        </div>
-
+          </p> */}
+      </div>
+      <div className="md:px-8 px-2 overflow-hidden">
         <div className="grid lg:grid-cols-2 md:gap-12 gap-10 mt-8">
           <video
             muted

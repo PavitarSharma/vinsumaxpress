@@ -243,22 +243,23 @@ const Navbar = () => {
                                 to={href}
                                 className="flex gap-3 select-none p-2 rounded-sm transition-colors hover:bg-foreground/5 items-center"
                               >
-                                <div className="w-10 h-10 bg-gray-500 rounded-sm shadow-sm border-t border-foreground/5 flex-shrink-0 grid place-items-center">
-                                  <img
-                                    src={icon}
-                                    alt="logo"
-                                    className="w-8 h-8 object-contain"
-                                  />
-                                </div>
+                                <div className="group flex items-center space-x-2 cursor-pointer">
+                                  <div className="w-10 h-10 bg-gray-500 rounded-sm shadow-sm border-t border-foreground/5 flex-shrink-0 grid place-items-center 
+                                                  transition-all duration-300 group-hover:bg-primary group-hover:scale-105 group-hover:animate-beat">
+                                    <img
+                                      src={icon}
+                                      alt="logo"
+                                      className="w-8 h-8 object-contain"
+                                    />
+                                  </div>
 
-                                <div
-                                  className={`text-[13px] leading-normal mb-1 ${
-                                    pathname === href
-                                      ? "text-primary font-medium"
-                                      : ""
-                                  }`}
-                                >
-                                  {label}
+                                  <div
+                                    className={`text-[13px] leading-normal mb-1 transition-colors duration-300 ${
+                                      pathname === href ? "text-primary font-medium" : "text-foreground"
+                                    } group-hover:text-primary group-hover:font-semibold`}
+                                  >
+                                    {label}
+                                  </div>
                                 </div>
                               </Link>
                             </NavigationMenuLink>

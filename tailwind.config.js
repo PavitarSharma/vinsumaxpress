@@ -83,6 +83,15 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      keyframes: {
+        beat: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.3)' },
+        },
+      },
+      animation: {
+        beat: 'beat 0.4s ease-in-out',
+      },
     },
   },
   plugins: [tailwindcssAnimate],
