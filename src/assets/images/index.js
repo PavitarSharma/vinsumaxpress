@@ -77,6 +77,8 @@ import warehouseSolution from "@/assets/images/services/wraehouse-solution.png";
 import airService from "@/assets/images/services/air-service.jpg";
 import trainService from "@/assets/images/services/train-service.jpg";
 import roadService from "@/assets/images/services/road-service.jpg";
+import InPlantLogisticService from "@/assets/images/services/InPlantLogisticSolution.jpg";
+import End2EndCustomerSupport from "@/assets/images/services/End2EndCustomerSupport.jpg";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -222,6 +224,8 @@ export {
   threePlService,
   fourPlService,
   multiModalTransportBlog,
+  End2EndCustomerSupport,
+  InPlantLogisticService,
   instagram,
   facebook,
   linkedin,

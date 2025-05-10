@@ -4,8 +4,40 @@ const damageFreeDeliveryText = `At Vinsum Axpress, we take pride in offering dam
 We use robust packaging techniques, modern vehicles, and a dedicated tracking system to give our clients full confidence in every shipment. Our proactive communication, real-time updates, and customer-first approach make us the trusted choice for businesses seeking reliable, damage-free logistics. With Vinsum Axpress, you don’t just deliver—you deliver with peace of mind.
 `
 
-const techDrivenSolutionText = `At Vinsum Axpress, we believe in harnessing the power of innovation through tech-driven logistics solutions that redefine the way cargo moves. From real-time shipment tracking to intelligent route optimization and automated operations, our technology-first approach ensures faster, smarter, and more efficient delivery outcomes. We continuously invest in digital tools and platforms that enhance visibility, reduce operational delays, and improve overall customer experience. By turning logistical challenges into growth opportunities, Vinsum Axpress empowers businesses with reliable, connected, and future-ready freight solutions—keeping you ahead in an ever-evolving supply chain landscape. <br><br>
-Our integrated systems provide end-to-end transparency, allowing clients to monitor their shipments with accuracy and confidence. Through data analytics, we uncover insights that drive performance, reduce costs, and increase delivery precision. Whether you're scaling operations or managing time-sensitive cargo, our tech-enabled infrastructure adapts to your needs. With Vinsum Axpress, innovation isn’t just a buzzword—it’s the backbone of everything we do, ensuring that your cargo journeys are not only efficient but also smarter and future-focused.
+const techDrivenSolutionText = `
+  <span class="text-xl font-semibold">Welcome to Vinsum Axpress — Where Technology Drives Logistics Excellence</span><br><br>
+  In a world where speed, precision, and adaptability define success, <strong>Vinsum Axpress</strong> stands at the forefront of a logistics revolution. We are more than a cargo company—we are your <strong>technology partner in motion</strong>, delivering transformative, data-driven freight solutions that redefine how cargo moves across the country and beyond. <br><br>
+  At the heart of our operations is a relentless commitment to <strong>innovation</strong>. Our systems are built to think, learn, and evolve—ensuring every shipment, every route, and every customer interaction is handled with unmatched intelligence and agility. <br><br>
+  <hr class="my-4 border-t border-gray-300" /><br>
+  <span class="text-2xl font-semibold">Tech-First. Future-Ready. Customer-Centric.</span><br><br>
+  Through a robust suite of integrated platforms, we create a seamless digital ecosystem that powers your logistics journey:<br><br>
+  <ul style="padding-left: 3rem; list-style-type: decimal;">
+    <li>
+      <span class="text-base font-semibold">TMS (Transportation Management System)</span><br>
+      Optimize routing, scheduling, and freight movement with precision and control. <br><br>
+    </li>
+    <li>
+      <span class="text-base font-semibold">WMS (Warehouse Management System)</span><br>
+      Streamline storage, inventory, and distribution with real-time visibility. <br><br>
+    </li>
+    <li>
+      <span class="text-base font-semibold">ERP (Enterprise Resource Planning)</span><br>
+      Drive operational efficiency and decision-making through centralized business intelligence. <br><br>
+    </li>
+    <li>
+      <span class="text-base font-semibold">HRMS (Human Resource Management System)</span><br>
+      Empower workforce productivity with smart people management. <br><br>
+    </li>
+    <li>
+      <span class="text-base font-semibold">Real-Time Shipment Tracking</span><br>
+      Get live updates and proactive notifications across every mile. <br><br>
+    </li>
+    <li>
+      <span class="text-base font-semibold">Smart Automation & Analytics</span><br>
+      Uncover insights that drive performance, reduce costs, and enable predictive logistics. <br><br>
+    </li>
+  </ul> <br><br>  
+  Our digital infrastructure is not just a support system—it’s <strong>the engine of our excellence</strong>, enabling us to eliminate delays, optimize costs, and increase delivery accuracy.
 `
 
 const WhyUsPopup = ({id}) => {

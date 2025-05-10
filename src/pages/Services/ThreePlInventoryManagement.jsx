@@ -9,6 +9,7 @@ import {
   purchaseOrder,
   shipment,
   threePl,
+  threePlService,
   transferOrder,
 } from "@/assets/images";
 import MoreService from "@/components/MoreService";
@@ -19,7 +20,7 @@ const threePlManagement = {
     title: "3PL Inventory Management",
     description:
       "We are a third-party logistics provider specializing in <strong>integrated warehousing and transportation solutions</strong> that are fully <strong>scalable and customizable</strong> to meet evolving market demands. Our services also include <strong>value-added support</strong> such as supply chain integration, procurement assistance, and production-related logistics.",
-    image: threePl,
+    image: threePlService,
   },
   section02: {
     title: "Inventory Management",
@@ -60,7 +61,7 @@ const ThreePlInventoryManagement = () => {
 
   return (
     <>
-      <div className="container py-8">
+      <div className="container mt-10">
         <h1 className="text-primary sm:text-2xl text-xl font-bold">{title}</h1>
       </div>
       <section className="section">
@@ -73,7 +74,7 @@ const ThreePlInventoryManagement = () => {
           </div>
 
           <div className="md:order-2 order-1">
-            <img src={section01.image} alt="4pl-inplant-logistics01" />
+            <img src={section01.image} alt="4pl-inplant-logistics01" className="rounded-xl" />
           </div>
         </div>
       </section>

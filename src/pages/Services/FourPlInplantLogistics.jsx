@@ -4,6 +4,9 @@ import {
   fourPlInplantLogistics1,
   fourPlInplantLogistics2,
   fourPlInplantLogistics3,
+  InPlantLogisticService,
+  End2EndCustomerSupport,
+  fourPlService
 } from "@/assets/images";
 import MoreService from "@/components/MoreService";
 
@@ -13,7 +16,7 @@ const fourPLInplant = {
     title: "Lead Logistics Provider (LLP) / 4PL Solutions",
     description:
       "As a <strong>Fourth-Party Logistics (4PL)</strong> partner, <strong>Vinsum Axpress</strong> serves as the strategic orchestrator of your entire supply chain. Acting as a <strong>single point of contact</strong>, we manage and coordinate all logistics functions and service providers to ensure seamless, efficient, and end-to-end operations.",
-    image: fourPlInplantLogistics1,
+    image: fourPlService,
     services: [
       "Distribution Management.",
       "Picking & Packing, CKD/CBU Packaging.",
@@ -27,7 +30,7 @@ const fourPLInplant = {
     title: "In-Plant Logistics Solutions",
     description:
       'At <strong>Vinsum Axpress</strong>, we define <strong>In-Plant Logistics</strong> as the comprehensive management of material flow—be it raw materials or finished goods—within a manufacturing facility. Our services are designed to support or fully manage your internal logistics operations, enhancing productivity, efficiency, and operational precision.<br> Whether it\'s <strong>labour management, yard operations</strong>, or internal material movement, we integrate seamlessly with your team—or act as your extended team—to keep your plant running smoothly.',
-    image: fourPlInplantLogistics2,
+    image: InPlantLogisticService,
     services: [
       "Store / SPD / PG Warehouse Management.",
       "Sequencing Projects.",
@@ -42,7 +45,7 @@ const fourPLInplant = {
     title: "End-to-End Project Management Services",
     description:
       "At <strong>Vinsum Axpress</strong>, we take full ownership of project execution — applying proven processes, methodologies, skills, and experience to deliver successful outcomes within defined scope, time, and budget parameters.",
-    image: fourPlInplantLogistics3,
+    image: End2EndCustomerSupport,
     services: [
       "Identifying project goals and defining the core business need.",
       "Capturing requirements, setting quality benchmarks, and estimating time & resource needs.",
@@ -66,7 +69,7 @@ const FourPlInplantLogistics = () => {
 
   return (
     <>
-      <div className="container py-8">
+      <div className="container mt-10">
         <h1 className="text-primary sm:text-2xl text-xl font-bold">{title}</h1>
       </div>
       <section className="section">
@@ -93,7 +96,7 @@ const FourPlInplantLogistics = () => {
           </div>
 
           <div className="md:order-2 order-1">
-            <img src={section01.image} alt="4pl-inplant-logistics01" />
+            <img src={section01.image} alt="4pl-inplant-logistics01" className="rounded-xl" />
           </div>
         </div>
       </section>
@@ -104,7 +107,7 @@ const FourPlInplantLogistics = () => {
             <img
               src={section02.image}
               alt="4pl-inplant-logistics01"
-              className="lg:w-auto w-full"
+              className="lg:w-auto w-full rounded-xl"
             />
           </div>
 
@@ -155,7 +158,7 @@ const FourPlInplantLogistics = () => {
           </div>
 
           <div className="md:order-2 order-1">
-            <img src={section03.image} alt="4pl-inplant-logistics01" />
+            <img src={section03.image} alt="4pl-inplant-logistics01" className="rounded-xl" />
           </div>
         </div>
       </section>
