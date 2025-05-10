@@ -69,7 +69,7 @@ const Navbar = () => {
             : pathname === "/" && "text-primary-foreground"
         }`}
       >
-        <div className="px-5 md:px-14 py-2  flex flex-wrap items-center justify-between bg-gray-300 w-full">
+        <div className="hidden md:flex px-5 md:px-14 py-2 flex-wrap items-center justify-between bg-gray-300 w-full">
           <div className="text-black">
             {/* <a
               href={`tel:${companyDetail.contact}`}
@@ -139,7 +139,7 @@ const Navbar = () => {
             </a> */}
           </div>
         </div>
-        <div className="container h-14 flex items-center justify-between">
+        <div className="container h-14 flex items-center justify-between mt-4 md:mt-0">
           <Logo />
 
           <Popover open={popoverOpen} onOpenChange={togglePopover}>
@@ -218,19 +218,12 @@ const Navbar = () => {
                   </li>
 
                   <li>
-                    <a
-                      href="https://hrms.vinsumaxpress.com/Default.aspx"
-                      target="_blank"
-                    >
-                      <Button type="button" variant="destructive" onClick={togglePopover}>
-                        HRMS Login
-                      </Button>
-                    </a>
+                    <Button type="button" variant="secondary" onClick={() => setIsDialogOpen(true)} className="w-full">
+                        Branch Locator
+                    </Button>
                   </li>
                 </div>
-              </ul>
-
-            
+              </ul>            
             </PopoverContent>
           </Popover>
 
@@ -348,7 +341,7 @@ function BranchLocatorDialog({ isOpen, onClose }) {
           <div className="flex gap-2 mb-6 ">
             <input
               type="text"
-              placeholder="Enter Pincode or Area"
+              placeholder="Enter Pin code or Area"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="flex-1 border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
