@@ -201,6 +201,7 @@ import vinsumAxpressPlantImage02 from "@/assets/images/packaging/vinsum-axpress-
 import vinsumAxpressPlantImage03 from "@/assets/images/packaging/vinsum-axpress-plant-image3.jpg";
 import vinsumAxpressPlantImage04 from "@/assets/images/packaging/vinsum-axpress-plant-image4.jpg";
 import vinsumAxpressPlantImage05 from "@/assets/images/packaging/vinsum-axpress-plant-image5.jpg";
+import packagingService from "@/assets/images/packaging/packagingService.jpg";
 
 // blog
 import lastMileDelivery from "@/assets/images/blog/last_mile_delivery.jpg";
@@ -219,6 +220,7 @@ import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 export {
   techDrivenSolution,
   damageFreeDelivery,
+  packagingService,
   lastMileDelivery2,
   threePlBlog,
   threePlService,

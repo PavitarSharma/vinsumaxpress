@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { warehouseSolution } from "@/assets/images";
 import { FaHandPointRight } from "react-icons/fa";
 import MoreService from "@/components/MoreService";
+import { packagingService } from "../../assets/images";
 
 const warehouseSolutionPage = {
   title: "WAREHOUSING SOLUTION",
@@ -41,7 +42,13 @@ const WarehouseSolution = () => {
             </h2>
             <p className="my-4" dangerouslySetInnerHTML={{ __html: description }}></p>
           </div>
+
+          <div className="md:order-2 order-1">
+            <img src={packagingService} className="rounded-lg" alt="warehouse-solution" />
+          </div>
         </div>
+
+        
       </section>
 
       <section className="section">
@@ -60,10 +67,6 @@ const WarehouseSolution = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="md:order-2 order-1">
-            <img src={image} alt="warehouse-solution" />
           </div>
         </div>
       </section>

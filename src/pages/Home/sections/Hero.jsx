@@ -210,7 +210,7 @@ const Hero = () => {
         </div>
 
                
-        {/* <video
+        <video
           id="bannerVideo"
           muted
           loop
@@ -220,15 +220,15 @@ const Hero = () => {
           className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover"
         >
           <source src={heroBannerVideo} type="video/mp4" />
-        </video> */}
+        </video>
 
-      <figure className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover">
+      {/* <figure className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover">
         <img
           src={heroSectionBg}
           alt="franchise"
           className="h-full w-full"
         />
-      </figure>
+      </figure> */}
       </section>
     </>
   );
