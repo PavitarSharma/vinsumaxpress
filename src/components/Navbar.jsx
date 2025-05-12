@@ -35,14 +35,14 @@ import { Search, MapPin, Landmark, Home, LocateFixed, Type } from 'lucide-react'
 
 
 const Navbar = () => {
-  const [navBg, setNavBg] = useState(false);
+  const [navBg, setNavBg] = useState(true);
   const [popoverOpen, setPopoverOpen] = useState(false);
   const { pathname } = useLocation();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
 
   const changeNavBg = () => {
-    window.scrollY >= 80 ? setNavBg(true) : setNavBg(false);
+    window.scrollY >= 80 ? setNavBg(true) : setNavBg(true);
   };
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const Navbar = () => {
             : pathname === "/" && "text-primary-foreground"
         }`}
       >
-        <div className="hidden md:flex px-5 md:px-14 py-2 flex-wrap items-center justify-between bg-gray-300 w-full">
+        <div className="hidden md:flex px-5 md:px-14 py-2 flex-wrap items-center justify-between bg-gray-100 w-full">
           <div className="text-black">
             {/* <a
               href={`tel:${companyDetail.contact}`}

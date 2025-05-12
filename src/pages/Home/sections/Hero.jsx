@@ -215,7 +215,7 @@ const Hero = () => {
           muted
           loop
           autoPlay
-          title="Video Indroduction"
+          title="Video Introduction"
           poster="https://cdn.pixabay.com/photo/2014/09/11/22/00/dock-441989_1280.jpg"
           className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover"
         >
