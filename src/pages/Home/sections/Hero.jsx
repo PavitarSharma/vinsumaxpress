@@ -208,7 +208,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
                
         <video
           id="bannerVideo"
@@ -221,6 +220,8 @@ const Hero = () => {
         >
           <source src={heroBannerVideo} type="video/mp4" />
         </video>
+
+        
 
       {/* <figure className="absolute inset-0 w-full h-full -z-10 brightness-50 object-cover">
         <img

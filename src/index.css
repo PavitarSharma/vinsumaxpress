@@ -337,3 +337,24 @@
 .tilt-3d:hover {
   transform: rotateX(8deg) rotateY(-8deg);
 }
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+card-3d-fix {
+  transform: translateZ(0);
+  /* GPU compositing */
+  will-change: transform, opacity;
+  /* Explicit GPU hint */
+  backface-visibility: hidden;
+  contain: layout paint;
+  /* Force separate render layer */
+  isolation: isolate;
+  /* Prevent shared rendering context */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

@@ -8,7 +8,7 @@ const RoadService = () => {
     document.title = "Road Service";
   }, []);
 
-  const { title, image, description, offers } =
+  const { title, image, description, offers, secondaryText } =
     multimodalTransPortationServices[2];
   return (
     <>
@@ -17,30 +17,37 @@ const RoadService = () => {
           <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold">
             {title}
           </h2>
-          <p className="my-4">{description}</p>
+          <p className="my-4" dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       </section>
 
       <section>
         <div className="container grid md:grid-cols-2 gap-6">
           <div>
-            <img src={image} alt="air-service" className="w-full" />
+            <img src={image} alt="air-service" className="w-full rounded-lg" />
           </div>
           <div>
-            <h2 className="md:text-3xl text-2xl font-bold">Key Features – Surface Express Solutions</h2>
+            <h2 className="md:text-3xl text-2xl font-bold">✅ Key Features of VINSUM’s Road Services</h2>
 
             <ul className="ps-2 flex flex-col items-start my-4 gap-2">
               {offers.map((service, index) => (
                 <li
                   key={index}
-                  className="flex items-center justify-center gap-2"
+                  className="flex items-top justify-center gap-2"
                 >
                   <FaHandPointRight size={16} className="opacity-70" />
-                  <span className="flex-1 text-sm">{service}</span>
+                  <p className="flex-1 text-base" dangerouslySetInnerHTML={{ __html: service }} />
+                  <hr class="my-4 border-t border-gray-300" /><br></br>
                 </li>
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <p className="" dangerouslySetInnerHTML={{ __html: secondaryText }} />
         </div>
       </section>
 
@@ -63,7 +70,7 @@ const RoadService = () => {
       <section className="section">
         <div className="container">
           <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
-            To know more about our multi modal transportaion, please reach us
+            To know more about our multi modal transportation, please reach us
             through the appended form or write to us at.
             <a
               href="mailto:care@vinsumaxpress.com"

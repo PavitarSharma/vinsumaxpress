@@ -27,16 +27,16 @@ const RailService = () => {
             <img src={image} alt="air-service" className="w-full" />
           </div>
           <div className="md:order-1 order-2">
-            <h2 className="md:text-3xl text-2xl font-bold">Key Highlights</h2>
+            <h2 className="md:text-3xl text-2xl font-bold">Key Offerings of VINSUM's Rail Cargo Services</h2>
 
             <ul className="ps-2 flex flex-col items-start my-4 gap-2">
               {offers.map((service, index) => (
                 <li
                   key={index}
-                  className="flex items-center justify-center gap-2"
+                  className="flex items-top justify-center gap-2"
                 >
                   <FaHandPointRight size={16} className="opacity-70" />
-                  <span className="flex-1 text-sm">{service}</span>
+                  <p className="flex-1 text-base" dangerouslySetInnerHTML={{ __html: service }} />
                 </li>
               ))}
             </ul>

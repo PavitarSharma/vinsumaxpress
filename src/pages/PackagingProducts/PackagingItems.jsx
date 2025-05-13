@@ -4,10 +4,11 @@ import { packagingPage } from "@/constants";
 import CylinderCards from "../../components/CylinderCard";
 const { foldableCrates } = packagingPage;
 
-const PPBox = () => {
+const PackagingItems = ({ key }) => {
   useEffect(() => {
     document.title = "PP Box";
   }, []);
+  console.log(key)
 
   return (
     <>
@@ -31,4 +32,4 @@ const PPBox = () => {
   );
 };
 
-export default PPBox;
+export default PackagingItems;

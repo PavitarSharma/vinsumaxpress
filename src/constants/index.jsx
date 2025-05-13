@@ -132,6 +132,7 @@ import {
   threePlBlog,
   threePlService,
   fourPlService,
+  pp_box2
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -141,11 +142,13 @@ import { multiModelTransportServiceIcon,
   packagingServiceIcon } from "@/assets/images";
 
 import { ROUTES } from "@/lib/routes";
+import { Package2Icon } from "lucide-react";
 import {
   LuGlobe,
   LuBuilding2,
   LuUsersRound,
   LuBriefcaseBusiness,
+  LuPackagePlus,
 } from "react-icons/lu";
 
 export const navLinks = [
@@ -306,50 +309,146 @@ export const homeServices = [
 
 export const packagingProducts = [
   {
+    id: 0,
+    image: pp_box2,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "PP BOX",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PP_BOX}`,
   },
   {
+    id: 1,
+    image: pp_box2,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Foldable Crates Bin",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FOLDABLE_CRATES_BIN}`,
   },
   {
+    id: 2,
+    image: pp_box2,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "PLS Foldable",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLS_FOLDABLE}`,
   },
   {
+    id: 3,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "FLC Foldable",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.FLC_FOLDABLE}`,
   },
   {
+    id: 4,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Wire Mesh Container",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WIRE_MESH_CONTAINER}`,
   },
   {
+    id: 5,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Metal Foldable Bin",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.METAL_FOLDABLE_BIN}`,
   },
+  // {
+  //   id: 6,
+  //   image: Package2Icon,
+  //   description: "This is a small description about this thing",
+  //   benefits: [
+  //     "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+  //     "Flat Packed to 1/5th the Assembled Size.",
+  //     "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+  //   ],
+  //   label: "Pallets",
+  //   href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PALLETS}`,
+  // },
   {
-    label: "Pallets",
-    href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PALLETS}`,
-  },
-  {
+    id: 6,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Plastic Pallets",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.PLASTIC_PALLETS}`,
   },
   {
+    id: 7,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Wooden Pallets",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.WOODEN_PALLETS}`,
   },
   {
+    id: 8,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Steel Pallets",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.STEEL_PALLETS}`,
   },
   {
+    id: 9,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Thermoforming Trays",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.THERMOFORMING_TRAYS}`,
   },
   {
+    id: 10,
+    image: Package2Icon,
+    description: "This is a small description about this thing",
+    benefits: [
+      "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
+      "Flat Packed to 1/5th the Assembled Size.",
+      "Can with stand Payload of up to 20-25 kg and 5 High Stacking.",
+    ],
     label: "Customized Wooden Packaging Box",
     href: `${ROUTES.PACKAGING_PRODUCTS}${ROUTES.CUSTOMIZE_WOODEN_PACKAGING_BOX}`,
   },
@@ -475,35 +574,101 @@ export const multimodalTransPortationServices = [
   {
     title: "Rail Cargo Services",
     description:
-      `With over 23 years of expertise in cargo transportation, <strong>Vinsum Axpress</strong> specializes in delivering safe, reliable, and efficient <strong>rail logistics solutions</strong>. Our dedicated team ensures careful handling at every stage—from secure packaging to final delivery—guaranteeing the integrity of your cargo throughout the journey. We provide fully customizable rail freight services tailored to meet the unique needs of each client. Supported by our advanced ERP system and mobile application, we offer real-time tracking and end-to-end visibility, ensuring total control and transparency over in-transit cargo.`,
+      ` <strong>Rail Cargo Services</strong> As part of our commitment to building a more sustainable and efficient cargo ecosystem in India, <strong>VINSUM proudly offers Rail Cargo Services in collaboration with Dedicated Freight Corridors (DFC), Indian Railways, and the Ministry of Railways</strong>, under the transformative <strong>PM Gati Shakti National Master Plan</strong>. This initiative is aligned with India’s goal of developing <strong>green, multi-modal logistics infrastructure</strong>, and we are proud to contribute to this mission by promoting <strong>eco-friendly and high-capacity rail transportation</strong> for goods movement.<br><br>
+        Currently, VINSUM operates <strong>six key freight rail routes</strong> that connect <strong>North India with major commercial and industrial centers</strong>, including <strong>Bangalore, Chennai, Kolkata, Guwahati, and Gujarat</strong>. These services use a mix of dedicated <strong>freight trains, VPU (Vans Parcel Units) wagons</strong>, and other specialized rolling stock to ensure safe, reliable, and high-volume movement of cargo across long distances. Our rail-based logistics offer not only <strong>cost-effective transportation</strong> but also a <strong>significantly reduced carbon footprint</strong>, making them ideal for businesses looking to meet both operational and environmental goals.<br><br>
+        We offer a diverse portfolio of rail cargo services that cater to different types of cargo and loading needs, including <strong>Truck-on-Train (TOT), RORO (Roll-On/Roll-Off)</strong>, and <strong>SLR (Seating-cum-Luggage Rake)</strong> services, as well as <strong>NMG CBU (Car Carrier) transportation</strong> for automotive sector clients.`,
     image: trainService,
     offers: [
-      "Extensive industry expertise and proven experience.",
-      "End-to-end solutions from a single, integrated logistics provider.",
-      "Seamless multimodal cargo movement.",
-      "Specialized handling of large-volume and bulk shipments.",
-      "Real-time in-transit cargo monitoring.",
-      "Support for both break-bulk and full train consignments.",
-      "Availability of both SLR (Seating-cum-Luggage Rake) and VPU (Van Parcel Unit) options.",
+      `<strong>Truck on Train (TOT) / RORO Services</strong><br>
+       Transport entire loaded trucks directly on freight trains for faster, greener, and congestion-free movement—ideal for long-haul logistics and highway bypassing. <br>`,
+
+      `<strong>VPU (Vans Parcel Unit) Services via Dedicated Freight Trains</strong><br>
+       Leveraging dedicated freight trains fitted with VPUs to ensure the safe and timely transport of general and parcel cargo over vast distances.`,
+
+      `<strong>SLR (Seating-cum-Luggage Rake) Services</strong><br>
+       Specialized small-lot cargo solutions for mixed loads and regional deliveries, suited for lightweight goods and FMCG industries.`,
+
+      `<strong>xNMG (New Modified Goods) CBU Transportation</strong><br>
+       A specialized service for the automotive industry, enabling the transport of Completely Built Units (CBUs) such as cars and two-wheelers across India using NMG rail wagons.`,
     ],
     path: ROUTES.RAIL_SERVICE,
+    secondaryText: `
+
+    `
   },
   {
-    title: "Road Services",
+    title: "Road Transportation Services",
     description:
-      "At <strong>Vinsum Axpress</strong>, we specialize in high-volume freight transportation via road, delivering reliable and efficient service around the clock—independent of airport, railway, or port schedules. Our road logistics solutions are tailored to meet each client’s unique requirements, ensuring deliveries are made in strict alignment with agreed timelines and at the most competitive rates. With a focus on flexibility, precision, and cost-efficiency, we provide dependable overland transport solutions designed to support your supply chain seamlessly.",
+      `At <strong>VINSUM</strong>, we take pride in being one of the most dependable providers of high-volume <strong>road freight transportation</strong> in India. With a strong understanding of the diverse and dynamic needs of our clients across industries, our <strong>Road Services</strong> are designed to provide <strong>flexibility, coverage, and reliability</strong>. Whether it's Full Truck Load (FTL), Part Truck Load (PTL), or specialized cargo, we deliver customized road transport solutions that ensure timely and secure deliveries across the country. <br><br>
+       Our road network is powered by a robust fleet of <strong>920+ GPS-enabled vehicles</strong>, capable of covering over <strong>3 lakh kilometers every day</strong>, offering pan-India connectivity through a well-organized and technology-driven approach. From temperature-sensitive and weather-proof shipments to over-dimensional cargo (ODC) and milk run logistics, VINSUM handles a wide variety of freight requirements with precision and care. With strong compliance standards, real-time tracking, and experienced logistics personnel, we offer our clients peace of mind and operational efficiency on every mile of the journey. <br><br>
+       <hr class="my-4 border-t border-gray-300" /><br>
+      `,
     image: roadService,
     offers: [
-      "GPS-enabled fleet with flexible routing.",
-      "Full Truckload (FTL) and Part Truckload (PTL) management.",
-      "High-speed trucking and ODC (Over Dimensional Cargo) movement.",
-      "450+ fleet covering over 1.5 lakh km daily across India.",
-      "Milk-run transportation for optimized deliveries.",
-      "Weather-proof, containerized vehicles for safe transit.",
-      "650+ dedicated vehicles with trained drivers.",
-      "Reliable, pan-India surface cargo services with express delivery options.",
+      `<strong>Flexible Routing & Real-Time GPS Monitoring</strong><br>
+       All vehicles are <strong>equipped with GPS tracking</strong>, enabling route optimization, visibility, and timely updates for clients throughout the cargo movement cycle. <br>`,
+
+      `<strong>FTL / PTL Management (Full & Part Truck Load)</strong><br>
+       Whether you require an entire truckload for high-volume goods or shared truck space to optimize costs, we provide scalable and flexible load options to suit your cargo volume.`,
+
+      `<strong>ODC (Over-Dimensional Cargo) Transportation</strong><br>
+       Specialized handling and route planning for <strong>over-sized and heavy cargo,</strong> using suitable trailers, escorts, and infrastructure to ensure compliance and safety.`,
+
+      `<strong>920+ Fleet Size Covering 3+ Lakh Km/Day</strong><br>
+       A large, modern, and well-maintained fleet that services <strong>thousands of kilometers daily</strong>, ensuring <strong>nationwide coverage</strong> with consistent delivery performance.`,
+
+      `<strong>Milk Run Transportation Services</strong><br>
+       Efficient distribution systems where a single vehicle makes <strong>multiple pickups or deliveries</strong> along a route, helping reduce costs and streamline supply chain operations.`,
+
+      `<strong>Weather-Proof, Containerized Vehicles</strong><br>
+       We use containerized trucks designed to protect goods from <strong>rain, dust, and temperature fluctuations</strong>, making them ideal for sensitive cargo such as pharmaceuticals, electronics, and perishables.`,
     ],
     path: ROUTES.ROAD_SERVICE,
+    secondaryText: `
+      <span class="text-base font-semibold">Why Choose VINSUM’s Road Cargo Solutions?</span><br><br>
+      <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Wide geographical coverage with end-to-end service<br>
+          </li>
+          <li>
+            High-load capacity for industrial and commercial cargo<br>
+          </li>
+          <li>
+            GPS-enabled real-time visibility and monitoring<br>
+          </li>
+          <li>
+            24/7 operations with proactive customer support<br>
+          </li>
+          <li>
+            Cost-effective and scalable for all business sizes<br>
+          </li>
+          <li>
+            Compliance with safety and environmental standards<br>
+          </li>
+        </ul><br><br>
+
+        <span class="text-base font-semibold">Industries We Serve:</span><br><br>        
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            FMCG & Retail Distribution<br>
+          </li>
+          <li>
+            Automotive & Spare Parts<br>
+          </li>
+          <li>
+            Industrial Equipment & Machinery<br>
+          </li>
+          <li>
+            Pharmaceuticals, Healthcare & Chemicals<br>
+          </li>
+          <li>
+            Consumer Electronics<br>
+          </li>
+          <li>
+            E-Commerce & Warehousing<br>
+          </li>
+        </ul><br>
+    `
   },
 ];
 
