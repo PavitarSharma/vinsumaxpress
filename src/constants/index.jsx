@@ -132,7 +132,17 @@ import {
   threePlBlog,
   threePlService,
   fourPlService,
-  pp_box2
+  pp_box2,
+  thermoTray,
+  plasticPallet,
+  steelPallet,
+  woodenBox,
+  woodenPallet,
+  wiremess2,
+  pls2,
+  flc2,
+  fsb2,
+  mfc2
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -322,7 +332,7 @@ export const packagingProducts = [
   },
   {
     id: 1,
-    image: pp_box2,
+    image: fsb2,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -334,7 +344,7 @@ export const packagingProducts = [
   },
   {
     id: 2,
-    image: pp_box2,
+    image: pls2,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -346,7 +356,7 @@ export const packagingProducts = [
   },
   {
     id: 3,
-    image: Package2Icon,
+    image: flc2,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -358,7 +368,7 @@ export const packagingProducts = [
   },
   {
     id: 4,
-    image: Package2Icon,
+    image: wiremess2,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -370,7 +380,7 @@ export const packagingProducts = [
   },
   {
     id: 5,
-    image: Package2Icon,
+    image: mfc2,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -394,7 +404,7 @@ export const packagingProducts = [
   // },
   {
     id: 6,
-    image: Package2Icon,
+    image: plasticPallet,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -406,7 +416,7 @@ export const packagingProducts = [
   },
   {
     id: 7,
-    image: Package2Icon,
+    image: woodenPallet,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -418,7 +428,7 @@ export const packagingProducts = [
   },
   {
     id: 8,
-    image: Package2Icon,
+    image: steelPallet,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -430,7 +440,7 @@ export const packagingProducts = [
   },
   {
     id: 9,
-    image: Package2Icon,
+    image: thermoTray,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",
@@ -442,7 +452,7 @@ export const packagingProducts = [
   },
   {
     id: 10,
-    image: Package2Icon,
+    image: woodenBox,
     description: "This is a small description about this thing",
     benefits: [
       "Can be Designed to suit Trucks sizes for all Regions PAN INDIA.",

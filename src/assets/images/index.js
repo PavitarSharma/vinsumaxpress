@@ -203,6 +203,16 @@ import vinsumAxpressPlantImage04 from "@/assets/images/packaging/vinsum-axpress-
 import vinsumAxpressPlantImage05 from "@/assets/images/packaging/vinsum-axpress-plant-image5.jpg";
 import packagingService from "@/assets/images/packaging/packagingService.jpg";
 import pp_box2 from "@/assets/images/packaging/pp-box2.png";
+import flc2 from "@/assets/images/packaging/flc3.png";
+import fsb2 from "@/assets/images/packaging/fsb2.png";
+import pls2 from "@/assets/images/packaging/pls2.png";
+import plasticPallet from "@/assets/images/packaging/plastic_pallet.png";
+import steelPallet from "@/assets/images/packaging/steelpallet.png";
+import woodenPallet from "@/assets/images/packaging/woodenpallet.png";
+import woodenBox from "@/assets/images/packaging/woodenbox.png";
+import wiremess2 from "@/assets/images/packaging/wiremess2.png";
+import thermoTray from "@/assets/images/packaging/thermotray.png";
+import mfc2 from "@/assets/images/packaging/MFC.png";
 
 // blog
 import lastMileDelivery from "@/assets/images/blog/last_mile_delivery.jpg";
@@ -219,6 +229,16 @@ import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
 import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 
 export {
+  thermoTray,
+  plasticPallet,
+  steelPallet,
+  woodenBox,
+  woodenPallet,
+  wiremess2,
+  pls2,
+  flc2,
+  fsb2,
+  mfc2,
   techDrivenSolution,
   damageFreeDelivery,
   packagingService,
