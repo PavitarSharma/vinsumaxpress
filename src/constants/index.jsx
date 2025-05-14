@@ -142,7 +142,8 @@ import {
   pls2,
   flc2,
   fsb2,
-  mfc2
+  mfc2,
+  jyotiSharma
 } from "@/assets/images";
 
 import { multiModelTransportServiceIcon,
@@ -565,21 +566,103 @@ export const faqTrackShipment = [
 
 export const multimodalTransPortationServices = [
   {
-    title: "Air Logistics Services – Vinsum Axpress",
+    title: "Air Cargo Services – Vinsum Axpress",
     description:
-      "At Vinsum Axpress, we offer express, time-bound services with unmatched assurance, safety, and convenience. With our extensive network, trusted partners, and broad geographical reach, we handle and deliver shipments both nationally and internationally, providing personalized service and end-to-end in-transit tracking for our customers. Our experienced team expertly manages domestic and international air cargo shipments across a wide range of goods, selecting optimal routes tailored to your specific needs. Our fixed schedules on daily flights offer you the flexibility to expedite or hold deliveries, ensuring seamless alignment with your supply chain requirements.",
+      `<p class="text-base">At <strong>VINSUM</strong>, we understand that in today’s fast-moving world, businesses require <strong>swift, secure, and reliable air cargo solutions</strong> to keep up with their time-critical delivery needs. Our dedicated <strong>Air Services division</strong> specializes in organizing both <strong>domestic and international air cargo</strong> shipping across a wide range of industries and cargo types. Backed by an experienced team and robust partnerships with leading airlines, we ensure your shipments are handled with precision, care, and urgency.</p> <br>
+       <p class="text-sm"> Our team works closely with clients to select the <strong>most efficient air routes</strong>, taking into consideration cargo sensitivity, delivery deadlines, and budgetary goals. Whether you're shipping urgent business documents, high-value goods, or bulk freight, we provide <strong>customized air cargo logistics</strong> that match your individual needs. From airport-to-airport to fully integrated <strong>door-to-door delivery</strong>, our services are designed to offer maximum speed, flexibility, and reach. <br><br>
+        With access to <strong>dedicated cargo flights</strong> and specialized handling options like <strong>GCR (General Cargo Rate), Fast Track, and Hand Carry</strong>, VINSUM ensures a seamless experience from pickup to final delivery—backed by <strong>24/7 customer support</strong> and real-time tracking. </p>`,
     image: airService,
     offers: [
-      "Time-sensitive express deliveries.",
-      "Extensive geographical reach.",
-      "Cost-effective cargo routing.",
-      "Round the clock service.",
-      "Dedicated cargo flights (GCR, Fast Track, Hand Carry).",
-      "Door-to-Door, Door-to-Airport, Airport-to-Door, Airport-to-Airport services.",
-      "Real-time tracking and intelligent shipment alerts (Road, Rail & Air).",
-      "Multi-platform access (Web, iOS & Android).",
+      `<strong>⏱️ Time-Sensitive Express Deliveries</strong><br>
+       Tailored air solutions for <strong>urgent, high-priority cargo</strong>, ensuring the fastest possible delivery timelines across metro and non-metro cities. <br>`,
+
+      `<strong>🌍 Domestic & International Reach</strong><br>
+       Our network extends across <strong>India and global destinations</strong>, enabling you to ship goods almost anywhere in the world with ease and confidence.`,
+
+      `<strong>💸 Cost-Effective Routing Solutions</strong><br>
+       Smart cargo planning and route optimization to provide the <strong>best value for air freight</strong>, without compromising on speed or safety.`,
+
+      `<strong>🕐 24/7 Operations & Support</strong><br>
+       Round-the-clock monitoring and assistance to ensure <strong>real-time updates</strong>, proactive response, and complete peace of mind for time-bound shipments.`,
+
+      `<strong>✈️ Dedicated Air Cargo Services</strong><br>
+       We offer multiple service models, including: <br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <strong>GCR (General Cargo Rate) –</strong> Economic option for general freight<br>
+          </li>
+          <li>
+            <strong>Fast Track –</strong> Prioritized handling for time-critical shipments<br>
+          </li>
+          <li>
+            <strong>Hand Carry / On-Board Courier –</strong> A dedicated personnel member accompanies your cargo for maximum speed and security<br>
+          </li>
+       </ul>    
+      `,
+
+      `<strong>🏠 Flexible Delivery Options</strong><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <strong>Door-to-Door:</strong> Pickup from your location and delivery to the final destination<br>
+          </li>
+          <li>
+            <strong>Airport-to-Airport:</strong> Efficient transfers for clients who manage the first/last mile<br>
+          </li>
+       </ul>    
+      `,
+
+      `<strong>🏙️ Fast Transit Times</strong><br>
+       <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            <strong>18–24 hours delivery across major metro cities</strong><br>
+          </li>
+          <li>
+            <strong>24–48 hours delivery in non-metro destinations,</strong> depending on the airline and location<br>
+          </li>
+       </ul>    
+      `,
     ],
     path: ROUTES.AIR_SERVICE,
+    secondaryText: `
+      <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-2xl font-semibold">📦 Ideal For:</span><br><br>        
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Urgent medical and pharmaceutical shipments<br>
+          </li>
+          <li>
+            High-value electronics and spare parts<br>
+          </li>
+          <li>
+            Automotive, aerospace, and industrial goods<br>
+          </li>
+          <li>
+            Retail and e-commerce express cargo<br>
+          </li>
+          <li>
+            Documents, prototypes, and time-sensitive packages<br>  
+          </li>
+        </ul><br>
+        <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-2xl font-semibold">🚀 Why Choose VINSUM for Air Freight?</span><br><br>        
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Decades of cargo expertise and reliable airline partnerships<br>
+          </li>
+          <li>
+            Real-time tracking and proactive communication<br>
+          </li>
+          <li>
+            Custom solutions for all types of industries<br>
+          </li>
+          <li>
+            24/7 operations for global and national shipments<br>
+          </li>
+          <li>
+            Commitment to speed, reliability, and safety<br>
+          </li>
+        </ul><br>
+    `
   },
   {
     title: "Rail Cargo Services",
@@ -598,12 +681,55 @@ export const multimodalTransPortationServices = [
       `<strong>SLR (Seating-cum-Luggage Rake) Services</strong><br>
        Specialized small-lot cargo solutions for mixed loads and regional deliveries, suited for lightweight goods and FMCG industries.`,
 
-      `<strong>xNMG (New Modified Goods) CBU Transportation</strong><br>
+      `<strong>NMG (New Modified Goods) CBU Transportation</strong><br>
        A specialized service for the automotive industry, enabling the transport of Completely Built Units (CBUs) such as cars and two-wheelers across India using NMG rail wagons.`,
     ],
     path: ROUTES.RAIL_SERVICE,
     secondaryText: `
-
+        <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-2xl font-semibold">Our Active Rail Routes Connect:</span><br><br>        
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            North India ↔ <strong>Bangalore</strong><br>
+          </li>
+          <li>
+            North India ↔ <strong>Chennai</strong><br>
+          </li>
+          <li>
+            North India ↔ <strong>Kolkata</strong><br>
+          </li>
+          <li>
+            North India ↔ <strong>Guwahati</strong><br>
+          </li>
+          <li>
+            North India ↔ <strong>Gujarat</strong><br>  
+          </li>
+          <li>
+            Other strategic rail corridors as per client demand<br>
+          </li>
+        </ul><br>
+        <hr class="my-4 border-t border-gray-300" /><br>
+        <span class="text-2xl font-semibold">Why Choose VINSUM's Rail Services?</span><br><br>        
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>
+            Alignment with <strong>PM Gati Shakti</strong> for national logistics development<br>
+          </li>
+          <li>
+            Reduced fuel consumption & <strong>lower carbon emissions</strong><br>
+          </li>
+          <li>
+            Reliable long-haul transport with <strong>fewer transit delays</strong><br>
+          </li>
+          <li>
+            Flexible load types: trucks, parcels, cargo units, and automobiles<br>
+          </li>
+          <li>
+            Collaboration with Indian Railways ensures <strong>priority movement</strong><br>
+          </li>
+          <li>
+            Ideal for <strong>B2B, industrial, and large-volume logistics</strong><br>
+          </li>
+        </ul><br>
     `
   },
   {
@@ -635,47 +761,81 @@ export const multimodalTransPortationServices = [
     ],
     path: ROUTES.ROAD_SERVICE,
     secondaryText: `
-      <span class="text-base font-semibold">Why Choose VINSUM’s Road Cargo Solutions?</span><br><br>
-      <ul style="padding-left: 3rem; list-style-type: disc;">
-          <li>
-            Wide geographical coverage with end-to-end service<br>
-          </li>
-          <li>
-            High-load capacity for industrial and commercial cargo<br>
-          </li>
-          <li>
-            GPS-enabled real-time visibility and monitoring<br>
-          </li>
-          <li>
-            24/7 operations with proactive customer support<br>
-          </li>
-          <li>
-            Cost-effective and scalable for all business sizes<br>
-          </li>
-          <li>
-            Compliance with safety and environmental standards<br>
-          </li>
-        </ul><br><br>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Why Choose Section -->
+      <div class="order-1">
+        <span class="text-base font-semibold">Why Choose VINSUM’s Road Cargo Solutions?</span><br><br>
+        <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>Wide geographical coverage with end-to-end service<br></li>
+          <li>High-load capacity for industrial and commercial cargo<br></li>
+          <li>GPS-enabled real-time visibility and monitoring<br></li>
+          <li>24/7 operations with proactive customer support<br></li>
+          <li>Cost-effective and scalable for all business sizes<br></li>
+          <li>Compliance with safety and environmental standards<br></li>
+        </ul>
+      </div>
 
+      <!-- Industries We Serve Section -->
+      <div class="order-2">
         <span class="text-base font-semibold">Industries We Serve:</span><br><br>        
         <ul style="padding-left: 3rem; list-style-type: disc;">
+          <li>FMCG & Retail Distribution<br></li>
+          <li>Automotive & Spare Parts<br></li>
+          <li>Industrial Equipment & Machinery<br></li>
+          <li>Pharmaceuticals, Healthcare & Chemicals<br></li>
+          <li>Consumer Electronics<br></li>
+          <li>E-Commerce & Warehousing<br></li>
+        </ul>
+      </div>
+
+    </div>`,
+    speedTruck: `
+      <strong>VINSUM</strong> is a leading name in the Indian cargo and logistics industry, renowned for delivering <strong>fast, efficient, and customer-centric transportation solutions</strong>. As part of our commitment to meet the evolving needs of modern businesses, we proudly offer our specialized <strong>Speed Truck Services</strong>—a same-day and time-sensitive delivery solution designed to help clients move cargo swiftly and reliably across key locations in India. In today's fast-paced and demand-driven economy, timely delivery is not just an expectation—it's a necessity. That’s why VINSUM has developed a dedicated logistics model focused on speed, reliability, and operational excellence. <br><br>
+      <p class="text-sm">Our Speed Truck Services are tailored to serve manufacturers, suppliers, and businesses that require <strong>quick turnaround times</strong> without compromising on the safety or quality of the goods being transported. With a strategic presence in major industrial cities, we can facilitate direct and secure transportation routes, ensuring goods reach their destination on the <strong>same day or within a guaranteed 24–96 hour window</strong>, depending on the location. Our operations are backed by a disciplined scheduling system, a trained fleet, and an experienced logistics team that monitors each delivery closely. <br><br>
+      Whether it's urgent production materials, retail distribution, or high-value industrial shipments, VINSUM’s Speed Truck Services are built to provide peace of mind and business continuity. </p> <br>
+      <hr class="my-4 border-t border-gray-300" /><br>
+    `,
+    offersSpeedTruck: [
+      `<strong>Same-Day & Time-Definite Delivery</strong><br>
+       VINSUM specializes in <strong>same-day delivery services</strong> that are aligned with the urgency of customer requirements. This service is perfect for industries where time-sensitive logistics are crucial, such as automotive, electronics, pharmaceuticals, and retail. <br>`,
+
+      `<strong>Dedicated Route Network Covering Major Indian Cities</strong><br>
+       We have carefully designed and optimized transport routes connecting <strong>key industrial and commercial hubs</strong> across India.`,
+
+      `<strong>Guaranteed Turnaround Time (TAT) of 24–96 Hours</strong><br>
+       Depending on the origin and destination, we commit to a <strong>Turnaround Time (TAT)</strong> of anywhere between 24 to 96 hours, ensuring that cargo reaches its destination efficiently without unnecessary delays.`,
+
+      `<strong>Pan-India Operational Capability</strong><br>
+       With our growing network and fleet capacity, we offer services that span across the country, providing businesses with a <strong>single-window solution for nationwide cargo movement.</strong>`,
+
+      `<strong>Designed for Modern Business Needs</strong><br>
+       Our services are especially suitable for industries that demand precision and punctuality. We support businesses in <strong>supply chain optimization, inventory management</strong>, and <strong>customer fulfillment</strong>.`,
+
+      `<strong>Flexible, Scalable & Customer-First Approach</strong><br>
+       At VINSUM, we understand that no two clients are the same. That’s why we offer <strong>customizable solutions</strong> based on delivery urgency, type of cargo, and specific location requirements.`,
+
+      `<strong>Safety & Reliability</strong><br>
+      All cargo is handled by trained professionals and transported via secure routes with real-time tracking, ensuring that goods are delivered safely and on time.`,
+    ],
+    secondaryTextSpeedTruck: `
+      <hr class="my-4 border-t border-gray-300" /><br><br>
+      <span class="text-4xl font-semibold">Why Choose VINSUM for Speed Truck Services?</span><br><br>        
+      <ul class="text-2xl" style="padding-left: 3rem; list-style-type: disc;">
           <li>
-            FMCG & Retail Distribution<br>
+            Industry experience and operational expertise<br>
           </li>
           <li>
-            Automotive & Spare Parts<br>
+            Strategic delivery hubs for optimal reach<br>
           </li>
           <li>
-            Industrial Equipment & Machinery<br>
+            Scalable for both SME and large enterprises<br>
           </li>
           <li>
-            Pharmaceuticals, Healthcare & Chemicals<br>
+            Transparent and competitive pricing models<br>
           </li>
           <li>
-            Consumer Electronics<br>
-          </li>
-          <li>
-            E-Commerce & Warehousing<br>
+            Commitment to service excellence<br>
           </li>
         </ul><br>
     `
@@ -997,7 +1157,15 @@ export const leadershipTeams = [
   {
     image: tcSharma,
     name: "Mr. T.C Sharma",
-    position: "President",
+    position: "President — Operations",
+    twitter: "",
+    instagram: "",
+    linkedin: "",
+  },
+  {
+    image: profileUser,
+    name: "Mr. Perminder Singh",
+    position: "President — Business Excellence & Corp Affairs",
     twitter: "",
     instagram: "",
     linkedin: "",
@@ -1005,14 +1173,14 @@ export const leadershipTeams = [
   {
     image: vimalSharma,
     name: "Mr. Vimal Sharma",
-    position: "Head Credit Control",
+    position: "AVP — Admin, Audit & Credit Control",
     twitter: "",
     instagram: "",
     linkedin: "",
   },
   // {
-  //   image: babulalSharma,
-  //   name: "Mr. Babulal Sharma",
+  //   image: jyotiSharma,
+  //   name: "Mrs. Jyoti Sharma",
   //   position: "Head - Audit & Cost Control",
   //   twitter: "",
   //   instagram: "",
@@ -1021,23 +1189,7 @@ export const leadershipTeams = [
   {
     image: anilRajput,
     name: "Mr. Anil Rajput",
-    position: "Head Billing",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
-  {
-    image: amitShandilay,
-    name: "Amit Shandilay",
-    position: "GM - Information Technology (IT)",
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-  },
-  {
-    image: mohitVashist,
-    name: "Mr. Mohit Vashisht",
-    position: "Manager Packaging Manufacturing Plant",
+    position: "AVP — IT, Branding & Billing",
     twitter: "",
     instagram: "",
     linkedin: "",
@@ -1045,19 +1197,27 @@ export const leadershipTeams = [
   {
     image: supriyaDutt,
     name: "Mrs. Supriya Dutt",
-    position: "HR HEAD",
+    position: "HEAD — HR Department",
     twitter: "",
     instagram: "",
     linkedin: "",
   },
   {
-    image: profileUser,
-    name: "Mr. Perminder Singh",
-    position: "President (Sales & KAM)",
+    image: amitShandilay,
+    name: "Amit Shandilay",
+    position: "GM — Information Technology (IT)",
     twitter: "",
     instagram: "",
     linkedin: "",
   },
+  // {
+  //   image: mohitVashist,
+  //   name: "Mr. Mohit Vashisht",
+  //   position: "Manager Packaging Manufacturing Plant",
+  //   twitter: "",
+  //   instagram: "",
+  //   linkedin: "",
+  // },
   // {
   //   image: profileUser,
   //   name: "Mr. Kamlesh Jha",

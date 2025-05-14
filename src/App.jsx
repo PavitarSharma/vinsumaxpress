@@ -90,7 +90,6 @@ import { LuArrowUp } from "react-icons/lu";
 import { Sidebar } from "lucide-react";
 import SocialSidebar from "./components/Sidebar";
 import WhyUsPopup from "./components/WhyUsPopup";
-import PackagingItems from "./pages/PackagingProducts/PackagingItems";
 
 const App = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
@@ -171,7 +170,6 @@ const App = () => {
           {/* <Route path={ROUTES.FRANCHISE} element={<Franchise />} /> */}
           <Route path={ROUTES.TRACK_SHIPMENT} element={<TrackShipment />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
-          {/* <Route path="/packaging-products/:id" element={<PackagingItems />} /> */}
           <Route path={ROUTES.SOCIAL_NETWORK} element={<SocialNetwork />} />
           <Route
             path={ROUTES.PACKAGING_PRODUCTS}

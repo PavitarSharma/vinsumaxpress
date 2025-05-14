@@ -5,39 +5,78 @@ We use robust packaging techniques, modern vehicles, and a dedicated tracking sy
 `
 
 const techDrivenSolutionText = `
-  <span class="text-xl font-semibold">Welcome to Vinsum Axpress — Where Technology Drives Logistics Excellence</span><br><br>
-  In a world where speed, precision, and adaptability define success, <strong>Vinsum Axpress</strong> stands at the forefront of a logistics revolution. We are more than a cargo company—we are your <strong>technology partner in motion</strong>, delivering transformative, data-driven freight solutions that redefine how cargo moves across the country and beyond. <br><br>
-  At the heart of our operations is a relentless commitment to <strong>innovation</strong>. Our systems are built to think, learn, and evolve—ensuring every shipment, every route, and every customer interaction is handled with unmatched intelligence and agility. <br><br>
+  <span class="text-xl font-semibold">Welcome to Vinsum Axpress — <i>Where Technology Drives Logistics Excellence </i></span><br><br>
+  In a world where <strong>speed, precision, and adaptability</strong> define business success, <strong>Vinsum Axpress</strong> stands at the cutting edge of a logistics revolution. We are more than a cargo company—we are your <strong>technology-driven logistics partner</strong>, delivering <strong>transformative, intelligent, and future-ready freight solutions</strong> that redefine how cargo moves across India and beyond. <br><br>
+  With a foundation built on <strong>innovation, automation, and real-time data intelligence</strong>, we ensure every shipment, every route, and every customer experience is <strong>optimized, secure, and transparent</strong>. Whether it's road, rail, air, or multi-modal logistics, we provide <strong>seamless connectivity</strong> backed by a robust digital infrastructure. <br><br>
   <hr class="my-4 border-t border-gray-300" /><br>
   <span class="text-2xl font-semibold">Tech-First. Future-Ready. Customer-Centric.</span><br><br>
-  Through a robust suite of integrated platforms, we create a seamless digital ecosystem that powers your logistics journey:<br><br>
+  At the core of Vinsum Axpress lies a powerful <strong>digital ecosystem</strong>, seamlessly integrating our transportation, warehousing, customer engagement, and supply chain operations through advanced platforms:<br><br>
   <ul style="padding-left: 3rem; list-style-type: decimal;">
     <li>
-      <span class="text-base font-semibold">TMS (Transportation Management System)</span><br>
-      Optimize routing, scheduling, and freight movement with precision and control. <br><br>
+      <span class="text-lg font-semibold">TMS (Transportation Management System)</span><br>
+      Plan, route, and execute freight movements with real-time visibility and precision optimization. <br><br>
     </li>
     <li>
-      <span class="text-base font-semibold">WMS (Warehouse Management System)</span><br>
-      Streamline storage, inventory, and distribution with real-time visibility. <br><br>
+      <span class="text-lg font-semibold">WMS (Warehouse Management System)</span><br>
+      Manage storage, stock movement, and distribution with intelligent tracking and automated workflows. <br><br>
     </li>
     <li>
-      <span class="text-base font-semibold">ERP (Enterprise Resource Planning)</span><br>
-      Drive operational efficiency and decision-making through centralized business intelligence. <br><br>
+      <span class="text-lg font-semibold">ERP (Enterprise Resource Planning)</span><br>
+      A robust <strong>in-house ERP</strong> supports end-to-end operational control, including <strong>financial accounting, vendor management</strong>, and <strong>performance analytics</strong>. <br><br>
     </li>
     <li>
-      <span class="text-base font-semibold">HRMS (Human Resource Management System)</span><br>
-      Empower workforce productivity with smart people management. <br><br>
+      <span class="text-lg font-semibold">HRMS (Human Resource Management System)</span><br>
+      Enable people-first logistics with advanced workforce planning, productivity tracking, and HR automation. <br><br>
     </li>
     <li>
-      <span class="text-base font-semibold">Real-Time Shipment Tracking</span><br>
-      Get live updates and proactive notifications across every mile. <br><br>
+      <span class="text-lg font-semibold">Real-Time Shipment & Vehicle Tracking (GPS)</span><br>
+      Get <strong>live updates</strong> on fleet location, transit status, and delivery progress, all visible through our <strong>customer portal</strong>. <br><br>
     </li>
     <li>
-      <span class="text-base font-semibold">Smart Automation & Analytics</span><br>
-      Uncover insights that drive performance, reduce costs, and enable predictive logistics. <br><br>
+      <span class="text-lg font-semibold">Operations Control Centre (OCC) & CCTV Surveillance</span><br>
+      Our warehouses are equipped with <strong>24x7 surveillance</strong> and monitored by OCC for corrective action, package safety, and cargo security. <br><br>
     </li>
-  </ul> <br><br>  
-  Our digital infrastructure is not just a support system—it’s <strong>the engine of our excellence</strong>, enabling us to eliminate delays, optimize costs, and increase delivery accuracy.
+    <li>
+      <span class="text-lg font-semibold">Smart Notifications & Automation</span><br>
+      Customers receive <strong>auto-SMS alerts</strong> on pickup and dispatch, while our <strong>online shipment tracker</strong> provides transparent milestone updates. <br><br>
+    </li>
+    <li>
+      <span class="text-lg font-semibold">Auto MIS & Reporting</span><br>
+      Clients benefit from <strong>automated MIS reports</strong>, dashboards, and access to personalized insights through <strong>My Stock</strong> and <strong>My Receivables portals</strong>. <br><br>
+    </li>
+    <li>
+      <span class="text-lg font-semibold">ePOD (Electronic Proof of Delivery)</span><br>
+      Digitally signed PODs for faster reconciliation and seamless documentation. <br><br>
+    </li> 
+  </ul> 
+  <hr class="my-4 border-t border-gray-300" /><br>
+  <span class="text-2xl font-semibold">Smart Tag & Trace: Returnable Packaging Asset Management</span><br><br>
+  Our cutting-edge <strong>Smart Tag & Trace system</strong> is transforming how businesses manage <strong>Returnable Packaging Equipment (RPE)</strong>:<br><br>
+  <ul style="padding-left: 3rem; list-style-type: disc;">
+    <li>
+      Uses <strong>globally standardized technologies</strong> like <strong>QR Codes, RFID tags, sensors</strong>, and <strong>IoT gateways</strong> <br><br>
+    </li>
+    <li>
+      Enables <strong>real-time visibility</strong> of packaging assets across all warehouses and customer sites <br><br>
+    </li>
+    <li>
+      Tracks <strong>stock levels, stock aging, retention time, and cycle days</strong> <br><br>
+    </li>
+    <li>
+      Sends alerts based on pre-set thresholds for timely actions <br><br>
+    </li>
+    <li>
+      Identifies <strong>non-moving or idle RPE</strong>, helping improve utilization rates <br><br>
+    </li>
+    <li>
+      Minimizes RPE loss in the supply chain, driving down operational costs <br><br>
+    </li>
+  </ul> <br>
+  This advanced asset lifecycle management ensures <strong>sustainability, cost-efficiency, and operational transparency</strong> for packaging-heavy industries such as FMCG, automotive, and manufacturing. <br><br>
+  <hr class="my-4 border-t border-gray-300" /><br>
+  <span class="text-2xl font-semibold">Redefining Logistics with Intelligence & Integrity</span><br><br>
+  Every solution at Vinsum Axpress is engineered to make your logistics <strong>smarter, safer, and more efficient, from automated supply chain orchestration to smart packaging visibility</strong>. Our end-to-end ecosystem not only enables faster freight movement but also empowers your business with the <strong>control, data, and insights</strong> needed to thrive in a competitive landscape. <br><br>
+  Let’s build the logistics of tomorrow—<strong>together</strong>. 
 `
 
 const WhyUsPopup = ({id}) => {

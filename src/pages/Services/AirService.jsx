@@ -3,13 +3,14 @@ import { multimodalTransPortationServices } from "@/constants";
 import { FaHandPointRight } from "react-icons/fa";
 import { Separator } from "@/components/ui/separator";
 import MoreService from "@/components/MoreService";
+import { airplaneDesignFreight } from "@/assets/images";
 
 const AirService = () => {
   useEffect(() => {
     document.title = "Air Service";
   }, []);
 
-  const { title, image, description, offers } =
+  const { title, image, description, offers, secondaryText } =
     multimodalTransPortationServices[0];
 
   return (
@@ -19,30 +20,36 @@ const AirService = () => {
           <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold">
             {title}
           </h2>
-          <p className="my-4">{description}</p>
+          <p className="my-4" dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       </section>
 
       <section>
         <div className="container grid md:grid-cols-2 gap-6">
           <div>
-            <img src={image} alt="air-service" />
+            <img src={image} alt="air-service" className="rounded-lg" />
           </div>
           <div>
-            <h2 className="md:text-3xl text-2xl font-bold">We Offer</h2>
+            <h2 className="md:text-2xl text-2xl font-bold">✅ Key Features of VINSUM’s Air Cargo Services</h2>
 
             <ul className="ps-2 flex flex-col items-start my-4 gap-2">
               {offers.map((service, index) => (
                 <li
                   key={index}
-                  className="flex items-center justify-center gap-2"
+                  className="flex items-top justify-center gap-2"
                 >
                   <FaHandPointRight size={16} className="opacity-70" />
-                  <span className="flex-1 text-sm">{service}</span>
+                  <span className="flex-1 text-sm" dangerouslySetInnerHTML={{ __html: service }} />
                 </li>
               ))}
             </ul>
           </div>
+        </div>
+        <div className="container grid md:grid-cols-2 gap-6 items-center mt-8">
+          <div className="md:order-2 order-1">
+            <img src={airplaneDesignFreight} alt="air-service" className="w-full rounded-lg h-full" />
+          </div>
+          <p className="flex-1 text-base p-8 md:order-1 order-2" dangerouslySetInnerHTML={{ __html: secondaryText }} />
         </div>
       </section>
 

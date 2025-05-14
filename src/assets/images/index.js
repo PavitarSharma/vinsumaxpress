@@ -79,6 +79,7 @@ import trainService from "@/assets/images/services/train-service.jpg";
 import roadService from "@/assets/images/services/road-service.jpg";
 import InPlantLogisticService from "@/assets/images/services/InPlantLogisticSolution.jpg";
 import End2EndCustomerSupport from "@/assets/images/services/End2EndCustomerSupport.jpg";
+import speedTruckImg from "@/assets/images/services/speed-truck.png";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -107,6 +108,7 @@ import amitabhaMohapatra from "@/assets/images/teams/amitabha-mohapatra.png";
 import mohitVashist from "@/assets/images/teams/mohit-vashisht.png";
 import supriyaDutt from "@/assets/images/teams/supriya-dutt.png";
 import amitShandilay from "@/assets/images/teams/amit-shandilay.png";
+import jyotiSharma from "@/assets/images/teams/jyoti-sharma.png";
 
 // Gallery
 import gallery1 from "@/assets/images/gallery/gallery-1.png";
@@ -229,6 +231,8 @@ import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
 import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 
 export {
+  jyotiSharma,
+  speedTruckImg,
   thermoTray,
   plasticPallet,
   steelPallet,

@@ -58,8 +58,12 @@ const fourPLInplant = {
       "Stakeholder communication and alignment throughout the lifecycle.",
       "Structured and controlled project closure.",
     ],
+    footer: `<hr class="my-4 border-t border-gray-300" /><br><span class="text-3xl font-semibold">In-Plant Logistics Solutions</span><br><br>
+      Streamlining Internal Logistics for Operational Excellence<br><br>
+      At <strong>Vinsum Axpress</strong>, we specialize in In-Plant Logistics, offering end-to-end solutions to manage the flow of materials—raw materials, semi-finished goods, and finished products—within your manufacturing facility. Our approach is designed to reduce downtime, increase efficiency, and optimize every stage of internal logistics to ensure leaner, faster, and smarter plant operations. <br><br>`
   },
 };
+
 const FourPlInplantLogistics = () => {
   useEffect(() => {
     document.title = "4PL Inplant Logistics Project Management";
@@ -165,6 +169,7 @@ const FourPlInplantLogistics = () => {
 
       <section className="section">
         <div className="container">
+          <p className="my-4" dangerouslySetInnerHTML={{ __html: section03.footer }}></p>
           <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
             To know more about our 4PL /Inplant Logistics /Project Management,
             please reach us through the appended form or write to us at.

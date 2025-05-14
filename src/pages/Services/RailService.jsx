@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { multimodalTransPortationServices } from "@/constants";
 import { FaHandPointRight } from "react-icons/fa";
 import MoreService from "@/components/MoreService";
+import { railService } from "@/assets/images";
 
 const RailService = () => {
   useEffect(() => {
     document.title = "Rail Service";
   }, []);
 
-  const { title, image, description, offers } =
+  const { title, image, description, offers, secondaryText } =
     multimodalTransPortationServices[1];
   return (
     <>
@@ -24,7 +25,7 @@ const RailService = () => {
       <section>
         <div className="container grid md:grid-cols-2 gap-6">
           <div className="md:order-2 order-1">
-            <img src={image} alt="air-service" className="w-full" />
+            <img src={image} alt="air-service" className="w-full rounded-lg" />
           </div>
           <div className="md:order-1 order-2">
             <h2 className="md:text-3xl text-2xl font-bold">Key Offerings of VINSUM's Rail Cargo Services</h2>
@@ -42,6 +43,12 @@ const RailService = () => {
             </ul>
           </div>
         </div>
+        <div className="container grid md:grid-cols-2 gap-6 items-center mt-8">
+          <div className="md:order-2 order-1">
+            <img src={railService} alt="air-service" className="w-full rounded-lg h-full" />
+          </div>
+          <p className="flex-1 text-base p-8 md:order-1 order-2" dangerouslySetInnerHTML={{ __html: secondaryText }} />
+        </div>  
       </section>
 
       <section className="section">
@@ -63,7 +70,7 @@ const RailService = () => {
       <section className="section">
         <div className="container">
           <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
-            To know more about our multi modal transportaion, please reach us
+            To know more about our multi modal transportation, please reach us
             through the appended form or write to us at.
             <a
               href="mailto:care@vinsumaxpress.com"

@@ -19,7 +19,7 @@ export default function CylinderCards({ activeIndex }) {
   
   return (
     <div
-        className="flex items-center justify-center w-full h-full"
+        className="flex items-center justify-center w-full h-full opacity-80"
         style={{  WebkitFontSmoothing: "antialiased" }}>
         <div
             className="relative transition-transform duration-700"
