@@ -95,7 +95,7 @@ const AirService = () => {
 
       <section className="section">
         <div className="container">
-          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto">
+          <p className="py-4 bg-neutral-200 rounded-lg px-4 mx-auto text-center">
             To know more about our multi modal transportation, please reach us
             through the appended form or write to us at.
             <a
