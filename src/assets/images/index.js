@@ -80,6 +80,7 @@ import roadService from "@/assets/images/services/road-service.jpg";
 import InPlantLogisticService from "@/assets/images/services/InPlantLogisticSolution.jpg";
 import End2EndCustomerSupport from "@/assets/images/services/End2EndCustomerSupport.jpg";
 import speedTruckImg from "@/assets/images/services/speed-truck.png";
+import threePlWhyChooseUs from "@/assets/images/services/threePlWhyChooseUs.jpg";
 
 // about
 import vinsumRoadMap from "@/assets/images/about/road-map.png";
@@ -231,6 +232,7 @@ import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
 import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 
 export {
+  threePlWhyChooseUs,
   jyotiSharma,
   speedTruckImg,
   thermoTray,

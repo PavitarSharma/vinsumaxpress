@@ -8,7 +8,7 @@ import {
   lookup,
   purchaseOrder,
   shipment,
-  threePl,
+  threePlWhyChooseUs,
   threePlService,
   transferOrder,
 } from "@/assets/images";
@@ -63,7 +63,9 @@ const threePlManagement = {
             Whether you need short-term warehousing or a long-term 3PL partner, our solutions can be tailored to <strong>seasonal spikes, market expansion, or geographic growth.</strong> <br><br>
           </li>
         </ul> <br><br>
-        <span class="text-3xl font-semibold mt-6">Why Choose Vinsum Axpress as Your 3PL Partner?</span><br><br><br>
+    `,
+    whyChooseUs: `
+      <span class="text-3xl font-semibold mt-6">Why Choose Vinsum Axpress as Your 3PL Partner?</span><br><br><br>
         <ol style="padding-left: 3rem; list-style-type: decimal;">
           <li>
             Smart technology-driven inventory systems (WMS, ERP, Auto MIS) <br><br>
@@ -150,7 +152,16 @@ const ThreePlInventoryManagement = () => {
       <section className="container">
         <div>
           <p dangerouslySetInnerHTML={{ __html: section01.benefits }} />
-        </div>
+          <div className="container grid md:grid-cols-2 gap-6 items-center">
+            <div className="md:order-1 order-2">
+              <p dangerouslySetInnerHTML={{ __html: section01.whyChooseUs }} />
+            </div>
+
+            <div className="md:order-2 order-1">
+              <img src={threePlWhyChooseUs} alt="4pl-inplant-logistics01" className="rounded-xl w-full h-fit" />
+            </div>
+          </div>
+        </div>    
       </section>
 
       <section>
