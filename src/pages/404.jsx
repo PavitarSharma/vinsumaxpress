@@ -7,6 +7,7 @@ const NotFound = () => {
   useEffect(() => {
     document.title = "404 Not Found";
   }, []);
+  
   return (
     <section className="section">
       <div className="container">

@@ -117,82 +117,53 @@ const Contact = () => {
         <div className="container grid md:grid-cols-2 gap-6">
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl" >Head Office</CardTitle>
-              <CardDescription className="text-base">
+              <CardTitle className="text-2xl">Head Office</CardTitle>
+              <CardDescription className="text-base mt-2">
                 <div
-                href="mailto:care@vinsumaxpress.com"
-                className="flex gap-2 text-base text-text my-4 hover:text-primary transition duration-300"
-              >
-                <FaMapMarkedAlt size={18} />
-                <span className="flex-1 text-base">
-                  404- Electronic City, Udyog Vihar, Phase IV, Sector 18,
-                  Gurugram, 122015.
-                </span>
-              </div>
+                  className="flex gap-2 text-base text-text my-4 hover:text-primary transition duration-300"
+                >
+                  <FaMapMarkedAlt size={18} />
+                  <span className="flex-1 text-base">
+                    404 – Electronic City, Udyog Vihar, Phase IV, Sector 18, Gurugram, 122015
+                  </span>
+                </div>
               </CardDescription>
             </CardHeader>
             <CardContent>
               <h3 className="text-xl font-bold">Information</h3>
+
               <p className="font-medium text-gray-700 mt-2">
-                Phone:{" "}
-                <a href="tel:0124 4070191" className="ml-2">
+                Phone:
+                <a href="tel:0124 4070191" className="ml-2 hover:underline">
                   0124 4070191
                 </a>
               </p>
               <p className="font-medium text-gray-700 mt-2">
-                Customer Care:{" "}
-                <a href="tel:1800-833-3513" className="ml-2">
+                Customer Care:
+                <a href="tel:1800-833-3513" className="ml-2 hover:underline">
                   1800-833-3513
                 </a>
               </p>
               <p className="font-medium text-gray-700 mt-2">
-                <a href="mailto:care@vinsumaxpress.com">
+                Email:
+                <a href="mailto:care@vinsumaxpress.com" className="ml-2 hover:underline">
                   {companyDetail.email}
                 </a>
               </p>
+
+              <hr className="my-4 border-gray-300" />
+
+              <h4 className="text-lg font-semibold text-gray-800">Operating Hours</h4>
+              <p className="text-gray-700 mt-1">We operate 24 hours a day, 7 days a week.</p>
+              <p className="text-gray-500 text-sm">Support and logistics available round the clock.</p>
+
+              <hr className="my-4 border-gray-300" />
+
+              <h4 className="text-lg font-semibold text-gray-800">About the Office</h4>
+              <p className="text-gray-700 mt-1">
+                Strategically located in Gurugram's business district, our Head Office serves as the central hub for nationwide logistics coordination, customer service, and strategic planning.
+              </p>
             </CardContent>
-            <CardFooter>
-              <div>
-                <h3 className="text-xl font-bold">Follow Us</h3>
-                <div className="flex gap-4 flex-wrap mt-2">
-                  <a
-                    href={companyDetail.instagram}
-                    target="_blank"
-                    className={socialIcon}
-                  >
-                    <FaInstagram />
-                  </a>
-                  <a
-                    href={companyDetail.facebook}
-                    target="_blank"
-                    className={socialIcon}
-                  >
-                    <FaFacebookF />
-                  </a>
-                  <a
-                    href={companyDetail.youtube}
-                    target="_blank"
-                    className={socialIcon}
-                  >
-                    <FaYoutube />
-                  </a>
-                  <a
-                    href={companyDetail.linkedin}
-                    target="_blank"
-                    className={socialIcon}
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                  <a
-                    href={companyDetail.thread}
-                    target="_blank"
-                    className={socialIcon}
-                  >
-                    <FaThreads />
-                  </a>
-                </div>
-              </div>
-            </CardFooter>
           </Card>
 
           <Card>

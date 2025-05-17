@@ -114,7 +114,7 @@ const threePlManagement = {
       "DUL",
       "Bin Charging",
       "FIFO/LIFO",
-      "Karban",
+      "Kanban",
       "Bounded Warehouse",
       "Order Processing",
       "Escorts services",
