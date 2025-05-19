@@ -1164,6 +1164,14 @@ export const leadershipTeams = [
   },
   {
     image: tcSharma,
+    name: "Mr. OP Vyas",
+    position: "Associate Director",
+    twitter: "",
+    instagram: "",
+    linkedin: "",
+  },
+  {
+    image: tcSharma,
     name: "Mr. T.C Sharma",
     position: "President — Operations",
     twitter: "",
