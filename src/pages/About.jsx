@@ -194,12 +194,12 @@ const About = () => {
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 hidden lg:flex flex-col w-full items-center justify-center">
                     <p className="text-xl">Mr. Vinod Sharma</p>
                     <p className="font-semibold mb-1">Chairman & Managing Director</p>
-                    <button className="bg-sky-600 hover:bg-sky-700 text-white text-center justify-self-center py-2 rounded-md border border-sky-600 px-4 rounded inline-flex items-center justify-center">
+                    <a href="https://www.linkedin.com/in/vinod-sharma-005a24265/" target="_blank" className="bg-sky-600 hover:bg-sky-700 text-white text-center justify-self-center py-2 rounded-md border border-sky-600 px-4 rounded inline-flex items-center justify-center">
                       <p className="flex items-center text-lg">Connect on LinkedIn</p>
                       <div className="bg-white text-sky-600 p-1 ms-2 flex items-center justify-center">
                         <FaLinkedinIn />
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div>
 

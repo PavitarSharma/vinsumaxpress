@@ -110,6 +110,12 @@ import mohitVashist from "@/assets/images/teams/mohit-vashisht.png";
 import supriyaDutt from "@/assets/images/teams/supriya-dutt.png";
 import amitShandilay from "@/assets/images/teams/amit-shandilay.png";
 import jyotiSharma from "@/assets/images/teams/jyoti-sharma.png";
+import janardan from "@/assets/images/teams/janardan.png";
+import mukeshGoyal from "@/assets/images/teams/mukesh-goyal.png";
+import nareshPilania from "@/assets/images/teams/naresh-pilania.jpg";
+import opVyas from "@/assets/images/teams/op-vyas.png";
+import poonam from "@/assets/images/teams/poonam.png";
+import parminderSingh from "@/assets/images/teams/parminder-singh.png";
 
 // Gallery
 import gallery1 from "@/assets/images/gallery/gallery-1.png";
@@ -232,6 +238,12 @@ import damageFreeDelivery from "@/assets/images/damageFreeDelivery.png";
 import techDrivenSolution from "@/assets/images/techDrivenSolution.png";
 
 export {
+  janardan,
+  opVyas,
+  mukeshGoyal,
+  poonam,
+  nareshPilania,
+  parminderSingh,
   threePlWhyChooseUs,
   jyotiSharma,
   speedTruckImg,
