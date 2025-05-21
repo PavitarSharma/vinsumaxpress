@@ -162,7 +162,7 @@ const PackagingSolution = () => {
                 {returnablePackagingServices.map((service, index) => (
                   <li
                     key={index}
-                    className="flex items-center justify-center gap-2 w-full md:text-2xl"
+                    className="flex items-center justify-center gap-2 w-full md:text-lg"
                   >
                     <FaHandPointRight size={16} className="opacity-70" />
                     <span className="flex-1">{service}</span>
@@ -195,7 +195,7 @@ const PackagingSolution = () => {
                   alt={dermit.title}
                   className="w-16 h-16 object-contain"
                 />
-                <h2 className="">{dermit.title}</h2>
+                <h2 className="text-lg">{dermit.title}</h2>
               </div>
             ))}
           </div>
