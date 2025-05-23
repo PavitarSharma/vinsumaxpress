@@ -32,7 +32,7 @@ const OurClients = () => {
           <h2 className="text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-700 to-red-500 animate-text-gradient bg-[length:200%_200%]">
             Our Clients
           </h2>
-          <h1 className="text-4xl font-bold uppercase">
+          <h1 className="text-2xl font-bold uppercase">
             WITH OVER <span className="text-primary">500+ satisfied CLIENTS</span>, Vinsum has set a new standard for trust and reliability in the logistics industry.
           </h1>
           <p className="text-lg">

@@ -56,7 +56,7 @@ const TrackShipmentPopup = ({ onClose, show, shipment }) => {
         if(show) {
           if (status === "At Rest") truckMoment(1);
           if (status === "Intransit") truckMoment(2);
-          if (status === "Out for Delivery") truckMoment(3);
+          if (status === "Out For Delivery") truckMoment(3);
           if (status === "Delivered") truckMoment(4);
         }
         hasRunRef.current = true;
@@ -105,9 +105,9 @@ const TrackShipmentPopup = ({ onClose, show, shipment }) => {
 
               {/* Out for Delivery - Orange */}
               <div className={`absolute left-[63%] px-3 py-1 text-white rounded transition-all duration-300
-                ${status === "Out for Delivery" ? "bg-primary scale-110" : "bg-gray-600"}
+                ${status === "Out For Delivery" ? "bg-primary scale-110" : "bg-gray-600"}
               `}>
-                Out for Delivery
+                Out For Delivery
               </div>
 
               {/* Delivered - Green */}
